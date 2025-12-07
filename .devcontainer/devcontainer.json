@@ -1,0 +1,29 @@
+{
+  "name": "Medium ML Stack (Conda)",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "workspaceFolder": "/workspace",
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/workspace,type=bind"
+  ],
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "python.defaultInterpreterPath": "/opt/conda/envs/mlenv/bin/python",
+        "python.analysis.extraPaths": [
+          "/workspace"
+        ]
+      },
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-azuretools.vscode-docker",
+        "ms-ai-tools.codex",
+        "bierner.markdown-mermaid"
+      ]
+    }
+  },
+  "remoteUser": "vscode"
+}

@@ -1,0 +1,1472 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:frs-accrep="http://xbrl.frc.org.uk/reports/2023-01-01/accrep" xmlns:frs-aurep="http://xbrl.frc.org.uk/reports/2023-01-01/aurep" xmlns:frs-bus="http://xbrl.frc.org.uk/cd/2023-01-01/business" xmlns:frs-common="http://xbrl.frc.org.uk/general/2023-01-01/common" xmlns:frs-core="http://xbrl.frc.org.uk/fr/2023-01-01/core" xmlns:frs-countries="http://xbrl.frc.org.uk/cd/2023-01-01/countries" xmlns:frs-direp="http://xbrl.frc.org.uk/reports/2023-01-01/direp" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" xmlns:ixt="http://www.xbrl.org/inlineXBRL/transformation/2010-04-20" xmlns:ixt2="http://www.xbrl.org/inlineXBRL/transformation/2011-07-31" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:pag="http://taxcalc.com/application/pagination" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink">
+<head>
+<title>Finance Advice Centre Ltd</title>
+<meta content="application/xhtml+xml; charset=UTF-8" http-equiv="Content-Type"/>
+<style type="text/css">@media print {
+	body {
+		margin-left: 0mm; margin-right: 0;
+		line-height: 1.2;
+	}
+   .pagWebviewPageFooter { display: none; }	div.pageElement &gt; div.break &gt; div:first-child{ margin-top: 30px; }}
+@media screen {
+	div, ol, ul, li, table, body {
+		background: white;
+	}
+	html {
+		background: #808080;
+	}
+	body {
+		margin: 0 auto;
+		margin-top: 8px;
+		padding: 0 15mm 0 15mm;
+		width: 180mm;
+	}
+	.break {
+		background: white;		border-bottom: 8px solid #808080;
+		padding-bottom: 30px;		margin: 0 -15mm 0 -15mm;
+		padding-left: 0mm;
+	}
+   .pagPrintPageFooter { display: none; }	.pageHeader, 
+	.pageHeaderBlank {
+		padding-top: 30px;
+	}
+	body.drillable-notes *[data-drillablename*='drillable-note']:hover .break,	body.drillable-notes *[data-drillablename*='drillable-note']:hover .pageHeader,	body.drillable-notes *[data-drillablename*='drillable-note']:hover .pageHeader *	{		background: white;	}	.openNoteBtn	{		cursor: pointer;		position: absolute;		border: none;	}	.pageElement{ margin-top: 30px; }}
+body {
+	background: white;
+	line-height: 1.2;
+}
+.break {
+	page-break-after: always;
+	clear: both;
+}
+.break, .break *, .pagPrintPageFooter, .pagPrintPageFooter * {
+	text-align: center;
+}
+.continue {
+	position: relative;
+	height: 0;
+	text-align: right;
+}
+.pageHeader {
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+.pagPrintPageFooter {  position: relative;   height: 0; }
+.counted .counted .pageHeader, .counted .noncounted .pageHeader {	margin-left: -10mm }
+.counted .counted .break, .counted .noncounted .break {	margin-left: -25mm }
+.underline {
+	border-bottom: 1px solid black;
+	padding-bottom: 7px;
+}
+.sectionName {
+	display: none;
+}*{font-family: "Verdana", Arial; font-size: 8pt; text-align: left;} #coverPageTitle * {font-size: 10pt;} .pageHeader * { font-size: 10pt} @media print {	a {		color:black;		text-decoration: none;	}}#coverPageHeader {	text-align: right;}td { padding: 0; }#dummyHeaderNode {	padding-bottom: 1px;}#amendingHeader *{	text-align: center;	font-weight: bold;	text-transform: uppercase;}#amendingStatement {	font-weight: bold;	margin-top: 25px;}#coverPageTitle {	text-transform: uppercase;	font-weight: bold;}#coverPageTitle.has-left-margin {	float: left;}#coverPageFirmLogo.has-left-margin {	float: left;}#coverPageClientLogo.has-left-margin {	float: left;}#coverPageTitle * {	text-align: center;}table.reportTable { width: 100%; }
+table.reportTable td:first-child { width:100%;}
+.noteTextBlock table td { padding: 2px 2px 3px 2px; }
+.noteTextBlock table[align='center'] { margin: 0 auto 0 auto; float:none; } 
+.noteTextBlock table[align='right'] { margin: 0 0 0 auto; float:none; } 
+ 
+ table.directorsSign td {  width: 40em;  font-weight: normal;  vertical-align: top;  padding-top: 2em; }  
+ .role { font-weight: normal; padding-top: 0.5em; } 
+ .date-placeholder { 	 font-weight: normal; } 
+ .dots {   margin-top: 3em;	border-top: 1px dashed; 	width: 10em;  }  .signedPlace { font-weight: normal;padding-bottom: 5em;}  
+ .signPlace { 	padding: 2em 0 0.5em 0; } 
+table.reportTable td {	min-width: 80px; 	text-align: left; }table.reportTable th {	text-align: center;	vertical-align: top;}table.reportTable td.dummyColumn, table.reportTable th.dummyColumn {	min-width: 5px; }table.reportTable tr.title td {	font-weight: bold;	padding: 15px 5px;}table.reportTable td.subtitle {	font-style: italic;}table.reportTable tr.bold td:first-child,table.reportTable tr.total td:first-child,table.reportTable tr.totalTitle td:first-child,table.reportTable tr.subTotal td:first-child {	font-weight: bold;}table.reportTable tr.totalTitle td,table.reportTable tr.total td {	padding-top: 15px;}table.reportTable td.percent, table.reportTable td.null, table.reportTable td.number {	text-align: center;}table tr.dataAlignedRight td.percent, table tr.dataAlignedRight td.null, table tr.dataAlignedRight td.number, table tr.dataAlignedRight td.shares  {	text-align: right; 	min-width: auto; 	padding-right: 0.7em; }table th.thLeft{ text-align: left; } table.reportTable.investSubsidiaries td.text{ width: 40%; }table.reportTable td.noteNumber {	font-weight: bold;	text-align: center;}table.reportTable td.underlining1 {	border-top: 1px solid black;}table.reportTable td.underlining2 {	border-bottom: 3px double black;}table.reportTable td.money, table.reportTable td.shares {	text-align: right;	white-space: nowrap; }.title {	font-weight: bold;	margin-top: 20px;	text-align: left;}.titleItalic {	font-weight: bold;	font-style: italic;	margin-top: 20px;	text-align: left;}table.company-information {	width: 100%; }table.company-information td:first-child, #flysheet td:first-child {	width: 30%; }table.directorList td{	padding: 1px;}.blank-line {	height: 1em;}#contents {	margin-top: 40px;}#contents th {	padding-bottom: 20px;}#contents tr td {	padding-bottom: 15px;}#contents tr.title td {	padding-bottom: 20px;}#contents td.contentPageNumber {	text-align: center;}.note-section {	counter-reset: noteitem;	padding-left: 0;}.counterPrefix {	padding-top: 1em;	padding-right: 1em;}.counted, .noncounted {	padding-top: 1em;}.counted .counted, .counted .noncounted {	padding-left: 10mm;}.pageHeader, .pageHeader * {	text-align: center;}.noteTextBlock{	padding-top: 1em;}.notesMarkedList li div.noteTextBlock{	padding-top: 0;}td.money .negative-right-bracket,td.money .positive-right-spacer{	min-width: 0.7em;	display: inline-block;}.notesStartPageToEndPageContainer{	margin-top: 50px;	margin-left: 5px;}.boldText td:first-child{   font-weight: bold;}@media screen {	body.drillable-notes *[data-drillablename*='drillable-note']:hover,	body.drillable-notes *[data-drillablename*='drillable-term']:hover,	body.drillable-notes *[data-drillablename*='drillable-codedescription']:hover,	body.drillable-notes *[data-drillablename*='drillable-signature']:hover,	body.drillable-notes *[data-drillablename*='drillable-note']:hover *, 	body.drillable-notes *[data-drillablename*='drillable-term']:hover *, 	body.drillable-notes *[data-drillablename*='drillable-codedescription']:hover *,	body.drillable-notes *[data-drillablename*='drillable-signature']:hover *,	body.drillable-notes *[data-drillablename*='drillable-textref']:hover, 	body.drillable-notes *[data-drillablename*='drillable-textref']:hover *, 	body.drillable-notes *[data-drillablename*='drillable-value']:hover 	{		cursor: pointer;		background: #dbaacb;	}	body.drillable-notes:hover *[data-drillablename*='drillable-value'], 	body.drillable-notes:hover *[data-drillablename*='drillable-note'], 	body.drillable-notes:hover *[data-drillablename*='drillable-term'], 	body.drillable-notes:hover *[data-drillablename*='drillable-codedescription'], 	body.drillable-notes:hover *[data-drillablename*='drillable-textref']:hover 	{		outline: 1px dashed #9e0073;	}	body.drillable-notes:hover *[data-drillablename*='drillable-signature'] 	{		border: 1px dashed #9e0073;	}}</style>
+</head>
+<body xml:lang="en">
+<div style="display:none">
+<ix:header>
+<ix:hidden>
+<ix:nonNumeric contextRef="CURRENT_FY_PERIOD" name="frs-bus:NameProductionSoftware">Acorah Software Products - Accounts Production</ix:nonNumeric>
+<ix:nonNumeric contextRef="CURRENT_FY_PERIOD" name="frs-bus:VersionProductionSoftware">14.6.300</ix:nonNumeric>
+<ix:nonNumeric contextRef="CURRENT_FY_PERIOD_AccountingStandardFRS1021A" name="frs-bus:AccountingStandardsApplied"/>
+<ix:nonNumeric contextRef="CURRENT_FY_PERIOD_COUNTRYINCORPORATION" name="frs-bus:CountryFormationOrIncorporation"/>
+<ix:nonNumeric contextRef="CURRENT_FY_PERIOD_LegalFormPrivateLimitedCompanyLtd" name="frs-bus:LegalFormEntity"/>
+<ix:nonNumeric contextRef="CURRENT_FY_PERIOD_AccountsTypeFilleted" name="frs-bus:AccountsType"/>
+<ix:nonNumeric contextRef="CURRENT_FY_PERIOD_AccountsStatusAuditExemptNoAccountantsReport" name="frs-bus:AccountsStatusAuditedOrUnaudited"/>
+<ix:nonNumeric contextRef="CURRENT_FY_PERIOD" name="frs-bus:EntityTradingStatus"/>
+<ix:nonNumeric contextRef="CURRENT_FY_PERIOD" name="frs-bus:EntityDormantTruefalse">false</ix:nonNumeric>
+<ix:nonNumeric contextRef="CURRENT_FY_PERIOD" name="frs-bus:AccountingStandardsAppliedMatchesTaxonomyEntry-pointTruefalse">true</ix:nonNumeric>
+<ix:nonNumeric contextRef="PREVIOUS_FY_END" format="ixt:datelonguk" name="frs-bus:EndDateForPriorPeriod">31 March 2023</ix:nonNumeric>
+<ix:nonNumeric contextRef="PREVIOUS_FY_START" format="ixt:datelonguk" name="frs-bus:StartDateForPriorPeriod">1 April 2022</ix:nonNumeric>
+<ix:nonNumeric contextRef="CURRENT_FY_PERIOD" name="frs-bus:ReportIncludesDetailedProfitLossStatementTruefalse">false</ix:nonNumeric>
+<ix:nonNumeric contextRef="CURRENT_FY_PERIOD_ApplicableLegislationFRS1021A" name="frs-bus:ApplicableLegislation"/>
+<ix:nonNumeric contextRef="CURRENT_FY_START" format="ixt:datelonguk" name="frs-bus:StartDateForPeriodCoveredByReport">1 April 2023</ix:nonNumeric>
+<ix:nonNumeric contextRef="CURRENT_FY_END" format="ixt:datelonguk" name="frs-bus:EndDateForPeriodCoveredByReport">31 March 2024</ix:nonNumeric>
+<ix:nonNumeric contextRef="CURRENT_FY_END" format="ixt:datelonguk" name="frs-bus:BalanceSheetDate">31 March 2024</ix:nonNumeric>
+<ix:nonNumeric contextRef="CURRENT_FY_PERIOD" name="frs-bus:UKCompaniesHouseRegisteredNumber">08948140</ix:nonNumeric>
+<ix:nonNumeric contextRef="CURRENT_FY_PERIOD_Director1" name="frs-bus:NameEntityOfficer">Mr M E Cassar</ix:nonNumeric>
+</ix:hidden>
+<ix:references>
+<link:schemaRef xlink:href="https://xbrl.frc.org.uk/FRS-102/2023-01-01/FRS-102-2023-01-01.xsd" xlink:type="simple"/>
+</ix:references>
+<ix:resources>
+<xbrli:unit id="GBP">
+<xbrli:measure>iso4217:GBP</xbrli:measure>
+</xbrli:unit>
+<xbrli:unit id="EUR">
+<xbrli:measure>iso4217:EUR</xbrli:measure>
+</xbrli:unit>
+<xbrli:unit id="USD">
+<xbrli:measure>iso4217:USD</xbrli:measure>
+</xbrli:unit>
+<xbrli:unit id="Shares">
+<xbrli:measure>xbrli:shares</xbrli:measure>
+</xbrli:unit>
+<xbrli:unit id="Pure">
+<xbrli:measure>xbrli:pure</xbrli:measure>
+</xbrli:unit>
+<xbrli:unit id="Number">
+<xbrli:measure>xbrli:pure</xbrli:measure>
+</xbrli:unit>
+<xbrli:context id="CURRENT_FY_START">
+<xbrli:entity>
+<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">08948140</xbrli:identifier>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:instant>2023-03-31</xbrli:instant>
+</xbrli:period>
+</xbrli:context>
+<xbrli:context id="CURRENT_FY_END">
+<xbrli:entity>
+<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">08948140</xbrli:identifier>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:instant>2024-03-31</xbrli:instant>
+</xbrli:period>
+</xbrli:context>
+<xbrli:context id="CURRENT_FY_PERIOD">
+<xbrli:entity>
+<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">08948140</xbrli:identifier>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:startDate>2023-04-01</xbrli:startDate>
+<xbrli:endDate>2024-03-31</xbrli:endDate>
+</xbrli:period>
+</xbrli:context>
+<xbrli:context id="CURRENT_FY_END_Current">
+<xbrli:entity>
+<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">08948140</xbrli:identifier>
+<xbrli:segment>
+<xbrldi:explicitMember dimension="frs-core:FinancialInstrumentCurrentNon-currentDimension">frs-core:CurrentFinancialInstruments</xbrldi:explicitMember>
+</xbrli:segment>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:instant>2024-03-31</xbrli:instant>
+</xbrli:period>
+</xbrli:context>
+<xbrli:context id="CURRENT_FY_END_ComputerEquipment">
+<xbrli:entity>
+<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">08948140</xbrli:identifier>
+<xbrli:segment>
+<xbrldi:explicitMember dimension="frs-core:PropertyPlantEquipmentClassesDimension">frs-core:ComputerEquipment</xbrldi:explicitMember>
+</xbrli:segment>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:instant>2024-03-31</xbrli:instant>
+</xbrli:period>
+</xbrli:context>
+<xbrli:context id="CURRENT_FY_PERIOD_ComputerEquipment">
+<xbrli:entity>
+<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">08948140</xbrli:identifier>
+<xbrli:segment>
+<xbrldi:explicitMember dimension="frs-core:PropertyPlantEquipmentClassesDimension">frs-core:ComputerEquipment</xbrldi:explicitMember>
+</xbrli:segment>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:startDate>2023-04-01</xbrli:startDate>
+<xbrli:endDate>2024-03-31</xbrli:endDate>
+</xbrli:period>
+</xbrli:context>
+<xbrli:context id="CURRENT_FY_START_ComputerEquipment">
+<xbrli:entity>
+<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">08948140</xbrli:identifier>
+<xbrli:segment>
+<xbrldi:explicitMember dimension="frs-core:PropertyPlantEquipmentClassesDimension">frs-core:ComputerEquipment</xbrldi:explicitMember>
+</xbrli:segment>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:instant>2023-03-31</xbrli:instant>
+</xbrli:period>
+</xbrli:context>
+<xbrli:context id="CURRENT_FY_END_FurnitureFittings">
+<xbrli:entity>
+<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">08948140</xbrli:identifier>
+<xbrli:segment>
+<xbrldi:explicitMember dimension="frs-core:PropertyPlantEquipmentClassesDimension">frs-core:FurnitureFittings</xbrldi:explicitMember>
+</xbrli:segment>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:instant>2024-03-31</xbrli:instant>
+</xbrli:period>
+</xbrli:context>
+<xbrli:context id="CURRENT_FY_PERIOD_FurnitureFittings">
+<xbrli:entity>
+<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">08948140</xbrli:identifier>
+<xbrli:segment>
+<xbrldi:explicitMember dimension="frs-core:PropertyPlantEquipmentClassesDimension">frs-core:FurnitureFittings</xbrldi:explicitMember>
+</xbrli:segment>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:startDate>2023-04-01</xbrli:startDate>
+<xbrli:endDate>2024-03-31</xbrli:endDate>
+</xbrli:period>
+</xbrli:context>
+<xbrli:context id="CURRENT_FY_START_FurnitureFittings">
+<xbrli:entity>
+<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">08948140</xbrli:identifier>
+<xbrli:segment>
+<xbrldi:explicitMember dimension="frs-core:PropertyPlantEquipmentClassesDimension">frs-core:FurnitureFittings</xbrldi:explicitMember>
+</xbrli:segment>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:instant>2023-03-31</xbrli:instant>
+</xbrli:period>
+</xbrli:context>
+<xbrli:context id="CURRENT_FY_END_ShareCapital">
+<xbrli:entity>
+<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">08948140</xbrli:identifier>
+<xbrli:segment>
+<xbrldi:explicitMember dimension="frs-core:EquityClassesDimension">frs-core:ShareCapital</xbrldi:explicitMember>
+</xbrli:segment>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:instant>2024-03-31</xbrli:instant>
+</xbrli:period>
+</xbrli:context>
+<xbrli:context id="CURRENT_FY_END_RetainedEarningsAccumulatedLosses">
+<xbrli:entity>
+<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">08948140</xbrli:identifier>
+<xbrli:segment>
+<xbrldi:explicitMember dimension="frs-core:EquityClassesDimension">frs-core:RetainedEarningsAccumulatedLosses</xbrldi:explicitMember>
+</xbrli:segment>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:instant>2024-03-31</xbrli:instant>
+</xbrli:period>
+</xbrli:context>
+<xbrli:context id="CURRENT_FY_PERIOD_LegalFormPrivateLimitedCompanyLtd">
+<xbrli:entity>
+<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">08948140</xbrli:identifier>
+<xbrli:segment>
+<xbrldi:explicitMember dimension="frs-bus:LegalFormEntityDimension">frs-bus:PrivateLimitedCompanyLtd</xbrldi:explicitMember>
+</xbrli:segment>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:startDate>2023-04-01</xbrli:startDate>
+<xbrli:endDate>2024-03-31</xbrli:endDate>
+</xbrli:period>
+</xbrli:context>
+<xbrli:context id="CURRENT_FY_PERIOD_AccountsTypeFilleted">
+<xbrli:entity>
+<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">08948140</xbrli:identifier>
+<xbrli:segment>
+<xbrldi:explicitMember dimension="frs-bus:AccountsTypeDimension">frs-bus:FilletedAccounts</xbrldi:explicitMember>
+</xbrli:segment>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:startDate>2023-04-01</xbrli:startDate>
+<xbrli:endDate>2024-03-31</xbrli:endDate>
+</xbrli:period>
+</xbrli:context>
+<xbrli:context id="CURRENT_FY_PERIOD_AccountingStandardFRS1021A">
+<xbrli:entity>
+<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">08948140</xbrli:identifier>
+<xbrli:segment>
+<xbrldi:explicitMember dimension="frs-bus:AccountingStandardsDimension">frs-bus:SmallEntities</xbrldi:explicitMember>
+</xbrli:segment>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:startDate>2023-04-01</xbrli:startDate>
+<xbrli:endDate>2024-03-31</xbrli:endDate>
+</xbrli:period>
+</xbrli:context>
+<xbrli:context id="CURRENT_FY_PERIOD_AccountsStatusAuditExemptNoAccountantsReport">
+<xbrli:entity>
+<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">08948140</xbrli:identifier>
+<xbrli:segment>
+<xbrldi:explicitMember dimension="frs-bus:AccountsStatusDimension">frs-bus:AuditExempt-NoAccountantsReport</xbrldi:explicitMember>
+</xbrli:segment>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:startDate>2023-04-01</xbrli:startDate>
+<xbrli:endDate>2024-03-31</xbrli:endDate>
+</xbrli:period>
+</xbrli:context>
+<xbrli:context id="CURRENT_FY_PERIOD_ApplicableLegislationFRS1021A">
+<xbrli:entity>
+<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">08948140</xbrli:identifier>
+<xbrli:segment>
+<xbrldi:explicitMember dimension="frs-bus:ApplicableLegislationDimension">frs-bus:SmallCompaniesRegimeForAccounts</xbrldi:explicitMember>
+</xbrli:segment>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:startDate>2023-04-01</xbrli:startDate>
+<xbrli:endDate>2024-03-31</xbrli:endDate>
+</xbrli:period>
+</xbrli:context>
+<xbrli:context id="CURRENT_FY_PERIOD_Director1">
+<xbrli:entity>
+<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">08948140</xbrli:identifier>
+<xbrli:segment>
+<xbrldi:explicitMember dimension="frs-bus:EntityOfficersDimension">frs-bus:Director1</xbrldi:explicitMember>
+</xbrli:segment>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:startDate>2023-04-01</xbrli:startDate>
+<xbrli:endDate>2024-03-31</xbrli:endDate>
+</xbrli:period>
+</xbrli:context>
+<xbrli:context id="CURRENT_FY_PERIOD_COUNTRYINCORPORATION">
+<xbrli:entity>
+<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">08948140</xbrli:identifier>
+<xbrli:segment>
+<xbrldi:explicitMember dimension="frs-countries:CountriesRegionsDimension">frs-countries:EnglandWales</xbrldi:explicitMember>
+</xbrli:segment>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:startDate>2023-04-01</xbrli:startDate>
+<xbrli:endDate>2024-03-31</xbrli:endDate>
+</xbrli:period>
+</xbrli:context>
+<xbrli:context id="PREVIOUS_FY_START">
+<xbrli:entity>
+<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">08948140</xbrli:identifier>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:instant>2022-03-31</xbrli:instant>
+</xbrli:period>
+</xbrli:context>
+<xbrli:context id="PREVIOUS_FY_END">
+<xbrli:entity>
+<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">08948140</xbrli:identifier>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:instant>2023-03-31</xbrli:instant>
+</xbrli:period>
+</xbrli:context>
+<xbrli:context id="PREVIOUS_FY_PERIOD">
+<xbrli:entity>
+<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">08948140</xbrli:identifier>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:startDate>2022-04-01</xbrli:startDate>
+<xbrli:endDate>2023-03-31</xbrli:endDate>
+</xbrli:period>
+</xbrli:context>
+<xbrli:context id="PREVIOUS_FY_END_Current">
+<xbrli:entity>
+<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">08948140</xbrli:identifier>
+<xbrli:segment>
+<xbrldi:explicitMember dimension="frs-core:FinancialInstrumentCurrentNon-currentDimension">frs-core:CurrentFinancialInstruments</xbrldi:explicitMember>
+</xbrli:segment>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:instant>2023-03-31</xbrli:instant>
+</xbrli:period>
+</xbrli:context>
+<xbrli:context id="PREVIOUS_FY_END_ShareCapital">
+<xbrli:entity>
+<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">08948140</xbrli:identifier>
+<xbrli:segment>
+<xbrldi:explicitMember dimension="frs-core:EquityClassesDimension">frs-core:ShareCapital</xbrldi:explicitMember>
+</xbrli:segment>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:instant>2023-03-31</xbrli:instant>
+</xbrli:period>
+</xbrli:context>
+<xbrli:context id="PREVIOUS_FY_END_RetainedEarningsAccumulatedLosses">
+<xbrli:entity>
+<xbrli:identifier scheme="http://www.companieshouse.gov.uk/">08948140</xbrli:identifier>
+<xbrli:segment>
+<xbrldi:explicitMember dimension="frs-core:EquityClassesDimension">frs-core:RetainedEarningsAccumulatedLosses</xbrldi:explicitMember>
+</xbrli:segment>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:instant>2023-03-31</xbrli:instant>
+</xbrli:period>
+</xbrli:context>
+</ix:resources>
+</ix:header>
+</div>
+<div class="pageHeaderBlank"/>
+<div id="p5_3_Cover_Page">
+<div id="coverPageHeader">Registered number: 08948140</div>
+<div id="dummyHeaderNode"> </div>
+<div id="coverPageTitle" style="width:680px; height:45px; margin-top: 364.79999999999995px;">
+<div>
+<span>
+<ix:nonNumeric contextRef="CURRENT_FY_PERIOD" name="frs-bus:EntityCurrentLegalOrRegisteredName">Finance Advice Centre Ltd</ix:nonNumeric>
+</span>
+</div>
+<div>
+<span>
+<ix:nonNumeric contextRef="CURRENT_FY_PERIOD" name="frs-bus:ReportTitle"><div>Financial Statements</div>
+</ix:nonNumeric>
+</span>
+</div>
+<div id="period-description">
+<span>For The Year Ended 31 March 2024</span>
+</div>
+</div>
+</div>
+<div class="pageElement" style="padding-top: 519.16px;">
+<div class="break"/>
+<div class="pagPrintPageFooter"/>
+</div>
+<div class="pageHeader underline">
+<div>Finance Advice Centre Ltd</div>
+<div>Contents</div>
+<div/>
+</div>
+<div class="sectionName">Contents</div>
+<table cellspacing="5" class="reportTable" id="contents">
+<tr>
+<th/>
+<th>Page</th>
+</tr>
+<tr>
+<td>
+<a href="#p_balance_sheet">Balance Sheet</a>
+</td>
+<td class="contentPageNumber">1—2</td>
+</tr>
+<tr>
+<td>
+<a href="#p_notes">Notes to the Financial Statements</a>
+</td>
+<td class="contentPageNumber">3—4</td>
+</tr>
+</table>
+<div class="pageElement" style="padding-top: 735.16px;">
+<div class="break"/>
+<div class="pagPrintPageFooter" style="top: 998.16px;">Page 1</div>
+</div>
+<div class="pageHeader underline">
+<div>Finance Advice Centre Ltd</div>
+<div>Balance Sheet</div>
+<div>As At <span>
+<span>
+<ix:nonNumeric contextRef="CURRENT_FY_END" format="ixt:datelonguk" name="frs-bus:BalanceSheetDate">31 March 2024</ix:nonNumeric>
+</span>
+</span>
+</div>
+</div>
+<div class="sectionName">Balance Sheet</div>
+<div id="p_balance_sheet">
+<span>
+<strong>Registered number: </strong>
+<span>08948140</span>
+</span>
+<div class="blank-line"/>
+<table cellspacing="5" class="reportTable">
+<tr>
+<th colspan="2"/>
+<th colspan="2">2024</th>
+<th colspan="2">2023</th>
+</tr>
+<tr>
+<th/>
+<th>Notes</th>
+<th>£</th>
+<th>£</th>
+<th>£</th>
+<th>£</th>
+</tr>
+<tr>
+<td class="title" colspan="1">FIXED ASSETS</td>
+</tr>
+<tr>
+<td>Tangible Assets</td>
+<td class="noteNumber"><a href="#p5_14_Tangible_Fixed_Assets1">4</a>
+</td>
+<td class="money"/>
+<td class="money" title="Tangible">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_END" decimals="0" format="ixt:numcommadot" name="frs-core:PropertyPlantEquipment" unitRef="GBP">6,808</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="money"/>
+<td class="money" title="Tangible">
+<span>
+<ix:nonFraction contextRef="PREVIOUS_FY_END" decimals="0" format="ixt:numcommadot" name="frs-core:PropertyPlantEquipment" unitRef="GBP">6,425</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+</tr>
+<tr class="min_height">
+<td> </td>
+<td> </td>
+<td> </td>
+<td class="underlining1"> </td>
+<td class="dummyColumn"> </td>
+<td class="underlining1"> </td>
+</tr>
+<tr class="total">
+<td/>
+<td class="noteNumber"/>
+<td class="money"/>
+<td class="money" title="FixedAssetsTotal">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_END" decimals="0" format="ixt:numcommadot" name="frs-core:FixedAssets" unitRef="GBP">6,808</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="money"/>
+<td class="money" title="FixedAssetsTotal">
+<span>
+<ix:nonFraction contextRef="PREVIOUS_FY_END" decimals="0" format="ixt:numcommadot" name="frs-core:FixedAssets" unitRef="GBP">6,425</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+</tr>
+<tr>
+<td class="title" colspan="1">CURRENT ASSETS</td>
+</tr>
+<tr>
+<td>Debtors</td>
+<td class="noteNumber"><a href="#p5_17_Debtors">5</a>
+</td>
+<td class="money" title="Debtors">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_END" decimals="0" format="ixt:numcommadot" name="frs-core:Debtors" unitRef="GBP">57,839</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="money"/>
+<td class="money" title="Debtors">
+<span>
+<ix:nonFraction contextRef="PREVIOUS_FY_END" decimals="0" format="ixt:numcommadot" name="frs-core:Debtors" unitRef="GBP">145,228</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="money"/>
+</tr>
+<tr>
+<td>Cash at bank and in hand</td>
+<td class="noteNumber"/>
+<td class="money" title="Cash_Bank">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_END" decimals="0" format="ixt:numcommadot" name="frs-core:CashBankOnHand" unitRef="GBP">366,696</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="money"/>
+<td class="money" title="Cash_Bank">
+<span>
+<ix:nonFraction contextRef="PREVIOUS_FY_END" decimals="0" format="ixt:numcommadot" name="frs-core:CashBankOnHand" unitRef="GBP">415,684</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="money"/>
+</tr>
+<tr class="min_height">
+<td> </td>
+<td> </td>
+<td class="underlining1"> </td>
+<td class="dummyColumn"> </td>
+<td class="underlining1"> </td>
+</tr>
+<tr class="total">
+<td/>
+<td class="noteNumber"/>
+<td class="money" title="Current_Total">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_END" decimals="0" format="ixt:numcommadot" name="frs-core:CurrentAssets" unitRef="GBP">424,535</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="money"/>
+<td class="money" title="Current_Total">
+<span>
+<ix:nonFraction contextRef="PREVIOUS_FY_END" decimals="0" format="ixt:numcommadot" name="frs-core:CurrentAssets" unitRef="GBP">560,912</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="money"/>
+</tr>
+<tr class="total">
+<td>Creditors: Amounts Falling Due Within One Year</td>
+<td class="noteNumber"><a href="#p5_18_Creditors_Due_Within_One_Year">6</a>
+</td>
+<td class="money" title="Creditors_&lt;1">
+<span>(<ix:nonFraction contextRef="CURRENT_FY_END" decimals="0" format="ixt:numcommadot" name="frs-core:Creditors" unitRef="GBP">96,601</ix:nonFraction>
+<span class="negative-right-bracket">)</span>
+</span>
+</td>
+<td class="money"/>
+<td class="money" title="Creditors_&lt;1">
+<span>(<ix:nonFraction contextRef="PREVIOUS_FY_END" decimals="0" format="ixt:numcommadot" name="frs-core:Creditors" unitRef="GBP">252,191</ix:nonFraction>
+<span class="negative-right-bracket">)</span>
+</span>
+</td>
+<td class="money"/>
+</tr>
+<tr class="min_height">
+<td> </td>
+<td> </td>
+<td class="underlining1"> </td>
+<td class="dummyColumn"> </td>
+<td class="underlining1"> </td>
+</tr>
+<tr class="total">
+<td>NET CURRENT ASSETS (LIABILITIES)</td>
+<td class="noteNumber"/>
+<td class="money"/>
+<td class="money" title="Net_Current">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_END" decimals="0" format="ixt:numcommadot" name="frs-core:NetCurrentAssetsLiabilities" unitRef="GBP">327,934</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="money"/>
+<td class="money" title="Net_Current">
+<span>
+<ix:nonFraction contextRef="PREVIOUS_FY_END" decimals="0" format="ixt:numcommadot" name="frs-core:NetCurrentAssetsLiabilities" unitRef="GBP">308,721</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+</tr>
+<tr class="min_height">
+<td> </td>
+<td> </td>
+<td> </td>
+<td class="underlining1"> </td>
+<td class="dummyColumn"> </td>
+<td class="underlining1"> </td>
+</tr>
+<tr class="total">
+<td>TOTAL ASSETS LESS CURRENT LIABILITIES</td>
+<td class="noteNumber"/>
+<td class="money"/>
+<td class="money" title="Total_Less_CL">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_END" decimals="0" format="ixt:numcommadot" name="frs-core:TotalAssetsLessCurrentLiabilities" unitRef="GBP">334,742</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="money"/>
+<td class="money" title="Total_Less_CL">
+<span>
+<ix:nonFraction contextRef="PREVIOUS_FY_END" decimals="0" format="ixt:numcommadot" name="frs-core:TotalAssetsLessCurrentLiabilities" unitRef="GBP">315,146</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+</tr>
+<tr class="min_height">
+<td> </td>
+<td> </td>
+<td> </td>
+<td class="underlining1"> </td>
+<td class="dummyColumn"> </td>
+<td class="underlining1"> </td>
+</tr>
+<tr class="total">
+<td>NET ASSETS</td>
+<td class="noteNumber"/>
+<td class="money"/>
+<td class="money" title="Net_Assets">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_END" decimals="0" format="ixt:numcommadot" name="frs-core:NetAssetsLiabilities" unitRef="GBP">334,742</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="money"/>
+<td class="money" title="Net_Assets">
+<span>
+<ix:nonFraction contextRef="PREVIOUS_FY_END" decimals="0" format="ixt:numcommadot" name="frs-core:NetAssetsLiabilities" unitRef="GBP">315,146</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+</tr>
+<tr class="min_height">
+<td> </td>
+<td> </td>
+<td> </td>
+<td class="underlining2"> </td>
+<td class="dummyColumn"> </td>
+<td class="underlining2"> </td>
+</tr>
+<tr>
+<td class="title" colspan="1">CAPITAL AND RESERVES</td>
+</tr>
+<tr>
+<td>Called up share capital</td>
+<td class="noteNumber"><a href="#p5_23_1_ShareCapital">7</a>
+</td>
+<td class="money"/>
+<td class="money" title="Share_Capital">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_END_ShareCapital" decimals="0" format="ixt:numcommadot" name="frs-core:Equity" unitRef="GBP">100</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="money"/>
+<td class="money" title="Share_Capital">
+<span>
+<ix:nonFraction contextRef="PREVIOUS_FY_END_ShareCapital" decimals="0" format="ixt:numcommadot" name="frs-core:Equity" unitRef="GBP">100</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+</tr>
+<tr class="nonDrillable">
+<td>Profit and Loss Account</td>
+<td class="noteNumber"/>
+<td class="money"/>
+<td class="money" title="FRS102_Profit_Loss">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_END_RetainedEarningsAccumulatedLosses" decimals="0" format="ixt:numcommadot" name="frs-core:Equity" unitRef="GBP">334,642</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="money"/>
+<td class="money" title="FRS102_Profit_Loss">
+<span>
+<ix:nonFraction contextRef="PREVIOUS_FY_END_RetainedEarningsAccumulatedLosses" decimals="0" format="ixt:numcommadot" name="frs-core:Equity" unitRef="GBP">315,046</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+</tr>
+<tr class="min_height">
+<td> </td>
+<td> </td>
+<td> </td>
+<td class="underlining1"> </td>
+<td class="dummyColumn"> </td>
+<td class="underlining1"> </td>
+</tr>
+<tr class="total">
+<td>SHAREHOLDERS' FUNDS</td>
+<td class="noteNumber"/>
+<td class="money"/>
+<td class="money" title="FRS102_Shareholders_Funds">
+<span>334,742<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="money"/>
+<td class="money" title="FRS102_Shareholders_Funds">
+<span>315,146<span class="positive-right-spacer"/>
+</span>
+</td>
+</tr>
+<tr class="min_height">
+<td> </td>
+<td> </td>
+<td> </td>
+<td class="underlining2"> </td>
+<td class="dummyColumn"> </td>
+<td class="underlining2"> </td>
+</tr>
+</table>
+<div class="pageElement" style="padding-top: 365.16px;">
+<div class="break">
+<div class="pagWebviewPageFooter">Page 1</div>
+</div>
+<div class="pagPrintPageFooter" style="top: 998.16px;">Page 2</div>
+</div>
+<div class="pageHeader underline">
+<div>Finance Advice Centre Ltd</div>
+<div>Balance Sheet (continued)</div>
+<div>As At <span>
+<span>
+<ix:nonNumeric contextRef="CURRENT_FY_END" format="ixt:datelonguk" name="frs-bus:BalanceSheetDate">31 March 2024</ix:nonNumeric>
+</span>
+</span>
+</div>
+</div>
+<div class="unbreakable">
+<div class="unbreakable">
+<div>
+<div class="noteTextBlock">
+<span>
+<ix:nonNumeric contextRef="CURRENT_FY_PERIOD" name="frs-direp:StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies">For the year ending 31 March 2024 the company was entitled to exemption from audit under section 477 of the Companies Act 2006 relating to small companies.</ix:nonNumeric>
+</span>
+</div>
+<div class="noteTextBlock">
+<span>
+<ix:nonNumeric contextRef="CURRENT_FY_PERIOD" name="frs-direp:StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit">The member has not required the company to obtain an audit in accordance with section 476 of the Companies Act 2006.</ix:nonNumeric>
+</span>
+</div>
+<div class="noteTextBlock">
+<span>
+<ix:nonNumeric contextRef="CURRENT_FY_PERIOD" name="frs-direp:StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct">The director acknowledges his responsibilities for complying with the requirements of the Act with respect to accounting records and the preparation of accounts.</ix:nonNumeric>
+</span>
+</div>
+<div class="noteTextBlock">
+<span>
+<ix:nonNumeric contextRef="CURRENT_FY_PERIOD" name="frs-direp:StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime">These accounts have been prepared and delivered in accordance with the provisions applicable to companies subject to the small companies' regime.</ix:nonNumeric>
+</span>
+</div>
+<div class="noteTextBlock">
+<span>
+<ix:nonNumeric contextRef="CURRENT_FY_PERIOD" name="frs-direp:StatementThatDirectorsHaveElectedNotToDeliverProfitLossAccountUnderSection4445ACompaniesAct2006">The company has taken advantage of section 444(1) of the Companies Act 2006 and opted not to deliver to the registrar a copy of the company's Profit and Loss Account.</ix:nonNumeric>
+</span>
+</div>
+</div>
+</div>
+<div class="noteTextBlock">On behalf of the board</div>
+<table class="directorsSign">
+<col width="100%"/>
+<tbody>
+<tr>
+<td>
+<div class="dots"/>
+<div class="signPlace">
+<span>
+<ix:nonNumeric contextRef="CURRENT_FY_PERIOD_Director1" name="frs-core:DirectorSigningFinancialStatements"/>Mr M E Cassar</span>
+</div>
+<div class="role">Director</div>
+</td>
+</tr>
+<tr>
+<td>
+<div>
+<span>
+<ix:nonNumeric contextRef="CURRENT_FY_END" format="ixt:datelonguk" name="frs-core:DateAuthorisationFinancialStatementsForIssue">27 June 2024</ix:nonNumeric>
+</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="notesStartPageToEndPageContainer">The notes on <span class="notesStartPageToEndPage">pages 3 to 4</span> form part of these financial statements.</div>
+</div>
+</div>
+<div class="pageElement" style="padding-top: 442.16px;">
+<div class="break" style=""><div class="pagWebviewPageFooter">Page 2</div>
+</div>
+<div class="pagPrintPageFooter" style="top: 998.16px;">Page 3</div>
+</div>
+<div class="pageHeader underline">
+<div>Finance Advice Centre Ltd</div>
+<div>Notes to the Financial Statements</div>
+<div><span>For The Year Ended 31 March 2024</span>
+</div>
+</div>
+<div class="sectionName">Notes to the Financial Statements</div>
+<div class="note-section" id="p_notes">
+<div class="counted" id="generalInformationFRS102Id">
+<span class="counterPrefix">1.</span>
+<span class="title">General Information</span>
+<div class="noteTextBlock">
+<div><span>
+<ix:nonNumeric contextRef="CURRENT_FY_PERIOD" name="frs-bus:EntityCurrentLegalOrRegisteredName">Finance Advice Centre Ltd</ix:nonNumeric>
+</span> is a private company, limited by shares, incorporated in England &amp; Wales, registered number <span>
+<ix:nonNumeric contextRef="CURRENT_FY_PERIOD" name="frs-bus:UKCompaniesHouseRegisteredNumber">08948140</ix:nonNumeric>
+</span>. The registered office is Chatsworth House Prime Business Centre, Raynesway, Derby, Derbyshire, DE21 7SR.</div>
+</div>
+</div>
+<div class="counted" id="p5_6_Accounting_Policies">
+<span class="counterPrefix">2.</span>
+<span class="title">Accounting Policies</span>
+<div class="note-section">
+<div class="counted" id="p5_6_1_Basis_of_preparation_of_financial_statements">
+<span class="counterPrefix">2.1.</span>
+<span class="title">Basis of Preparation of Financial Statements</span>
+<div>
+<ix:nonNumeric contextRef="CURRENT_FY_PERIOD" name="frs-core:StatementComplianceWithApplicableReportingFramework">
+<div class="noteTextBlock">
+<div>The financial statements have been prepared under the historical cost convention and in accordance with Financial Reporting Standard 102 section 1A Small Entities "The Financial Reporting Standard applicable in the UK and Republic of Ireland" and the Companies Act 2006.</div>
+</div>
+</ix:nonNumeric>
+</div>
+</div>
+<div class="counted" id="p5_6_3_Turnover">
+<span class="counterPrefix">2.2.</span>
+<span class="title">Turnover</span>
+<div>
+<ix:nonNumeric contextRef="CURRENT_FY_PERIOD" name="frs-core:RevenueRecognitionPolicy">
+<div class="noteTextBlock">
+<div>Turnover is measured at the fair value of the consideration received or receivable, net of discounts and value added taxes. Turnover includes revenue earned from the sale of goods and from the rendering of services. Turnover is reduced for estimated customer returns, rebates and other similar allowances.</div>
+<div class="blank-line"/>
+<div>
+<strong>Sale of goods</strong>
+</div>
+<div class="blank-line"/>
+<div>Turnover from the sale of goods is recognised when the significant risks and rewards of ownership of the goods has transferred to the buyer. This is usually at the point that the customer has signed for the delivery of the goods.</div>
+<div class="blank-line"/>
+<div>
+<strong>Rendering of services</strong>
+</div>
+<div class="blank-line"/>
+<div>Turnover from the rendering of services is recognised by reference to the stage of completion of the contract. The stage of completion of a contract is measured by comparing the costs incurred for work performed to date to the total estimated contract costs. Turnover is only recognised to the extent of recoverable expenses when the outcome of a contract cannot be estimated reliably.</div>
+</div>
+</ix:nonNumeric>
+</div>
+</div>
+<div class="counted" id="p5_6_4_Tangible_fixed_assets_and_depreciation">
+<span class="counterPrefix">2.3.</span>
+<span class="title">Tangible Fixed Assets and Depreciation </span>
+<div>
+<ix:nonNumeric contextRef="CURRENT_FY_PERIOD" name="frs-core:PropertyPlantEquipmentPolicy">
+<div class="noteTextBlock">
+<div>Tangible fixed assets are measured at cost less accumulated depreciation and any accumulated impairment losses. Depreciation is provided at rates calculated to write off the cost of the fixed assets, less their estimated residual value, over their expected useful lives on the following bases:</div>
+</div>
+</ix:nonNumeric>
+</div>
+<div class="blank-line"/>
+<table style="padding-left:2em; width: 100%">
+<tr>
+<td class="text" style="width: 250px" title="Fixtures_Header">Fixtures &amp; Fittings</td>
+<td class="text" title="Fixtures_Policy">
+<span>
+<ix:nonNumeric contextRef="CURRENT_FY_PERIOD_FurnitureFittings" name="frs-core:DescriptionDepreciationMethodForPropertyPlantEquipment">25% reducing balance</ix:nonNumeric>
+</span>
+</td>
+</tr>
+<tr>
+<td class="text" style="width: 250px" title="Computer_Header">Computer Equipment</td>
+<td class="text" title="Computer_Policy">
+<span>
+<ix:nonNumeric contextRef="CURRENT_FY_PERIOD_ComputerEquipment" name="frs-core:DescriptionDepreciationMethodForPropertyPlantEquipment">25% straight line</ix:nonNumeric>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="counted" id="p5_6_8_Deferred_taxation">
+<span class="counterPrefix">2.4.</span>
+<span class="title">Taxation</span>
+<div>
+<div class="noteTextBlock">
+<div>Income tax expense represents the sum of the tax currently payable and deferred tax.</div>
+<div class="blank-line"/>
+<div>The tax currently payable is based on taxable profit for the year. The company's liability for current tax is calculated using tax rates that have been enacted or substantively enacted by the end of the reporting period.</div>
+<div class="blank-line"/>
+<div>Deferred tax is recognised on timing differences between the carrying amounts of assets and liabilities in the financial statements and the corresponding tax bases used in the computation of taxable profit. The carrying amount of deferred tax assets is reviewed at the end of each reporting period.</div>
+<div class="blank-line"/>
+<div>Deferred tax assets and liabilities are measured at the tax rates that are expected to apply in the period in which the liability is settled or the asset realised, based on tax rates (and tax laws) that have been enacted or substantively enacted by the end of the reporting period. Deferred tax liabilities are presented within provisions for liabilities and deferred tax assets within debtors.</div>
+<div class="blank-line"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="counted" id="p5_9_1_Average_Number_of_Employees">
+<span class="counterPrefix">3.</span>
+<span class="title">Average Number of Employees</span>
+<div class="noteTextBlock">
+<div>Average number of employees, including directors, during the year was:<span> 12 (2023: 15)</span>
+</div>
+</div>
+</div>
+<div style="display: none">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_PERIOD" decimals="0" name="frs-core:AverageNumberEmployeesDuringPeriod" unitRef="Number">12</ix:nonFraction>
+</span>
+<span>
+<ix:nonFraction contextRef="PREVIOUS_FY_PERIOD" decimals="0" name="frs-core:AverageNumberEmployeesDuringPeriod" unitRef="Number">15</ix:nonFraction>
+</span>
+</div>
+<div class="pageElement" style="padding-top: 159.16px;">
+<div class="break">
+<div class="pagWebviewPageFooter">Page 3</div>
+</div>
+<div class="pagPrintPageFooter" style="top: 998.16px;">Page 4</div>
+</div>
+<div class="pageHeader underline">
+<div>Finance Advice Centre Ltd</div>
+<div>Notes to the Financial Statements (continued)</div>
+<div><span>For The Year Ended 31 March 2024</span>
+</div>
+</div>
+<div class="counted" id="p5_14_Tangible_Fixed_Assets1">
+<span class="counterPrefix">4.</span>
+<span class="title">Tangible Assets</span>
+<table cellspacing="5" class="reportTable">
+<tr>
+<th/>
+<th>Fixtures &amp; Fittings</th>
+<th>Computer Equipment</th>
+<th>Total</th>
+</tr>
+<tr>
+<th/>
+<th>£</th>
+<th>£</th>
+<th>£</th>
+</tr>
+<tr>
+<td class="title" colspan="1">Cost</td>
+</tr>
+<tr class="nonDrillable">
+<td>As at 1 April 2023</td>
+<td class="money" title="4140">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_START_FurnitureFittings" decimals="0" format="ixt:numcommadot" name="frs-core:PropertyPlantEquipmentGrossCost" unitRef="GBP">6,001</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="money" title="4150">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_START_ComputerEquipment" decimals="0" format="ixt:numcommadot" name="frs-core:PropertyPlantEquipmentGrossCost" unitRef="GBP">21,212</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="money" title="Total_FA_Start">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_START" decimals="0" format="ixt:numcommadot" name="frs-core:PropertyPlantEquipmentGrossCost" unitRef="GBP">27,213</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+</tr>
+<tr>
+<td>Additions</td>
+<td class="money" title="4141">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_PERIOD_FurnitureFittings" decimals="0" format="ixt:numcommadot" name="frs-core:TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment" unitRef="GBP">1,595</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="money" title="4151">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_PERIOD_ComputerEquipment" decimals="0" format="ixt:numcommadot" name="frs-core:TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment" unitRef="GBP">1,268</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="money" title="Total_FA_Add">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_PERIOD" decimals="0" format="ixt:numcommadot" name="frs-core:TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment" unitRef="GBP">2,863</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+</tr>
+<tr class="min_height">
+<td> </td>
+<td class="underlining1"> </td>
+<td class="underlining1"> </td>
+<td class="underlining1"> </td>
+</tr>
+<tr class="nonDrillable">
+<td>As at 31 March 2024</td>
+<td class="money" title="Cost_End_FF">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_END_FurnitureFittings" decimals="0" format="ixt:numcommadot" name="frs-core:PropertyPlantEquipmentGrossCost" unitRef="GBP">7,596</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="money" title="Cost_End_CE">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_END_ComputerEquipment" decimals="0" format="ixt:numcommadot" name="frs-core:PropertyPlantEquipmentGrossCost" unitRef="GBP">22,480</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="money" title="Total_FA_End">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_END" decimals="0" format="ixt:numcommadot" name="frs-core:PropertyPlantEquipmentGrossCost" unitRef="GBP">30,076</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+</tr>
+<tr class="min_height">
+<td> </td>
+<td class="underlining2"> </td>
+<td class="underlining2"> </td>
+<td class="underlining2"> </td>
+</tr>
+<tr>
+<td class="title" colspan="1">Depreciation</td>
+</tr>
+<tr class="nonDrillable">
+<td>As at 1 April 2023</td>
+<td class="money" title="4143">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_START_FurnitureFittings" decimals="0" format="ixt:numcommadot" name="frs-core:AccumulatedDepreciationImpairmentPropertyPlantEquipment" unitRef="GBP">4,002</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="money" title="4153">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_START_ComputerEquipment" decimals="0" format="ixt:numcommadot" name="frs-core:AccumulatedDepreciationImpairmentPropertyPlantEquipment" unitRef="GBP">16,786</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="money" title="Total_FAD_Start">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_START" decimals="0" format="ixt:numcommadot" name="frs-core:AccumulatedDepreciationImpairmentPropertyPlantEquipment" unitRef="GBP">20,788</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+</tr>
+<tr>
+<td>Provided during the period</td>
+<td class="money" title="4144">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_PERIOD_FurnitureFittings" decimals="0" format="ixt:numcommadot" name="frs-core:IncreaseFromDepreciationChargeForYearPropertyPlantEquipment" unitRef="GBP">765</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="money" title="4154">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_PERIOD_ComputerEquipment" decimals="0" format="ixt:numcommadot" name="frs-core:IncreaseFromDepreciationChargeForYearPropertyPlantEquipment" unitRef="GBP">1,715</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="money" title="Total_FAD_Charge">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_PERIOD" decimals="0" format="ixt:numcommadot" name="frs-core:IncreaseFromDepreciationChargeForYearPropertyPlantEquipment" unitRef="GBP">2,480</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+</tr>
+<tr class="min_height">
+<td> </td>
+<td class="underlining1"> </td>
+<td class="underlining1"> </td>
+<td class="underlining1"> </td>
+</tr>
+<tr class="nonDrillable">
+<td>As at 31 March 2024</td>
+<td class="money" title="Dep_End_FF">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_END_FurnitureFittings" decimals="0" format="ixt:numcommadot" name="frs-core:AccumulatedDepreciationImpairmentPropertyPlantEquipment" unitRef="GBP">4,767</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="money" title="Dep_End_CE">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_END_ComputerEquipment" decimals="0" format="ixt:numcommadot" name="frs-core:AccumulatedDepreciationImpairmentPropertyPlantEquipment" unitRef="GBP">18,501</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="money" title="Total_FAD_End">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_END" decimals="0" format="ixt:numcommadot" name="frs-core:AccumulatedDepreciationImpairmentPropertyPlantEquipment" unitRef="GBP">23,268</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+</tr>
+<tr class="min_height">
+<td> </td>
+<td class="underlining2"> </td>
+<td class="underlining2"> </td>
+<td class="underlining2"> </td>
+</tr>
+<tr>
+<td class="title" colspan="1">Net Book Value</td>
+</tr>
+<tr class="nonDrillable">
+<td>As at 31 March 2024</td>
+<td class="money" title="NBV_End_FF">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_END_FurnitureFittings" decimals="0" format="ixt:numcommadot" name="frs-core:PropertyPlantEquipment" unitRef="GBP">2,829</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="money" title="NBV_End_CE">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_END_ComputerEquipment" decimals="0" format="ixt:numcommadot" name="frs-core:PropertyPlantEquipment" unitRef="GBP">3,979</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="money" title="NBV_End_Total">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_END" decimals="0" format="ixt:numcommadot" name="frs-core:PropertyPlantEquipment" unitRef="GBP">6,808</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+</tr>
+<tr class="min_height">
+<td> </td>
+<td class="underlining2"> </td>
+<td class="underlining2"> </td>
+<td class="underlining2"> </td>
+</tr>
+<tr class="nonDrillable">
+<td>As at 1 April 2023</td>
+<td class="money" title="NBV_Start_FF">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_START_FurnitureFittings" decimals="0" format="ixt:numcommadot" name="frs-core:PropertyPlantEquipment" unitRef="GBP">1,999</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="money" title="NBV_Start_CE">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_START_ComputerEquipment" decimals="0" format="ixt:numcommadot" name="frs-core:PropertyPlantEquipment" unitRef="GBP">4,426</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="money" title="NBV_Start_Total">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_START" decimals="0" format="ixt:numcommadot" name="frs-core:PropertyPlantEquipment" unitRef="GBP">6,425</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+</tr>
+<tr class="min_height">
+<td> </td>
+<td class="underlining2"> </td>
+<td class="underlining2"> </td>
+<td class="underlining2"> </td>
+</tr>
+</table>
+</div>
+<div class="counted" id="p5_17_Debtors">
+<span class="counterPrefix">5.</span>
+<span class="title">Debtors</span>
+<table cellspacing="5" class="reportTable">
+<tr>
+<th/>
+<th>2024</th>
+<th class="dummyColumn"/>
+<th>2023</th>
+</tr>
+<tr>
+<th/>
+<th>£</th>
+<th class="dummyColumn"/>
+<th>£</th>
+</tr>
+<tr>
+<td class="title" colspan="1">Due within one year</td>
+</tr>
+<tr>
+<td>Trade debtors</td>
+<td class="money" title="TradeDebtors">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_END_Current" decimals="0" format="ixt:numcommadot" name="frs-core:TradeDebtorsTradeReceivables" unitRef="GBP">57,839</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="dummyColumn"/>
+<td class="money" title="TradeDebtors">
+<span>
+<ix:nonFraction contextRef="PREVIOUS_FY_END_Current" decimals="0" format="ixt:numcommadot" name="frs-core:TradeDebtorsTradeReceivables" unitRef="GBP">144,240</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+</tr>
+<tr>
+<td>Prepayments and accrued income</td>
+<td class="money">
+<span>-<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="dummyColumn"/>
+<td class="money" title="Prepayments_Income">
+<span>
+<ix:nonFraction contextRef="PREVIOUS_FY_END_Current" decimals="0" format="ixt:numcommadot" name="frs-core:PrepaymentsAccruedIncome" unitRef="GBP">988</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+</tr>
+<tr class="min_height">
+<td> </td>
+<td class="underlining1"> </td>
+<td class="dummyColumn"> </td>
+<td class="underlining1"> </td>
+</tr>
+<tr class="subTotal">
+<td/>
+<td class="money" title="Debtors">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_END" decimals="0" format="ixt:numcommadot" name="frs-core:Debtors" unitRef="GBP">57,839</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="dummyColumn"/>
+<td class="money" title="Debtors">
+<span>
+<ix:nonFraction contextRef="PREVIOUS_FY_END" decimals="0" format="ixt:numcommadot" name="frs-core:Debtors" unitRef="GBP">145,228</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+</tr>
+<tr class="min_height">
+<td> </td>
+<td class="underlining2"> </td>
+<td class="dummyColumn"> </td>
+<td class="underlining2"> </td>
+</tr>
+</table>
+</div>
+<div class="counted" id="p5_18_Creditors_Due_Within_One_Year">
+<span class="counterPrefix">6.</span>
+<span class="title">Creditors: Amounts Falling Due Within One Year</span>
+<table cellspacing="5" class="reportTable">
+<tr>
+<th/>
+<th>2024</th>
+<th class="dummyColumn"/>
+<th>2023</th>
+</tr>
+<tr>
+<th/>
+<th>£</th>
+<th class="dummyColumn"/>
+<th>£</th>
+</tr>
+<tr>
+<td>Trade creditors</td>
+<td class="money" title="TradeCreditors">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_END_Current" decimals="0" format="ixt:numcommadot" name="frs-core:TradeCreditorsTradePayables" unitRef="GBP">65,226</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="dummyColumn"/>
+<td class="money" title="TradeCreditors">
+<span>
+<ix:nonFraction contextRef="PREVIOUS_FY_END_Current" decimals="0" format="ixt:numcommadot" name="frs-core:TradeCreditorsTradePayables" unitRef="GBP">71,841</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+</tr>
+<tr>
+<td>Corporation tax</td>
+<td class="money" title="5310">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_END_Current" decimals="0" format="ixt:numcommadot" name="frs-core:CorporationTaxPayable" unitRef="GBP">26,302</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="dummyColumn"/>
+<td class="money" title="5310">
+<span>
+<ix:nonFraction contextRef="PREVIOUS_FY_END_Current" decimals="0" format="ixt:numcommadot" name="frs-core:CorporationTaxPayable" unitRef="GBP">11,344</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+</tr>
+<tr>
+<td>Other taxes and social security</td>
+<td class="money" title="5320">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_END_Current" decimals="0" format="ixt:numcommadot" name="frs-core:OtherTaxationSocialSecurityPayable" unitRef="GBP">2,577</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="dummyColumn"/>
+<td class="money" title="5320">
+<span>
+<ix:nonFraction contextRef="PREVIOUS_FY_END_Current" decimals="0" format="ixt:numcommadot" name="frs-core:OtherTaxationSocialSecurityPayable" unitRef="GBP">5,332</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+</tr>
+<tr>
+<td>Other creditors</td>
+<td class="money" title="5350">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_END_Current" decimals="0" format="ixt:numcommadot" name="frs-core:OtherCreditors" unitRef="GBP">84</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="dummyColumn"/>
+<td class="money" title="5350">
+<span>
+<ix:nonFraction contextRef="PREVIOUS_FY_END_Current" decimals="0" format="ixt:numcommadot" name="frs-core:OtherCreditors" unitRef="GBP">161,832</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+</tr>
+<tr>
+<td>Accruals and deferred income</td>
+<td class="money" title="5360">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_END_Current" decimals="0" format="ixt:numcommadot" name="frs-core:AccruedLiabilitiesDeferredIncome" unitRef="GBP">2,100</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="dummyColumn"/>
+<td class="money" title="5360">
+<span>
+<ix:nonFraction contextRef="PREVIOUS_FY_END_Current" decimals="0" format="ixt:numcommadot" name="frs-core:AccruedLiabilitiesDeferredIncome" unitRef="GBP">1,842</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+</tr>
+<tr>
+<td>Director's loan account</td>
+<td class="money" title="CreditorsDirectorsTotal">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_END_Current" decimals="0" format="ixt:numcommadot" name="frs-core:AmountsOwedToDirectors" unitRef="GBP">312</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="dummyColumn"/>
+<td class="money">
+<span>-<span class="positive-right-spacer"/>
+</span>
+</td>
+</tr>
+<tr class="min_height">
+<td> </td>
+<td class="underlining1"> </td>
+<td class="dummyColumn"> </td>
+<td class="underlining1"> </td>
+</tr>
+<tr class="subTotal">
+<td/>
+<td class="money" title="Creditors_&lt;1">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_END" decimals="0" format="ixt:numcommadot" name="frs-core:Creditors" unitRef="GBP">96,601</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="dummyColumn"/>
+<td class="money" title="Creditors_&lt;1">
+<span>
+<ix:nonFraction contextRef="PREVIOUS_FY_END" decimals="0" format="ixt:numcommadot" name="frs-core:Creditors" unitRef="GBP">252,191</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+</tr>
+<tr class="min_height">
+<td> </td>
+<td class="underlining2"> </td>
+<td class="dummyColumn"> </td>
+<td class="underlining2"> </td>
+</tr>
+</table>
+<div class="note"> </div>
+</div>
+<div class="counted" id="p5_23_1_ShareCapital">
+<span class="counterPrefix">7.</span>
+<span class="title">Share Capital</span>
+<table cellspacing="5" class="reportTable">
+<tr>
+<th/>
+<th>2024</th>
+<th class="dummyColumn"/>
+<th>2023</th>
+</tr>
+<tr>
+<th/>
+<th>£</th>
+<th class="dummyColumn"/>
+<th>£</th>
+</tr>
+<tr>
+<td>Allotted, Called up and fully paid</td>
+<td class="money" title="Total_Shares_End">
+<span>
+<ix:nonFraction contextRef="CURRENT_FY_END_ShareCapital" decimals="0" format="ixt:numcommadot" name="frs-core:Equity" unitRef="GBP">100</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+<td class="dummyColumn"/>
+<td class="money" title="Total_Shares_End">
+<span>
+<ix:nonFraction contextRef="PREVIOUS_FY_END_ShareCapital" decimals="0" format="ixt:numcommadot" name="frs-core:Equity" unitRef="GBP">100</ix:nonFraction>
+<span class="positive-right-spacer"/>
+</span>
+</td>
+</tr>
+<tr class="min_height">
+<td> </td>
+<td class="underlining2"> </td>
+<td class="dummyColumn"> </td>
+<td class="underlining2"> </td>
+</tr>
+</table>
+</div>
+</div>
+<div class="pageElement" style="padding-top: 80.16px;">
+<div class="break" style=""><div class="pagWebviewPageFooter">Page 4</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+name: mlenv
+channels:
+  - conda-forge
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.11
+  - numpy
+  - scipy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - jupyterlab
+  - ipykernel
+  # Add these if you like
+  - pytorch
+  - cpuonly  # for CPU-only PyTorch, if using pytorch channel instead of conda-forge
+  - pip
+  - pip:
+      - black
+      - isort
+      - jupyterlab-code-formatter
