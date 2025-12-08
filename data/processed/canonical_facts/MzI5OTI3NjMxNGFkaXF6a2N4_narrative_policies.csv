@@ -1,0 +1,19 @@
+name,contextRef,unitRef,decimals,value,measure,entity_identifier,entity_scheme,start_date,end_date,instant,scenario,domain
+frs-core:DateAuthorisationFinancialStatementsForIssue,CURRENT_FY_END,,,23 April 2021,,08948140,http://www.companieshouse.gov.uk/,,,2021-03-31,,frs-core
+frs-core:StatementComplianceWithApplicableReportingFramework,CURRENT_FY_PERIOD,,,The financial statements are prepared under the historical cost convention and in accordance with the FRS 102 Section 1A Small Entities - The Financial Reporting Standard applicable in the UK and Republic of Ireland and the Companies Act 2006.,,08948140,http://www.companieshouse.gov.uk/,2020-04-01,2021-03-31,,,frs-core
+frs-core:RevenueRecognitionPolicy,CURRENT_FY_PERIOD,,,"Turnover is measured at the fair value of the consideration received or receivable, net of discounts and value added taxes. Turnover includes revenue earned from the sale of goods and from the rendering of services. Turnover is reduced for estimated customer returns, rebates and other similar allowances.
+
+
+Sale of goods
+
+
+Turnover from the sale of goods is recognised when the significant risks and rewards of ownership of the goods has transferred to the buyer. This is usually at the point that the customer has signed for the delivery of the goods.
+
+
+Rendering of services
+
+
+Turnover from the rendering of services is recognised by reference to the stage of completion of the contract. The stage of completion of a contract is measured by comparing the costs incurred for work performed to date to the total estimated contract costs. Turnover is only recognised to the extent of recoverable expenses when the outcome of a contract cannot be estimated reliably.",,08948140,http://www.companieshouse.gov.uk/,2020-04-01,2021-03-31,,,frs-core
+frs-core:PropertyPlantEquipmentPolicy,CURRENT_FY_PERIOD,,,"Tangible fixed assets are measured at cost less accumulated depreciation and any accumulated impairment losses. Depreciation is provided at rates calculated to write off the cost of the fixed assets, less their estimated residual value, over their expected useful lives on the following bases:",,08948140,http://www.companieshouse.gov.uk/,2020-04-01,2021-03-31,,,frs-core
+frs-core:DescriptionDepreciationMethodForPropertyPlantEquipment,CURRENT_FY_PERIOD_FurnitureFittings,,,25% reducing balance,,08948140,http://www.companieshouse.gov.uk/,2020-04-01,2021-03-31,,,frs-core
+frs-core:DescriptionDepreciationMethodForPropertyPlantEquipment,CURRENT_FY_PERIOD_ComputerEquipment,,,25% straight line,,08948140,http://www.companieshouse.gov.uk/,2020-04-01,2021-03-31,,,frs-core

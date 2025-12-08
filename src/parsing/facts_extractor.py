@@ -1,126 +1,70 @@
 # Canonical financial facts extraction
 import pandas as pd
-from typing import Dict, List, Any
-
-def tag_mapping() -> Dict[str, List[str]]:
-    """
-    Returns a mapping of canonical financial metrics to lists of iXBRL tags (including synonyms).
-    """
-    return {
-        "property_plant_equipment": [
-            "core:PropertyPlantEquipment", "frs-core:PropertyPlantEquipment"
-        ],
-        "fixed_assets": [
-            "core:FixedAssets", "frs-core:FixedAssets"
-        ],
-        "debtors": [
-            "core:Debtors", "frs-core:Debtors"
-        ],
-        "cash_bank_on_hand": [
-            "core:CashBankOnHand", "frs-core:CashBankOnHand"
-        ],
-        "current_assets": [
-            "core:CurrentAssets", "frs-core:CurrentAssets"
-        ],
-        "creditors": [
-            "core:Creditors", "frs-core:Creditors"
-        ],
-        "net_current_assets_liabilities": [
-            "core:NetCurrentAssetsLiabilities", "frs-core:NetCurrentAssetsLiabilities"
-        ],
-        "total_assets_less_current_liabilities": [
-            "core:TotalAssetsLessCurrentLiabilities", "frs-core:TotalAssetsLessCurrentLiabilities"
-        ],
-        "net_assets_liabilities": [
-            "core:NetAssetsLiabilities", "frs-core:NetAssetsLiabilities"
-        ],
-        "equity": [
-            "core:Equity", "frs-core:Equity"
-        ],
-        # Add more as needed for revenue, profit before tax, net income, total liabilities, etc.
-    }
+from typing import Dict
 
 def extract_canonical_facts(
     facts_with_context: pd.DataFrame,
-    tag_map: Dict[str, List[str]],
-    preferred_currency: str = "GBP",
-    prefer_consolidated: bool = True,
-    fiscal_year: Any = None
-) -> pd.DataFrame:
+    preferred_currency: str = "GBP"
+) -> Dict[str, pd.DataFrame]:
     """
-    Extracts canonical financial facts (e.g. revenue, profit before tax, net income, total assets, total liabilities)
-    from a merged iXBRL facts DataFrame, using tag mapping, context, and unit filtering.
-
-    Args:
-        facts_with_context: DataFrame with iXBRL facts merged with context and units.
-        tag_map: Dict mapping canonical metric names to lists of iXBRL tags (including synonyms).
-        preferred_currency: Only facts in this currency are returned (default: GBP).
-        prefer_consolidated: If True, prefer consolidated over individual statements when both exist.
-        fiscal_year: Optionally filter for a specific fiscal year (context or period).
-
-    Returns:
-        DataFrame with one row per canonical fact, including value, context, and metadata.
+    Given a raw iXBRL DataFrame, produce three ground truth tables:
+      - financial_facts: numeric/monetary facts (frs-core, GBP)
+      - narrative_policies: text/policy notes (frs-core, non-monetary)
+      - entity_compliance: entity-level and compliance metadata (frs-bus, frs-direp)
+    Returns a dict of DataFrames.
     """
+    df = facts_with_context.copy()
 
-    print("TESTING extract_canonical_facts function")
+    # Helper: extract domain from tag (e.g. "frs-core:PropertyPlantEquipment" -> "frs-core")
+    def get_domain(tag):
+        if pd.isnull(tag):
+            return None
+        return str(tag).split(":")[0] if ":" in str(tag) else None
 
-    results = []
+    df["domain"] = df["name"].apply(get_domain)
 
-    # Use actual column names from your CSVs
-    tag_col = 'name'
-    currency_col = 'unitRef' #if 'unitRef' in facts_with_context.columns else 'measure'
-    context_col = 'contextRef' #if 'contextRef' in facts_with_context.columns else 'context_id'
-    date_col = 'instant' #if 'end_date' in facts_with_context.columns else 'instant'
+    # --- gt_financial_facts ---
+    gt_financial_facts = df[
+        (df["domain"] == "frs-core") &
+        (df["unitRef"].fillna("").str.upper() == preferred_currency.upper()) &
+        (~df["value"].isin(["-", "", None]))
+    ].copy()
 
-    print("DEBUG: Unique tag values in DataFrame:", facts_with_context[tag_col].unique())
-    for metric, tags in tag_map.items():
+    # --- gt_narrative_policies ---
+    gt_narrative_policies = df[
+        (df["domain"] == "frs-core") &
+        (df["unitRef"].isnull()) &
+        (df["value"].notnull())
+    ].copy()
 
-        print(f"\nDEBUG: Filtering for metric '{metric}' with tags {tags}")
+    # --- gt_entity_compliance ---
+    gt_entity_compliance = df[
+        df["domain"].isin(["frs-bus", "frs-direp"])
+    ].copy()
 
-        # Filter by tag (case-insensitive, strip whitespace)
-        tag_mask = facts_with_context[tag_col].str.strip().str.lower().isin([t.lower() for t in tags])
-        filtered = facts_with_context[tag_mask]
-        print(f"DEBUG: Rows after tag filter: {len(filtered)}")
+    return {
+        "financial_facts": gt_financial_facts,
+        "narrative_policies": gt_narrative_policies,
+        "entity_compliance": gt_entity_compliance,
+    }
 
-        # Filter by currency
-        if currency_col in filtered.columns:
-            filtered = filtered[filtered[currency_col].str.upper() == preferred_currency.upper()]
-            print(f"DEBUG: Rows after currency filter: {len(filtered)}")
+def extract_canonical_facts_dataframes(facts_with_context_dict):
+    """Extract canonical facts for multiple filings."""
+    canonical_facts_dict = {}
+    for filing_id, df in facts_with_context_dict.items():
+        canonical_facts_dict[filing_id] = extract_canonical_facts(df)
+    return canonical_facts_dict
 
-        # Filter by fiscal year (end_date)
-        if fiscal_year and date_col in filtered.columns:
-            filtered = filtered[filtered[date_col] == fiscal_year]
-            print(f"DEBUG: Rows after fiscal year filter: {len(filtered)}")
+def save_canonical_facts_to_csv(canonical_facts_dict, output_dir):
+    """
+    Save canonical facts (financial_facts, narrative_policies, entity_compliance)
+    for each filing_id to CSV files in the specified output directory.
+    Each file will be named <filing_id>_<table_name>.csv.
+    """
+    import os
 
-        # Select the most recent or relevant fact
-        if not filtered.empty:
-
-            # Sort by date_col if available
-            if date_col in filtered.columns:
-                best_fact = filtered.sort_values(date_col, ascending=False).iloc[0]
-            else:
-                best_fact = filtered.iloc[0]
-            print(f"DEBUG: Selected fact for '{metric}':", best_fact.to_dict())
-
-            results.append({
-                'metric': metric,
-                'value': best_fact['value'],
-                'currency': best_fact.get(currency_col, None),
-                'period_end': best_fact.get(date_col, None),
-                'context_id': best_fact.get(context_col, None),
-                'source_tag': best_fact[tag_col],
-                'raw_row': best_fact.to_dict(),
-            })
-        else:
-            print(f"DEBUG: No fact found for '{metric}' after filtering.")
-            results.append({
-                'metric': metric,
-                'value': None,
-                'currency': None,
-                'period_end': None,
-                'context_id': None,
-                'source_tag': None,
-                'raw_row': None,
-            })
-
-    return pd.DataFrame(results)
+    os.makedirs(output_dir, exist_ok=True)
+    for filing_id, tables in canonical_facts_dict.items():
+        for table_name, df in tables.items():
+            csv_path = os.path.join(output_dir, f"{filing_id}_{table_name}.csv")
+            df.to_csv(csv_path, index=False)

@@ -39,6 +39,22 @@ def search_company(name):
     r.raise_for_status()
     return r.json()
 
+def search_companies_from_list(names):
+    """
+    Accepts a list of company names and returns a dict
+    mapping each name to its Companies House search result.
+    """
+    if not isinstance(names, list):
+        raise TypeError("Input must be a list of company names.")
+
+    results = {}
+    for name in filter(None, set(names)):
+        try:
+            results[name] = search_company(name)
+        except Exception as e:
+            results[name] = {"error": str(e)}
+    return results
+
 def fetch_active_company_numbers(
     query: str, *, items_per_page: int = 100, max_pages: int = 5
 ) -> list[str]:
