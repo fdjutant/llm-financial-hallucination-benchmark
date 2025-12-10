@@ -1,2 +1,6 @@
 /COMPANIES_HOUSE_API_KEY
 /scribble
+/src/__pycache__/
+/evaluation/__pycache__/
+/parsing/__pycache__/
+/qa_generation/__pycache__/

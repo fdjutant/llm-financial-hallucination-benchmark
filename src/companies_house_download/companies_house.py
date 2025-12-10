@@ -80,7 +80,7 @@ def fetch_active_company_numbers(
         response.raise_for_status()
         data = response.json()
 
-        debug_path = RAW_DIR / "debug" / "last_search.json"
+        debug_path = RAW_DIR / "companies_house" / "debug" / "last_search.json"
         debug_path.parent.mkdir(parents=True, exist_ok=True)
         with debug_path.open("w", encoding="utf-8") as f:
             json.dump(data, f, indent=2)
@@ -100,8 +100,7 @@ def fetch_active_company_numbers(
 
     return active_numbers
 
-def build_download_manifest(
-    company_names: Iterable[str], *,
+def build_download_manifest(company_names: Iterable[str], *,
     manifest_path: Optional[Path] = RAW_DIR / "companies_house" / "manifest.json"
 ) -> list[FilingRequest]:
     """Return manifest entries (iXBRL only) and update on-disk manifest for traceability."""
@@ -316,15 +315,21 @@ def _existing_download_timestamp(destination: Path) -> Optional[str]:
     return _format_timestamp(destination.stat().st_mtime)
 
 def _write_manifest(index: dict[str, dict[str, Any]], manifest_path: Path) -> None:
-    """Persist manifest entries to disk in deterministic order."""
+    """Persist manifest entries to disk in deterministic order within a timestamped folder inside 'manifest'."""
 
-    manifest_path.parent.mkdir(parents=True, exist_ok=True)
+    timestamp = dt.datetime.now(tz=dt.timezone.utc).strftime("%Y%m%d_%I%M%p")
+    manifest_folder = manifest_path.parent / "manifest"
+    timestamped_folder = manifest_folder / timestamp
+    timestamped_folder.mkdir(parents=True, exist_ok=True)
+
     ordered_entries = sorted(index.values(), key=_manifest_entry_sort_key)
     manifest_doc = {
         "generated_at": _format_timestamp_from_datetime(dt.datetime.now(tz=dt.timezone.utc)),
         "entries": ordered_entries,
     }
-    manifest_path.write_text(json.dumps(manifest_doc, indent=2))
+
+    timestamped_manifest_path = timestamped_folder / manifest_path.name
+    timestamped_manifest_path.write_text(json.dumps(manifest_doc, indent=2))
 
 def _fetch_document_metadata(metadata_url: str) -> dict[str, Any]:
     """Retrieve Companies House document metadata JSON."""
