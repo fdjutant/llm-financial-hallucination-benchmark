@@ -1,85 +1,13 @@
 {
-  "generated_at": "2025-12-08T10:11:57Z",
+  "generated_at": "2025-12-10T11:06:13Z",
   "entries": [
-    {
-      "company_name": "FINANCE ADVICE CENTRE LTD",
-      "company_number": "08948140",
-      "filing_id": "MzQ3ODU4MjE4N2FkaXF6a2N4",
-      "made_up_date": "2025-03-31",
-      "download_timestamp": "2025-12-07T21:27:47Z",
-      "source_url": "https://document-api.company-information.service.gov.uk/document/zwfOpb4vDoS8HYiih8KPrQC_5D-bXy8mFgzECRlZQWQ"
-    },
-    {
-      "company_name": "FINANCE ADVICE CENTRE LTD",
-      "company_number": "08948140",
-      "filing_id": "MzQyNzE3ODU4MGFkaXF6a2N4",
-      "made_up_date": "2024-03-31",
-      "download_timestamp": "2025-12-07T21:27:49Z",
-      "source_url": "https://document-api.company-information.service.gov.uk/document/g9fl0LsKwkcyOt6yPiMMm2nYdCsch9mBa1s6RrtxrAc"
-    },
-    {
-      "company_name": "FINANCE ADVICE CENTRE LTD",
-      "company_number": "08948140",
-      "filing_id": "MzM4NDI4MDYwOGFkaXF6a2N4",
-      "made_up_date": "2023-03-31",
-      "download_timestamp": "2025-12-07T21:27:51Z",
-      "source_url": "https://document-api.company-information.service.gov.uk/document/hW8ybGsLtgSptmC0PwrlhXfGeQipsE9mP3eDR7v_wKU"
-    },
-    {
-      "company_name": "FINANCE ADVICE CENTRE LTD",
-      "company_number": "08948140",
-      "filing_id": "MzM0Mjg1MTY1MGFkaXF6a2N4",
-      "made_up_date": "2022-03-31",
-      "download_timestamp": "2025-12-07T21:27:52Z",
-      "source_url": "https://document-api.company-information.service.gov.uk/document/30mV2z9WHjI1NJKO9iZOXu9DnXmuLP8n8RZc5eZAZYg"
-    },
-    {
-      "company_name": "FINANCE ADVICE CENTRE LTD",
-      "company_number": "08948140",
-      "filing_id": "MzI5OTI3NjMxNGFkaXF6a2N4",
-      "made_up_date": "2021-03-31",
-      "download_timestamp": "2025-12-07T21:27:53Z",
-      "source_url": "https://document-api.company-information.service.gov.uk/document/7vEvEMIWtlt5fhd7sGOKpGgKvup69622uvpGR2sFwe4"
-    },
-    {
-      "company_name": "FINANCE ADVICE CENTRE LTD",
-      "company_number": "08948140",
-      "filing_id": "MzI4MTcyOTA3NWFkaXF6a2N4",
-      "made_up_date": "2020-03-31",
-      "download_timestamp": "2025-12-07T21:27:54Z",
-      "source_url": "https://document-api.company-information.service.gov.uk/document/HUkGYfEmb_56vzNm4uGxkvfdC0cY72hUiwng6PQ_Ylg"
-    },
-    {
-      "company_name": "FINANCE ADVICE CENTRE LTD",
-      "company_number": "08948140",
-      "filing_id": "MzI1MjkyNzY4N2FkaXF6a2N4",
-      "made_up_date": "2019-03-31",
-      "download_timestamp": "2025-12-07T21:27:55Z",
-      "source_url": "https://document-api.company-information.service.gov.uk/document/h5wWnk3ja4T4pxkQpD1Y0Qt8CKepExFY9YLoJ_2gaok"
-    },
-    {
-      "company_name": "FINANCE ADVICE CENTRE LTD",
-      "company_number": "08948140",
-      "filing_id": "MzIyMjY3NDUxN2FkaXF6a2N4",
-      "made_up_date": "2018-03-31",
-      "download_timestamp": "2025-12-07T21:27:55Z",
-      "source_url": "https://document-api.company-information.service.gov.uk/document/eIDylqMUjDwfFp1GcxbytKfpSfecPPhh1OxJ5BJd8VY"
-    },
-    {
-      "company_name": "FINANCE ADVICE CENTRE LTD",
-      "company_number": "08948140",
-      "filing_id": "MzE4NTE0NDIyM2FkaXF6a2N4",
-      "made_up_date": "2017-03-31",
-      "download_timestamp": "2025-12-07T21:27:56Z",
-      "source_url": "https://document-api.company-information.service.gov.uk/document/Sm6J4Tnbwbh5b9WqN8vcQzWqpIC8_kRc7nIqjwcLM64"
-    },
     {
       "company_name": "FINANCE ADVICE CENTRE (ILKESTON) LIMITED",
       "company_number": "11270200",
       "filing_id": "MzQ4Mzg0NDYxN2FkaXF6a2N4",
       "made_up_date": "2025-03-31",
       "source_url": "https://document-api.company-information.service.gov.uk/document/LSD9cMwL_rdB7VVFSQ6H8vYkFaIflQam8-1PYTYtEow",
-      "download_timestamp": "2025-12-07T21:27:47Z"
+      "download_timestamp": null
     },
     {
       "company_name": "FINANCE ADVICE CENTRE (ILKESTON) LIMITED",
@@ -87,7 +15,7 @@
       "filing_id": "MzQ0NTExOTQ1NmFkaXF6a2N4",
       "made_up_date": "2024-03-31",
       "source_url": "https://document-api.company-information.service.gov.uk/document/U0qA_mqg3AivOZ7tzVSo0uJ41G-EYEcHS0H145DjarA",
-      "download_timestamp": "2025-12-07T21:27:48Z"
+      "download_timestamp": null
     },
     {
       "company_name": "FINANCE ADVICE CENTRE (ILKESTON) LIMITED",
@@ -95,7 +23,7 @@
       "filing_id": "MzM5NzAzMzA5NmFkaXF6a2N4",
       "made_up_date": "2023-03-31",
       "source_url": "https://document-api.company-information.service.gov.uk/document/Bzag6OVH2ehNQzFKyucBmq1ZOs3cL5iKenSIh3STqbs",
-      "download_timestamp": "2025-12-07T21:27:50Z"
+      "download_timestamp": null
     },
     {
       "company_name": "FINANCE ADVICE CENTRE (ILKESTON) LIMITED",
@@ -103,7 +31,79 @@
       "filing_id": "MzM1NjEwMjEzNGFkaXF6a2N4",
       "made_up_date": "2022-03-31",
       "source_url": "https://document-api.company-information.service.gov.uk/document/_hvbLvCGYtVMOk1IswuQJLAtdVoRKu66w9dJhXX21CQ",
-      "download_timestamp": "2025-12-07T21:27:51Z"
+      "download_timestamp": null
+    },
+    {
+      "company_name": "FINANCE ADVICE CENTRE LTD",
+      "company_number": "FINANCE ADVICE CENTRE LTD",
+      "filing_id": "MzQ3ODU4MjE4N2FkaXF6a2N4",
+      "made_up_date": "2025-03-31",
+      "source_url": "https://document-api.company-information.service.gov.uk/document/zwfOpb4vDoS8HYiih8KPrQC_5D-bXy8mFgzECRlZQWQ",
+      "download_timestamp": "2025-12-10T10:27:23Z"
+    },
+    {
+      "company_name": "FINANCE ADVICE CENTRE LTD",
+      "company_number": "FINANCE ADVICE CENTRE LTD",
+      "filing_id": "MzQyNzE3ODU4MGFkaXF6a2N4",
+      "made_up_date": "2024-03-31",
+      "source_url": "https://document-api.company-information.service.gov.uk/document/g9fl0LsKwkcyOt6yPiMMm2nYdCsch9mBa1s6RrtxrAc",
+      "download_timestamp": "2025-12-10T10:27:25Z"
+    },
+    {
+      "company_name": "FINANCE ADVICE CENTRE LTD",
+      "company_number": "FINANCE ADVICE CENTRE LTD",
+      "filing_id": "MzM4NDI4MDYwOGFkaXF6a2N4",
+      "made_up_date": "2023-03-31",
+      "source_url": "https://document-api.company-information.service.gov.uk/document/hW8ybGsLtgSptmC0PwrlhXfGeQipsE9mP3eDR7v_wKU",
+      "download_timestamp": "2025-12-10T10:27:26Z"
+    },
+    {
+      "company_name": "FINANCE ADVICE CENTRE LTD",
+      "company_number": "FINANCE ADVICE CENTRE LTD",
+      "filing_id": "MzM0Mjg1MTY1MGFkaXF6a2N4",
+      "made_up_date": "2022-03-31",
+      "source_url": "https://document-api.company-information.service.gov.uk/document/30mV2z9WHjI1NJKO9iZOXu9DnXmuLP8n8RZc5eZAZYg",
+      "download_timestamp": "2025-12-10T10:27:27Z"
+    },
+    {
+      "company_name": "FINANCE ADVICE CENTRE LTD",
+      "company_number": "FINANCE ADVICE CENTRE LTD",
+      "filing_id": "MzI5OTI3NjMxNGFkaXF6a2N4",
+      "made_up_date": "2021-03-31",
+      "source_url": "https://document-api.company-information.service.gov.uk/document/7vEvEMIWtlt5fhd7sGOKpGgKvup69622uvpGR2sFwe4",
+      "download_timestamp": "2025-12-10T10:27:29Z"
+    },
+    {
+      "company_name": "FINANCE ADVICE CENTRE LTD",
+      "company_number": "FINANCE ADVICE CENTRE LTD",
+      "filing_id": "MzI4MTcyOTA3NWFkaXF6a2N4",
+      "made_up_date": "2020-03-31",
+      "source_url": "https://document-api.company-information.service.gov.uk/document/HUkGYfEmb_56vzNm4uGxkvfdC0cY72hUiwng6PQ_Ylg",
+      "download_timestamp": "2025-12-10T10:27:30Z"
+    },
+    {
+      "company_name": "FINANCE ADVICE CENTRE LTD",
+      "company_number": "FINANCE ADVICE CENTRE LTD",
+      "filing_id": "MzI1MjkyNzY4N2FkaXF6a2N4",
+      "made_up_date": "2019-03-31",
+      "source_url": "https://document-api.company-information.service.gov.uk/document/h5wWnk3ja4T4pxkQpD1Y0Qt8CKepExFY9YLoJ_2gaok",
+      "download_timestamp": "2025-12-10T10:27:31Z"
+    },
+    {
+      "company_name": "FINANCE ADVICE CENTRE LTD",
+      "company_number": "FINANCE ADVICE CENTRE LTD",
+      "filing_id": "MzIyMjY3NDUxN2FkaXF6a2N4",
+      "made_up_date": "2018-03-31",
+      "source_url": "https://document-api.company-information.service.gov.uk/document/eIDylqMUjDwfFp1GcxbytKfpSfecPPhh1OxJ5BJd8VY",
+      "download_timestamp": "2025-12-10T10:27:32Z"
+    },
+    {
+      "company_name": "FINANCE ADVICE CENTRE LTD",
+      "company_number": "FINANCE ADVICE CENTRE LTD",
+      "filing_id": "MzE4NTE0NDIyM2FkaXF6a2N4",
+      "made_up_date": "2017-03-31",
+      "source_url": "https://document-api.company-information.service.gov.uk/document/Sm6J4Tnbwbh5b9WqN8vcQzWqpIC8_kRc7nIqjwcLM64",
+      "download_timestamp": "2025-12-10T10:27:34Z"
     }
   ]
 }

@@ -1,0 +1,2527 @@
+{
+  "Polar Capital Technology Trust": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1996-07-15",
+    "company_type": "plc",
+    "company_number": "03224867",
+    "address": {
+      "address_line_1": "Palace Street",
+      "locality": "London",
+      "postal_code": "SW1E 5JD",
+      "premises": "16"
+    },
+    "title": "POLAR CAPITAL TECHNOLOGY TRUST PLC",
+    "address_snippet": "16 Palace Street, London, SW1E 5JD",
+    "description": "03224867 - Incorporated on 15 July 1996",
+    "links": {
+      "self": "/company/03224867"
+    },
+    "snippet": "HENDERSON TECHNOLOGY TRUST \u00b7 HENDERSON TECHNOLOGY INVESTMENT TRUST",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Coca-Cola Europacific Partners": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "2015-08-04",
+    "company_type": "plc",
+    "company_number": "09717350",
+    "address": {
+      "address_line_1": "Bakers Road",
+      "country": "England",
+      "locality": "Uxbridge",
+      "postal_code": "UB8 1EZ",
+      "premises": "Pemberton House"
+    },
+    "title": "COCA-COLA EUROPACIFIC PARTNERS PLC",
+    "address_snippet": "Pemberton House, Bakers Road, Uxbridge, England, UB8 1EZ",
+    "description": "09717350 - Incorporated on 4 August 2015",
+    "links": {
+      "self": "/company/09717350"
+    },
+    "snippet": "COCA-COLA EUROPEAN PARTNERS",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Rolls-Royce Holdings": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "2011-02-10",
+    "company_type": "plc",
+    "company_number": "07524813",
+    "address": {
+      "address_line_1": "90 York Way",
+      "country": "United Kingdom",
+      "locality": "London",
+      "postal_code": "N1 9FX",
+      "premises": "Kings Place"
+    },
+    "title": "ROLLS-ROYCE HOLDINGS PLC",
+    "address_snippet": "Kings Place, 90 York Way, London, United Kingdom, N1 9FX",
+    "description": "07524813 - Incorporated on 10 February 2011",
+    "links": {
+      "self": "/company/07524813"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "JD Sports Fashion": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1985-02-21",
+    "company_type": "plc",
+    "company_number": "01888425",
+    "address": {
+      "address_line_1": "Pilsworth",
+      "locality": "Bury",
+      "postal_code": "BL9 8RR",
+      "premises": "Hollinsbrook Way",
+      "region": "Lancashire"
+    },
+    "title": "JD SPORTS FASHION PLC",
+    "address_snippet": "Hollinsbrook Way, Pilsworth, Bury, Lancashire, BL9 8RR",
+    "description": "01888425 - Incorporated on 21 February 1985",
+    "links": {
+      "self": "/company/01888425"
+    },
+    "snippet": "JOHN DAVID SPORTS",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Hiscox": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1993-07-20",
+    "company_type": "plc",
+    "company_number": "02837811",
+    "address": {
+      "address_line_1": "Bishopsgate",
+      "country": "United Kingdom",
+      "locality": "London",
+      "postal_code": "EC2N 4BQ",
+      "premises": "22"
+    },
+    "title": "HISCOX PLC",
+    "address_snippet": "22 Bishopsgate, London, United Kingdom, EC2N 4BQ",
+    "description": "02837811 - Incorporated on 20 July 1993",
+    "links": {
+      "self": "/company/02837811"
+    },
+    "snippet": "HISCOX DEDICATED INSURANCE FUND",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Tesco": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1947-11-27",
+    "company_type": "plc",
+    "company_number": "00445790",
+    "address": {
+      "address_line_1": "Kestrel Way",
+      "country": "United Kingdom",
+      "locality": "Welwyn Garden City",
+      "postal_code": "AL7 1GA",
+      "premises": "Tesco House, Shire Park"
+    },
+    "title": "TESCO PLC",
+    "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+    "description": "00445790 - Incorporated on 27 November 1947",
+    "links": {
+      "self": "/company/00445790"
+    },
+    "snippet": "TESCO STORES (HOLDINGS)",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Coca-Cola HBC AG": null,
+  "Next": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "2002-04-09",
+    "company_type": "plc",
+    "company_number": "04412362",
+    "address": {
+      "address_line_1": "Enderby",
+      "locality": "Leicester",
+      "postal_code": "LE19 4AT",
+      "premises": "Desford Road"
+    },
+    "title": "NEXT PLC",
+    "address_snippet": "Desford Road, Enderby, Leicester, LE19 4AT",
+    "description": "04412362 - Incorporated on 9 April 2002",
+    "links": {
+      "self": "/company/04412362"
+    },
+    "snippet": "NEXT GROUP",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Easyjet": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "2000-03-24",
+    "company_type": "plc",
+    "company_number": "03959649",
+    "address": {
+      "address_line_1": "London Luton Airport",
+      "country": "United Kingdom",
+      "locality": "Luton",
+      "postal_code": "LU2 9PF",
+      "premises": "Hangar 89",
+      "region": "Bedfordshire"
+    },
+    "title": "EASYJET PLC",
+    "address_snippet": "Hangar 89 London Luton Airport, Luton, Bedfordshire, United Kingdom, LU2 9PF",
+    "description": "03959649 - Incorporated on 24 March 2000",
+    "links": {
+      "self": "/company/03959649"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Hikma Pharmaceuticals": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "2005-09-08",
+    "company_type": "plc",
+    "company_number": "05557934",
+    "address": {
+      "address_line_1": "New Burlington Place",
+      "country": "United Kingdom",
+      "locality": "London",
+      "postal_code": "W1S 2HR",
+      "premises": "1"
+    },
+    "title": "HIKMA PHARMACEUTICALS PUBLIC LIMITED COMPANY",
+    "address_snippet": "1 New Burlington Place, London, United Kingdom, W1S 2HR",
+    "description": "05557934 - Incorporated on 8 September 2005",
+    "links": {
+      "self": "/company/05557934"
+    },
+    "snippet": "HIKMA PHARMA",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Rio Tinto": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1940-01-19",
+    "company_type": "plc",
+    "company_number": "00358901",
+    "address": {
+      "address_line_1": "St James's Square",
+      "locality": "London",
+      "postal_code": "SW1Y 4AD",
+      "premises": "6"
+    },
+    "title": "RIO TINTO FINANCE PLC",
+    "address_snippet": "6 St James's Square, London, SW1Y 4AD",
+    "description": "00358901 - Incorporated on 19 January 1940",
+    "links": {
+      "self": "/company/00358901"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "IMI": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1962-02-02",
+    "company_type": "plc",
+    "company_number": "00714275",
+    "address": {
+      "address_line_1": "Solihull Parkway",
+      "locality": "Birmingham Business Park",
+      "postal_code": "B37 7XZ",
+      "premises": "Lakeside",
+      "region": "Birmingham"
+    },
+    "title": "IMI PLC",
+    "address_snippet": "Lakeside, Solihull Parkway, Birmingham Business Park, Birmingham, B37 7XZ",
+    "description": "00714275 - Incorporated on 2 February 1962",
+    "links": {
+      "self": "/company/00714275"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Whitbread": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1889-07-25",
+    "company_type": "plc",
+    "company_number": "00029423",
+    "address": {
+      "address_line_1": "Houghton Hall Business Park",
+      "locality": "Porz Avenue Dunstable",
+      "postal_code": "LU5 5XE",
+      "premises": "Whitbread Court",
+      "region": "Bedfordshire"
+    },
+    "title": "WHITBREAD GROUP PLC",
+    "address_snippet": "Whitbread Court, Houghton Hall Business Park, Porz Avenue Dunstable, Bedfordshire, LU5 5XE",
+    "description": "00029423 - Incorporated on 25 July 1889",
+    "links": {
+      "self": "/company/00029423"
+    },
+    "snippet": "WHITBREAD \u00b7 WHITBREAD AND COMPANY",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "AstraZeneca": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1992-06-17",
+    "company_type": "plc",
+    "company_number": "02723534",
+    "address": {
+      "address_line_1": "Francis Crick Avenue",
+      "address_line_2": "Cambridge Biomedical Campus",
+      "country": "United Kingdom",
+      "locality": "Cambridge",
+      "postal_code": "CB2 0AA",
+      "premises": "1"
+    },
+    "title": "ASTRAZENECA PLC",
+    "address_snippet": "1 Francis Crick Avenue, Cambridge Biomedical Campus, Cambridge, United Kingdom, CB2 0AA",
+    "description": "02723534 - Incorporated on 17 June 1992",
+    "links": {
+      "self": "/company/02723534"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Schroders": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "2000-01-14",
+    "company_type": "plc",
+    "company_number": "03909886",
+    "address": {
+      "address_line_1": "London Wall Place",
+      "country": "England",
+      "locality": "London",
+      "postal_code": "EC2Y 5AU",
+      "premises": "1"
+    },
+    "title": "SCHRODERS PLC",
+    "address_snippet": "1 London Wall Place, London, England, EC2Y 5AU",
+    "description": "03909886 - Incorporated on 14 January 2000",
+    "links": {
+      "self": "/company/03909886"
+    },
+    "snippet": "NEW SCHRODERS PLC",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Severn Trent": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1989-04-01",
+    "company_type": "plc",
+    "company_number": "02366619",
+    "address": {
+      "address_line_1": "2 St John's Street",
+      "locality": "Coventry",
+      "postal_code": "CV1 2LZ",
+      "premises": "Severn Trent Centre"
+    },
+    "title": "SEVERN TRENT PLC",
+    "address_snippet": "Severn Trent Centre, 2 St John's Street, Coventry, CV1 2LZ",
+    "description": "02366619 - Incorporated on 1 April 1989",
+    "links": {
+      "self": "/company/02366619"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Reckitt Benckiser Group": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "2007-06-06",
+    "company_type": "plc",
+    "company_number": "06270876",
+    "address": {
+      "address_line_1": "Bath Road",
+      "address_line_2": "Slough",
+      "locality": "Berkshire",
+      "postal_code": "SL1 3UH",
+      "premises": "103-105"
+    },
+    "title": "RECKITT BENCKISER GROUP PLC",
+    "address_snippet": "103-105 Bath Road, Slough, Berkshire, SL1 3UH",
+    "description": "06270876 - Incorporated on 6 June 2007",
+    "links": {
+      "self": "/company/06270876"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "HSBC Holdings": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1959-01-01",
+    "company_type": "plc",
+    "company_number": "00617987",
+    "address": {
+      "address_line_1": "Canada Square",
+      "locality": "London",
+      "postal_code": "E14 5HQ",
+      "premises": "8"
+    },
+    "title": "HSBC HOLDINGS PLC",
+    "address_snippet": "8 Canada Square, London, E14 5HQ",
+    "description": "00617987 - Incorporated on 1 January 1959",
+    "links": {
+      "self": "/company/00617987"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Land Securities Group": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "2002-02-07",
+    "company_type": "plc",
+    "company_number": "04369054",
+    "address": {
+      "address_line_1": "Victoria Street",
+      "country": "United Kingdom",
+      "locality": "London",
+      "postal_code": "SW1E 5JL",
+      "premises": "100"
+    },
+    "title": "LAND SECURITIES GROUP PLC",
+    "address_snippet": "100 Victoria Street, London, United Kingdom, SW1E 5JL",
+    "description": "04369054 - Incorporated on 7 February 2002",
+    "links": {
+      "self": "/company/04369054"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "London Stock Exchange Group": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1986-11-19",
+    "company_type": "plc",
+    "company_number": "02075721",
+    "address": {
+      "address_line_1": "Paternoster Square",
+      "address_line_2": "London",
+      "postal_code": "EC4M 7LS",
+      "premises": "10"
+    },
+    "title": "LONDON STOCK EXCHANGE PLC",
+    "address_snippet": "10 Paternoster Square, London, EC4M 7LS",
+    "description": "02075721 - Incorporated on 19 November 1986",
+    "links": {
+      "self": "/company/02075721"
+    },
+    "snippet": "INTERNATIONAL STOCK EXCHANGE OF THE UNITED KINGDOM AND THE REPUBLIC OF IRELAND LIMITED(THE)",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Anglo American": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1998-05-14",
+    "company_type": "plc",
+    "company_number": "03564138",
+    "address": {
+      "address_line_1": "Charterhouse Street",
+      "country": "United Kingdom",
+      "locality": "London",
+      "postal_code": "EC1N 6RA",
+      "premises": "17"
+    },
+    "title": "ANGLO AMERICAN PLC",
+    "address_snippet": "17 Charterhouse Street, London, United Kingdom, EC1N 6RA",
+    "description": "03564138 - Incorporated on 14 May 1998",
+    "links": {
+      "self": "/company/03564138"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "LondonMetric Property": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "2010-01-13",
+    "company_type": "plc",
+    "company_number": "07124797",
+    "address": {
+      "address_line_1": "Curzon Street",
+      "country": "England",
+      "locality": "London",
+      "postal_code": "W1J 5HB",
+      "premises": "1"
+    },
+    "title": "LONDONMETRIC PROPERTY PLC",
+    "address_snippet": "1 Curzon Street, London, England, W1J 5HB",
+    "description": "07124797 - Incorporated on 13 January 2010",
+    "links": {
+      "self": "/company/07124797"
+    },
+    "snippet": "LONDON & STAMFORD PROPERTY",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Lloyds Banking Group": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1960-08-31",
+    "company_type": "plc",
+    "company_number": "00668987",
+    "address": {
+      "address_line_1": "5 Godwin Street",
+      "country": "England",
+      "locality": "Bradford",
+      "postal_code": "BD1 2AH",
+      "premises": "Fairburn House"
+    },
+    "title": "VANQUIS BANKING GROUP PLC",
+    "address_snippet": "Fairburn House, 5 Godwin Street, Bradford, England, BD1 2AH",
+    "description": "00668987 - Incorporated on 31 August 1960",
+    "links": {
+      "self": "/company/00668987"
+    },
+    "snippet": "PROVIDENT FINANCIAL GROUP",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Mondi": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "2006-08-25",
+    "company_type": "plc",
+    "company_number": "05916680",
+    "address": {
+      "address_line_1": "Brooklands",
+      "country": "United Kingdom",
+      "locality": "Weybridge",
+      "postal_code": "KT13 0NY",
+      "premises": "Ground Floor, Building 5 The Heights",
+      "region": "Surrey"
+    },
+    "title": "MONDI FINANCE PLC",
+    "address_snippet": "Ground Floor, Building 5 The Heights Brooklands, Weybridge, Surrey, United Kingdom, KT13 0NY",
+    "description": "05916680 - Incorporated on 25 August 2006",
+    "links": {
+      "self": "/company/05916680"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Prudential": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1978-11-01",
+    "company_type": "plc",
+    "company_number": "01397169",
+    "address": {
+      "address_line_1": "Floor 10 Old Bailey",
+      "country": "England",
+      "locality": "London",
+      "postal_code": "EC4M 7NG",
+      "premises": "5th"
+    },
+    "title": "PRUDENTIAL PUBLIC LIMITED COMPANY",
+    "address_snippet": "5th Floor 10 Old Bailey, London, England, EC4M 7NG",
+    "description": "01397169 - Incorporated on 1 November 1978",
+    "links": {
+      "self": "/company/01397169"
+    },
+    "snippet": "PRUDENTIAL CORPORATION",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Entain": null,
+  "Rightmove": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "2007-11-14",
+    "company_type": "plc",
+    "company_number": "06426485",
+    "address": {
+      "address_line_1": "Caldecotte Lake Business Park Caldecotte Lake Drive",
+      "address_line_2": "Caldecotte",
+      "country": "United Kingdom",
+      "locality": "Milton Keynes",
+      "postal_code": "MK7 8LE",
+      "premises": "2"
+    },
+    "title": "RIGHTMOVE PLC",
+    "address_snippet": "2 Caldecotte Lake Business Park Caldecotte Lake Drive, Caldecotte, Milton Keynes, United Kingdom, MK7 8LE",
+    "description": "06426485 - Incorporated on 14 November 2007",
+    "links": {
+      "self": "/company/06426485"
+    },
+    "snippet": "RIGHTMOVE GROUP PLC",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Intertek Group": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1996-07-19",
+    "company_type": "plc",
+    "company_number": "03226960",
+    "address": {
+      "address_line_1": "1-9 Brook Street",
+      "locality": "Brentwood",
+      "postal_code": "CM14 5NQ",
+      "premises": "Academy Place",
+      "region": "Essex"
+    },
+    "title": "INTERTEK FINANCE PLC",
+    "address_snippet": "Academy Place, 1-9 Brook Street, Brentwood, Essex, CM14 5NQ",
+    "description": "03226960 - Incorporated on 19 July 1996",
+    "links": {
+      "self": "/company/03226960"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "BT Group": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "2001-03-30",
+    "company_type": "plc",
+    "company_number": "04190816",
+    "address": {
+      "address_line_1": "Braham Street",
+      "country": "United Kingdom",
+      "locality": "London",
+      "postal_code": "E1 8EE",
+      "premises": "1"
+    },
+    "title": "BT GROUP PLC",
+    "address_snippet": "1 Braham Street, London, United Kingdom, E1 8EE",
+    "description": "04190816 - Incorporated on 30 March 2001",
+    "links": {
+      "self": "/company/04190816"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "National Grid": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1989-04-01",
+    "company_type": "plc",
+    "company_number": "02366923",
+    "address": {
+      "address_line_1": "Feeder Road",
+      "locality": "Bristol",
+      "postal_code": "BS2 0TB",
+      "premises": "Avonbank"
+    },
+    "title": "NATIONAL GRID ELECTRICITY DISTRIBUTION (EAST MIDLANDS) PLC",
+    "address_snippet": "Avonbank, Feeder Road, Bristol, BS2 0TB",
+    "description": "02366923 - Incorporated on 1 April 1989",
+    "links": {
+      "self": "/company/02366923"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Babcock International Group": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1989-02-01",
+    "company_type": "plc",
+    "company_number": "02342138",
+    "address": {
+      "address_line_1": "Wigmore Street",
+      "locality": "London",
+      "postal_code": "W1U 1QX",
+      "premises": "33"
+    },
+    "title": "BABCOCK INTERNATIONAL GROUP PLC",
+    "address_snippet": "33 Wigmore Street, London, W1U 1QX",
+    "description": "02342138 - Incorporated on 1 February 1989",
+    "links": {
+      "self": "/company/02342138"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Glencore": null,
+  "Games Workshop Group": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1991-12-09",
+    "company_type": "plc",
+    "company_number": "02670969",
+    "address": {
+      "address_line_1": "Lenton",
+      "locality": "Nottingham",
+      "postal_code": "NG7 2WS",
+      "premises": "Willow Road",
+      "region": "Nottinghamshire"
+    },
+    "title": "GAMES WORKSHOP GROUP PLC",
+    "address_snippet": "Willow Road, Lenton, Nottingham, Nottinghamshire, NG7 2WS",
+    "description": "02670969 - Incorporated on 9 December 1991",
+    "links": {
+      "self": "/company/02670969"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "F&C Investment Trust": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1879-03-15",
+    "company_type": "plc",
+    "company_number": "00012901",
+    "address": {
+      "address_line_1": "78 Cannon Street",
+      "country": "United Kingdom",
+      "locality": "London",
+      "postal_code": "EC4N 6AG",
+      "premises": "Cannon  Place"
+    },
+    "title": "F&C INVESTMENT TRUST PLC",
+    "address_snippet": "Cannon  Place, 78 Cannon Street, London, United Kingdom, EC4N 6AG",
+    "description": "00012901 - Incorporated on 15 March 1879",
+    "links": {
+      "self": "/company/00012901"
+    },
+    "snippet": "FOREIGN & COLONIAL INVESTMENT TRUST \u00b7 FOREIGN AND COLONIAL INVESTMENT TRUST PLC(THE)",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Pershing Square Holdings": null,
+  "Shell": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "2002-02-05",
+    "company_type": "plc",
+    "company_number": "04366849",
+    "address": {
+      "address_line_1": "London",
+      "postal_code": "SE1 7NA",
+      "premises": "Shell Centre"
+    },
+    "title": "SHELL PLC",
+    "address_snippet": "Shell Centre, London, SE1 7NA",
+    "description": "04366849 - Incorporated on 5 February 2002",
+    "links": {
+      "self": "/company/04366849"
+    },
+    "snippet": "ROYAL DUTCH SHELL",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "British American Tobacco": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1997-07-23",
+    "company_type": "plc",
+    "company_number": "03407696",
+    "address": {
+      "address_line_1": "4 Temple Place",
+      "locality": "London",
+      "postal_code": "WC2R 2PG",
+      "premises": "Globe House"
+    },
+    "title": "BRITISH AMERICAN TOBACCO P.L.C.",
+    "address_snippet": "Globe House, 4 Temple Place, London, WC2R 2PG",
+    "description": "03407696 - Incorporated on 23 July 1997",
+    "links": {
+      "self": "/company/03407696"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "ConvaTec Group": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "2016-09-06",
+    "company_type": "plc",
+    "company_number": "10361298",
+    "address": {
+      "address_line_1": "Floor 20 Eastbourne Terrace",
+      "country": "United Kingdom",
+      "locality": "London",
+      "postal_code": "W2 6LG",
+      "premises": "7th"
+    },
+    "title": "CONVATEC GROUP PLC",
+    "address_snippet": "7th Floor 20 Eastbourne Terrace, London, United Kingdom, W2 6LG",
+    "description": "10361298 - Incorporated on 6 September 2016",
+    "links": {
+      "self": "/company/10361298"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Standard Chartered": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1969-11-18",
+    "company_type": "plc",
+    "company_number": "00966425",
+    "address": {
+      "address_line_1": "Basinghall Avenue",
+      "country": "United Kingdom",
+      "locality": "London",
+      "postal_code": "EC2V 5DD",
+      "premises": "1"
+    },
+    "title": "STANDARD CHARTERED PLC",
+    "address_snippet": "1 Basinghall Avenue, London, United Kingdom, EC2V 5DD",
+    "description": "00966425 - Incorporated on 18 November 1969",
+    "links": {
+      "self": "/company/00966425"
+    },
+    "snippet": "STANDARD CHARTERED BANK",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "SSE": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1989-04-01",
+    "company_type": "plc",
+    "company_number": "SC117119",
+    "address": {
+      "address_line_1": "200 Dunkeld Road",
+      "locality": "Perth",
+      "postal_code": "PH1 3AQ",
+      "premises": "Inveralmond House",
+      "region": "Perthshire"
+    },
+    "title": "SSE PLC",
+    "address_snippet": "Inveralmond House, 200 Dunkeld Road, Perth, Perthshire, PH1 3AQ",
+    "description": "SC117119 - Incorporated on 1 April 1989",
+    "links": {
+      "self": "/company/SC117119"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Halma": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1894-04-13",
+    "company_type": "plc",
+    "company_number": "00040932",
+    "address": {
+      "address_line_1": "Rectory Way",
+      "locality": "Amersham",
+      "postal_code": "HP7 0DE",
+      "premises": "Misbourne Court",
+      "region": "Buckinghamshire"
+    },
+    "title": "HALMA PUBLIC LIMITED COMPANY",
+    "address_snippet": "Misbourne Court, Rectory Way, Amersham, Buckinghamshire, HP7 0DE",
+    "description": "00040932 - Incorporated on 13 April 1894",
+    "links": {
+      "self": "/company/00040932"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Marks & Spencer Group": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1926-06-17",
+    "company_type": "plc",
+    "company_number": "00214436",
+    "address": {
+      "address_line_1": "35 North Wharf Road",
+      "locality": "London",
+      "postal_code": "W2 1NW",
+      "premises": "Waterside House"
+    },
+    "title": "MARKS AND SPENCER P.L.C.",
+    "address_snippet": "Waterside House, 35 North Wharf Road, London, W2 1NW",
+    "description": "00214436 - Incorporated on 17 June 1926",
+    "links": {
+      "self": "/company/00214436"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Associated British Foods": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1910-07-07",
+    "company_type": "plc",
+    "company_number": "00110663",
+    "address": {
+      "address_line_1": "Church Street",
+      "address_line_2": "Harston",
+      "country": "England",
+      "locality": "Cambridge",
+      "postal_code": "CB22 7NP",
+      "premises": "61-65"
+    },
+    "title": "ASSOCIATED BRITISH ENGINEERING PLC",
+    "address_snippet": "61-65 Church Street, Harston, Cambridge, England, CB22 7NP",
+    "description": "00110663 - Incorporated on 7 July 1910",
+    "links": {
+      "self": "/company/00110663"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Pearson": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1897-08-12",
+    "company_type": "plc",
+    "company_number": "00053723",
+    "address": {
+      "address_line_1": "Strand",
+      "address_line_2": "London",
+      "postal_code": "WC2R 0RL",
+      "premises": "80"
+    },
+    "title": "PEARSON PLC",
+    "address_snippet": "80 Strand, London, WC2R 0RL",
+    "description": "00053723 - Incorporated on 12 August 1897",
+    "links": {
+      "self": "/company/00053723"
+    },
+    "snippet": "S. PEARSON & SON",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "BP": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1909-04-14",
+    "company_type": "plc",
+    "company_number": "00102498",
+    "address": {
+      "address_line_1": "St James's Square",
+      "address_line_2": "London",
+      "postal_code": "SW1Y 4PD",
+      "premises": "1"
+    },
+    "title": "BP P.L.C.",
+    "address_snippet": "1 St James's Square, London, SW1Y 4PD",
+    "description": "00102498 - Incorporated on 14 April 1909",
+    "links": {
+      "self": "/company/00102498"
+    },
+    "snippet": "BP AMOCO",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Berkeley Group Holdings": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "2004-07-07",
+    "company_type": "plc",
+    "company_number": "05172586",
+    "address": {
+      "address_line_1": "19 Portsmouth Road",
+      "locality": "Cobham",
+      "postal_code": "KT11 1JG",
+      "premises": "Berkeley House",
+      "region": "Surrey"
+    },
+    "title": "THE BERKELEY GROUP HOLDINGS PLC",
+    "address_snippet": "Berkeley House, 19 Portsmouth Road, Cobham, Surrey, KT11 1JG",
+    "description": "05172586 - Incorporated on 7 July 2004",
+    "links": {
+      "self": "/company/05172586"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Aviva": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1990-02-09",
+    "company_type": "plc",
+    "company_number": "02468686",
+    "address": {
+      "address_line_1": "Fenchurch Street",
+      "country": "United Kingdom",
+      "locality": "London",
+      "postal_code": "EC3M 4AE",
+      "premises": "80"
+    },
+    "title": "AVIVA PLC",
+    "address_snippet": "80 Fenchurch Street, London, United Kingdom, EC3M 4AE",
+    "description": "02468686 - Incorporated on 9 February 1990",
+    "links": {
+      "self": "/company/02468686"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Persimmon": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1984-05-22",
+    "company_type": "plc",
+    "company_number": "01818486",
+    "address": {
+      "address_line_1": "Fulford",
+      "locality": "York",
+      "postal_code": "YO19 4FE",
+      "premises": "Persimmon House"
+    },
+    "title": "PERSIMMON PUBLIC LIMITED COMPANY",
+    "address_snippet": "Persimmon House, Fulford, York, YO19 4FE",
+    "description": "01818486 - Incorporated on 22 May 1984",
+    "links": {
+      "self": "/company/01818486"
+    },
+    "snippet": "PERSIMMON (1984)",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Airtel Africa": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "2018-07-12",
+    "company_type": "plc",
+    "company_number": "11462215",
+    "address": {
+      "address_line_1": "53/54 Grosvenor Street",
+      "country": "United Kingdom",
+      "locality": "London",
+      "postal_code": "W1K 3HU",
+      "premises": "First Floor"
+    },
+    "title": "AIRTEL AFRICA PLC",
+    "address_snippet": "First Floor, 53/54 Grosvenor Street, London, United Kingdom, W1K 3HU",
+    "description": "11462215 - Incorporated on 12 July 2018",
+    "links": {
+      "self": "/company/11462215"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Imperial Brands": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1996-06-14",
+    "company_type": "plc",
+    "company_number": "03214426",
+    "address": {
+      "address_line_1": "Winterstoke Road",
+      "locality": "Bristol",
+      "postal_code": "BS3 2LL",
+      "premises": "121"
+    },
+    "title": "IMPERIAL BRANDS FINANCE PLC",
+    "address_snippet": "121 Winterstoke Road, Bristol, BS3 2LL",
+    "description": "03214426 - Incorporated on 14 June 1996",
+    "links": {
+      "self": "/company/03214426"
+    },
+    "snippet": "IMPERIAL TOBACCO FINANCE",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Alliance Witan": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1888-04-21",
+    "company_type": "plc",
+    "company_number": "SC001731",
+    "address": {
+      "address_line_1": "5 West Victoria Dock Road",
+      "country": "Scotland",
+      "locality": "Dundee",
+      "postal_code": "DD1 3JT",
+      "premises": "River Court"
+    },
+    "title": "ALLIANCE WITAN PLC",
+    "address_snippet": "River Court, 5 West Victoria Dock Road, Dundee, Scotland, DD1 3JT",
+    "description": "SC001731 - Incorporated on 21 April 1888",
+    "links": {
+      "self": "/company/SC001731"
+    },
+    "snippet": "ALLIANCE TRUST \u00b7 ALLIANCE TRUST PUBLIC LIMITED COMPANY(THE)",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Centrica": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1995-03-16",
+    "company_type": "plc",
+    "company_number": "03033654",
+    "address": {
+      "address_line_1": "Windsor",
+      "locality": "Berkshire",
+      "postal_code": "SL4 5GD",
+      "premises": "Millstream Maidenhead Road"
+    },
+    "title": "CENTRICA PLC",
+    "address_snippet": "Millstream Maidenhead Road, Windsor, Berkshire, SL4 5GD",
+    "description": "03033654 - Incorporated on 16 March 1995",
+    "links": {
+      "self": "/company/03033654"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Melrose Industries": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "2015-09-29",
+    "company_type": "plc",
+    "company_number": "09800044",
+    "address": {
+      "address_line_1": "Floor The Colmore Building",
+      "address_line_2": "Colmore Circus Queensway",
+      "locality": "Birmingham",
+      "postal_code": "B4 6AT",
+      "premises": "11th"
+    },
+    "title": "MELROSE INDUSTRIES PLC",
+    "address_snippet": "11th Floor The Colmore Building, Colmore Circus Queensway, Birmingham, B4 6AT",
+    "description": "09800044 - Incorporated on 29 September 2015",
+    "links": {
+      "self": "/company/09800044"
+    },
+    "snippet": "NEW MELROSE INDUSTRIES PLC",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "United Utilities Group": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1989-04-01",
+    "company_type": "plc",
+    "company_number": "02366616",
+    "address": {
+      "address_line_1": "Lingley Mere Business Park",
+      "locality": "Lingley Green Avenue Great",
+      "postal_code": "WA5 3LP",
+      "premises": "Haweswater House",
+      "region": "Sankey, Warrington"
+    },
+    "title": "UNITED UTILITIES PLC",
+    "address_snippet": "Haweswater House, Lingley Mere Business Park, Lingley Green Avenue Great, Sankey, Warrington, WA5 3LP",
+    "description": "02366616 - Incorporated on 1 April 1989",
+    "links": {
+      "self": "/company/02366616"
+    },
+    "snippet": "NORTH WEST WATER GROUP",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "3i Group": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1945-07-21",
+    "company_type": "plc",
+    "company_number": "00397156",
+    "address": {
+      "address_line_1": "Knightsbridge",
+      "country": "United Kingdom",
+      "locality": "London",
+      "postal_code": "SW1X 7LX",
+      "premises": "1"
+    },
+    "title": "3I PLC",
+    "address_snippet": "1 Knightsbridge, London, United Kingdom, SW1X 7LX",
+    "description": "00397156 - Incorporated on 21 July 1945",
+    "links": {
+      "self": "/company/00397156"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Diploma": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1931-05-01",
+    "company_type": "plc",
+    "company_number": "00256111",
+    "address": {
+      "address_line_1": "Charterhouse Square",
+      "country": "England",
+      "locality": "London",
+      "postal_code": "EC1M 6EE",
+      "premises": "10-11"
+    },
+    "title": "DIPLOMA HOLDINGS PLC",
+    "address_snippet": "10-11 Charterhouse Square, London, England, EC1M 6EE",
+    "description": "00256111 - Incorporated on 1 May 1931",
+    "links": {
+      "self": "/company/00256111"
+    },
+    "snippet": "DIPLOMA \u00b7 DIPLOMA INVESTMENTS",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "International Consolidated Airlines Group": null,
+  "GSK": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1999-12-06",
+    "company_type": "plc",
+    "company_number": "03888792",
+    "address": {
+      "address_line_1": "New Oxford Street",
+      "country": "United Kingdom",
+      "locality": "London",
+      "postal_code": "WC1A 1DG",
+      "premises": "79"
+    },
+    "title": "GSK PLC",
+    "address_snippet": "79 New Oxford Street, London, United Kingdom, WC1A 1DG",
+    "description": "03888792 - Incorporated on 6 December 1999",
+    "links": {
+      "self": "/company/03888792"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Experian": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1917-03-17",
+    "company_type": "plc",
+    "company_number": "00146575",
+    "address": {
+      "address_line_1": "Ng2 Business Park",
+      "locality": "Nottingham",
+      "postal_code": "NG80 1ZZ",
+      "premises": "The Sir John Peace Building Experian Way"
+    },
+    "title": "EXPERIAN FINANCE PLC",
+    "address_snippet": "The Sir John Peace Building Experian Way, Ng2 Business Park, Nottingham, NG80 1ZZ",
+    "description": "00146575 - Incorporated on 17 March 1917",
+    "links": {
+      "self": "/company/00146575"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Burberry Group": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1997-10-30",
+    "company_type": "plc",
+    "company_number": "03458224",
+    "address": {
+      "address_line_1": "Horseferry Road",
+      "locality": "London",
+      "postal_code": "SW1P 2AW",
+      "premises": "Horseferry House"
+    },
+    "title": "BURBERRY GROUP PLC",
+    "address_snippet": "Horseferry House, Horseferry Road, London, SW1P 2AW",
+    "description": "03458224 - Incorporated on 30 October 1997",
+    "links": {
+      "self": "/company/03458224"
+    },
+    "snippet": "BURBERRYS GROUP",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Fresnillo": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "2007-08-15",
+    "company_type": "plc",
+    "company_number": "06344120",
+    "address": {
+      "address_line_1": "Floor, 21 Upper Brook Street",
+      "country": "England",
+      "locality": "London",
+      "postal_code": "W1K 7PY",
+      "premises": "2nd"
+    },
+    "title": "FRESNILLO PLC",
+    "address_snippet": "2nd Floor, 21 Upper Brook Street, London, England, W1K 7PY",
+    "description": "06344120 - Incorporated on 15 August 2007",
+    "links": {
+      "self": "/company/06344120"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "M&G": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "2018-07-02",
+    "company_type": "plc",
+    "company_number": "11444019",
+    "address": {
+      "address_line_1": "Fenchurch Avenue",
+      "country": "England",
+      "locality": "London",
+      "postal_code": "EC3M 5AG",
+      "premises": "10"
+    },
+    "title": "M&G PLC",
+    "address_snippet": "10 Fenchurch Avenue, London, England, EC3M 5AG",
+    "description": "11444019 - Incorporated on 2 July 2018",
+    "links": {
+      "self": "/company/11444019"
+    },
+    "snippet": "M&G PRUDENTIAL",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "DCC": null,
+  "Kingfisher": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1982-09-16",
+    "company_type": "plc",
+    "company_number": "01664812",
+    "address": {
+      "address_line_1": "Paddington Square",
+      "country": "England",
+      "locality": "London",
+      "postal_code": "W2 1GG",
+      "premises": "1"
+    },
+    "title": "KINGFISHER PLC",
+    "address_snippet": "1 Paddington Square, London, England, W2 1GG",
+    "description": "01664812 - Incorporated on 16 September 1982",
+    "links": {
+      "self": "/company/01664812"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Croda International": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1925-05-22",
+    "company_type": "plc",
+    "company_number": "00206132",
+    "address": {
+      "address_line_1": "Snaith",
+      "locality": "Goole",
+      "postal_code": "DN14 9AA",
+      "premises": "Cowick Hall",
+      "region": "East Yorkshire"
+    },
+    "title": "CRODA INTERNATIONAL PUBLIC LIMITED COMPANY",
+    "address_snippet": "Cowick Hall, Snaith, Goole, East Yorkshire, DN14 9AA",
+    "description": "00206132 - Incorporated on 22 May 1925",
+    "links": {
+      "self": "/company/00206132"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Beazley": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "2015-09-04",
+    "company_type": "plc",
+    "company_number": "09763575",
+    "address": {
+      "address_line_1": "Bishopsgate",
+      "country": "United Kingdom",
+      "locality": "London",
+      "postal_code": "EC2N 4BQ",
+      "premises": "22"
+    },
+    "title": "BEAZLEY PLC",
+    "address_snippet": "22 Bishopsgate, London, United Kingdom, EC2N 4BQ",
+    "description": "09763575 - Incorporated on 4 September 2015",
+    "links": {
+      "self": "/company/09763575"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Antofagasta": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1888-11-27",
+    "company_type": "plc",
+    "company_number": "00027767",
+    "address": {
+      "address_line_1": "Mount Street",
+      "country": "United Kingdom",
+      "locality": "London",
+      "postal_code": "W1K 2TJ",
+      "premises": "103"
+    },
+    "title": "ANTOFAGASTA RAILWAY COMPANY PLC",
+    "address_snippet": "103 Mount Street, London, United Kingdom, W1K 2TJ",
+    "description": "00027767 - Incorporated on 27 November 1888",
+    "links": {
+      "self": "/company/00027767"
+    },
+    "snippet": "ANTOFAGASTA (CHILI) AND BOLIVIA RAILWAY COMPANY",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "St. James's Place": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1991-07-04",
+    "company_type": "plc",
+    "company_number": "02628062",
+    "address": {
+      "address_line_1": "1 Tetbury Road",
+      "country": "England",
+      "locality": "Cirencester",
+      "postal_code": "GL7 1FP",
+      "premises": "St. James's Place House",
+      "region": "Gloucestershire"
+    },
+    "title": "ST. JAMES'S PLACE UK PLC",
+    "address_snippet": "St. James's Place House, 1 Tetbury Road, Cirencester, Gloucestershire, England, GL7 1FP",
+    "description": "02628062 - Incorporated on 4 July 1991",
+    "links": {
+      "self": "/company/02628062"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Haleon": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "2021-06-28",
+    "company_type": "plc",
+    "company_number": "13481162",
+    "address": {
+      "address_line_1": "First Floor",
+      "address_line_2": "The Heights",
+      "country": "England",
+      "locality": "Weybridge",
+      "postal_code": "KT13 0NY",
+      "premises": "Building 5,",
+      "region": "Surrey"
+    },
+    "title": "HALEON UK CAPITAL PLC",
+    "address_snippet": "Building 5, First Floor, The Heights, Weybridge, Surrey, England, KT13 0NY",
+    "description": "13481162 - Incorporated on 28 June 2021",
+    "links": {
+      "self": "/company/13481162"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Unilever": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1894-06-21",
+    "company_type": "plc",
+    "company_number": "00041424",
+    "address": {
+      "address_line_1": "Wirral",
+      "locality": "Merseyside",
+      "postal_code": "CH62 4ZD",
+      "premises": "Port Sunlight"
+    },
+    "title": "UNILEVER PLC",
+    "address_snippet": "Port Sunlight, Wirral, Merseyside, CH62 4ZD",
+    "description": "00041424 - Incorporated on 21 June 1894",
+    "links": {
+      "self": "/company/00041424"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Endeavour Mining": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "2021-03-21",
+    "company_type": "plc",
+    "company_number": "13280545",
+    "address": {
+      "address_line_1": "Young Street",
+      "country": "United Kingdom",
+      "locality": "London",
+      "postal_code": "W8 5EH",
+      "premises": "5"
+    },
+    "title": "ENDEAVOUR MINING PLC",
+    "address_snippet": "5 Young Street, London, United Kingdom, W8 5EH",
+    "description": "13280545 - Incorporated on 21 March 2021",
+    "links": {
+      "self": "/company/13280545"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Natwest Group": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1968-03-25",
+    "company_type": "plc",
+    "company_number": "SC045551",
+    "address": {
+      "address_line_1": "St Andrew Square",
+      "address_line_2": "Edinburgh",
+      "postal_code": "EH2 2YB",
+      "premises": "36"
+    },
+    "title": "NATWEST GROUP PLC",
+    "address_snippet": "36 St Andrew Square, Edinburgh, EH2 2YB",
+    "description": "SC045551 - Incorporated on 25 March 1968",
+    "links": {
+      "self": "/company/SC045551"
+    },
+    "snippet": "THE ROYAL BANK OF SCOTLAND GROUP",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Smiths Group": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1914-07-15",
+    "company_type": "plc",
+    "company_number": "00137013",
+    "address": {
+      "address_line_1": "255 Blackfriars Road",
+      "country": "England",
+      "locality": "London",
+      "postal_code": "SE1 9AX",
+      "premises": "Level 10"
+    },
+    "title": "SMITHS GROUP PLC",
+    "address_snippet": "Level 10 255 Blackfriars Road, London, England, SE1 9AX",
+    "description": "00137013 - Incorporated on 15 July 1914",
+    "links": {
+      "self": "/company/00137013"
+    },
+    "snippet": "SMITHS INDUSTRIES",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Barratt Redrow": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1958-05-14",
+    "company_type": "plc",
+    "company_number": "00604574",
+    "address": {
+      "address_line_1": "Forest Business Park, Bardon Hill",
+      "locality": "Coalville",
+      "postal_code": "LE67 1UF",
+      "premises": "Barratt House Cartwright Way",
+      "region": "Leicestershire"
+    },
+    "title": "BARRATT REDROW PLC",
+    "address_snippet": "Barratt House Cartwright Way, Forest Business Park, Bardon Hill, Coalville, Leicestershire, LE67 1UF",
+    "description": "00604574 - Incorporated on 14 May 1958",
+    "links": {
+      "self": "/company/00604574"
+    },
+    "snippet": "BARRATT DEVELOPMENTS P L C",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Sage Group": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1988-03-16",
+    "company_type": "plc",
+    "company_number": "02231246",
+    "address": {
+      "country": "United Kingdom",
+      "locality": "Newcastle Upon Tyne",
+      "postal_code": "NE28 9EJ",
+      "premises": "C23 - 5 & 6 Cobalt Park Way Cobalt Park"
+    },
+    "title": "THE SAGE GROUP PLC.",
+    "address_snippet": "C23 - 5 & 6 Cobalt Park Way Cobalt Park Newcastle Upon Tyne, United Kingdom, NE28 9EJ",
+    "description": "02231246 - Incorporated on 16 March 1988",
+    "links": {
+      "self": "/company/02231246"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "ICG": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1988-03-23",
+    "company_type": "plc",
+    "company_number": "02234775",
+    "address": {
+      "address_line_1": "55 Ludgate Hill",
+      "country": "United Kingdom",
+      "locality": "London",
+      "postal_code": "EC4M 7JW",
+      "premises": "Procession House"
+    },
+    "title": "ICG PLC",
+    "address_snippet": "Procession House, 55 Ludgate Hill, London, United Kingdom, EC4M 7JW",
+    "description": "02234775 - Incorporated on 23 March 1988",
+    "links": {
+      "self": "/company/02234775"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Auto Trader Group": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "2015-02-13",
+    "company_type": "plc",
+    "company_number": "09439967",
+    "address": {
+      "address_line_1": "Tony Wilson Place",
+      "country": "United Kingdom",
+      "locality": "Manchester",
+      "postal_code": "M15 4FN",
+      "premises": "1"
+    },
+    "title": "AUTO TRADER GROUP PLC",
+    "address_snippet": "1 Tony Wilson Place, Manchester, United Kingdom, M15 4FN",
+    "description": "09439967 - Incorporated on 13 February 2015",
+    "links": {
+      "self": "/company/09439967"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Spirax Group": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1958-01-01",
+    "company_type": "plc",
+    "company_number": "00596337",
+    "address": {
+      "address_line_1": "Charlton Kings",
+      "country": "United Kingdom",
+      "locality": "Cheltenham",
+      "postal_code": "GL53 8ER",
+      "premises": "Charlton House Cirencester Road",
+      "region": "Gloucestershire"
+    },
+    "title": "SPIRAX GROUP PLC",
+    "address_snippet": "Charlton House Cirencester Road, Charlton Kings, Cheltenham, Gloucestershire, United Kingdom, GL53 8ER",
+    "description": "00596337 - Incorporated on 1 January 1958",
+    "links": {
+      "self": "/company/00596337"
+    },
+    "snippet": "SPIRAX-SARCO ENGINEERING PLC",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Weir Group": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1895-06-14",
+    "company_type": "plc",
+    "company_number": "SC002934",
+    "address": {
+      "address_line_1": "West Regent Street",
+      "country": "Scotland",
+      "locality": "Glasgow",
+      "postal_code": "G2 1RW",
+      "premises": "1"
+    },
+    "title": "WEIR GROUP PLC(THE)",
+    "address_snippet": "1 West Regent Street, Glasgow, Scotland, G2 1RW",
+    "description": "SC002934 - Incorporated on 14 June 1895",
+    "links": {
+      "self": "/company/SC002934"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "RELX": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1903-05-28",
+    "company_type": "plc",
+    "company_number": "00077536",
+    "address": {
+      "address_line_1": "Strand",
+      "address_line_2": "London",
+      "postal_code": "WC2N 5JR",
+      "premises": "1-3"
+    },
+    "title": "RELX PLC",
+    "address_snippet": "1-3 Strand, London, WC2N 5JR",
+    "description": "00077536 - Incorporated on 28 May 1903",
+    "links": {
+      "self": "/company/00077536"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Metlen Energy & Metals": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "2015-10-22",
+    "company_type": "plc",
+    "company_number": "09837001",
+    "address": {
+      "address_line_1": "Eastcastle Street",
+      "locality": "London",
+      "postal_code": "W1W 8DH",
+      "premises": "27-28"
+    },
+    "title": "NEO ENERGY METALS PLC",
+    "address_snippet": "27-28 Eastcastle Street, London, W1W 8DH",
+    "description": "09837001 - Incorporated on 22 October 2015",
+    "links": {
+      "self": "/company/09837001"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Vodafone Group": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1984-07-17",
+    "company_type": "plc",
+    "company_number": "01833679",
+    "address": {
+      "address_line_1": "The Connection",
+      "locality": "Newbury",
+      "postal_code": "RG14 2FN",
+      "premises": "Vodafone House",
+      "region": "Berkshire"
+    },
+    "title": "VODAFONE GROUP PUBLIC LIMITED COMPANY",
+    "address_snippet": "Vodafone House, The Connection, Newbury, Berkshire, RG14 2FN",
+    "description": "01833679 - Incorporated on 17 July 1984",
+    "links": {
+      "self": "/company/01833679"
+    },
+    "snippet": "VODAFONE AIRTOUCH \u00b7 RACAL TELECOMMUNICATIONS GROUP",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Barclays": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1896-07-20",
+    "company_type": "plc",
+    "company_number": "00048839",
+    "address": {
+      "address_line_1": "Churchill Place",
+      "locality": "London",
+      "postal_code": "E14 5HP",
+      "premises": "1"
+    },
+    "title": "BARCLAYS PLC",
+    "address_snippet": "1 Churchill Place, London, E14 5HP",
+    "description": "00048839 - Incorporated on 20 July 1896",
+    "links": {
+      "self": "/company/00048839"
+    },
+    "snippet": "BARCLAYS BANK PLC",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "InterContinental Hotels Group": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "2004-05-21",
+    "company_type": "plc",
+    "company_number": "05134420",
+    "address": {
+      "address_line_1": "Windsor Dials",
+      "address_line_2": "Arthur Road",
+      "country": "England",
+      "locality": "Windsor",
+      "postal_code": "SL4 1RS",
+      "premises": "1",
+      "region": "Berkshire"
+    },
+    "title": "INTERCONTINENTAL HOTELS GROUP PLC",
+    "address_snippet": "1 Windsor Dials, Arthur Road, Windsor, Berkshire, England, SL4 1RS",
+    "description": "05134420 - Incorporated on 21 May 2004",
+    "links": {
+      "self": "/company/05134420"
+    },
+    "snippet": "NEW INTERCONTINENTAL HOTELS GROUP",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "BAE Systems": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1979-12-31",
+    "company_type": "plc",
+    "company_number": "01470151",
+    "address": {
+      "address_line_1": "Carlton Gardens",
+      "locality": "London",
+      "postal_code": "SW1Y 5AD",
+      "premises": "6"
+    },
+    "title": "BAE SYSTEMS PLC",
+    "address_snippet": "6 Carlton Gardens, London, SW1Y 5AD",
+    "description": "01470151 - Incorporated on 31 December 1979",
+    "links": {
+      "self": "/company/01470151"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Smith & Nephew": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1937-02-17",
+    "company_type": "plc",
+    "company_number": "00324357",
+    "address": {
+      "address_line_1": "Croxley Park",
+      "address_line_2": "Hatters Lane",
+      "country": "England",
+      "locality": "Watford",
+      "postal_code": "WD18 8YE",
+      "premises": "Building 5,",
+      "region": "Hertfordshire"
+    },
+    "title": "SMITH & NEPHEW PLC",
+    "address_snippet": "Building 5, Croxley Park, Hatters Lane, Watford, Hertfordshire, England, WD18 8YE",
+    "description": "00324357 - Incorporated on 17 February 1937",
+    "links": {
+      "self": "/company/00324357"
+    },
+    "snippet": "SMITH & NEPHEW ASSOCIATED COMPANIES",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Ashtead Group": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1984-04-11",
+    "company_type": "plc",
+    "company_number": "01807982",
+    "address": {
+      "address_line_1": "Cheapside",
+      "locality": "London",
+      "postal_code": "EC2V 6DT",
+      "premises": "100"
+    },
+    "title": "ASHTEAD GROUP PUBLIC LIMITED COMPANY",
+    "address_snippet": "100 Cheapside, London, EC2V 6DT",
+    "description": "01807982 - Incorporated on 11 April 1984",
+    "links": {
+      "self": "/company/01807982"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Phoenix Group Holdings": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "2018-10-05",
+    "company_type": "plc",
+    "company_number": "11606773",
+    "address": {
+      "address_line_1": "Old Bailey",
+      "country": "England",
+      "locality": "London",
+      "postal_code": "EC4M 7AN",
+      "premises": "20"
+    },
+    "title": "PHOENIX GROUP HOLDINGS PLC",
+    "address_snippet": "20 Old Bailey, London, England, EC4M 7AN",
+    "description": "11606773 - Incorporated on 5 October 2018",
+    "links": {
+      "self": "/company/11606773"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Compass Group": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1987-01-16",
+    "company_type": "plc",
+    "company_number": "02090126",
+    "address": {
+      "address_line_1": "Guildford Street",
+      "locality": "Chertsey",
+      "postal_code": "KT16 9BQ",
+      "premises": "Compass House",
+      "region": "Surrey"
+    },
+    "title": "COMPASS GROUP HOLDINGS PUBLIC LIMITED COMPANY",
+    "address_snippet": "Compass House, Guildford Street, Chertsey, Surrey, KT16 9BQ",
+    "description": "02090126 - Incorporated on 16 January 1987",
+    "links": {
+      "self": "/company/02090126"
+    },
+    "snippet": "COMPASS GROUP",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Legal & General Group": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1979-02-27",
+    "company_type": "plc",
+    "company_number": "01417162",
+    "address": {
+      "address_line_1": "London",
+      "postal_code": "EC2R 5AA",
+      "premises": "One Coleman Street"
+    },
+    "title": "LEGAL & GENERAL GROUP PLC",
+    "address_snippet": "One Coleman Street, London, EC2R 5AA",
+    "description": "01417162 - Incorporated on 27 February 1979",
+    "links": {
+      "self": "/company/01417162"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Rentokil Initial": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1927-10-01",
+    "company_type": "plc",
+    "company_number": "00224814",
+    "address": {
+      "address_line_1": "Manor Royal",
+      "country": "United Kingdom",
+      "locality": "Crawley",
+      "postal_code": "RH10 9PY",
+      "premises": "Compass House",
+      "region": "West Sussex"
+    },
+    "title": "RENTOKIL INITIAL 1927 PLC",
+    "address_snippet": "Compass House, Manor Royal, Crawley, West Sussex, United Kingdom, RH10 9PY",
+    "description": "00224814 - Incorporated on 1 October 1927",
+    "links": {
+      "self": "/company/00224814"
+    },
+    "snippet": "RENTOKIL INITIAL \u00b7 RENTOKIL GROUP P L C",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Bunzl": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1940-01-22",
+    "company_type": "plc",
+    "company_number": "00358948",
+    "address": {
+      "address_line_1": "45 Seymour Street",
+      "locality": "London",
+      "postal_code": "W1H 7JT",
+      "premises": "York House"
+    },
+    "title": "BUNZL PUBLIC LIMITED COMPANY",
+    "address_snippet": "York House, 45 Seymour Street, London, W1H 7JT",
+    "description": "00358948 - Incorporated on 22 January 1940",
+    "links": {
+      "self": "/company/00358948"
+    },
+    "snippet": "BUNZL PULP & PAPER",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "WPP": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "2006-04-19",
+    "company_type": "plc",
+    "company_number": "05785385",
+    "address": {
+      "address_line_1": "18 Upper Ground",
+      "country": "United Kingdom",
+      "locality": "London",
+      "postal_code": "SE1 9GL",
+      "premises": "Sea Containers House"
+    },
+    "title": "WPP CP FINANCE PLC",
+    "address_snippet": "Sea Containers House, 18 Upper Ground, London, United Kingdom, SE1 9GL",
+    "description": "05785385 - Incorporated on 19 April 2006",
+    "links": {
+      "self": "/company/05785385"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Howden Joinery Group": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1987-05-07",
+    "company_type": "plc",
+    "company_number": "02128710",
+    "address": {
+      "address_line_1": "Wigmore Street",
+      "country": "England",
+      "locality": "London",
+      "postal_code": "W1U 1QY",
+      "premises": "105"
+    },
+    "title": "HOWDEN JOINERY GROUP PLC",
+    "address_snippet": "105 Wigmore Street, London, England, W1U 1QY",
+    "description": "02128710 - Incorporated on 7 May 1987",
+    "links": {
+      "self": "/company/02128710"
+    },
+    "snippet": "MFI FURNITURE GROUP",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Scottish Mortgage Inv Tst": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1909-03-17",
+    "company_type": "plc",
+    "company_number": "SC007058",
+    "address": {
+      "address_line_1": "1 Greenside Row",
+      "locality": "Edinburgh",
+      "postal_code": "EH1 3AN",
+      "premises": "Calton Square"
+    },
+    "title": "SCOTTISH MORTGAGE INVESTMENT TRUST PLC",
+    "address_snippet": "Calton Square, 1 Greenside Row, Edinburgh, EH1 3AN",
+    "description": "SC007058 - Incorporated on 17 March 1909",
+    "links": {
+      "self": "/company/SC007058"
+    },
+    "snippet": "THE SCOTTISH MORTGAGE AND TRUST",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Sainsbury (J)": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1922-11-10",
+    "company_type": "plc",
+    "company_number": "00185647",
+    "address": {
+      "address_line_1": "Charterhouse Street",
+      "country": "England",
+      "locality": "London",
+      "postal_code": "EC1M 6HA",
+      "premises": "33"
+    },
+    "title": "J SAINSBURY PLC",
+    "address_snippet": "33 Charterhouse Street, London, England, EC1M 6HA",
+    "description": "00185647 - Incorporated on 10 November 1922",
+    "links": {
+      "self": "/company/00185647"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Admiral Group": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1999-09-24",
+    "company_type": "plc",
+    "company_number": "03849958",
+    "address": {
+      "address_line_1": "David Street",
+      "locality": "Cardiff",
+      "postal_code": "CF10 2EH",
+      "premises": "Ty Admiral"
+    },
+    "title": "ADMIRAL GROUP PLC",
+    "address_snippet": "Ty Admiral, David Street, Cardiff, CF10 2EH",
+    "description": "03849958 - Incorporated on 24 September 1999",
+    "links": {
+      "self": "/company/03849958"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Diageo": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1886-10-21",
+    "company_type": "plc",
+    "company_number": "00023307",
+    "address": {
+      "address_line_1": "Great Marlborough Street",
+      "country": "United Kingdom",
+      "locality": "London",
+      "postal_code": "W1F 7HS",
+      "premises": "16"
+    },
+    "title": "DIAGEO PLC",
+    "address_snippet": "16 Great Marlborough Street, London, United Kingdom, W1F 7HS",
+    "description": "00023307 - Incorporated on 21 October 1886",
+    "links": {
+      "self": "/company/00023307"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Informa": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "2014-01-24",
+    "company_type": "plc",
+    "company_number": "08860726",
+    "address": {
+      "address_line_1": "Howick Place",
+      "locality": "London",
+      "postal_code": "SW1P 1WG",
+      "premises": "5"
+    },
+    "title": "INFORMA PLC",
+    "address_snippet": "5 Howick Place, London, SW1P 1WG",
+    "description": "08860726 - Incorporated on 24 January 2014",
+    "links": {
+      "self": "/company/08860726"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  },
+  "Segro": {
+    "kind": "searchresults#company",
+    "description_identifier": [
+      "incorporated-on"
+    ],
+    "company_status": "active",
+    "date_of_creation": "1920-05-19",
+    "company_type": "plc",
+    "company_number": "00167591",
+    "address": {
+      "address_line_1": "New Burlington Place",
+      "country": "England",
+      "locality": "London",
+      "postal_code": "W1S 2HR",
+      "premises": "1"
+    },
+    "title": "SEGRO PUBLIC LIMITED COMPANY",
+    "address_snippet": "1 New Burlington Place, London, England, W1S 2HR",
+    "description": "00167591 - Incorporated on 19 May 1920",
+    "links": {
+      "self": "/company/00167591"
+    },
+    "snippet": "",
+    "matches": {
+      "snippet": []
+    }
+  }
+}

@@ -17,15 +17,14 @@ BASE_URL = "https://api.company-information.service.gov.uk"
 API_KEY = Path(Path(__file__).resolve().parents[2]/"COMPANIES_HOUSE_API_KEY").read_text().strip()
 auth = base64.b64encode(f"{API_KEY}:".encode()).decode()
 headers = {"Authorization": f"Basic {auth}"}
-RAW_COMPANIES_HOUSE_DIR = Path(__file__).resolve().parents[2] / "data" / "raw" / "companies_house"
-MANIFEST_PATH = RAW_COMPANIES_HOUSE_DIR / "manifest.json"
+RAW_DIR = Path(__file__).resolve().parents[2] / "data" / "raw"
+MANIFEST_PATH = RAW_DIR / "manifest.json"
 PREFERRED_IXBRL_MIMETYPE = "application/xhtml+xml"
 
 @dataclass(frozen=True)
 class FilingRequest:
     """Describe a single filing download request for a UK company."""
 
-    company_number: str
     company_name: Optional[str]
     filing_id: str
     filing_date: dt.date
@@ -81,7 +80,7 @@ def fetch_active_company_numbers(
         response.raise_for_status()
         data = response.json()
 
-        debug_path = RAW_COMPANIES_HOUSE_DIR / "debug" / "last_search.json"
+        debug_path = RAW_DIR / "debug" / "last_search.json"
         debug_path.parent.mkdir(parents=True, exist_ok=True)
         with debug_path.open("w", encoding="utf-8") as f:
             json.dump(data, f, indent=2)
@@ -102,8 +101,8 @@ def fetch_active_company_numbers(
     return active_numbers
 
 def build_download_manifest(
-    company_numbers: Iterable[str], *,
-    manifest_path: Optional[Path] = RAW_COMPANIES_HOUSE_DIR/"manifest.json"
+    company_names: Iterable[str], *,
+    manifest_path: Optional[Path] = RAW_DIR / "companies_house" / "manifest.json"
 ) -> list[FilingRequest]:
     """Return manifest entries (iXBRL only) and update on-disk manifest for traceability."""
 
@@ -111,31 +110,20 @@ def build_download_manifest(
     manifest_path = manifest_path or MANIFEST_PATH
     manifest_index = _load_manifest_index(manifest_path)
 
-    for company_number in company_numbers:
-        profile_response = requests.get(
-            f"{BASE_URL}/company/{company_number}",
-            headers=headers,
-        )
-        profile_response.raise_for_status()
-        company_name = profile_response.json().get("company_name")
+    for company_name in company_names:
 
-        response = requests.get(
-            f"{BASE_URL}/company/{company_number}/filing-history",
-            headers=headers,
-        )
-        response.raise_for_status()
-        filings = response.json()
-        
-        # debug output
-        debug_path = RAW_COMPANIES_HOUSE_DIR / "debug" / "all_filings_from_chosen_companies.json"
-        debug_path.parent.mkdir(parents=True, exist_ok=True)
-        with debug_path.open("w", encoding="utf-8") as f:
-            json.dump(filings, f, indent=2)
+        # Load filings from local JSON file
+        filings_path = RAW_DIR.parent / "raw" / "companies_house" / "filing_history" / f"filinghistory_{company_name}.json"
+        if not filings_path.exists():
+            print(f"Warning: Filing history file not found for {company_name}")
+            continue
+        with filings_path.open("r", encoding="utf-8") as f:
+            filings = json.load(f)
 
         for item in filings.get("items", []):
-            if item.get("category") != "accounts":
+            if item.get("type") != "AA":
                 continue
-
+            
             description = (item.get("description") or "").lower()
             if "full" not in description and "group" not in description:
                 continue
@@ -147,10 +135,12 @@ def build_download_manifest(
             try:
                 metadata = _fetch_document_metadata(metadata_link)
             except requests.HTTPError as exc:
-                print(f"Skipping filing {company_number}:{metadata_link} ({exc})")
+                print(f"Skipping filing {company_name}:{metadata_link} ({exc})")
                 continue
 
             resources = metadata.get("resources") or {}
+            print(f"DEBUG: {json.dumps(resources)}")
+
             if PREFERRED_IXBRL_MIMETYPE not in resources:
                 # Skip filings where only PDF renditions are present.
                 continue
@@ -163,13 +153,13 @@ def build_download_manifest(
 
             filing_id = item.get("transaction_id") or item.get("barcode")
             if not filing_id:
-                filing_id = f"{company_number}-{date_str}"
+                filing_id = f"{company_name}-{date_str}"
 
-            destination = RAW_COMPANIES_HOUSE_DIR / company_number / f"{filing_id}.ixbrl"
+            destination = (RAW_DIR / "companies_house" /
+                           company_name / f"{filing_id}.ixbrl")
             
             manifest.append(
                 FilingRequest(
-                    company_number=company_number,
                     company_name=company_name,
                     filing_id=filing_id,
                     filing_date=filing_date,
@@ -183,8 +173,7 @@ def build_download_manifest(
             manifest_entry = manifest_index.get(filing_id, {}).copy()
             manifest_entry.update(
                 {
-                    "company_name": company_name,
-                    "company_number": company_number,
+                    "company_number": company_name,
                     "filing_id": filing_id,
                     "made_up_date": item.get("description_values", {}).get("made_up_date"),
                     "source_url": metadata_link,
@@ -202,6 +191,7 @@ def build_download_manifest(
 def download_ixbrl_filing(request: FilingRequest) -> Path:
     """ Download an IXBRL filing for UK Companies House """
    
+    print(f"Downloading iXBRL filing: {request.company_name}, {request.destination}")
     metadata_url = request.document_url
     metadata_response = requests.get(metadata_url, headers=headers)
     metadata_response.raise_for_status()
@@ -209,12 +199,6 @@ def download_ixbrl_filing(request: FilingRequest) -> Path:
     year = metadata["created_at"][:10]
 
     document_url = metadata.get("links", {}).get("document")
-
-    # debug output
-    debug_path = RAW_COMPANIES_HOUSE_DIR / "debug" / "individual_document_metadata.json"
-    debug_path.parent.mkdir(parents=True, exist_ok=True)
-    with debug_path.open("w", encoding="utf-8") as f:
-        json.dump(metadata, f, indent=2)
 
     if not document_url:
         raise ValueError("Document URL is not available")
@@ -242,6 +226,45 @@ def download_ixbrl_filing(request: FilingRequest) -> Path:
         print(f"{year}, {resp.headers['Content-Type']}, {destination}")
 
     return destination
+
+def download_full_filing_history(company_name: str, company_number: str) -> Path:
+    """
+    Download all pages of filing history for a company and save to
+    /raw/filing_history/filinghistory_{company_name}.json.
+    Returns the path to the saved file.
+    """
+    filings = []
+    start_index = 0
+    items_per_page = 100
+    total_results = None
+
+    while True:
+        params = {
+            "items_per_page": items_per_page,
+            "start_index": start_index,
+        }
+        response = requests.get(
+            f"{BASE_URL}/company/{company_number}/filing-history",
+            headers=headers,
+            params=params,
+        )
+        response.raise_for_status()
+        data = response.json()
+        filings.extend(data.get("items", []))
+        if total_results is None:
+            total_results = data.get("total_count") or data.get("total_results")
+        start_index += items_per_page
+        if not data.get("items") or (isinstance(total_results, int) and start_index >= total_results):
+            break
+
+    output_dir = RAW_DIR.parent / "raw" / "companies_house" / "filing_history"
+    output_dir.mkdir(parents=True, exist_ok=True)
+    output_path = output_dir / f"filinghistory_{company_name}.json"
+
+    with output_path.open("w", encoding="utf-8") as f:
+        json.dump({"company_name": company_name, "items": filings}, f, indent=2)
+    
+    return output_path
 
 def _load_manifest_index(manifest_path: Path) -> dict[str, dict[str, Any]]:
     """Return manifest entries keyed by filing id (preserving download timestamps)."""

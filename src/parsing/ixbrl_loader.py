@@ -19,40 +19,43 @@ class IXBRLDocument:
     contexts: pd.DataFrame
     units: pd.DataFrame
 
-def load_ixbrl_dataframes(ixbrl_folders: Path):
+def load_ixbrl_dataframes(ixbrl_folders: Path, folder_name: str):
 
     df_contexts = []
     df_facts = []
     df_units = []
     facts_with_context_dict = {}
     
-    for company_dir in ixbrl_folders.iterdir():
-        if company_dir.is_dir() or company_dir.name != "debug":
-            for ixbrl_filepath in company_dir.glob("*.ixbrl"):
-                ixbrl_doc = load_ixbrl(ixbrl_filepath)
-                ctx_df = extract_contexts(ixbrl_doc)
-                facts_df = extract_facts(ixbrl_doc)
-                units_df = extract_units(ixbrl_doc)
-                df_contexts.append((ixbrl_filepath.stem, ctx_df))
-                df_facts.append((ixbrl_filepath.stem, facts_df))
-                df_units.append((ixbrl_filepath.stem, units_df))
-                # Merge facts with units
-                facts = facts_df.merge(
-                    units_df,
-                    left_on="unitRef",
-                    right_on="unit_id",
-                    how="left"
-                )
-                # Merge with context
-                facts_with_context = facts.merge(
-                    ctx_df,
-                    left_on="contextRef",
-                    right_on="context_id",
-                    how="left"
-                )
-                # Drop duplicate join columns
-                facts_with_context = facts_with_context.drop(columns=["unit_id", "context_id"])
-                facts_with_context_dict[ixbrl_filepath.stem] = facts_with_context
+    specific_folder = ixbrl_folders / folder_name
+    print(f"Loading iXBRL files from folder: {specific_folder}")
+    for ixbrl_filepath in specific_folder.glob("*.ixbrl"):
+        
+        print(f"Processing iXBRL file: {ixbrl_filepath.name}")
+
+        ixbrl_doc = load_ixbrl(ixbrl_filepath)
+        ctx_df = extract_contexts(ixbrl_doc)
+        facts_df = extract_facts(ixbrl_doc)
+        units_df = extract_units(ixbrl_doc)
+        df_contexts.append((ixbrl_filepath.stem, ctx_df))
+        df_facts.append((ixbrl_filepath.stem, facts_df))
+        df_units.append((ixbrl_filepath.stem, units_df))
+        # Merge facts with units
+        facts = facts_df.merge(
+            units_df,
+            left_on="unitRef",
+            right_on="unit_id",
+            how="left"
+        )
+        # Merge with context
+        facts_with_context = facts.merge(
+            ctx_df,
+            left_on="contextRef",
+            right_on="context_id",
+            how="left"
+        )
+        # Drop duplicate join columns
+        facts_with_context = facts_with_context.drop(columns=["unit_id", "context_id"])
+        facts_with_context_dict[ixbrl_filepath.stem] = facts_with_context
     
     return facts_with_context_dict
 
