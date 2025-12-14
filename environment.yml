@@ -11,6 +11,8 @@ dependencies:
   - scikit-learn
   - matplotlib
   - seaborn
+  - lxml
+  - arelle-release
   - jupyterlab
   - ipykernel
   # Add these if you like

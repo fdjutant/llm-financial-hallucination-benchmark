@@ -2,8 +2,7 @@
 import pandas as pd
 from typing import Dict
 
-def extract_canonical_facts(
-    facts_with_context: pd.DataFrame,
+def extract_canonical_facts(facts_with_context: pd.DataFrame,
     preferred_currency: str = "GBP"
 ) -> Dict[str, pd.DataFrame]:
     """
