@@ -1,0 +1,213 @@
+__annotations__: {'_elementQname': 'QName', '_parentQname': 'QName | None', '_elementSequence': 'int', '_namespaceURI': 'str | None', '_hashSEqual': 'int', '_hashXpathEqual': 'int', 'sValue': 'TypeSValue', 'xAttributes': 'dict[str, ModelAttribute]', 'xValue': 'TypeXValue', 'xValueError': 'Exception | None', 'xValid': 'int', 'xlinkLabel': 'str', 'tag': 'str', 'targetModelXbrl': 'ModelXbrl'}
+__bool__: <method-wrapper '__bool__' of ModelContext object at 0x759c813cd900>
+__class__: <class 'arelle.ModelInstanceObject.ModelContext'>
+__contains__: <method-wrapper '__contains__' of ModelContext object at 0x759c813cd900>
+__copy__: <bound method _Element.__copy__ of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+__deepcopy__: <bound method _Element.__deepcopy__ of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+__delattr__: <method-wrapper '__delattr__' of ModelContext object at 0x759c813cd900>
+__delitem__: <method-wrapper '__delitem__' of ModelContext object at 0x759c813cd900>
+__dict__: {'isChanged': False, 'modelDocument': ModelDocument[__0]()), 'objectIndex': 20, 'segDimValues': {}, 'scenDimValues': {}, 'qnameDims': {}, 'errorDimValues': [], 'segNonDimValues': [], 'scenNonDimValues': [], '_isEqualTo': {}, '_localName': 'context', '_namespaceURI': 'http://www.xbrl.org/2003/instance', '_prefixedName': 'xbrli:context', '_elementQname': xbrli:context, 'xValid': 1, 'xValue': None, 'sValue': None, 'xAttributes': {'id': <arelle.ModelObject.ModelAttribute object at 0x759c75a8ffb0>}, '_period': ModelObject[23, GSK_2024.html line 235197), '_startDatetime': datetime.datetime(2024, 1, 1, 0, 0), '_endDatetime': datetime.datetime(2025, 1, 1, 0, 0), '_periodHash': -8192447093802897999, '_entity': ModelObject[21, GSK_2024.html line 235197), '_entityIdentifierElement': ModelObject[22, GSK_2024.html line 235197), '_entityIdentifier': ('http://standards.iso.org/iso/17442', '5493000HZTVUYLO1D793'), '_entityIdentifierHash': 3741541112566825844, '_dimsHash': 133146708735736, '_nonDimSegmentHash': 5740354900026072187, '_nonDimScenarioHash': 5740354900026072187, '_nonDimsHash': 2365640235626401024, '_contextDimAwareHash': 6815394194360403344, '_isInstantPeriod': False, '_isStartEndPeriod': True, '_md5sum': <arelle.HashUtil.Md5Sum object at 0x759c759e8e10>, '_isForeverPeriod': False, '_contextNonDimAwareHash': -3205592238011287722, '_elementSequence': 3, '_endDate': datetime.date(2024, 12, 31), '_instantDate': None, '_instantDatetime': None, '_parentQname': ix:resources}
+__dir__: <built-in method __dir__ of ModelContext object at 0x759c813cd900>
+__doc__: 
+    .. class:: ModelContext(modelDocument)
+
+    Model context
+
+    :param modelDocument: owner document
+    :type modelDocument: ModelDocument
+
+        .. attribute:: segDimValues
+
+        (dict) - Dict by dimension ModelConcept of segment dimension ModelDimensionValues
+
+        .. attribute:: scenDimValues
+
+        (dict) - Dict by dimension ModelConcept of scenario dimension ModelDimensionValues
+
+        .. attribute:: qnameDims
+
+        (dict) - Dict by dimension concept QName of ModelDimensionValues (independent of whether segment or scenario)
+
+        .. attribute:: errorDimValues
+
+        (list) - List of ModelDimensionValues whose dimension concept could not be determined or which were duplicates
+
+        .. attribute:: segNonDimValues
+
+        (list) - List of segment child non-dimension ModelObjects
+
+        .. attribute:: scenNonDimValues
+
+        (list) - List of scenario child non-dimension ModelObjects
+    
+__eq__: <method-wrapper '__eq__' of ModelContext object at 0x759c813cd900>
+__format__: <built-in method __format__ of ModelContext object at 0x759c813cd900>
+__ge__: <method-wrapper '__ge__' of ModelContext object at 0x759c813cd900>
+__getattribute__: <method-wrapper '__getattribute__' of ModelContext object at 0x759c813cd900>
+__getitem__: <method-wrapper '__getitem__' of ModelContext object at 0x759c813cd900>
+__getstate__: <built-in method __getstate__ of ModelContext object at 0x759c813cd900>
+__gt__: <method-wrapper '__gt__' of ModelContext object at 0x759c813cd900>
+__hash__: <method-wrapper '__hash__' of ModelContext object at 0x759c813cd900>
+__init__: <method-wrapper '__init__' of ModelContext object at 0x759c813cd900>
+__init_subclass__: <built-in method __init_subclass__ of type object at 0x5a0b96524290>
+__iter__: <method-wrapper '__iter__' of ModelContext object at 0x759c813cd900>
+__le__: <method-wrapper '__le__' of ModelContext object at 0x759c813cd900>
+__len__: <method-wrapper '__len__' of ModelContext object at 0x759c813cd900>
+__lt__: <method-wrapper '__lt__' of ModelContext object at 0x759c813cd900>
+__module__: arelle.ModelInstanceObject
+__ne__: <method-wrapper '__ne__' of ModelContext object at 0x759c813cd900>
+__new__: <built-in method __new__ of type object at 0x759c845d4da0>
+__reduce__: <built-in method __reduce__ of ModelContext object at 0x759c813cd900>
+__reduce_ex__: <built-in method __reduce_ex__ of ModelContext object at 0x759c813cd900>
+__repr__: <bound method ModelContext.__repr__ of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+__reversed__: <bound method _Element.__reversed__ of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+__setattr__: <method-wrapper '__setattr__' of ModelContext object at 0x759c813cd900>
+__setitem__: <method-wrapper '__setitem__' of ModelContext object at 0x759c813cd900>
+__sizeof__: <built-in method __sizeof__ of ModelContext object at 0x759c813cd900>
+__str__: <method-wrapper '__str__' of ModelContext object at 0x759c813cd900>
+__subclasshook__: <built-in method __subclasshook__ of type object at 0x5a0b96524290>
+__weakref__: None
+_contextDimAwareHash: 6815394194360403344
+_dimsHash: 133146708735736
+_elementQname: xbrli:context
+_endDatetime: 2025-01-01 00:00:00
+_entity: ModelObject[21, GSK_2024.html line 235197)
+_entityIdentifier: ('http://standards.iso.org/iso/17442', '5493000HZTVUYLO1D793')
+_entityIdentifierElement: ModelObject[22, GSK_2024.html line 235197)
+_entityIdentifierHash: 3741541112566825844
+_init: <bound method ModelObject._init of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+_isEqualTo: {}
+_isForeverPeriod: False
+_isInstantPeriod: False
+_isStartEndPeriod: True
+_localName: context
+_md5sum: 498d0e11c56e0a84b00bee88c7585ecc
+_namespaceURI: http://www.xbrl.org/2003/instance
+_nonDimScenarioHash: 5740354900026072187
+_nonDimSegmentHash: 5740354900026072187
+_nonDimsHash: 2365640235626401024
+_period: ModelObject[23, GSK_2024.html line 235197)
+_periodHash: -8192447093802897999
+_prefixedName: xbrli:context
+_startDatetime: 2024-01-01 00:00:00
+addnext: <bound method _Element.addnext of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+addprevious: <bound method _Element.addprevious of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+append: <bound method _Element.append of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+attr: <bound method ModelObject.attr of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+attrib: {'id': 'c-1'}
+base: /workspace/data/raw/FCA/GSK/GSK_2024.html
+clear: <bound method ModelObject.clear of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+clearCachedProperties: <bound method ModelContext.clearCachedProperties of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+contextDimAwareHash: 6815394194360403344
+contextNonDimAwareHash: -3205592238011287722
+cssselect: <bound method _Element.cssselect of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+dimAspects: <bound method ModelContext.dimAspects of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+dimMemberQname: <bound method ModelContext.dimMemberQname of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+dimValue: <bound method ModelContext.dimValue of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+dimValues: <bound method ModelContext.dimValues of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+dimsHash: 133146708735736
+document: ModelDocument[__0]())
+elementAttributesStr: id='c-1'
+elementAttributesTuple: (('id', 'c-1'),)
+elementDeclaration: <bound method ModelObject.elementDeclaration of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+elementNamespaceURI: http://www.xbrl.org/2003/instance
+elementQname: xbrli:context
+elementSequence: 3
+endDate: 2024-12-31
+endDatetime: 2025-01-01 00:00:00
+entity: ModelObject[21, GSK_2024.html line 235197)
+entityIdentifier: ('http://standards.iso.org/iso/17442', '5493000HZTVUYLO1D793')
+entityIdentifierElement: ModelObject[22, GSK_2024.html line 235197)
+entityIdentifierHash: 3741541112566825844
+errorDimValues: []
+extend: <bound method _Element.extend of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+find: <bound method _Element.find of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+findall: <bound method _Element.findall of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+findtext: <bound method _Element.findtext of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+genLabel: <bound method ModelObject.genLabel of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+get: <bound method _Element.get of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+getStripped: <bound method ModelObject.getStripped of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+getchildren: <bound method _Element.getchildren of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+getiterator: <bound method _Element.getiterator of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+getnext: <bound method _Element.getnext of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+getparent: <bound method _Element.getparent of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+getprevious: <bound method _Element.getprevious of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+getroottree: <bound method _Element.getroottree of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+hasDimension: <bound method ModelContext.hasDimension of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+hasScenario: False
+hasSegment: False
+id: c-1
+index: <bound method _Element.index of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+init: <bound method ModelContext.init of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+insert: <bound method _Element.insert of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+instantDate: None
+instantDatetime: None
+isChanged: False
+isEntityIdentifierEqualTo: <bound method ModelContext.isEntityIdentifierEqualTo of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+isEqualTo: <bound method ModelContext.isEqualTo of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+isEqualTo_: <bound method ModelContext.isEqualTo_ of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+isForeverPeriod: False
+isInstantPeriod: False
+isPeriodEqualTo: <bound method ModelContext.isPeriodEqualTo of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+isStartEndPeriod: True
+items: <bound method _Element.items of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+iter: <bound method _Element.iter of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+iterancestors: <bound method _Element.iterancestors of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+iterchildren: <bound method _Element.iterchildren of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+iterdescendants: <bound method _Element.iterdescendants of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+iterfind: <bound method _Element.iterfind of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+itersiblings: <bound method _Element.itersiblings of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+itertext: <bound method _Element.itertext of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+keys: <bound method _Element.keys of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+localName: context
+makeelement: <bound method _Element.makeelement of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+md5sum: 498d0e11c56e0a84b00bee88c7585ecc
+modelDocument: ModelDocument[__0]())
+modelXbrl: <arelle.ModelXbrl.ModelXbrl object at 0x759c8161c210>
+namespaceURI: http://www.xbrl.org/2003/instance
+nonDimHash: 2365640235626401024
+nonDimScenarioHash: 5740354900026072187
+nonDimSegmentHash: 5740354900026072187
+nonDimValues: <bound method ModelContext.nonDimValues of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+nsmap: {'link': 'http://www.xbrl.org/2003/linkbase', 'xlink': 'http://www.w3.org/1999/xlink', 'xbrldi': 'http://xbrl.org/2006/xbrldi', 'gsk': 'http://www.gsk.com/20241231', None: 'http://www.w3.org/1999/xhtml', 'esef_cor': 'https://www.esma.europa.eu/taxonomy/2022-03-24/esef_cor', 'ix': 'http://www.xbrl.org/2013/inlineXBRL', 'ixt': 'http://www.xbrl.org/inlineXBRL/transformation/2020-02-12', 'xbrli': 'http://www.xbrl.org/2003/instance', 'iso4217': 'http://www.xbrl.org/2003/iso4217', 'xsi': 'http://www.w3.org/2001/XMLSchema-instance', 'ifrs-full': 'https://xbrl.ifrs.org/taxonomy/2022-03-24/ifrs-full'}
+objectId: <bound method ModelObject.objectId of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+objectIndex: 20
+parentQname: ix:resources
+period: ModelObject[23, GSK_2024.html line 235197)
+periodHash: -8192447093802897999
+prefix: xbrli
+prefixedName: xbrli:context
+prefixedNameQname: <bound method ModelObject.prefixedNameQname of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+propertyView: (('entity', '5493000HZTVUYLO1D793', (('scheme', 'http://standards.iso.org/iso/17442'),)), ('startDate', '2024-01-01'), ('endDate', '2024-12-31'), ())
+qname: xbrli:context
+qnameDims: {}
+remove: <bound method _Element.remove of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+replace: <bound method _Element.replace of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+resolveUri: <bound method ModelObject.resolveUri of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+sValue: None
+scenDimValues: {}
+scenNonDimValues: []
+scenario: None
+scenarioHash: 6187840458176
+segDimValues: {}
+segNonDimValues: []
+segment: None
+segmentHash: 6187840458176
+set: <bound method _Element.set of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+setNamespaceLocalName: <bound method ModelObject.setNamespaceLocalName of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+slottedAttributesNames: set()
+sourceline: 235197
+startDatetime: 2024-01-01 00:00:00
+stringValue: 5493000HZTVUYLO1D7932024-01-012024-12-31
+tag: {http://www.xbrl.org/2003/instance}context
+tail: None
+text: None
+textNodes: <bound method ModelObject.textNodes of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+textValue: 
+vQname: <bound method ModelObject.vQname of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+values: <bound method _Element.values of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+viewText: <bound method ModelObject.viewText of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
+xAttributes: {'id': <arelle.ModelObject.ModelAttribute object at 0x759c75a8ffb0>}
+xValid: 1
+xValue: None
+xpath: <bound method _Element.xpath of modelContext[c-1, period: duration 2024-01-01 - 2024-12-31, GSK_2024.html line 235197]>
