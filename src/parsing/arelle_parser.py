@@ -1,11 +1,21 @@
-from arelle import Cntlr
+from arelle import Cntlr, FileSource
 from itertools import islice
 from datetime import timedelta
 
-def load_model_xbrl(entry_html_path: str):
+def load_model_xbrl_old(entry_html_path: str):
     cntlr = Cntlr.Cntlr(logFileName=None)  # no GUI
     model_manager = cntlr.modelManager
     model_xbrl = model_manager.load(entry_html_path)
+    return model_xbrl
+
+def load_model_xbrl(filing_basefolder: str,
+                    entry_html_path: str):
+    print(f"Loading XBRL model from entry HTML: {entry_html_path}")
+    print(f"Using filing base folder: {filing_basefolder}")
+    cntlr = Cntlr.Cntlr(logFileName=None)
+    file_source = FileSource.FileSource(filing_basefolder, cntlr)
+    model_xbrl = cntlr.modelManager.load(entry_html_path,
+                                         fileSource=file_source)
     return model_xbrl
 
 def extract_context_rows(model_xbrl, filing_id: str):
