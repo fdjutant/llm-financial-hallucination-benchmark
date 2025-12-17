@@ -1,11 +1,46 @@
 from arelle import Cntlr, FileSource
 from itertools import islice
 from datetime import timedelta
-import re
+from pathlib import Path
+import pandas as pd
+
+def process_html_files(html_folder, output_filepath, debug=False):
+        
+    merged_dfs = []
+    for html_filepath in html_folder.rglob("*.html"):
+        if debug and html_filepath.name != "5493000HZTVUYLO1D793-2022-12-31-T01.html":
+            continue
+
+        filing_basefolder = html_filepath.parents[1]
+        model_xbrl = load_model_xbrl(str(filing_basefolder),
+                                     str(html_filepath))
+
+        filing_id = html_filepath.parents[1].stem
+        fact_rows = extract_fact_rows(model_xbrl, filing_id)
+        context_rows = extract_context_rows(model_xbrl, filing_id)
+
+        fact_df = pd.DataFrame(fact_rows)
+        context_df = pd.DataFrame(context_rows)
+
+        merged_df = pd.merge(fact_df, 
+                             context_df, on=['filing_id', 'context_id'], 
+                             how='inner')
+        merged_dfs.append(merged_df)
+
+    final_df = pd.concat(merged_dfs, ignore_index=True)
+    final_df.to_csv(output_filepath, index=False)
+    print(f"Saved merged DataFrame to {output_filepath}")
+
+    return final_df
 
 def load_model_xbrl(filing_basefolder: str, entry_html_path: str):
-    
-    cntlr = Cntlr.Cntlr(logFileName=None)
+
+    root = Path(filing_basefolder).resolve().parents[3]
+    log_dir = root / "processed" / "debug"
+    log_dir.mkdir(parents=True, exist_ok=True)
+    log_file_path = str(log_dir / "arelle.log")
+
+    cntlr = Cntlr.Cntlr(logFileName=log_file_path)
     file_source = FileSource.FileSource(filing_basefolder, cntlr)
     model_xbrl = cntlr.modelManager.load(entry_html_path,
                                          fileSource=file_source)
