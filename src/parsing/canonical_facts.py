@@ -31,7 +31,7 @@ def create_gold_ground_truth(silver_df: pd.DataFrame, output_path):
     
     return gold_df
 
-def create_silve_ground_truth(df: pd.DataFrame, output_path):
+def create_silver_ground_truth(df: pd.DataFrame, output_path):
     # 1. Load Data
     # Convert 'dimensional_qualifier' to string immediately to avoid the "unhashable dict" error
     df['dimensional_qualifier'] = df['dimensional_qualifier'].astype(str)
