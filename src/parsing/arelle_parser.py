@@ -1,8 +1,8 @@
 from arelle import Cntlr, FileSource
 from itertools import islice
-from datetime import timedelta
 from pathlib import Path
 import pandas as pd
+import re
 
 def process_html_files(html_folder, output_filepath, debug=False):
         
@@ -22,14 +22,15 @@ def process_html_files(html_folder, output_filepath, debug=False):
         fact_df = pd.DataFrame(fact_rows)
         context_df = pd.DataFrame(context_rows)
 
-        merged_df = pd.merge(fact_df, 
-                             context_df, on=['filing_id', 'context_id'], 
+        merged_df = pd.merge(fact_df, context_df,
+                             on=['filing_id', 'context_id'], 
                              how='inner')
         merged_dfs.append(merged_df)
 
     final_df = pd.concat(merged_dfs, ignore_index=True)
+    final_df['value_text'] = final_df['value_text'].apply(remove_css_tags)
     final_df.to_csv(output_filepath, index=False)
-    print(f"Saved merged DataFrame to {output_filepath}")
+    print(f"Bronze data saved to: {output_filepath}")
 
     return final_df
 
@@ -108,6 +109,21 @@ def safe_dict(d):
         return str(d)
     else:
         return d
+
+def remove_css_tags(text):
+    if pd.isnull(text):
+        return text
+    # Remove <style>...</style> blocks
+    text = re.sub(r'<style.*?>.*?</style>', '', text, flags=re.DOTALL | re.IGNORECASE)
+    # Remove attributes: style, class, id, colspan, rowspan (double-quoted, single-quoted, or unquoted)
+    text = re.sub(r'\s*(?:style|class|id|colspan|rowspan)\s*=\s*(?:"[^"]*"|\'[^\']*\'|\S+)', '', text, flags=re.IGNORECASE)
+    # Remove empty attributes left after removal (e.g., <div  >)
+    text = re.sub(r'<(\w+)\s+>', r'<\1>', text)
+    # Remove span/div/table/tbody/tr/td opening and closing tags (keep inner text)
+    text = re.sub(r'</?(?:span|div|table|tbody|tr|td)[^>]*>', '', text, flags=re.IGNORECASE)
+    # Collapse multiple spaces
+    text = re.sub(r'\s{2,}', ' ', text)
+    return text
 
 def debug_fact_attributes(model_xbrl, projectRoot, object_number: int = 32):
     return _debug_attributes(model_xbrl.facts, projectRoot, "fact", object_number)
