@@ -1,8 +1,7 @@
 /COMPANIES_HOUSE_API_KEY
 /scribble
 /src/__pycache__/
-/evaluation/__pycache__/
-/ingestion/__pycache__/
-/parsing/__pycache__/
-/qa_generation/__pycache__/
-/data/raw/FCA
+/src/evaluation/__pycache__/
+/src/parsing/__pycache__/
+/src/qa_generation/__pycache__/
+/data/raw/fca
