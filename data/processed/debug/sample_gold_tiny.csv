@@ -1,0 +1,11 @@
+entity_name,segment,canonical_fact_name,ground_truth_value,period_type,year
+GSK,Balance_Sheet,Other Comprehensive Income Before Tax Gains Losses From Investments In Equity Instruments,-911000000.0,duration,2022
+AstraZeneca,Income_Statement,Other Comprehensive Income That Will Not Be Reclassified To Profit Or Loss Net Of Tax,816000000.0,duration,2023
+AstraZeneca,Balance_Sheet,Equity,14596000000.0,instant,2020
+GSK,Company_Specific_Metric,Purchase Of Businesses Net Of Cash Acquired,0.0,duration,2022
+GSK,Balance_Sheet,Equity,7944000000.0,instant,2022
+GSK,Balance_Sheet,Deferred Tax Liabilities,311000000.0,instant,2024
+GSK,Company_Specific_Metric,Cash From Used In Operations Before Tax Discontinued Operations,2422000000.0,duration,2021
+GSK,Balance_Sheet,Other Noncurrent Assets,1584000000.0,instant,2024
+AstraZeneca,Company_Specific_Metric,Increase Decrease Through Transfer Between Other Reserves And Retained Earnings Equity,-4000000.0,duration,2024
+AstraZeneca,Income_Statement,Other Comprehensive Income,0.0,duration,2023

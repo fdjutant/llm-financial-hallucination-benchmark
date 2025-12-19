@@ -15,6 +15,8 @@ dependencies:
   - arelle-release
   - jupyterlab
   - ipykernel
+  - pydantic
+  - openai
   # Add these if you like
   - pytorch
   - cpuonly  # for CPU-only PyTorch, if using pytorch channel instead of conda-forge
