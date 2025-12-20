@@ -4,9 +4,11 @@ from openai import OpenAI
 import os
 from pydantic import BaseModel, ValidationError
 import json
+from pathlib import Path
 
-# Set your OpenAI API key
-client = OpenAI(api_key="sk-YOUR_ACTUAL_KEY_HERE_...")
+# Set OpenAI API key
+api_key=Path(Path(__file__).resolve().parents[2]/"OPENAI_API_KEY").read_text().strip()
+client = OpenAI(api_key=api_key)
 
 # Define Pydantic schema for output
 class QAOutput(BaseModel):
@@ -29,13 +31,11 @@ def generate_qa_openai(input_csv_path, output_csv_path,
     excluded_segments = ['Narrative_Disclosure', 'Other_Financial_Metric']
     df_processing = df[~df['segment'].isin(excluded_segments)].copy()
     
-    print(f"Filtered down to {len(df_processing)} numeric rows for processing.")
-
     results = []
 
     # 3. Iterate and Generate
     for idx, row in df_processing.iterrows():
-        
+
         # Extract context variables
         entity = row.get('entity_name', 'Unknown Company')
         year = row.get('year', 'Unknown Year')

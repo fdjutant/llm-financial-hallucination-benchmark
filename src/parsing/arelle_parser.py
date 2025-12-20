@@ -3,6 +3,7 @@ from itertools import islice
 from pathlib import Path
 import pandas as pd
 import re
+from datetime import timedelta
 
 def process_html_files(html_folder, output_filepath, debug=False):
         
@@ -54,7 +55,6 @@ def extract_context_rows(model_xbrl, filing_id: str):
     contexts_iter = islice(model_xbrl.contexts.items(), 50, 51) if debug else model_xbrl.contexts.items()
     for ctx_id, ctx in contexts_iter:
         entity = ctx.entityIdentifier  # (scheme, identifier)
-        period = ctx.period
         row = {
             "filing_id": filing_id,
             "context_id": ctx_id,
@@ -63,7 +63,7 @@ def extract_context_rows(model_xbrl, filing_id: str):
             "period_type": "instant" if ctx.isInstantPeriod else "duration",
             "instant": str(getattr(ctx, "instantDatetime", None))[:10],
             "period_start": str(getattr(ctx, "startDatetime", None))[:10],
-            "period_end": str(getattr(ctx, "endDatetime", None))[:10],
+            "period_end": str((getattr(ctx, "endDatetime", None) - timedelta(days=1)) if ctx.endDatetime else None)[:10],
             "dimensional_qualifier": ctx.qnameDims,  # you’ll JSON-ify this
         }
         rows.append(row)
