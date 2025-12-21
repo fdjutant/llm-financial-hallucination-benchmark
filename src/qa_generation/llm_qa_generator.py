@@ -7,13 +7,8 @@ import json
 from pathlib import Path
 
 # Set OpenAI API key
-api_key=Path(Path(__file__).resolve().parents[2]/"OPENAI_API_KEY").read_text().strip()
+api_key = Path(Path(__file__).resolve().parents[2]/"OPENAI_API_KEY").read_text().strip()
 client = OpenAI(api_key=api_key)
-
-# Define Pydantic schema for output
-class QAOutput(BaseModel):
-    Question: str
-    Answer: str
 
 def generate_qa_openai(input_csv_path, output_csv_path,
                          model="gpt-4o-mini"):
