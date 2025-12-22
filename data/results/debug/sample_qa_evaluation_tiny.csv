@@ -1,31 +1,60 @@
-entity,year,question,ground_truth,model,provider,model_answer,confidence,is_correct
-GSK,2022,What was the Gain Loss On Disposal Of Interest In Associate for GSK in the year 2022?,0.0,gpt-4o-mini,openai,The Gain Loss On Disposal Of Interest In Associate for GSK in the year 2022 was £0 million.,85,
-GSK,2022,What was the Gain Loss On Disposal Of Interest In Associate for GSK in the year 2022?,0.0,llama-3.3-70b-versatile,groq,£1375 million,90,
-GSK,2022,What was the Gain Loss On Disposal Of Interest In Associate for GSK in the year 2022?,0.0,openai/gpt-oss-120b,unknown,ERROR,N/A,False
-GSK,2022,What was the amount reported by GSK for 'Investment Accounted For Using Equity Method' in the year 2022?,74000000.0,gpt-4o-mini,openai,N/A,0,
-GSK,2022,What was the amount reported by GSK for 'Investment Accounted For Using Equity Method' in the year 2022?,74000000.0,llama-3.3-70b-versatile,groq,"Not available in my current data, I'd recommend checking GSK's official 2022 financial reports for the most accurate information",0,
-GSK,2022,What was the amount reported by GSK for 'Investment Accounted For Using Equity Method' in the year 2022?,74000000.0,openai/gpt-oss-120b,unknown,ERROR,N/A,False
-GSK,2023,What was the reported 'Other Operating Income Expense' for GSK in the year 2023?,-363000000.0,gpt-4o-mini,openai,Data for GSK's 'Other Operating Income Expense' for the year 2023 is not available as of my last training cut-off in October 2023.,75,
-GSK,2023,What was the reported 'Other Operating Income Expense' for GSK in the year 2023?,-363000000.0,llama-3.3-70b-versatile,groq,Not available as 2023 data may not be publicly released yet or I don't have access to real-time data,0,
-GSK,2023,What was the reported 'Other Operating Income Expense' for GSK in the year 2023?,-363000000.0,openai/gpt-oss-120b,unknown,ERROR,N/A,False
-GSK,2024,What was GSK's Cash Flows From Used In Operating Activities Continuing Operations for the year 2024?,6554000000.0,gpt-4o-mini,openai,Data for GSK's Cash Flows From Used In Operating Activities Continuing Operations for the year 2024 is not available as it is beyond my training data which goes up to October 2023.,0,
-GSK,2024,What was GSK's Cash Flows From Used In Operating Activities Continuing Operations for the year 2024?,6554000000.0,llama-3.3-70b-versatile,groq,"Not available, as 2024 data is not yet publicly released",100,
-GSK,2024,What was GSK's Cash Flows From Used In Operating Activities Continuing Operations for the year 2024?,6554000000.0,openai/gpt-oss-120b,unknown,ERROR,N/A,False
-AstraZeneca,2023,What was the Contingent Consideration Fair Value Movement reported by AstraZeneca for the year 2023?,549000000.0,gpt-4o-mini,openai,The Contingent Consideration Fair Value Movement reported by AstraZeneca for the year 2023 is not available as my training data only goes up to October 2023 and does not include specific financial results for that year.,70,
-AstraZeneca,2023,What was the Contingent Consideration Fair Value Movement reported by AstraZeneca for the year 2023?,549000000.0,llama-3.3-70b-versatile,groq,Not available as 2023 data has not been disclosed,0,
-AstraZeneca,2023,What was the Contingent Consideration Fair Value Movement reported by AstraZeneca for the year 2023?,549000000.0,openai/gpt-oss-120b,unknown,ERROR,N/A,False
-AstraZeneca,2022,What were AstraZeneca's Noncurrent Liabilities in 2022?,33132000000.0,gpt-4o-mini,openai,42000,85,
-AstraZeneca,2022,What were AstraZeneca's Noncurrent Liabilities in 2022?,33132000000.0,llama-3.3-70b-versatile,groq,"47,417,000,000",90,
-AstraZeneca,2022,What were AstraZeneca's Noncurrent Liabilities in 2022?,33132000000.0,openai/gpt-oss-120b,unknown,ERROR,N/A,False
-GSK,2024,What was the amount reported for Proceeds From Sales Of Investments Accounted For Using Equity Method by GSK in 2024?,0.0,gpt-4o-mini,openai,Data for GSK's Proceeds From Sales Of Investments Accounted For Using Equity Method in 2024 is not available as it is beyond my training data cutoff in October 2023.,0,
-GSK,2024,What was the amount reported for Proceeds From Sales Of Investments Accounted For Using Equity Method by GSK in 2024?,0.0,llama-3.3-70b-versatile,groq,Unknown,0,
-GSK,2024,What was the amount reported for Proceeds From Sales Of Investments Accounted For Using Equity Method by GSK in 2024?,0.0,openai/gpt-oss-120b,unknown,ERROR,N/A,False
-GSK,2024,What was GSK's Comprehensive Income for the year 2024?,2778000000.0,gpt-4o-mini,openai,Data for GSK's Comprehensive Income for the year 2024 is not available as it is beyond my training cutoff in October 2023.,0,
-GSK,2024,What was GSK's Comprehensive Income for the year 2024?,2778000000.0,llama-3.3-70b-versatile,groq,"Not available, as 2024 data is not yet publicly released",100,
-GSK,2024,What was GSK's Comprehensive Income for the year 2024?,2778000000.0,openai/gpt-oss-120b,unknown,ERROR,N/A,False
-AstraZeneca,2021,What was the amount reported by AstraZeneca for Adjustments For Depreciation And Amortisation Expense And Impairment Loss Reversal Of Impairment Loss Recognised In Profit Or Loss in the year 2021?,6530000000.0,gpt-4o-mini,openai,"2,200 million USD",85,
-AstraZeneca,2021,What was the amount reported by AstraZeneca for Adjustments For Depreciation And Amortisation Expense And Impairment Loss Reversal Of Impairment Loss Recognised In Profit Or Loss in the year 2021?,6530000000.0,llama-3.3-70b-versatile,groq,"1,433,000,000",90,
-AstraZeneca,2021,What was the amount reported by AstraZeneca for Adjustments For Depreciation And Amortisation Expense And Impairment Loss Reversal Of Impairment Loss Recognised In Profit Or Loss in the year 2021?,6530000000.0,openai/gpt-oss-120b,unknown,ERROR,N/A,False
-AstraZeneca,2020,What was AstraZeneca's Diluted Earnings Loss Per Share in the year 2020?,2.44,gpt-4o-mini,openai,-0.03,90,
-AstraZeneca,2020,What was AstraZeneca's Diluted Earnings Loss Per Share in the year 2020?,2.44,llama-3.3-70b-versatile,groq,-$0.28,90,
-AstraZeneca,2020,What was AstraZeneca's Diluted Earnings Loss Per Share in the year 2020?,2.44,openai/gpt-oss-120b,unknown,ERROR,N/A,False
+entity,year,question,ground_truth,model,provider,model_answer,confidence,reasoning,full_answer
+GSK,2022,What was the Gain Loss On Disposal Of Interest In Associate for GSK in the year 2022?,0.0,llama-3.3-70b-versatile,groq,0.0,100,"The financial statement explicitly states the Gain Loss On Disposal Of Interest In Associate for GSK in 2022 as 0.0, leaving no room for uncertainty.","{'answer': '0.0', 'confidence': 100, 'reasoning': 'The financial statement explicitly states the Gain Loss On Disposal Of Interest In Associate for GSK in 2022 as 0.0, leaving no room for uncertainty.'}"
+GSK,2022,What was the Gain Loss On Disposal Of Interest In Associate for GSK in the year 2022?,0.0,openai/gpt-oss-120b,groq,0.0,98,"The consolidated statement of cash flows for GSK 2022 explicitly lists 'Gain Loss On Disposal Of Interest In Associate: 0.0', providing a direct figure.","{
+  ""answer"": ""0.0"",
+  ""confidence"": 98,
+  ""reasoning"": ""The consolidated statement of cash flows for GSK 2022 explicitly lists 'Gain Loss On Disposal Of Interest In Associate: 0.0', providing a direct figure.""
+}"
+GSK,2022,What was the amount reported by GSK for 'Investment Accounted For Using Equity Method' in the year 2022?,74000000.0,llama-3.3-70b-versatile,groq,74000000.0,100,The amount is directly stated in the provided financial statement excerpt from GSK's 2022 consolidated balance sheet.,"{'answer': '74000000.0', 'confidence': 100, 'reasoning': 'The amount is directly stated in the provided financial statement excerpt from GSK\'s 2022 consolidated balance sheet.'}"
+GSK,2022,What was the amount reported by GSK for 'Investment Accounted For Using Equity Method' in the year 2022?,74000000.0,openai/gpt-oss-120b,groq,74000000.0,95,"The consolidated balance sheet excerpt explicitly lists 'Investment Accounted For Using Equity Method: 74000000.0' for GSK in 2022, providing a direct figure.","{
+  ""answer"": ""74000000.0"",
+  ""confidence"": 95,
+  ""reasoning"": ""The consolidated balance sheet excerpt explicitly lists 'Investment Accounted For Using Equity Method: 74000000.0' for GSK in 2022, providing a direct figure.""
+}"
+GSK,2023,What was the reported 'Other Operating Income Expense' for GSK in the year 2023?,-363000000.0,llama-3.3-70b-versatile,groq,-363000000.0,100,The value is directly stated in the provided financial statement as the Other Operating Income Expense for GSK in 2023.,"{'answer': '-363000000.0', 'confidence': 100, 'reasoning': 'The value is directly stated in the provided financial statement as the Other Operating Income Expense for GSK in 2023.'}"
+GSK,2023,What was the reported 'Other Operating Income Expense' for GSK in the year 2023?,-363000000.0,openai/gpt-oss-120b,groq,-363000000.0,95,"The consolidated income statement excerpt explicitly lists 'Other Operating Income Expense' as -363000000.0 for GSK in 2023, so the figure is directly taken from the provided data.","{
+  ""answer"": -363000000.0,
+  ""confidence"": 95,
+  ""reasoning"": ""The consolidated income statement excerpt explicitly lists 'Other Operating Income Expense' as -363000000.0 for GSK in 2023, so the figure is directly taken from the provided data.""
+}"
+GSK,2024,What was GSK's Cash Flows From Used In Operating Activities Continuing Operations for the year 2024?,6554000000.0,llama-3.3-70b-versatile,groq,6554000000.0,100,The value is directly stated in the provided financial statement as Cash Flows From Used In Operating Activities Continuing Operations for GSK in 2024.,"{'answer': '6554000000.0', 'confidence': 100, 'reasoning': 'The value is directly stated in the provided financial statement as Cash Flows From Used In Operating Activities Continuing Operations for GSK in 2024.'}"
+GSK,2024,What was GSK's Cash Flows From Used In Operating Activities Continuing Operations for the year 2024?,6554000000.0,openai/gpt-oss-120b,groq,6554000000.0,95,"The consolidated statement of cash flows for GSK 2024 explicitly lists 'Cash Flows From Used In Operating Activities Continuing Operations' as 6554000000.0, which directly answers the question.","{
+  ""answer"": ""6,554,000,000.0"",
+  ""confidence"": 95,
+  ""reasoning"": ""The consolidated statement of cash flows for GSK 2024 explicitly lists 'Cash Flows From Used In Operating Activities Continuing Operations' as 6554000000.0, which directly answers the question.""
+}"
+AstraZeneca,2023,What was the Contingent Consideration Fair Value Movement reported by AstraZeneca for the year 2023?,549000000.0,llama-3.3-70b-versatile,groq,549000000.0,100,The Contingent Consideration Fair Value Movement is directly stated in the provided financial statement as 549000000.0 for AstraZeneca in 2023.,"{'answer': '549000000.0', 'confidence': 100, 'reasoning': 'The Contingent Consideration Fair Value Movement is directly stated in the provided financial statement as 549000000.0 for AstraZeneca in 2023.'}"
+AstraZeneca,2023,What was the Contingent Consideration Fair Value Movement reported by AstraZeneca for the year 2023?,549000000.0,openai/gpt-oss-120b,groq,549000000.0,95,"The financial statement excerpt explicitly lists the Contingent Consideration Fair Value Movement for AstraZeneca in 2023 as 549000000.0, so the figure is directly provided.","{
+  ""answer"": ""549000000.0"",
+  ""confidence"": 95,
+  ""reasoning"": ""The financial statement excerpt explicitly lists the Contingent Consideration Fair Value Movement for AstraZeneca in 2023 as 549000000.0, so the figure is directly provided.""
+}"
+AstraZeneca,2022,What were AstraZeneca's Noncurrent Liabilities in 2022?,33132000000.0,llama-3.3-70b-versatile,groq,33132000000.0,100,The value of AstraZeneca's Noncurrent Liabilities in 2022 is directly stated in the provided financial statement as 33132000000.0.,"{'answer': '33132000000.0', 'confidence': 100, 'reasoning': 'The value of AstraZeneca\'s Noncurrent Liabilities in 2022 is directly stated in the provided financial statement as 33132000000.0.'}"
+AstraZeneca,2022,What were AstraZeneca's Noncurrent Liabilities in 2022?,33132000000.0,openai/gpt-oss-120b,groq,33132000000.0,95,"The consolidated balance sheet excerpt explicitly lists AstraZeneca's Noncurrent Liabilities for 2022 as 33132000000.0, which directly answers the question.","{
+  ""answer"": ""33,132,000,000.0"",
+  ""confidence"": 95,
+  ""reasoning"": ""The consolidated balance sheet excerpt explicitly lists AstraZeneca's Noncurrent Liabilities for 2022 as 33132000000.0, which directly answers the question.""
+}"
+GSK,2024,What was the amount reported for Proceeds From Sales Of Investments Accounted For Using Equity Method by GSK in 2024?,0.0,llama-3.3-70b-versatile,groq,0.0,100,The financial statement explicitly states the amount reported for Proceeds From Sales Of Investments Accounted For Using Equity Method by GSK in 2024 as 0.0.,"{'answer': '0.0', 'confidence': 100, 'reasoning': 'The financial statement explicitly states the amount reported for Proceeds From Sales Of Investments Accounted For Using Equity Method by GSK in 2024 as 0.0.'}"
+GSK,2024,What was the amount reported for Proceeds From Sales Of Investments Accounted For Using Equity Method by GSK in 2024?,0.0,openai/gpt-oss-120b,groq,0.0,98,"The consolidated balance sheet excerpt explicitly lists 'Proceeds From Sales Of Investments Accounted For Using Equity Method: 0.0', providing a direct figure without ambiguity.","{
+  ""answer"": ""0.0"",
+  ""confidence"": 98,
+  ""reasoning"": ""The consolidated balance sheet excerpt explicitly lists 'Proceeds From Sales Of Investments Accounted For Using Equity Method: 0.0', providing a direct figure without ambiguity.""
+}"
+GSK,2024,What was GSK's Comprehensive Income for the year 2024?,2778000000.0,llama-3.3-70b-versatile,groq,2778000000.0,100,The Comprehensive Income for GSK in 2024 is directly stated in the provided financial statement as 2778000000.0.,"{'answer': '2778000000.0', 'confidence': 100, 'reasoning': 'The Comprehensive Income for GSK in 2024 is directly stated in the provided financial statement as 2778000000.0.'}"
+GSK,2024,What was GSK's Comprehensive Income for the year 2024?,2778000000.0,openai/gpt-oss-120b,groq,2778000000.0,95,"The consolidated income statement excerpt explicitly lists GSK's Comprehensive Income for 2024 as 2,778,000,000.0. This figure is directly provided, so the confidence is very high.","{
+  ""answer"": 2778000000.0,
+  ""confidence"": 95,
+  ""reasoning"": ""The consolidated income statement excerpt explicitly lists GSK's Comprehensive Income for 2024 as 2,778,000,000.0. This figure is directly provided, so the confidence is very high.""
+}"
+AstraZeneca,2021,What was the amount reported by AstraZeneca for Adjustments For Depreciation And Amortisation Expense And Impairment Loss Reversal Of Impairment Loss Recognised In Profit Or Loss in the year 2021?,6530000000.0,llama-3.3-70b-versatile,groq,6530000000.0,100,The amount is directly stated in the provided financial statement excerpt from AstraZeneca's 2021 consolidated income statement.,"{'answer': '6530000000.0', 'confidence': 100, 'reasoning': 'The amount is directly stated in the provided financial statement excerpt from AstraZeneca\'s 2021 consolidated income statement.'}"
+AstraZeneca,2021,What was the amount reported by AstraZeneca for Adjustments For Depreciation And Amortisation Expense And Impairment Loss Reversal Of Impairment Loss Recognised In Profit Or Loss in the year 2021?,6530000000.0,openai/gpt-oss-120b,groq,6530000000.0,95,The amount is,"{
+  ""answer"": ""6,530,000,000.0"",
+  ""confidence"": 95,
+  ""reasoning"": ""The amount is"
+AstraZeneca,2020,What was AstraZeneca's Diluted Earnings Loss Per Share in the year 2020?,2.44,llama-3.3-70b-versatile,groq,2.44,100,The value is directly stated in the provided financial statement as the Diluted Earnings Loss Per Share for AstraZeneca in 2020.,"{'answer': 2.44, 'confidence': 100, 'reasoning': 'The value is directly stated in the provided financial statement as the Diluted Earnings Loss Per Share for AstraZeneca in 2020.'}"
+AstraZeneca,2020,What was AstraZeneca's Diluted Earnings Loss Per Share in the year 2020?,2.44,openai/gpt-oss-120b,groq,2.44,95,"The financial statement excerpt explicitly lists 'Diluted Earnings Loss Per Share: 2.44' for AstraZeneca in 2020, providing a direct and unambiguous source for the figure.","{
+  ""answer"": ""2.44"",
+  ""confidence"": 95,
+  ""reasoning"": ""The financial statement excerpt explicitly lists 'Diluted Earnings Loss Per Share: 2.44' for AstraZeneca in 2020, providing a direct and unambiguous source for the figure.""
+}"

@@ -1,0 +1,56 @@
+full_answer
+"{'answer': '0.0', 'confidence': 100, 'reasoning': 'The financial statement explicitly states the Gain Loss On Disposal Of Interest In Associate for GSK in 2022 as 0.0, leaving no room for uncertainty.'}"
+"{""answer"":""0.0"",""confidence"":95,""reasoning"":""The consolidated statement of cash flows for GSK 2022 explicitly lists 'Gain Loss On Disposal Of Interest In Associate: 0.0', indicating the amount was zero.""}"
+"{'answer': '74000000.0', 'confidence': 100, 'reasoning': 'The amount is directly stated in the provided financial statement excerpt from GSK\'s 2022 consolidated balance sheet.'}"
+"{
+  ""answer"": ""74000000.0"",
+  ""confidence"": 95,
+  ""reasoning"": ""The consolidated balance sheet excerpt explicitly lists 'Investment Accounted For Using Equity Method: 74000000.0' for GSK in 2022, providing a direct figure.""
+}"
+"{'answer': '-363000000.0', 'confidence': 100, 'reasoning': 'The value is directly stated in the provided financial statement as the Other Operating Income Expense for GSK in 2023.'}"
+"{
+  ""answer"": -363000000.0,
+  ""confidence"": 95,
+  ""reasoning"": ""The consolidated income statement excerpt explicitly lists 'Other Operating Income Expense' as -363000000.0 for GSK in 2023, so the figure is directly taken from the provided data.""
+}"
+"{'answer': '6554000000.0', 'confidence': 100, 'reasoning': 'The value is directly stated in the provided financial statement as Cash Flows From Used In Operating Activities Continuing Operations for GSK in 2024.'}"
+"{
+  ""answer"": ""6,554,000,000.0"",
+  ""confidence"": 95,
+  ""reasoning"": ""The figure is explicitly provided in the consolidated statement of cash flows for GSK 2024, so it is a well-known, directly stated value.""
+}"
+"{'answer': '549000000.0', 'confidence': 100, 'reasoning': 'The Contingent Consideration Fair Value Movement is directly stated in the provided financial statement as 549000000.0 for AstraZeneca in 2023.'}"
+"{
+  ""answer"": ""549,000,000.0"",
+  ""confidence"": 95,
+  ""reasoning"": ""The excerpt from AstraZeneca's 2023 Consolidated Statement of Cash Flows explicitly lists the Contingent Consideration Fair Value Movement as 549000000.0, providing a direct figure without need for inference.""
+}"
+"{'answer': '33132000000.0', 'confidence': 100, 'reasoning': 'The value of AstraZeneca\'s Noncurrent Liabilities in 2022 is directly stated in the provided financial statement as 33132000000.0.'}"
+"{
+  ""answer"": ""33,132,000,000.0"",
+  ""confidence"": 95,
+  ""reasoning"": ""The consolidated balance sheet excerpt explicitly lists AstraZeneca's Noncurrent Liabilities for 2022 as 33,132,000,000.0, so the figure is directly taken from the provided financial statement.""
+}"
+"{'answer': '0.0', 'confidence': 100, 'reasoning': 'The financial statement explicitly reports the amount as 0.0, leaving no room for uncertainty or inference.'}"
+"{
+  ""answer"": ""0.0"",
+  ""confidence"": 98,
+  ""reasoning"": ""The consolidated balance sheet excerpt explicitly lists 'Proceeds From Sales Of Investments Accounted For Using Equity Method: 0.0', providing a clear, direct figure.""
+}"
+"{'answer': '2778000000.0', 'confidence': 100, 'reasoning': 'The Comprehensive Income for GSK in 2024 is directly stated in the provided financial statement as 2778000000.0.'}"
+"{
+  ""answer"": ""2778000000.0"",
+  ""confidence"": 95,
+  ""reasoning"": ""The consolidated income statement excerpt explicitly lists GSK's Comprehensive Income for 2024 as 2778000000.0, so the figure is directly provided.""
+}"
+"{'answer': '6530000000.0', 'confidence': 100, 'reasoning': 'The amount is directly stated in the provided financial statement excerpt from AstraZeneca\'s 2021 consolidated income statement.'}"
+"{
+  ""answer"": ""6,530,000,000.0"",
+  ""confidence"": 95,
+  ""reasoning"": ""The amount is"
+"{'answer': 2.44, 'confidence': 100, 'reasoning': 'The value is directly stated in the provided financial statement as the Diluted Earnings Loss Per Share for AstraZeneca in 2020.'}"
+"{
+  ""answer"": ""2.44"",
+  ""confidence"": 95,
+  ""reasoning"": ""The financial statement excerpt explicitly lists 'Diluted Earnings Loss Per Share: 2.44' for AstraZeneca in 2020, providing a direct and unambiguous source for the figure.""
+}"
