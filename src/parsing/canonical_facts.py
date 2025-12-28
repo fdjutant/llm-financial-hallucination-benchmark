@@ -29,6 +29,8 @@ def create_gold_ground_truth(silver_df: pd.DataFrame, output_path):
     gold_df.drop_duplicates(subset=['canonical_fact_name',
                                     'entity_name', 'segment',
                                     'period_type', 'year'], inplace=True)
+    gold_df.reset_index(drop=True, inplace=True)
+    gold_df.insert(0, 'id', gold_df.index)
     gold_df.to_csv(output_path, index=False)
     print(f"Gold data saved to: {output_path}")
     

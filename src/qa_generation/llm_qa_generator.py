@@ -33,6 +33,7 @@ def generate_qa_openai(input_csv_path, output_csv_path,
     for idx, row in df_processing.iterrows():
 
         # Extract context variables
+        id = row.get('id', 'N/A')
         entity = row.get('entity_name', 'Unknown Company')
         year = row.get('year', 'Unknown Year')
         metric = row.get('canonical_fact_name', 'Unknown Metric')
@@ -70,6 +71,7 @@ def generate_qa_openai(input_csv_path, output_csv_path,
 
             # 7. Append to Results
             results.append({
+                "id": id,
                 "entity_name": entity,
                 "year": year,
                 "segment": row['segment'],

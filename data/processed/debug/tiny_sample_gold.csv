@@ -1,0 +1,11 @@
+id,entity_name,segment,canonical_fact_name,ground_truth_value,period_type,year
+1237,GSK,Company_Specific_Metric,Gain Loss On Disposal Of Interest In Associate,0.0,duration,2022
+1362,GSK,Balance_Sheet,Investment Accounted For Using Equity Method,74000000.0,instant,2022
+1745,GSK,Income_Statement,Other Operating Income Expense,-363000000.0,duration,2023
+2153,GSK,Cash_Flow,Cash Flows From Used In Operating Activities Continuing Operations,6554000000.0,duration,2024
+695,AstraZeneca,Company_Specific_Metric,Contingent Consideration Fair Value Movement,549000000.0,duration,2023
+227,AstraZeneca,Balance_Sheet,Noncurrent Liabilities,33132000000.0,instant,2022
+2182,GSK,Balance_Sheet,Proceeds From Sales Of Investments Accounted For Using Equity Method,0.0,duration,2024
+2075,GSK,Income_Statement,Comprehensive Income,2778000000.0,duration,2024
+689,AstraZeneca,Income_Statement,Adjustments For Depreciation And Amortisation Expense And Impairment Loss Reversal Of Impairment Loss Recognised In Profit Or Loss,6530000000.0,duration,2021
+115,AstraZeneca,Income_Statement,Diluted Earnings Loss Per Share,2.44,duration,2020
