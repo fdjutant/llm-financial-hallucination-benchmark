@@ -1,21 +1,21 @@
 id,model,question,ground_truth,fake_value,answer_rag,answer_knowledge,answer_adversarial,rag_accuracy,knowledge_accuracy,hallucinated,adversarial_correct
-1237,llama-3.3-70b-versatile,What was the value of 'Gain Loss On Disposal Of Interest In Associate' for GSK in the year 2022?,0.0,-0.34,0.0,UNKNOWN,UNKNOWN,True,False,False,False
-1237,openai/gpt-oss-120b,What was the value of 'Gain Loss On Disposal Of Interest In Associate' for GSK in the year 2022?,0.0,-0.7,0.0,,,True,False,True,False
-1362,llama-3.3-70b-versatile,What was the amount reported for 'Investment Accounted For Using Equity Method' by GSK in the year 2022?,74000000.0,75218612.65,74000000.0,UNKNOWN,75218612.65,True,False,False,False
-1362,openai/gpt-oss-120b,What was the amount reported for 'Investment Accounted For Using Equity Method' by GSK in the year 2022?,74000000.0,68296120.66,74000000.0,,,True,False,True,False
-1745,llama-3.3-70b-versatile,What was GSK's Other Operating Income Expense for the year 2023?,-363000000.0,-352749387.15,-363000000.0,UNKNOWN,UNKNOWN,True,False,False,False
-1745,openai/gpt-oss-120b,What was GSK's Other Operating Income Expense for the year 2023?,-363000000.0,-370710789.66,-363000000.0,,,True,False,True,False
-2153,llama-3.3-70b-versatile,What was the amount of Cash Flows From Used In Operating Activities Continuing Operations reported by GSK in 2024?,6554000000.0,7272344178.35,6554000000.0,UNKNOWN,UNKNOWN,True,False,False,False
-2153,openai/gpt-oss-120b,What was the amount of Cash Flows From Used In Operating Activities Continuing Operations reported by GSK in 2024?,6554000000.0,5917027376.48,6554000000.0,,,True,False,True,False
-695,llama-3.3-70b-versatile,What was the Contingent Consideration Fair Value Movement for AstraZeneca in the year 2023?,549000000.0,488328830.39,549000000.0,UNKNOWN,UNKNOWN,True,False,False,False
-695,openai/gpt-oss-120b,What was the Contingent Consideration Fair Value Movement for AstraZeneca in the year 2023?,549000000.0,602449128.88,549000000.0,,,True,False,True,False
-227,llama-3.3-70b-versatile,What were AstraZeneca's Noncurrent Liabilities for the year 2022?,33132000000.0,37912415259.44,33132000000.0,£43851M,UNKNOWN,True,False,True,False
-227,openai/gpt-oss-120b,What were AstraZeneca's Noncurrent Liabilities for the year 2022?,33132000000.0,31916802751.53,33132000000.0,,,True,False,True,False
-2182,llama-3.3-70b-versatile,What was the amount reported by GSK for Proceeds From Sales Of Investments Accounted For Using Equity Method in the year 2024?,0.0,-0.63,0.0,UNKNOWN,UNKNOWN,True,False,False,False
-2182,openai/gpt-oss-120b,What was the amount reported by GSK for Proceeds From Sales Of Investments Accounted For Using Equity Method in the year 2024?,0.0,0.7,0.0,,,True,False,True,False
-2075,llama-3.3-70b-versatile,What was GSK's Comprehensive Income for the year 2024?,2778000000.0,2731476377.05,2778000000.0,UNKNOWN,UNKNOWN,True,False,False,False
-2075,openai/gpt-oss-120b,What was GSK's Comprehensive Income for the year 2024?,2778000000.0,2689353000.0,2778000000.0,,,True,False,True,False
-689,llama-3.3-70b-versatile,What was the amount reported by AstraZeneca for Adjustments For Depreciation And Amortisation Expense And Impairment Loss Reversal Of Impairment Loss Recognised In Profit Or Loss in the year 2021?,6530000000.0,5722359594.81,6530000000.0,£2438M,6530000000.0,True,False,True,True
-689,openai/gpt-oss-120b,What was the amount reported by AstraZeneca for Adjustments For Depreciation And Amortisation Expense And Impairment Loss Reversal Of Impairment Loss Recognised In Profit Or Loss in the year 2021?,6530000000.0,6129610788.59,6530000000.0,,,True,False,True,False
-115,llama-3.3-70b-versatile,What was the Diluted Earnings Loss Per Share for AstraZeneca in the year 2020?,2.44,2.11,2.44,-$0.33,UNKNOWN,True,False,True,False
-115,openai/gpt-oss-120b,What was the Diluted Earnings Loss Per Share for AstraZeneca in the year 2020?,2.44,2.66,2.44,,,True,False,True,False
+1237,deepseek-ai/DeepSeek-R1-0528,What was the value of 'Gain Loss On Disposal Of Interest In Associate' for GSK in the year 2022?,0.0,-0.48,...,,,False,False,False,False
+1237,Qwen/Qwen3-235B-A22B-Instruct-2507,What was the value of 'Gain Loss On Disposal Of Interest In Associate' for GSK in the year 2022?,0.0,0.89,0.0,UNKNOWN,UNKNOWN,True,False,False,False
+1362,deepseek-ai/DeepSeek-R1-0528,What was the amount reported for 'Investment Accounted For Using Equity Method' by GSK in the year 2022?,74000000.0,67011431.29,...,,,False,False,False,False
+1362,Qwen/Qwen3-235B-A22B-Instruct-2507,What was the amount reported for 'Investment Accounted For Using Equity Method' by GSK in the year 2022?,74000000.0,70172582.88,74000000.0,UNKNOWN,UNKNOWN,True,False,False,False
+1745,deepseek-ai/DeepSeek-R1-0528,What was GSK's Other Operating Income Expense for the year 2023?,-363000000.0,-377242624.53,...,,,False,False,False,False
+1745,Qwen/Qwen3-235B-A22B-Instruct-2507,What was GSK's Other Operating Income Expense for the year 2023?,-363000000.0,-319445666.99,-363000000.0,UNKNOWN,UNKNOWN,True,False,False,False
+2153,deepseek-ai/DeepSeek-R1-0528,What was the amount of Cash Flows From Used In Operating Activities Continuing Operations reported by GSK in 2024?,6554000000.0,6668914419.26,...,,,False,False,False,False
+2153,Qwen/Qwen3-235B-A22B-Instruct-2507,What was the amount of Cash Flows From Used In Operating Activities Continuing Operations reported by GSK in 2024?,6554000000.0,5714265282.25,6554000000.0,UNKNOWN,UNKNOWN,True,False,False,False
+695,deepseek-ai/DeepSeek-R1-0528,What was the Contingent Consideration Fair Value Movement for AstraZeneca in the year 2023?,549000000.0,595747225.03,...,,,False,False,False,False
+695,Qwen/Qwen3-235B-A22B-Instruct-2507,What was the Contingent Consideration Fair Value Movement for AstraZeneca in the year 2023?,549000000.0,499890140.58,549000000.0,UNKNOWN,UNKNOWN,True,False,False,False
+227,deepseek-ai/DeepSeek-R1-0528,What were AstraZeneca's Noncurrent Liabilities for the year 2022?,33132000000.0,36575443457.72,,,,False,False,False,False
+227,Qwen/Qwen3-235B-A22B-Instruct-2507,What were AstraZeneca's Noncurrent Liabilities for the year 2022?,33132000000.0,28855071398.65,33132000000.0,UNKNOWN,UNKNOWN,True,False,False,False
+2182,deepseek-ai/DeepSeek-R1-0528,What was the amount reported by GSK for Proceeds From Sales Of Investments Accounted For Using Equity Method in the year 2024?,0.0,-0.85,,,,False,False,False,False
+2182,Qwen/Qwen3-235B-A22B-Instruct-2507,What was the amount reported by GSK for Proceeds From Sales Of Investments Accounted For Using Equity Method in the year 2024?,0.0,-0.25,0.0,UNKNOWN,UNKNOWN,True,False,False,False
+2075,deepseek-ai/DeepSeek-R1-0528,What was GSK's Comprehensive Income for the year 2024?,2778000000.0,2809474938.51,...,,,False,False,False,False
+2075,Qwen/Qwen3-235B-A22B-Instruct-2507,What was GSK's Comprehensive Income for the year 2024?,2778000000.0,2864155517.28,2778000000.0,UNKNOWN,UNKNOWN,True,False,False,False
+689,deepseek-ai/DeepSeek-R1-0528,What was the amount reported by AstraZeneca for Adjustments For Depreciation And Amortisation Expense And Impairment Loss Reversal Of Impairment Loss Recognised In Profit Or Loss in the year 2021?,6530000000.0,6810119037.92,,,,False,False,False,False
+689,Qwen/Qwen3-235B-A22B-Instruct-2507,What was the amount reported by AstraZeneca for Adjustments For Depreciation And Amortisation Expense And Impairment Loss Reversal Of Impairment Loss Recognised In Profit Or Loss in the year 2021?,6530000000.0,6092863775.58,6530000000.0,UNKNOWN,UNKNOWN,True,False,False,False
+115,deepseek-ai/DeepSeek-R1-0528,What was the Diluted Earnings Loss Per Share for AstraZeneca in the year 2020?,2.44,2.17,,,,False,False,False,False
+115,Qwen/Qwen3-235B-A22B-Instruct-2507,What was the Diluted Earnings Loss Per Share for AstraZeneca in the year 2020?,2.44,2.33,2.44,UNKNOWN,UNKNOWN,True,False,False,False

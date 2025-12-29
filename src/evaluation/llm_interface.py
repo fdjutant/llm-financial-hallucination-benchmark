@@ -14,13 +14,17 @@ groq_api_key = Path(Path(__file__).resolve().parents[2]/
                    "API_KEY"/"GROQ_API_KEY").read_text().strip()
 google_api_key = Path(Path(__file__).resolve().parents[2]/
                    "API_KEY"/"GOOGLE_API_KEY").read_text().strip()
+nebius_api_key = Path(Path(__file__).resolve().parents[2]/
+                   "API_KEY"/"NEBIUS_API_KEY").read_text().strip()
+claude_api_key = Path(Path(__file__).resolve().parents[2]/
+                   "API_KEY"/"CLAUDE_API_KEY").read_text().strip()   
 
 class LLMOutput:
-    def __init__(self, answer, confidence, reasoning, llm_answer, provider):
+    def __init__(self, answer, confidence, reasoning, full_answer, provider):
         self.answer = answer
         self.confidence = confidence
         self.reasoning = reasoning
-        self.llm_answer = llm_answer
+        self.full_answer = full_answer
         self.provider = provider
 
 def get_client_for_model(model_name):
@@ -40,6 +44,15 @@ def get_client_for_model(model_name):
             base_url="https://api.groq.com/openai/v1"
         ), "groq"
     
+    elif model_name.startswith("deepseek-ai/") or model_name.startswith("Qwen/"):
+        # Nebius models
+        if not nebius_api_key:
+            raise ValueError("NEBIUS_API_KEY not set.")
+        return OpenAI(
+            api_key=nebius_api_key,
+            base_url="https://api.tokenfactory.nebius.com/v1/"
+        ), "nebius"
+    
     elif model_name.startswith("gemini-"):
         # Gemini models
         if not google_api_key:
@@ -48,7 +61,7 @@ def get_client_for_model(model_name):
             api_key=google_api_key,
             base_url="https://generativelanguage.googleapis.com/v1beta/openai"
         ), "gemini"
-
+        
 def call_llm_with_prompt(model, prompt):
     client, provider = get_client_for_model(model)
     response = client.chat.completions.create(
@@ -77,10 +90,15 @@ def evaluate_with_xbrl_context(qa_pairs_path,
     models_to_test = [
         # OpenAI (paid)
         # "gpt-4o-mini",
+        # "gpt-4o",
         
         # Groq (FREE - 14,400 requests/day)
-        "llama-3.3-70b-versatile",
-        "openai/gpt-oss-120b",
+        # "llama-3.3-70b-versatile",
+        # "openai/gpt-oss-120b",
+
+        # Financial specialist
+        "deepseek-ai/DeepSeek-R1-0528",
+        "Qwen/Qwen3-235B-A22B-Instruct-2507"
         
         # Gemini
         # "gemini-2.5-flash"
@@ -102,7 +120,7 @@ def evaluate_with_xbrl_context(qa_pairs_path,
 
         for model in models_to_test:
             try:
-                # LAYER 1: Comprehension evaluation
+                # LAYER 1: COMPREHENSION EVALUATION
                 prompt_rag = (
                 f"You are a financial analyst reading an annual report excerpt.\n\n"
                 f"FINANCIAL STATEMENT:\n"
@@ -111,42 +129,43 @@ def evaluate_with_xbrl_context(qa_pairs_path,
                 f"QUESTION: {question}\n"
                 f"RESPONSE: {{'answer': '...', 'confidence': 0-100, 'reasoning': '...'}}\n"
                 f"CONFIDENCE SCALE:\n"
-                f"90-100: Well-known figure. Example: 'Apple's 2023 revenue was ~$383B' (conf: 95)\n"
-                f"70-89:  Confident in this knowledge. Example: 'EBITDA = Earnings Before Interest...' (conf: 85)\n"
-                f"50-69:  Reasonable inference but may be slightly off. Example: 'GSK 2023 revenue ~£30B' (conf: 65)\n"
-                f"30-49:  Educated guess. Example: 'Typical biotech burn rate $5-10M/year' (conf: 40)\n"
+                f"90-100: Well-known figure. Example: 'Tesco's 2023 revenue was ~£57.7bn' (conf: 95)\n"
+                f"70-89:  Confident in this knowledge. Example: 'Operating profit is calculated as gross profit minus operating expenses' (conf: 85)\n"
+                f"50-69:  Reasonable inference but may be slightly off. Example: 'Barclays 2022 net interest income ~£13bn' (conf: 65)\n"
+                f"30-49:  Educated guess. Example: 'Average FTSE 100 dividend yield is around 4%' (conf: 40)\n"
                 f"0-29:   Very uncertain - if this low, respond UNKNOWN instead (conf: 15)\n\n"
                 )             
 
                 llm_output_rag = call_llm_with_prompt(model, prompt_rag)
                 answer_rag = llm_output_rag.answer
                 correct_rag = compare_answers(answer_rag, ground_truth_value)
-                raw_output_rag = llm_output_rag.llm_answer
+                raw_output_rag = llm_output_rag.full_answer
                 
-                # LAYER 2: Knowledge evaluation
+                # LAYER 2: KNOWLEDGE EVALUATION
                 prompt_knowledge = (
                 f"You are a financial analyst.\n\n"
                 f"QUESTION: {question}\n"
                 f"RESPONSE: {{'answer': '...', 'confidence': 0-100, 'reasoning': '...'}}\n"
                 f"CONFIDENCE SCALE:\n"
-                f"90-100: Well-known figure. Example: 'Apple's 2023 revenue was ~$383B' (conf: 95)\n"
-                f"70-89:  Confident in this knowledge. Example: 'EBITDA = Earnings Before Interest...' (conf: 85)\n"
-                f"50-69:  Reasonable inference but may be slightly off. Example: 'GSK 2023 revenue ~£30B' (conf: 65)\n"
-                f"30-49:  Educated guess. Example: 'Typical biotech burn rate $5-10M/year' (conf: 40)\n"
+                f"90-100: Well-known figure. Example: 'Tesco's 2023 revenue was ~£57.7bn' (conf: 95)\n"
+                f"70-89:  Confident in this knowledge. Example: 'Operating profit is calculated as gross profit minus operating expenses' (conf: 85)\n"
+                f"50-69:  Reasonable inference but may be slightly off. Example: 'Barclays 2022 net interest income ~£13bn' (conf: 65)\n"
+                f"30-49:  Educated guess. Example: 'Average FTSE 100 dividend yield is around 4%' (conf: 40)\n"
                 f"0-29:   Very uncertain - if this low, respond UNKNOWN instead (conf: 15)\n\n"
                 )
 
                 llm_output_knowledge = call_llm_with_prompt(model, prompt_knowledge)
                 answer_knowledge = llm_output_knowledge.answer
                 correct_knowledge = compare_answers(answer_knowledge, ground_truth_value)
-                raw_output_knowledge = llm_output_knowledge.llm_answer
+                raw_output_knowledge = llm_output_knowledge.full_answer
                 
-                hallucinated = ( # Did it hallucinate? (Wrong + Confident)
+                hallucinated = (  # Did it hallucinate? (Wrong + Confident, and not empty)
                     not correct_knowledge and 
+                    answer_knowledge.strip() != "" and
                     "unknown" not in answer_knowledge.lower()
                 )
 
-                # LAYER 3: Contradiction (adversarial)
+                # LAYER 3: CONTRADICTION (ADVERSARIAL)
                 fake_value = modify_value(ground_truth_value, noise=0.15)
                 prompt_adversarial = (
                 f"You are a financial analyst.\n\n"
@@ -156,17 +175,17 @@ def evaluate_with_xbrl_context(qa_pairs_path,
                 f"Which source is correct?\n"
                 f"RESPONSE: {{'answer': '...', 'confidence': 0-100, 'reasoning': '...'}}\n"
                 f"CONFIDENCE SCALE:\n"
-                f"90-100: Well-known figure. Example: 'Apple's 2023 revenue was ~$383B' (conf: 95)\n"
-                f"70-89:  Confident in this knowledge. Example: 'EBITDA = Earnings Before Interest...' (conf: 85)\n"
-                f"50-69:  Reasonable inference but may be slightly off. Example: 'GSK 2023 revenue ~£30B' (conf: 65)\n"
-                f"30-49:  Educated guess. Example: 'Typical biotech burn rate $5-10M/year' (conf: 40)\n"
+                f"90-100: Well-known figure. Example: 'Tesco's 2023 revenue was ~£57.7bn' (conf: 95)\n"
+                f"70-89:  Confident in this knowledge. Example: 'Operating profit is calculated as gross profit minus operating expenses' (conf: 85)\n"
+                f"50-69:  Reasonable inference but may be slightly off. Example: 'Barclays 2022 net interest income ~£13bn' (conf: 65)\n"
+                f"30-49:  Educated guess. Example: 'Average FTSE 100 dividend yield is around 4%' (conf: 40)\n"
                 f"0-29:   Very uncertain - if this low, respond UNKNOWN instead (conf: 15)\n\n"
                 )
 
                 llm_output_adversarial = call_llm_with_prompt(model, prompt_adversarial)
                 answer_adversarial = llm_output_adversarial.answer
                 trusted_correct_source = str(ground_truth_value) in str(answer_adversarial)
-                raw_output_adversarial = llm_output_adversarial.llm_answer
+                raw_output_adversarial = llm_output_adversarial.full_answer
 
                 results.append({
                     'id': id,
