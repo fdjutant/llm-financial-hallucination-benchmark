@@ -1,0 +1,267 @@
+id,model,question,ground_truth,fake_value,raw_output_rag,raw_output_knowledge,raw_output_adversarial
+1237,deepseek-ai/DeepSeek-R1-0528,What was the value of 'Gain Loss On Disposal Of Interest In Associate' for GSK in the year 2022?,0.0,0.52,"<think>
+First, the user has given me a financial statement excerpt from the Consolidated Statement of Cash Flows for GSK in 2022. The specific line item is: ""Gain Loss On Disposal Of Interest In Associate: 0.0""
+
+The question is: ""What was the value of 'Gain Loss On Disposal Of Interest In Associate' for GSK in the year 2022?""
+
+I need to respond in valid JSON format only, as specified. The response should have three keys: 'answer', 'confidence', and 'reasoning'.
+
+The confidence scale is provided:
+
+- 90-100: Well-known figure
+
+- 70-89: Confident in this knowledge
+
+- 50-69: Reasonable inference but may be slightly off
+
+- 30-49: Educated guess
+
+- 0-29: Very uncertain – if below 30, respond 'UNKNOWN' instead.
+
+From the financial statement, the value is explicitly stated as ""0","<think>
+Alright, let's tackle this question. The user wants to know the value of 'Gain Loss On Disposal Of Interest In Associate' for GSK in 2022. 
+
+First, I need to recall what this term means. It's a financial line item that appears when a company sells its stake in an associate company. The gain or loss reflects the difference between the sale price and the carrying amount of that investment. 
+
+Now, thinking about GSK (GlaxoSmithKline), I remember they underwent a major restructuring in 2022. They demerged their consumer healthcare division into a new company called Haleon. This involved disposing of their interest in that associate. 
+
+I think the disposal resulted in a significant gain. I recall seeing financial reports where GSK recorded a large gain from this transaction. The exact figure is around £1.8 billion. 
+
+But I should double-check my confidence here. The Haleon demerger was a major event, so the figure","<think>
+Alright, let's tackle this problem step by step. So, the user is asking about the value of 'Gain Loss On Disposal Of Interest In Associate' for GSK in 2022. They've provided two sources: Source A says it's 0.0, and Source B says it's 0.52. The task is to figure out which source is correct and then respond in a specific JSON format with an answer, confidence level, and reasoning.
+
+First, I need to recall what this term means. ""Gain Loss On Disposal Of Interest In Associate"" refers to the profit or loss a company makes when it sells off its investment in an associate company. An associate is a company where the investor has significant influence, usually owning 20-50% of the voting stock. So, this figure would show up in the financial statements under income from associates or similar sections.
+
+Now, the challenge here is that I don't have direct access to GSK's"
+1237,Qwen/Qwen3-235B-A22B-Instruct-2507,What was the value of 'Gain Loss On Disposal Of Interest In Associate' for GSK in the year 2022?,0.0,-0.69,"{""answer"": ""0.0"", ""confidence"": 95, ""reasoning"": ""The financial statement explicitly states that the 'Gain Loss On Disposal Of Interest In Associate' for GSK in 2022 is 0.0. This is a direct figure from the reported data, making the answer certain and verifiable within the provided excerpt.""}","{""answer"": ""UNKNOWN"", ""confidence"": 15, ""reasoning"": ""The specific line item 'Gain Loss On Disposal Of Interest In Associate' for GSK in 2022 is not a commonly reported or widely publicized figure in standard financial summaries. Without access to GSK's detailed 2022 financial statements or specific disclosures regarding disposals of associates, it is not possible to provide an accurate value. Therefore, the confidence is very low, and the answer is marked as UNKNOWN.""}","{""answer"": ""UNKNOWN"", ""confidence"": 15, ""reasoning"": ""The provided sources give conflicting values for 'Gain Loss On Disposal Of Interest In Associate' (0.0 vs -0.69), but neither source is attributed to GSK's official financial statements for 2022, nor is the context of the sources clear. Without verifiable data from GSK's 2022 annual report or a reliable financial database, it is not possible to determine which value is accurate. Therefore, the correct answer cannot be determined with acceptable confidence.""}"
+1362,deepseek-ai/DeepSeek-R1-0528,What was the amount reported for 'Investment Accounted For Using Equity Method' by GSK in the year 2022?,74000000.0,79574243.43,"<think>
+Alright, let's tackle this problem step by step. So, I'm a financial analyst, and I've been given an excerpt from an annual report. Specifically, it's the Consolidated Balance Sheet for GSK in 2022. The only piece of data provided is ""Investment Accounted For Using Equity Method: 74000000.0"". The question asks for the amount reported for that specific investment in 2022.
+
+First, I need to understand what the ""Investment Accounted For Using Equity Method"" means. From my knowledge, this refers to investments where the company has significant influence but not full control, typically between 20% to 50% ownership. The equity method requires the investor to report their share of the investee's profits or losses in their financial statements.
+
+Looking at the data, the figure given is 74,000,000.0. Since the question is asking for the exact amount reported, and the statement provides that number, it seems straightforward. There's","<think>
+Alright, let's tackle this question. The user is asking about the 'Investment Accounted For Using Equity Method' for GSK in 2022. 
+
+First, I need to recall what the equity method is. It's an accounting technique used when a company has significant influence over another company, usually owning 20-50% of the voting stock. The investment is initially recorded at cost and adjusted for the investor's share of profits or losses.
+
+Now, thinking about GSK (GlaxoSmithKline), I remember they have various investments. Specifically, their joint venture with Pfizer forming Haleon comes to mind. Haleon was spun off in July 2022. Since GSK retained a minority stake (around 13%), this investment would be accounted for using the equity method post-spinoff.
+
+I think GSK's 2022 annual report would have this figure. From memory, the carrying value of their investment in Haleon was around £1.3 billion. But","<think>
+Alright, let's tackle this problem step by step. So, the user is asking about the amount reported for 'Investment Accounted For Using Equity Method' by GSK in 2022. They've provided two sources: Source A says 74,000,000.0 and Source B says 79,574,243.43. The task is to figure out which one is correct and then provide a JSON response with the answer, confidence level, and reasoning.
+
+First, I need to recall what the Equity Method in accounting entails. The Equity Method is used when a company has significant influence over another entity, typically when owning 20% to 50% of the voting stock. Under this method, the investment is initially recorded at cost and then adjusted periodically for the investor's share of the investee's profits or losses. Dividends received reduce the carrying amount of the investment. So, the reported value can fluctuate based on the investee's performance.
+
+Now, considering GSK ("
+1362,Qwen/Qwen3-235B-A22B-Instruct-2507,What was the amount reported for 'Investment Accounted For Using Equity Method' by GSK in the year 2022?,74000000.0,81701409.94,"{""answer"": ""74000000.0"", ""confidence"": 95, ""reasoning"": ""The financial statement explicitly states that the 'Investment Accounted For Using Equity Method' for GSK in 2022 is 74,000,000.0. This is a direct figure from the provided balance sheet, making the answer certain and verifiable within the context given.""}","{""answer"": ""UNKNOWN"", ""confidence"": 15, ""reasoning"": ""The specific amount reported for 'Investment Accounted For Using Equity Method' by GSK in 2022 is not a widely publicized or commonly referenced figure in standard financial summaries. Without direct access to GSK's 2022 financial statements or detailed disclosures, it is not possible to provide an accurate value with reasonable confidence. Therefore, the response is marked as UNKNOWN due to high uncertainty.""}","{""answer"": ""UNKNOWN"", ""confidence"": 15, ""reasoning"": ""The provided sources list two different values for 'Investment Accounted For Using Equity Method,' but neither is explicitly tied to GSK (GlaxoSmithKline) or the year 2022 in the query context. Without confirmation of which source corresponds to GSK's 2022 financial report, it is not possible to determine the correct amount with any reliability. The discrepancy between the two figures (74,000,000.00 and 81,701,409.94) further suggests potential confusion between entities or reporting periods. Given the lack of authoritative sourcing or contextual linkage to GSK's 2022 financial statements, the correct value cannot be confidently identified.""}"
+1745,deepseek-ai/DeepSeek-R1-0528,What was GSK's Other Operating Income Expense for the year 2023?,-363000000.0,-313085076.43,"<think>
+First, the user has given me a financial statement excerpt: ""CONSOLIDATED INCOME STATEMENT (GSK, 2023) Other Operating Income Expense: -363000000.0"". I need to answer the question: ""What was GSK's Other Operating Income Expense for the year 2023?""
+
+The response must be in valid JSON format with three keys: 'answer', 'confidence', and 'reasoning'.
+
+The confidence scale is provided:
+
+- 90-100: Well-known figure
+
+- 70-89: Confident in this knowledge
+
+- 50-69: Reasonable inference but may be slightly off
+
+- 30-49: Educated guess
+
+- 0-29: Very uncertain – respond 'UNKNOWN' if confidence is low
+
+In this case, the information is directly from the financial statement provided. The value is explicitly stated as -363000000.0. There's no ambiguity; it's a direct fact from the source.","<think>
+Alright, let's tackle this question. The user wants to know GSK's Other Operating Income Expense for 2023. First, I need to recall what this term means. Other Operating Income Expense typically includes non-core business activities, like gains or losses from asset sales, legal settlements, or restructuring costs. 
+
+I remember that GSK released their 2023 annual report. I think I saw that they had some significant one-time items. Let me try to recall the specifics. I believe there was a legal settlement related to Zantac litigation. That would fall under Other Operating Income/Expense. 
+
+Wait, did they report a gain or a loss? I think it was an expense because settlements usually cost money. But I'm not entirely sure about the exact figure. I think it was around £500 million, but I'm not confident. Maybe it was higher. 
+
+Also, restructuring costs might be part of it. GSK has been restructuring, so there could be expenses there","<think>
+Alright, let's tackle this problem step by step. So, I'm a financial analyst, and I need to determine GSK's Other Operating Income Expense for 2023 based on two conflicting sources. Source A says it's -363,000,000.0, and Source B says it's -313,085,076.43. The question is, which one is correct?
+
+First, I should recall that GSK is a large pharmaceutical company. Their financial statements are publicly available, but I don't have the exact report in front of me right now. However, as a financial analyst, I know that companies like GSK report their financials annually, and these figures should be consistent across reliable sources.
+
+Now, looking at the two sources. Source A provides a round number: -363 million. That seems a bit too neat. Financial statements usually have more precise figures, especially for a company as big as GSK. On the other hand, Source B gives a more detailed"
+1745,Qwen/Qwen3-235B-A22B-Instruct-2507,What was GSK's Other Operating Income Expense for the year 2023?,-363000000.0,-381704914.42,"{""answer"": ""-363000000.0"", ""confidence"": 95, ""reasoning"": ""The value for GSK's Other Operating Income Expense is explicitly stated in the provided financial statement as -363,000,000.0 for the year 2023. This is a direct figure from the reported data, making it highly reliable.""}","{""answer"": ""UNKNOWN"", ""confidence"": 15, ""reasoning"": ""GSK's Other Operating Income Expense for 2023 is not a widely reported or standard line item in public summaries, and specific breakdowns require access to the detailed income statement from GSK's 2023 annual report. Without direct access to the financial statements or a reliable source citing this exact figure, the value cannot be accurately determined. This is a very uncertain estimate, hence confidence is below 30.""}","{""answer"": ""UNKNOWN"", ""confidence"": 15, ""reasoning"": ""The provided sources list two different figures for GSK's Other Operating Income Expense in 2023, but there is no verifiable context or official source (such as a financial statement or regulatory filing) to confirm which one is accurate. Without access to GSK's official 2023 annual report or a reliable financial database, it is not possible to determine the correct value with any meaningful confidence. The discrepancy between the two figures suggests potential data inconsistencies, and thus the correct answer cannot be established from the given information.""}"
+2153,deepseek-ai/DeepSeek-R1-0528,What was the amount of Cash Flows From Used In Operating Activities Continuing Operations reported by GSK in 2024?,6554000000.0,7053066491.38,"<think>
+Alright, let's tackle this problem step by step. So, I'm a financial analyst, and I've been given an excerpt from an annual report. Specifically, it's the Consolidated Statement of Cash Flows for GSK in 2024. The key piece of information here is the line item: ""Cash Flows From Used In Operating Activities Continuing Operations: 6554000000.0"".
+
+The question asks for the amount reported for that specific line item. Since the data is directly provided in the financial statement excerpt, I can see that the amount is 6,554,000,000.0. 
+
+Now, considering the confidence scale provided, I need to assess how confident I am in this answer. The figure is explicitly stated in the financial statement, so there's no need for estimation or inference. It's a direct extraction of the given number. 
+
+Looking at the confidence scale examples:
+- 90-100 is for well-known figures, like publicly reported revenues.
+-","<think>
+Alright, let's tackle this question. The user is asking about GSK's Cash Flows From Used In Operating Activities Continuing Operations for 2024. 
+
+First, I need to recall if I have direct knowledge of GSK's 2024 financials. Since it's currently 2023, the 2024 reports aren't out yet. Financial reports for a given year are typically released early the following year. So, GSK's 2024 results would be published around February or March 2025. 
+
+Without access to future reports, the exact figure isn't available. Even if I had historical data, projecting forward would be speculative. The confidence level here would be very low because there's no official data. 
+
+Looking at the confidence scale, anything below 30 should be marked as UNKNOWN. Since the data isn't released, my confidence is near zero. The reasoning is straightforward: the information isn't available until the report is published. 
+
+Therefore, the response should","<think>
+Alright, let's tackle this problem step by step. So, I'm a financial analyst, and I've been given two different figures for GSK's Cash Flows From Used In Operating Activities Continuing Operations in 2024. Source A says it's 6,554,000,000, and Source B says it's 7,053,066,491.38. The question is asking which source is correct and what the actual amount was.
+
+First, I need to recall what this specific financial metric represents. Cash Flows From Operating Activities is a crucial part of the cash flow statement. It shows the cash generated or used by a company's regular business operations. For a company like GSK, which is a large pharmaceutical firm, this would include cash from selling products, paying suppliers, salaries, etc. It's a key indicator of the company's operational health.
+
+Now, looking at the two sources, they present significantly different numbers. Source A is a round number at 6"
+2153,Qwen/Qwen3-235B-A22B-Instruct-2507,What was the amount of Cash Flows From Used In Operating Activities Continuing Operations reported by GSK in 2024?,6554000000.0,7342432646.47,"{""answer"": ""6554000000.0"", ""confidence"": 95, ""reasoning"": ""The figure is explicitly stated in the provided financial statement excerpt, which reports 'Cash Flows From Used In Operating Activities Continuing Operations: 6554000000.0' for GSK in 2024. This is a direct data point from the source, making it highly reliable.""}","{""answer"": ""UNKNOWN"", ""confidence"": 15, ""reasoning"": ""GSK has not yet reported its full-year 2024 financial results as of the current date (April 2024), so the Cash Flows From Used In Operating Activities for Continuing Operations is not available. This information will be disclosed in their 2024 annual report, typically released in early 2025. Therefore, any figure would be speculative.""}","{""answer"": ""UNKNOWN"", ""confidence"": 20, ""reasoning"": ""The provided sources list two different values for Cash Flows From Used In Operating Activities Continuing Operations, but neither source is explicitly attributed to GSK (GlaxoSmithKline) or to the year 2024. Without confirmation that either source refers to GSK's 2024 financial report, it is not possible to determine which, if any, is correct. Therefore, the correct answer cannot be determined with sufficient confidence.""}"
+695,deepseek-ai/DeepSeek-R1-0528,What was the Contingent Consideration Fair Value Movement for AstraZeneca in the year 2023?,549000000.0,514190340.42,"<think>
+Alright, let's tackle this problem step by step. The user is asking about the Contingent Consideration Fair Value Movement for AstraZeneca in 2023. The information provided is from the Consolidated Statement of Cash Flows, specifically stating the value as 549,000,000.0.
+
+First, I need to verify that the data comes directly from the financial statement excerpt. The excerpt clearly lists the figure without any ambiguity. Since the question is straightforward and the answer is explicitly stated in the provided data, there's no need for interpretation or estimation. 
+
+Next, considering the confidence scale, this falls into the highest category. The figure is directly quoted from the official document, making it a well-known fact. Therefore, the confidence level should be between 90-100. I'll set it at 100 because there's no room for doubt—it's a direct extraction from the source.
+
+The reasoning is simple: the value is explicitly stated in the financial statement provided. There's","<think>
+Alright, let's tackle this question. The user is asking about the Contingent Consideration Fair Value Movement for AstraZeneca in 2023. 
+
+First, I need to recall what contingent consideration is. It's usually related to business acquisitions where part of the payment depends on future events, like meeting certain milestones. AstraZeneca has made several acquisitions, so this could be relevant.
+
+Next, I remember that AstraZeneca acquired Alexion in 2021. That deal likely included contingent considerations. But the question is about 2023 movements. I need to check their latest financial reports. 
+
+Looking at AstraZeneca's 2023 annual report, specifically the notes to the financial statements, there should be a section on contingent considerations. The movement would be the change in fair value from the start to the end of the year, including any new additions, re-measurements, and payments made.
+
+I recall that in their 2023 report, the contingent consideration liability decreased.","<think>
+Alright, let's tackle this problem step by step. So, the user is asking about the Contingent Consideration Fair Value Movement for AstraZeneca in 2023. They've provided two different figures from two sources: Source A says 549,000,000.0 and Source B says 514,190,340.42. The task is to figure out which one is correct and then provide a JSON response with the answer, confidence level, and reasoning.
+
+First, I need to recall what Contingent Consideration Fair Value Movement means. In financial terms, contingent consideration is part of a business acquisition where the buyer agrees to pay additional amounts to the seller if certain future events occur or conditions are met. The fair value movement refers to changes in the estimated value of these contingent payments over time, often due to reassessments based on new information or changes in circumstances.
+
+Now, since I'm a financial analyst, I should know that AstraZeneca is a major pharmaceutical company"
+695,Qwen/Qwen3-235B-A22B-Instruct-2507,What was the Contingent Consideration Fair Value Movement for AstraZeneca in the year 2023?,549000000.0,534999806.33,"{""answer"": ""549000000.0"", ""confidence"": 95, ""reasoning"": ""The figure is explicitly stated in the provided financial statement excerpt as 'Contingent Consideration Fair Value Movement: 549000000.0' for AstraZeneca in 2023. This is a direct disclosure from the company's consolidated statement of cash flows, making it a well-known and verifiable figure within the context of the document.""}","{""answer"": ""UNKNOWN"", ""confidence"": 15, ""reasoning"": ""The Contingent Consideration Fair Value Movement for AstraZeneca in 2023 is not a widely disclosed or commonly reported figure in public financial statements without specific access to detailed notes in their annual report. While AstraZeneca's major financial metrics like revenue and profit are readily available, contingent consideration adjustments—often related to acquisitions and subject to fair value changes—are typically buried in the notes to the financial statements and require detailed analysis. Without direct access to the 2023年报 or specific disclosures, this value cannot be accurately determined. Therefore, the confidence is too low to provide a reliable figure.""}","{""answer"": ""UNKNOWN"", ""confidence"": 15, ""reasoning"": ""The provided sources give different values for the Contingent Consideration Fair Value Movement, but there is no verifiable context or official disclosure confirming which source refers to AstraZeneca or whether this figure is publicly reported for 2023. Without access to AstraZeneca's official financial statements or a reliable financial database to confirm the exact figure, it is not possible to determine the correct value or validate either source. Therefore, the answer is UNKNOWN due to insufficient reliable evidence.""}"
+227,deepseek-ai/DeepSeek-R1-0528,What were AstraZeneca's Noncurrent Liabilities for the year 2022?,33132000000.0,34011855698.35,"<think>
+First, the user has given me a financial statement excerpt: ""CONSOLIDATED BALANCE SHEET (AstraZeneca, 2022) Noncurrent Liabilities: 33132000000.0"". I need to answer the question: ""What were AstraZeneca's Noncurrent Liabilities for the year 2022?""
+
+The response must be in valid JSON format with keys: 'answer', 'confidence', and 'reasoning'.
+
+The confidence scale is provided:
+
+- 90-100: Well-known figure
+
+- 70-89: Confident in this knowledge
+
+- 50-69: Reasonable inference but may be slightly off
+
+- 30-49: Educated guess
+
+- 0-29: Very uncertain – respond UNKNOWN if confidence is low
+
+In this case, the information is directly provided in the financial statement. The value is explicitly stated as ""33132000000.0"" for Noncurrent Liabilities in 2022. There","<think>
+Alright, let's tackle this question. The user wants to know AstraZeneca's Noncurrent Liabilities for 2022. First, I need to recall what noncurrent liabilities are. They're long-term financial obligations due beyond one year, like long-term debt, deferred tax liabilities, pension obligations, etc. 
+
+Next, I remember that AstraZeneca is a large pharmaceutical company, so their financials are publicly available. I think they release annual reports around February or March each year. For 2022, the report should be out by now. 
+
+I recall that in their 2022 annual report, the balance sheet showed noncurrent liabilities. Let me think... I believe the figure was around $36.5 billion. But I need to be precise. Wait, was it $36.5 billion or $35.8 billion? I think it was $36.5 billion. 
+
+Now, confidence level. Since this is a well-known company and the data is from their","<think>
+Alright, let's tackle this problem step by step. So, I'm a financial analyst, and I've been given two different figures for AstraZeneca's Noncurrent Liabilities for the year 2022. Source A says it's 33,132,000,000, and Source B says it's 34,011,855,698.35. My task is to figure out which one is correct and provide a response in JSON format with an answer, confidence level, and reasoning.
+
+First, I need to recall what Noncurrent Liabilities are. These are long-term financial obligations that a company owes, which are due beyond one year. Examples include long-term debt, deferred tax liabilities, and pension obligations. For a company like AstraZeneca, which is a large multinational pharmaceutical company, these figures can be substantial due to their extensive operations and investments.
+
+Now, looking at the two sources, there's a discrepancy of about 879 million between them. That's a significant difference"
+227,Qwen/Qwen3-235B-A22B-Instruct-2507,What were AstraZeneca's Noncurrent Liabilities for the year 2022?,33132000000.0,33735448197.37,"{""answer"": 33132000000.0, ""confidence"": 95, ""reasoning"": ""The provided financial statement explicitly states AstraZeneca's Noncurrent Liabilities for 2022 as 33,132,000,000.0, which is a direct figure from the balance sheet and requires no interpretation or estimation.""}","{""answer"": ""UNKNOWN"", ""confidence"": 15, ""reasoning"": ""AstraZeneca's Noncurrent Liabilities for 2022 are not readily available in public summaries without consulting the company's full annual report or financial statements. While such data exists, I cannot provide an accurate figure with confidence based on general knowledge or widely reported metrics. Therefore, the confidence is too low to provide a reliable number.""}","{""answer"": ""UNKNOWN"", ""confidence"": 15, ""reasoning"": ""The provided sources list two different figures for AstraZeneca's noncurrent liabilities in 2022, but without access to AstraZeneca's official 2022 financial statements or a verifiable citation from a reliable source such as the company's annual report (Form 20-F or 10-K), it is not possible to determine which value is accurate. Both figures are plausible in magnitude for a large pharmaceutical company like AstraZeneca, but the discrepancy suggests a need for authoritative confirmation. Given the lack of definitive source verification, the correct answer cannot be determined with acceptable confidence.""}"
+2182,deepseek-ai/DeepSeek-R1-0528,What was the amount reported by GSK for Proceeds From Sales Of Investments Accounted For Using Equity Method in the year 2024?,0.0,0.94,"<think>
+First, the user has given me a financial statement excerpt from GSK's 2024 Consolidated Balance Sheet. The specific line item is: ""Proceeds From Sales Of Investments Accounted For Using Equity Method: 0.0""
+
+The question is: ""What was the amount reported by GSK for Proceeds From Sales Of Investments Accounted For Using Equity Method in the year 2024?""
+
+I need to base my answer ONLY on the provided financial statement. There's no other information given, so I shouldn't infer or use external knowledge.
+
+The response must be in valid JSON format with three keys: 'answer', 'confidence', and 'reasoning'.
+
+- 'answer': This should be the amount reported. From the statement, it's clearly ""0.0"".
+
+- 'confidence': I have to assign a confidence level between 0 and 100 based on the scale provided.
+
+- 'reasoning': I need to explain why I'm confident or not.
+
+Now, assessing confidence:","<think>
+Alright, let's tackle this question. The user is asking about GSK's ""Proceeds From Sales Of Investments Accounted For Using Equity Method"" for 2024. 
+
+First, I need to recall if GSK has released their 2024 financial statements yet. Since we're currently in 2024, it's unlikely that the full-year report is available. Financial statements for a given year are typically published in the first quarter of the following year. So, GSK's 2024 report would probably come out around early 2025. 
+
+Next, I should consider if there's any interim report or preliminary announcement that might include this figure. However, even if such reports exist, they usually don't provide detailed line items like proceeds from specific types of investments. The equity method investments are usually disclosed in the notes to the financial statements, which are part of the annual report. 
+
+I also remember that GSK underwent a demerger with Haleon in 2022, which","<think>
+Alright, let's tackle this problem step by step. So, the user is asking about the amount reported by GSK for ""Proceeds From Sales Of Investments Accounted For Using Equity Method"" in 2024. They've provided two conflicting sources: Source A says it's 0.0, and Source B says it's 0.94. 
+
+First, I need to recall what this specific financial term means. The equity method is used when a company has significant influence over another company, usually owning 20-50% of the voting stock. Proceeds from sales of such investments would be the cash received when selling these equity investments. 
+
+Now, the question is which source is correct. Since I don't have access to GSK's actual financial statements for 2024, I have to rely on my knowledge as a financial analyst. I remember that GSK is a large pharmaceutical company. They do have various investments, but their main focus is on pharmaceuticals and vaccines."
+2182,Qwen/Qwen3-235B-A22B-Instruct-2507,What was the amount reported by GSK for Proceeds From Sales Of Investments Accounted For Using Equity Method in the year 2024?,0.0,-0.15,"{""answer"": ""0.0"", ""confidence"": 95, ""reasoning"": ""The financial statement explicitly states that the 'Proceeds From Sales Of Investments Accounted For Using Equity Method' is 0.0 for GSK in 2024. This is a direct figure from the reported data, making the answer certain and verifiable within the provided context.""}","{""answer"": ""UNKNOWN"", ""confidence"": 15, ""reasoning"": ""GSK has not publicly reported specific financial details for the year 2024, as that period has not yet occurred or concluded as of the current date (2024 is ongoing or not fully reported). Additionally, 'Proceeds From Sales Of Investments Accounted For Using Equity Method' is a highly specific line item that is not commonly disclosed in standard financial statements unless a significant transaction occurred. Without access to GSK's 2024 financial reports or press releases detailing such transactions, it is not possible to provide a reliable figure. Therefore, the confidence is very low, warranting an 'UNKNOWN' response.""}","{""answer"": ""UNKNOWN"", ""confidence"": 15, ""reasoning"": ""The provided sources give conflicting values (0.0 and -0.15), and there is no verifiable public data readily available to confirm which is accurate for GSK's 2024 financial reporting. Negative proceeds from sales of investments are unusual and may indicate a correction or error. Without access to GSK's official financial statements or a reliable financial database, it is not possible to determine the correct figure with confidence. Therefore, the answer is marked as UNKNOWN due to high uncertainty.""}"
+2075,deepseek-ai/DeepSeek-R1-0528,What was GSK's Comprehensive Income for the year 2024?,2778000000.0,2598612088.25,"<think>
+Alright, let's tackle this problem step by step. So, the user is asking about GSK's Comprehensive Income for the year 2024. The information provided is a financial statement excerpt from GSK's Consolidated Income Statement for 2024, which states that the Comprehensive Income is 2,778,000,000.0. 
+
+First, I need to make sure I understand what Comprehensive Income represents. In financial terms, Comprehensive Income includes all changes in equity during a period except those resulting from investments by owners and distributions to owners. It encompasses net income and other comprehensive income items like unrealized gains or losses on certain investments. 
+
+Looking at the data given, the figure is explicitly stated as 2778000000.0. Since this is directly from the financial statement, it's a straightforward piece of data. There's no need for calculations or interpretations here. The number is clearly presented, so the answer should be exactly that figure.
+
+Next, considering the confidence scale provided. The","<think>
+Alright, let's tackle this question. The user is asking for GSK's Comprehensive Income for 2024. First, I need to recall what Comprehensive Income includes. It's the total change in equity from non-owner sources, so it covers net income plus other comprehensive income items like foreign currency translation adjustments, unrealized gains/losses on securities, pension adjustments, etc.
+
+Now, considering the current date is early 2025, GSK's 2024 financial results should be available. Companies usually release their annual reports a few months after the fiscal year ends. GSK's fiscal year ends in December, so their 2024 report would be published around February or March 2025. Since it's past that timeframe, the data should be public.
+
+I remember that GSK reported their full-year 2024 results. Let me think about the key figures. Their comprehensive income would be in the consolidated statement of comprehensive income within their annual report. I recall that GSK had","<think>
+Alright, let's tackle this problem step by step. So, the user is asking about GSK's Comprehensive Income for the year 2024, and they've provided two different sources with conflicting numbers. Source A states it's 2,778,000,000.0, while Source B says it's 2,598,612,088.25. My task is to determine which source is correct and provide a response in a specific JSON format that includes the answer, confidence level, and reasoning.
+
+First, I need to recall what Comprehensive Income represents. Comprehensive Income includes all changes in equity during a period except those resulting from investments by owners and distributions to owners. It encompasses net income and other comprehensive income items like unrealized gains or losses on certain investments, foreign currency translation adjustments, and pension plan gains or losses. 
+
+Now, considering the two sources, the discrepancy between them is quite significant—nearly 180 million. This makes me wonder why there's such a difference."
+2075,Qwen/Qwen3-235B-A22B-Instruct-2507,What was GSK's Comprehensive Income for the year 2024?,2778000000.0,2842059065.09,"{""answer"": ""2778000000.0"", ""confidence"": 95, ""reasoning"": ""The financial statement explicitly states that GSK's Comprehensive Income for 2024 is 2,778,000,000.0. This is a direct figure from the provided income statement, making it a well-known and certain value within the context of the document.""}","{""answer"": ""UNKNOWN"", ""confidence"": 15, ""reasoning"": ""GSK's Comprehensive Income for the year 2024 is not yet available, as the 2024 financial year has not concluded and the company has not released those results. Comprehensive Income includes net income and other comprehensive income items such as foreign currency translation adjustments and unrealized gains or losses on investments, which are disclosed in the consolidated financial statements. Since the data is not public, any figure would be speculative.""}","{""answer"": ""UNKNOWN"", ""confidence"": 15, ""reasoning"": ""The provided sources list two different figures for Comprehensive Income (2778000000.0 and 2842059065.09), but there is no contextual information confirming which, if either, corresponds to GSK or the year 2024. Without verifiable data linking these numbers to GSK's official financial statements for 2024, the correct source cannot be determined. The discrepancy may stem from different accounting standards, rounding, or entirely different companies. Therefore, the answer is highly uncertain.""}"
+689,deepseek-ai/DeepSeek-R1-0528,What was the amount reported by AstraZeneca for Adjustments For Depreciation And Amortisation Expense And Impairment Loss Reversal Of Impairment Loss Recognised In Profit Or Loss in the year 2021?,6530000000.0,6617556167.64,"<think>
+First, the user has given me a financial statement excerpt from AstraZeneca's 2021 Consolidated Income Statement. The specific line item is: ""Adjustments For Depreciation And Amortisation Expense And Impairment Loss Reversal Of Impairment Loss Recognised In Profit Or Loss: 6530000000.0""
+
+The question is: ""What was the amount reported by AstraZeneca for Adjustments For Depreciation And Amortisation Expense And Impairment Loss Reversal Of Impairment Loss Recognised In Profit Or Loss in the year 2021?""
+
+I need to base my answer ONLY on the provided financial statement. I'm not supposed to use any external knowledge.
+
+The amount given is 6530000000.0. That looks like 6,530,000,000. I should present it in a standard numerical format, probably as a number without commas for JSON.
+
+Now, the response format must be valid JSON with three keys: 'answer', '","<think>
+Alright, let's tackle this question. The user is asking about AstraZeneca's Adjustments For Depreciation And Amortisation Expense And Impairment Loss Reversal Of Impairment Loss Recognised In Profit Or Loss for 2021. 
+
+First, I need to recall if I have this specific figure in my knowledge base. As a financial analyst, I remember that AstraZeneca's 2021 annual report is a key source. Depreciation and amortization are standard line items, but the exact phrasing here is quite detailed. 
+
+I think the number was around $4.1 billion. Let me double-check my memory. Yes, in their financial statements, under cash flow from operating activities, they list adjustments for depreciation, amortization, and impairment. For 2021, it was $4,103 million. 
+
+Now, about confidence. This is a well-documented figure from their official report. Since it's a major company's annual financial statement, the data is","<think>
+Alright, let's tackle this problem step by step. So, I'm a financial analyst, and I need to figure out the correct amount reported by AstraZeneca for ""Adjustments For Depreciation And Amortisation Expense And Impairment Loss Reversal Of Impairment Loss Recognised In Profit Or Loss"" in 2021. There are two sources provided: Source A says 6,530,000,000.0 and Source B says 6,617,556,167.64. 
+
+First, I need to recall what this specific financial metric represents. It's essentially the sum of depreciation, amortization expenses, impairment losses, and reversals of impairment losses that are recognized in the profit or loss statement. This is a non-cash adjustment that affects the company's net income but doesn't involve actual cash flow. 
+
+Now, the question is which source is correct. Since I don't have direct access to AstraZeneca's financial statements right now, I have"
+689,Qwen/Qwen3-235B-A22B-Instruct-2507,What was the amount reported by AstraZeneca for Adjustments For Depreciation And Amortisation Expense And Impairment Loss Reversal Of Impairment Loss Recognised In Profit Or Loss in the year 2021?,6530000000.0,5583760169.01,"{""answer"": ""6530000000.0"", ""confidence"": 95, ""reasoning"": ""The figure is explicitly stated in the financial statement provided, with no ambiguity. It is a direct data point from AstraZeneca's 2021 Consolidated Income Statement, making it a well-known and verifiable figure within the context given.""}","{""answer"": ""UNKNOWN"", ""confidence"": 15, ""reasoning"": ""The specific line item 'Adjustments For Depreciation And Amortisation Expense And Impairement Loss Reversal Of Impairment Loss Recognised In Profit Or Loss' for AstraZeneca in 2021 is not a standard or commonly reported figure in public summaries, and the exact value is not readily available in my knowledge base. This level of detail typically requires access to the company's full financial statements, such as the cash flow statement or notes to the accounts, which are not accessible in this context. Therefore, providing a number would be highly speculative.""}","{""answer"": ""UNKNOWN"", ""confidence"": 15, ""reasoning"": ""The provided sources list two different figures for 'Adjustments For Depreciation And Amortisation Expense And Impairment Loss Reversal Of Impairment Loss Recognised In Profit Or Loss', but there is no confirmation of which one corresponds to AstraZeneca or the year 2021. Without explicit attribution of the sources to AstraZeneca's 2021 financial statements, it is not possible to determine the correct amount. Therefore, the response is marked as UNKNOWN due to high uncertainty.""}"
+115,deepseek-ai/DeepSeek-R1-0528,What was the Diluted Earnings Loss Per Share for AstraZeneca in the year 2020?,2.44,2.61,"<think>
+First, the user has given me a financial statement excerpt from AstraZeneca's 2020 consolidated income statement. It says: ""Diluted Earnings Loss Per Share: 2.44"". The question is: ""What was the Diluted Earnings Loss Per Share for AstraZeneca in the year 2020?""
+
+I need to base my answer ONLY on the provided financial statement. I shouldn't use any external knowledge. The statement directly gives the figure as 2.44.
+
+Now, I have to output in a specific JSON format: {'answer': '...', 'confidence': 0-100, 'reasoning': '...'}
+
+The confidence scale is provided:
+
+- 90-100: Well-known figure. Example given is about Tesco's revenue.
+
+- 70-89: Confident in this knowledge.
+
+- 50-69: Reasonable inference.
+
+- 30-49: Educated guess.
+
+- 0-29: Very uncertain; if below","<think>
+Alright, let's tackle this question. The user wants to know AstraZeneca's Diluted Earnings Loss Per Share for 2020. First, I need to recall if I have that specific figure in my knowledge base. 
+
+I remember that AstraZeneca is a large pharmaceutical company, and their financials are publicly available. For 2020, they reported a loss per share. I think it was around $0.10. But I need to be precise. Let me think about their earnings reports from that year. 
+
+In 2020, AstraZeneca had significant R&D expenses, especially related to COVID-19 vaccine development. This might have impacted their earnings. I recall that their diluted EPS was negative, indicating a loss. The exact figure I have in mind is -$0.10. 
+
+Now, considering the confidence scale: I'm fairly sure about this because AstraZeneca's financial reports are widely covered. However, since I'm relying on memory without looking up","<think>
+Alright, let's tackle this problem step by step. So, the user is asking about AstraZeneca's Diluted Earnings Loss Per Share for 2020. They've provided two different figures from two sources: Source A says 2.44, and Source B says 2.61. My task is to figure out which one is correct and provide a response in a specific JSON format.
+
+First, I need to recall what Diluted Earnings Per Share (EPS) represents. It's a key financial metric that shows a company's profitability per share, accounting for all convertible securities like options, warrants, or convertible debt. A loss per share indicates the company wasn't profitable that year.
+
+Now, thinking about AstraZeneca in 2020. I remember that AstraZeneca is a major pharmaceutical company. In 2020, they were heavily involved in COVID-19 vaccine development, which might have impacted their financials. However, I'm not entirely sure about the exact diluted EPS loss"
+115,Qwen/Qwen3-235B-A22B-Instruct-2507,What was the Diluted Earnings Loss Per Share for AstraZeneca in the year 2020?,2.44,2.51,"{""answer"": ""2.44"", ""confidence"": 95, ""reasoning"": ""The financial statement explicitly states that the Diluted Earnings Loss Per Share for AstraZeneca in 2020 was 2.44. This is a direct figure from the provided income statement, making it a well-known and specific data point from the document.""}","{""answer"": ""UNKNOWN"", ""confidence"": 15, ""reasoning"": ""I do not have access to AstraZeneca's specific financial data for 2020, including its Diluted Earnings Loss Per Share. This would require consulting the company's annual report or financial statements from that year, which is outside the scope of my current knowledge base.""}","{""answer"": ""UNKNOWN"", ""confidence"": 15, ""reasoning"": ""The provided sources list different values for Diluted Earnings Loss Per Share (2.44 and 2.51), but AstraZeneca did not report a loss in 2020; instead, it reported a profit. Therefore, both sources appear to be incorrect or mislabeled, as AstraZeneca's Diluted Earnings Per Share (not loss) for 2020 was positive. Given the discrepancy and the fact that the correct figure is not among the options, the confidence is very low, leading to an UNKNOWN response.""}"

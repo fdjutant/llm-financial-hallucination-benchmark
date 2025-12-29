@@ -4,18 +4,22 @@ id,model,raw_output_rag,raw_output_knowledge,raw_output_adversarial,error
   ""confidence"": 99,
   ""reasoning"": ""The consolidated statement of cash flows for GSK in 2022 explicitly lists 'Gain Loss On Disposal Of Interest In Associate' as 0.0, indicating no gain or loss was recorded for that item.""
 }",,"{
-  ""answer"": ""0.95"",
-  ""confidence"":",
+  ""source"": ""UNKNOWN"",
+  ""answer"": ""The exact value of 'Gain Loss On Disposal Of Interest In Associate' for GSK in 2022 cannot be definitively determined from the provided information."",
+  ""confidence"": 30,
+  ""reasoning"": ""The",
 1362,openai/gpt-oss-120b,"{
   ""answer"": ""74,000,000.0"",
   ""confidence"": 99,
   ""reasoning"": ""The consolidated balance sheet for GSK in 2022 explicitly lists 'Investment Accounted For Using Equity Method' as 74000000.0, which directly answers the question.""
-}",{,,
+}",{,"{
+  ""source"": ""B"",
+  ""answer"": ""75",
 1745,openai/gpt-oss-120b,"{
   ""answer"": ""-363000000.0"",
   ""confidence"": 98,
   ""reasoning"": ""The consolidated income statement for GSK in 2023 lists 'Other Operating Income Expense' as -363000000.0, directly providing the requested figure.""
-}",,"{'answer': '-379,570,007.35 (Source B)', 'confidence': 78, 'reasoning': 'Source B provides a more precise figure with two decimal places, suggesting it is derived from the",
+}",,,
 2153,openai/gpt-oss-120b,"{
   ""answer"": ""6,554,000,000"",
   ""confidence"": 99,
@@ -25,7 +29,7 @@ id,model,raw_output_rag,raw_output_knowledge,raw_output_adversarial,error
 695,openai/gpt-oss-120b,"{
   ""answer"": ""549,000,000.0"",
   ""confidence"": 99,
-  ""reasoning"": ""The consolidated statement of cash flows for AstraZeneca in 2023 explicitly lists the Contingent Consideration Fair Value Movement as 549000000.0.""
+  ""reasoning"": ""The consolidated statement of cash flows for AstraZeneca in 2023 explicitly lists the Contingent Consideration Fair Value Movement as 549000000.0, which directly answers the question.""
 }","{
   ""answer"": ""The Contingent Consideration Fair Value Movement for AstraZeneca in 2023 is not available in the provided financial statement excerpt."",
   ""confidence"": 20,
@@ -35,10 +39,7 @@ id,model,raw_output_rag,raw_output_knowledge,raw_output_adversarial,error
   ""answer"": ""0.0"",
   ""confidence"": 100,
   ""reasoning"": ""The consolidated balance sheet for GSK in 2024 explicitly lists 'Proceeds From Sales Of Investments Accounted For Using Equity Method' as 0.0, indicating no proceeds were reported for this item.""
-}","{
-  ""answer"": null,
-  ""confidence"": 20,
-  ""reasoning"": ""The provided prompt does not include the specific financial statement data for GSK's 2024 Proceeds From Sales Of Investments Accounted For Using Equity Method. Without access to the actual report or external",,
+}","{""answer"":""The specific amount for GSK's \""Proceeds From Sales Of Investments Accounted For Using Equity Method\"" in 2024 is not available in the provided information."", ""confidence"":15, ""reasoning"":""The user query requires a precise figure from GSK's 2024 financial statements. Since the financial statement data was not included in the prompt and I",,
 2075,openai/gpt-oss-120b,"{
   ""answer"": ""2778000000.0"",
   ""confidence"": 95,
@@ -50,5 +51,7 @@ id,model,raw_output_rag,raw_output_knowledge,raw_output_adversarial,error
 689,openai/gpt-oss-120b,"{
   ""answer"": ""6,530,000,000.0"",
   ""confidence"": 99,
-  ""reasoning"": ""The consolidated income statement for AstraZeneca",,,
+  ""reasoning"": ""The consolidated income statement for AstraZeneca 202",,"{
+  ""source"": ""UNKNOWN"",
+  ""answer"": ""The amount reported by Astra",
 115,openai/gpt-oss-120b,"{""answer"":""2.44"",""confidence"":95,""reasoning"":""The consolidated income statement for AstraZeneca in 2020 explicitly lists the Diluted Earnings Loss Per Share as 2.44, which directly answers the question.""}",,,

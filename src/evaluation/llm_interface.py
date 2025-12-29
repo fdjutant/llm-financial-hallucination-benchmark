@@ -138,9 +138,8 @@ def evaluate_with_xbrl_context(qa_pairs_path,
 
                 llm_output_rag = call_llm_with_prompt(model, prompt_rag)
                 answer_rag = llm_output_rag.answer
-                correct_rag = compare_answers(answer_rag, ground_truth_value)
                 raw_output_rag = llm_output_rag.full_answer
-                
+
                 # LAYER 2: KNOWLEDGE EVALUATION
                 prompt_knowledge = (
                 f"You are a financial analyst.\n\n"
@@ -156,14 +155,7 @@ def evaluate_with_xbrl_context(qa_pairs_path,
 
                 llm_output_knowledge = call_llm_with_prompt(model, prompt_knowledge)
                 answer_knowledge = llm_output_knowledge.answer
-                correct_knowledge = compare_answers(answer_knowledge, ground_truth_value)
                 raw_output_knowledge = llm_output_knowledge.full_answer
-                
-                hallucinated = (  # Did it hallucinate? (Wrong + Confident, and not empty)
-                    not correct_knowledge and 
-                    answer_knowledge.strip() != "" and
-                    "unknown" not in answer_knowledge.lower()
-                )
 
                 # LAYER 3: CONTRADICTION (ADVERSARIAL)
                 fake_value = modify_value(ground_truth_value, noise=0.15)
@@ -184,7 +176,6 @@ def evaluate_with_xbrl_context(qa_pairs_path,
 
                 llm_output_adversarial = call_llm_with_prompt(model, prompt_adversarial)
                 answer_adversarial = llm_output_adversarial.answer
-                trusted_correct_source = str(ground_truth_value) in str(answer_adversarial)
                 raw_output_adversarial = llm_output_adversarial.full_answer
 
                 results.append({
@@ -195,11 +186,7 @@ def evaluate_with_xbrl_context(qa_pairs_path,
                     'fake_value': fake_value,
                     'answer_rag': answer_rag,
                     'answer_knowledge': answer_knowledge,
-                    'answer_adversarial': answer_adversarial,
-                    'rag_accuracy': correct_rag,
-                    'knowledge_accuracy': correct_knowledge,
-                    'hallucinated': hallucinated,
-                    'adversarial_correct': trusted_correct_source
+                    'answer_adversarial': answer_adversarial
                 })
 
                 all_llm_outputs.append({

@@ -1,0 +1,81 @@
+id,prompt_adv,answer_adversarial,adversarial_correct,reasoning_adversarial
+1237,"You are a financial analyst.
+
+Source A: Gain Loss On Disposal Of Interest In Associate = 0.0
+Source B: Gain Loss On Disposal Of Interest In Associate = -0.49
+Question: What was the value of 'Gain Loss On Disposal Of Interest In Associate' for GSK in the year 2022?
+Which source is correct?
+RESPONSE: {'answer': '...', 'confidence': 0-100, 'reasoning': '...'}
+",0.0,True,Insufficient information to determine the correct source as there is no additional context or data provided about GSK's financial performance in 2022.
+1362,"You are a financial analyst.
+
+Source A: Investment Accounted For Using Equity Method = 74000000.0
+Source B: Investment Accounted For Using Equity Method = 64243726.67
+Question: What was the amount reported for 'Investment Accounted For Using Equity Method' by GSK in the year 2022?
+Which source is correct?
+RESPONSE: {'answer': '...', 'confidence': 0-100, 'reasoning': '...'}
+",UNKNOWN,False,"Insufficient information to determine which source is correct. Both sources provide different values for 'Investment Accounted For Using Equity Method', but there is no additional context or data to verify which one is accurate for GSK in the year 2022."
+1745,"You are a financial analyst.
+
+Source A: Other Operating Income Expense = -363000000.0
+Source B: Other Operating Income Expense = -328414182.95
+Question: What was GSK's Other Operating Income Expense for the year 2023?
+Which source is correct?
+RESPONSE: {'answer': '...', 'confidence': 0-100, 'reasoning': '...'}
+",Unknown,False,"Both sources provide different values for Other Operating Income Expense, and there is no additional information to verify which one is correct."
+2153,"You are a financial analyst.
+
+Source A: Cash Flows From Used In Operating Activities Continuing Operations = 6554000000.0
+Source B: Cash Flows From Used In Operating Activities Continuing Operations = 6357820161.78
+Question: What was the amount of Cash Flows From Used In Operating Activities Continuing Operations reported by GSK in 2024?
+Which source is correct?
+RESPONSE: {'answer': '...', 'confidence': 0-100, 'reasoning': '...'}
+",Unknown,False,"Both sources provide different values for Cash Flows From Used In Operating Activities Continuing Operations, and there is no additional information to verify which one is correct."
+695,"You are a financial analyst.
+
+Source A: Contingent Consideration Fair Value Movement = 549000000.0
+Source B: Contingent Consideration Fair Value Movement = 506811335.41
+Question: What was the Contingent Consideration Fair Value Movement for AstraZeneca in the year 2023?
+Which source is correct?
+RESPONSE: {'answer': '...', 'confidence': 0-100, 'reasoning': '...'}
+",UNKNOWN,False,Insufficient information to determine the correct source as there is no additional context or data provided about AstraZeneca or the year 2023 to verify the Contingent Consideration Fair Value Movement.
+227,"You are a financial analyst.
+
+Source A: Noncurrent Liabilities = 33132000000.0
+Source B: Noncurrent Liabilities = 34048254139.37
+Question: What were AstraZeneca's Noncurrent Liabilities for the year 2022?
+Which source is correct?
+RESPONSE: {'answer': '...', 'confidence': 0-100, 'reasoning': '...'}
+",34048254139.37,False,"Source B is chosen because it provides a more precise figure with decimal places, suggesting a higher level of accuracy in the reporting of AstraZenecas Noncurrent Liabilities for the year 2022."
+2182,"You are a financial analyst.
+
+Source A: Proceeds From Sales Of Investments Accounted For Using Equity Method = 0.0
+Source B: Proceeds From Sales Of Investments Accounted For Using Equity Method = -0.43
+Question: What was the amount reported by GSK for Proceeds From Sales Of Investments Accounted For Using Equity Method in the year 2024?
+Which source is correct?
+RESPONSE: {'answer': '...', 'confidence': 0-100, 'reasoning': '...'}
+",0.0,True,"Insufficient information to determine the correct source, as there is no additional context or data provided about GSK or the year 2024. However, based on the values given, Source A reports a value of 0.0, while Source B reports a negative value. Without further context, it is impossible to determine which source is correct."
+2075,"You are a financial analyst.
+
+Source A: Comprehensive Income = 2778000000.0
+Source B: Comprehensive Income = 2950171413.37
+Question: What was GSK's Comprehensive Income for the year 2024?
+Which source is correct?
+RESPONSE: {'answer': '...', 'confidence': 0-100, 'reasoning': '...'}
+",Insufficient information to determine,False,"Both Source A and Source B provide different values for Comprehensive Income, and there is no additional information provided to verify which source is correct."
+689,"You are a financial analyst.
+
+Source A: Adjustments For Depreciation And Amortisation Expense And Impairment Loss Reversal Of Impairment Loss Recognised In Profit Or Loss = 6530000000.0
+Source B: Adjustments For Depreciation And Amortisation Expense And Impairment Loss Reversal Of Impairment Loss Recognised In Profit Or Loss = 6036401438.96
+Question: What was the amount reported by AstraZeneca for Adjustments For Depreciation And Amortisation Expense And Impairment Loss Reversal Of Impairment Loss Recognised In Profit Or Loss in the year 2021?
+Which source is correct?
+RESPONSE: {'answer': '...', 'confidence': 0-100, 'reasoning': '...'}
+",6530000000.0,True,"The question asks which source is correct, but without additional information, it's impossible to determine the accuracy of the sources. However, based on the prompt, I must choose between Source A and Source B. Source A is selected, but the confidence level is 50, indicating a lack of certainty due to the absence of corroborating evidence or context."
+115,"You are a financial analyst.
+
+Source A: Diluted Earnings Loss Per Share = 2.44
+Source B: Diluted Earnings Loss Per Share = 2.18
+Question: What was the Diluted Earnings Loss Per Share for AstraZeneca in the year 2020?
+Which source is correct?
+RESPONSE: {'answer': '...', 'confidence': 0-100, 'reasoning': '...'}
+",2.44 or 2.18,True,Insufficient information to determine the correct source as there is no additional data or context provided to verify the accuracy of either Source A or Source B.

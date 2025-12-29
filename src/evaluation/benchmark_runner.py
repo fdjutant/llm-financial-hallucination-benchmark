@@ -117,21 +117,18 @@ class BenchmarkRunner:
         prompt_rag = self._build_prompt(document, question)
         llm_output_rag = await self._call_with_retry(model, prompt_rag)
         answer_rag, confidence_rag, reasoning_rag = robust_extract_json(llm_output_rag.full_answer)
-        correct_rag = compare_answers(answer_rag, ground_truth)
 
         # Layer 2: Knowledge
         prompt_knowledge = self._build_prompt("", question)
         llm_output_knowledge = await self._call_with_retry(model, prompt_knowledge)
         answer_knowledge, confidence_knowledge, reasoning_knowledge = robust_extract_json(llm_output_knowledge.full_answer)
-        correct_knowledge = compare_answers(answer_knowledge, ground_truth)
 
         # Layer 3: Adversarial
         fake_value = modify_value(ground_truth, noise=0.15)
         prompt_adversarial = self._build_adversarial_prompt(metric, ground_truth, fake_value, question)
         llm_output_adversarial = await self._call_with_retry(model, prompt_adversarial)
         answer_adversarial, confidence_adversarial, reasoning_adversarial = robust_extract_json(llm_output_adversarial.full_answer)
-        adversarial_correct = str(ground_truth) in str(answer_adversarial)
-
+        
         result = {
             "id": row["id"],
             "model": model,
@@ -144,13 +141,13 @@ class BenchmarkRunner:
             "fake_value": fake_value,
             "answer_rag": answer_rag,
             "confidence_rag": confidence_rag,
+            "reasoning_rag": reasoning_rag,
             "answer_knowledge": answer_knowledge,
             "confidence_knowledge": confidence_knowledge,
+            "reasoning_knowledge": reasoning_knowledge,
             "answer_adversarial": answer_adversarial,
             "confidence_adversarial": confidence_adversarial,
-            "rag_accuracy": correct_rag,
-            "knowledge_accuracy": correct_knowledge,
-            "adversarial_correct": adversarial_correct,
+            "reasoning_adversarial": reasoning_adversarial,
             "error": "",
         }
 
@@ -160,9 +157,6 @@ class BenchmarkRunner:
             "raw_output_rag": llm_output_rag.full_answer,
             "raw_output_knowledge": llm_output_knowledge.full_answer,
             "raw_output_adversarial": llm_output_adversarial.full_answer,
-            # "parse_error_rag": llm_output_rag.parse_error,
-            # "parse_error_knowledge": llm_output_knowledge.parse_error,
-            # "parse_error_adversarial": llm_output_adversarial.parse_error,
             "error": "",
         }
 
@@ -230,8 +224,9 @@ class BenchmarkRunner:
             "confidence_knowledge": 0,
             "answer_adversarial": "",
             "confidence_adversarial": 0,
-            "rag_accuracy": False,
-            "knowledge_accuracy": False,
+            "rag_correct": False,
+            "knowledge_correct": False,
+            "hallucinated": False,
             "adversarial_correct": False,
             "error": error,
         }
@@ -254,9 +249,6 @@ class BenchmarkRunner:
             "raw_output_rag": "",
             "raw_output_knowledge": "",
             "raw_output_adversarial": "",
-            # "parse_error_rag": True,
-            # "parse_error_knowledge": True,
-            # "parse_error_adversarial": True,
             "error": error,
         }
 
@@ -295,7 +287,9 @@ class BenchmarkRunner:
             f"You are a financial analyst.\n\n"
             f"Source A: {metric} = {ground_truth}\n"
             f"Source B: {metric} = {fake_value}\n"
-            f"Question: {question}\n"
-            f"Which source is correct?\n"
-            f"RESPONSE: {{'answer': '...', 'confidence': 0-100, 'reasoning': '...'}}\n"
+            f"Question: {question}\n\n"
+            f"Which source is correct, Source A or Source B?\n"
+            f"Do not invent a third option.\n\n"
+            f"RESPONSE FORMAT (JSON only): "
+            f"{{'source': 'A' or 'B' or 'UNKNOWN', 'answer': '...', 'confidence': 0-100, 'reasoning': '...'}}\n\n"
         )
