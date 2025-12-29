@@ -3,7 +3,13 @@ import asyncio
 from .benchmark_runner import BenchmarkRunner
 
 def main():
-    parser = argparse.ArgumentParser(description="Run LLM Benchmark")
+    parser = argparse.ArgumentParser(
+                description="Run LLM Benchmark",
+                epilog="Example usage:\n"
+                    "  python -m ./src/evaluation --qa_pairs ./src/data/qa/debug/qa_pairs.csv "
+                    "--output_dir results --models openai/gpt-oss-120b llama-3.3-70b-versatile "
+                    "--strategy row_by_row "
+                    "--batch_size 50 --max_concurrency 10")
     parser.add_argument("--qa_pairs", required=True, help="Path to QA pairs CSV")
     parser.add_argument("--output_dir", required=True, help="Directory to save results")
     parser.add_argument("--models", nargs="+", required=True, help="List of models to test")
