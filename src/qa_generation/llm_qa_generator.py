@@ -39,7 +39,7 @@ def generate_qa_openai(input_csv_path, output_csv_path,
         metric = row.get('canonical_fact_name', 'Unknown Metric')
         value = row.get('ground_truth_value', 'N/A')
 
-        # 4. The Optimized Prompt (9/10 Quality)
+        # 4. The Prompt 
         prompt = (
             f"You are creating a financial benchmark dataset.\n"
             f"Context: In {year}, {entity} reported a '{metric}' of {value}.\n\n"

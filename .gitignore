@@ -1,7 +1,9 @@
 /API_KEY
+/BATCH_ID
 /scribble
 /src/__pycache__/
 /src/evaluation/__pycache__/
 /src/parsing/__pycache__/
 /src/qa_generation/__pycache__/
 /data/raw/fca
+/data/processed/debug/arelle.log

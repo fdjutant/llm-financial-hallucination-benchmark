@@ -1,0 +1,1572 @@
+custom_id,id,entity_name,year,segment,original_metric,ground_truth_value
+qa_2,2,AstraZeneca,2022,Income_Statement,Revenue From Sale Of Goods,42998000000.0
+qa_3,3,AstraZeneca,2021,Income_Statement,Revenue From Sale Of Goods,36541000000.0
+qa_4,4,AstraZeneca,2020,Income_Statement,Revenue From Sale Of Goods,25890000000.0
+qa_5,5,AstraZeneca,2022,Company_Specific_Metric,Collaboration Revenue,1353000000.0
+qa_6,6,AstraZeneca,2021,Company_Specific_Metric,Collaboration Revenue,876000000.0
+qa_7,7,AstraZeneca,2020,Company_Specific_Metric,Collaboration Revenue,727000000.0
+qa_8,8,AstraZeneca,2022,Income_Statement,Revenue,44351000000.0
+qa_9,9,AstraZeneca,2021,Income_Statement,Revenue,37417000000.0
+qa_10,10,AstraZeneca,2020,Income_Statement,Revenue,26617000000.0
+qa_14,14,AstraZeneca,2022,Income_Statement,Gross Profit,31960000000.0
+qa_15,15,AstraZeneca,2021,Income_Statement,Gross Profit,24980000000.0
+qa_16,16,AstraZeneca,2020,Income_Statement,Gross Profit,21318000000.0
+qa_20,20,AstraZeneca,2022,Income_Statement,Research And Development Expense,9762000000.0
+qa_21,21,AstraZeneca,2021,Income_Statement,Research And Development Expense,9736000000.0
+qa_22,22,AstraZeneca,2020,Income_Statement,Research And Development Expense,5991000000.0
+qa_23,23,AstraZeneca,2022,Income_Statement,Selling General And Administrative Expense,18419000000.0
+qa_24,24,AstraZeneca,2021,Income_Statement,Selling General And Administrative Expense,15234000000.0
+qa_25,25,AstraZeneca,2020,Income_Statement,Selling General And Administrative Expense,11294000000.0
+qa_26,26,AstraZeneca,2022,Income_Statement,Other Operating Income Expense,514000000.0
+qa_27,27,AstraZeneca,2021,Income_Statement,Other Operating Income Expense,1492000000.0
+qa_28,28,AstraZeneca,2020,Income_Statement,Other Operating Income Expense,1528000000.0
+qa_29,29,AstraZeneca,2022,Cash_Flow,Profit Loss From Operating Activities,3757000000.0
+qa_30,30,AstraZeneca,2021,Cash_Flow,Profit Loss From Operating Activities,1056000000.0
+qa_31,31,AstraZeneca,2020,Cash_Flow,Profit Loss From Operating Activities,5162000000.0
+qa_32,32,AstraZeneca,2022,Income_Statement,Finance Income,95000000.0
+qa_33,33,AstraZeneca,2021,Income_Statement,Finance Income,43000000.0
+qa_34,34,AstraZeneca,2020,Income_Statement,Finance Income,87000000.0
+qa_38,38,AstraZeneca,2022,Balance_Sheet,Share Of Profit Loss Of Associates And Joint Ventures Accounted For Using Equity Method,-5000000.0
+qa_39,39,AstraZeneca,2021,Balance_Sheet,Share Of Profit Loss Of Associates And Joint Ventures Accounted For Using Equity Method,-64000000.0
+qa_40,40,AstraZeneca,2020,Balance_Sheet,Share Of Profit Loss Of Associates And Joint Ventures Accounted For Using Equity Method,-27000000.0
+qa_41,41,AstraZeneca,2022,Income_Statement,Profit Loss Before Tax,2501000000.0
+qa_42,42,AstraZeneca,2021,Income_Statement,Profit Loss Before Tax,-265000000.0
+qa_43,43,AstraZeneca,2020,Income_Statement,Profit Loss Before Tax,3916000000.0
+qa_44,44,AstraZeneca,2022,Income_Statement,Income Tax Expense Continuing Operations,-792000000.0
+qa_45,45,AstraZeneca,2021,Income_Statement,Income Tax Expense Continuing Operations,-380000000.0
+qa_46,46,AstraZeneca,2020,Income_Statement,Income Tax Expense Continuing Operations,772000000.0
+qa_47,47,AstraZeneca,2022,Income_Statement,Profit Loss,3293000000.0
+qa_48,48,AstraZeneca,2021,Income_Statement,Profit Loss,115000000.0
+qa_49,49,AstraZeneca,2020,Income_Statement,Profit Loss,3144000000.0
+qa_50,50,AstraZeneca,2022,Income_Statement,Other Comprehensive Income Before Tax Gains Losses On Remeasurements Of Defined Benefit Plans,1118000000.0
+qa_51,51,AstraZeneca,2021,Income_Statement,Other Comprehensive Income Before Tax Gains Losses On Remeasurements Of Defined Benefit Plans,626000000.0
+qa_52,52,AstraZeneca,2020,Income_Statement,Other Comprehensive Income Before Tax Gains Losses On Remeasurements Of Defined Benefit Plans,-168000000.0
+qa_53,53,AstraZeneca,2022,Balance_Sheet,Other Comprehensive Income Before Tax Gains Losses From Investments In Equity Instruments,-88000000.0
+qa_54,54,AstraZeneca,2021,Balance_Sheet,Other Comprehensive Income Before Tax Gains Losses From Investments In Equity Instruments,-187000000.0
+qa_55,55,AstraZeneca,2020,Balance_Sheet,Other Comprehensive Income Before Tax Gains Losses From Investments In Equity Instruments,938000000.0
+qa_56,56,AstraZeneca,2022,Balance_Sheet,Other Comprehensive Income Before Tax Change In Fair Value Of Financial Liability Attributable To Change In Credit Risk Of Liability,2000000.0
+qa_57,57,AstraZeneca,2021,Balance_Sheet,Other Comprehensive Income Before Tax Change In Fair Value Of Financial Liability Attributable To Change In Credit Risk Of Liability,0.0
+qa_58,58,AstraZeneca,2020,Balance_Sheet,Other Comprehensive Income Before Tax Change In Fair Value Of Financial Liability Attributable To Change In Credit Risk Of Liability,-1000000.0
+qa_59,59,AstraZeneca,2022,Income_Statement,Income Tax Relating To Components Of Other Comprehensive Income That Will Not Be Reclassified To Profit Or Loss,216000000.0
+qa_60,60,AstraZeneca,2021,Income_Statement,Income Tax Relating To Components Of Other Comprehensive Income That Will Not Be Reclassified To Profit Or Loss,-105000000.0
+qa_61,61,AstraZeneca,2020,Income_Statement,Income Tax Relating To Components Of Other Comprehensive Income That Will Not Be Reclassified To Profit Or Loss,81000000.0
+qa_62,62,AstraZeneca,2022,Income_Statement,Other Comprehensive Income That Will Not Be Reclassified To Profit Or Loss Net Of Tax,816000000.0
+qa_63,63,AstraZeneca,2021,Income_Statement,Other Comprehensive Income That Will Not Be Reclassified To Profit Or Loss Net Of Tax,544000000.0
+qa_64,64,AstraZeneca,2020,Income_Statement,Other Comprehensive Income That Will Not Be Reclassified To Profit Or Loss Net Of Tax,688000000.0
+qa_65,65,AstraZeneca,2022,Company_Specific_Metric,Gains Losses On Exchange Differences On Consolidation Before Tax,-1446000000.0
+qa_66,66,AstraZeneca,2021,Company_Specific_Metric,Gains Losses On Exchange Differences On Consolidation Before Tax,-483000000.0
+qa_67,67,AstraZeneca,2020,Company_Specific_Metric,Gains Losses On Exchange Differences On Consolidation Before Tax,443000000.0
+qa_68,68,AstraZeneca,2022,Company_Specific_Metric,Gains Losses On Exchange Difference Hedges Of Net Investments In Foreign Operations Before Tax,-282000000.0
+qa_69,69,AstraZeneca,2021,Company_Specific_Metric,Gains Losses On Exchange Difference Hedges Of Net Investments In Foreign Operations Before Tax,-321000000.0
+qa_70,70,AstraZeneca,2020,Company_Specific_Metric,Gains Losses On Exchange Difference Hedges Of Net Investments In Foreign Operations Before Tax,573000000.0
+qa_71,71,AstraZeneca,2022,Cash_Flow,Gains Losses On Cash Flow Hedges Before Tax,-97000000.0
+qa_72,72,AstraZeneca,2021,Cash_Flow,Gains Losses On Cash Flow Hedges Before Tax,-167000000.0
+qa_73,73,AstraZeneca,2020,Cash_Flow,Gains Losses On Cash Flow Hedges Before Tax,180000000.0
+qa_74,74,AstraZeneca,2022,Cash_Flow,Reclassification Adjustments On Cash Flow Hedges Before Tax,-73000000.0
+qa_75,75,AstraZeneca,2021,Cash_Flow,Reclassification Adjustments On Cash Flow Hedges Before Tax,-208000000.0
+qa_76,76,AstraZeneca,2020,Cash_Flow,Reclassification Adjustments On Cash Flow Hedges Before Tax,254000000.0
+qa_77,77,AstraZeneca,2022,Income_Statement,Gains Losses On Hedges Of Net Investments In Foreign Operations Before Tax,-8000000.0
+qa_78,78,AstraZeneca,2021,Income_Statement,Gains Losses On Hedges Of Net Investments In Foreign Operations Before Tax,34000000.0
+qa_79,79,AstraZeneca,2020,Income_Statement,Gains Losses On Hedges Of Net Investments In Foreign Operations Before Tax,8000000.0
+qa_80,80,AstraZeneca,2022,Company_Specific_Metric,Cost Of Hedging Before Tax,7000000.0
+qa_81,81,AstraZeneca,2021,Company_Specific_Metric,Cost Of Hedging Before Tax,6000000.0
+qa_82,82,AstraZeneca,2020,Company_Specific_Metric,Cost Of Hedging Before Tax,-9000000.0
+qa_83,83,AstraZeneca,2022,Income_Statement,Income Tax Relating To Components Of Other Comprehensive Income That Will Be Reclassified To Profit Or Loss,-73000000.0
+qa_84,84,AstraZeneca,2021,Income_Statement,Income Tax Relating To Components Of Other Comprehensive Income That Will Be Reclassified To Profit Or Loss,-46000000.0
+qa_85,85,AstraZeneca,2020,Income_Statement,Income Tax Relating To Components Of Other Comprehensive Income That Will Be Reclassified To Profit Or Loss,39000000.0
+qa_86,86,AstraZeneca,2022,Income_Statement,Other Comprehensive Income That Will Be Reclassified To Profit Or Loss Net Of Tax,-1694000000.0
+qa_87,87,AstraZeneca,2021,Income_Statement,Other Comprehensive Income That Will Be Reclassified To Profit Or Loss Net Of Tax,-689000000.0
+qa_88,88,AstraZeneca,2020,Income_Statement,Other Comprehensive Income That Will Be Reclassified To Profit Or Loss Net Of Tax,920000000.0
+qa_89,89,AstraZeneca,2022,Income_Statement,Other Comprehensive Income,-878000000.0
+qa_90,90,AstraZeneca,2021,Income_Statement,Other Comprehensive Income,-145000000.0
+qa_91,91,AstraZeneca,2020,Income_Statement,Other Comprehensive Income,1608000000.0
+qa_92,92,AstraZeneca,2022,Income_Statement,Comprehensive Income,2415000000.0
+qa_93,93,AstraZeneca,2021,Income_Statement,Comprehensive Income,-30000000.0
+qa_94,94,AstraZeneca,2020,Income_Statement,Comprehensive Income,4752000000.0
+qa_95,95,AstraZeneca,2022,Income_Statement,Profit Loss Attributable To Owners Of Parent,3288000000.0
+qa_96,96,AstraZeneca,2021,Income_Statement,Profit Loss Attributable To Owners Of Parent,112000000.0
+qa_97,97,AstraZeneca,2020,Income_Statement,Profit Loss Attributable To Owners Of Parent,3196000000.0
+qa_98,98,AstraZeneca,2022,Income_Statement,Profit Loss Attributable To Noncontrolling Interests,5000000.0
+qa_99,99,AstraZeneca,2021,Income_Statement,Profit Loss Attributable To Noncontrolling Interests,3000000.0
+qa_100,100,AstraZeneca,2020,Income_Statement,Profit Loss Attributable To Noncontrolling Interests,-52000000.0
+qa_101,101,AstraZeneca,2022,Income_Statement,Comprehensive Income Attributable To Owners Of Parent,2413000000.0
+qa_102,102,AstraZeneca,2021,Income_Statement,Comprehensive Income Attributable To Owners Of Parent,-33000000.0
+qa_103,103,AstraZeneca,2020,Income_Statement,Comprehensive Income Attributable To Owners Of Parent,4804000000.0
+qa_104,104,AstraZeneca,2022,Income_Statement,Comprehensive Income Attributable To Noncontrolling Interests,2000000.0
+qa_105,105,AstraZeneca,2021,Income_Statement,Comprehensive Income Attributable To Noncontrolling Interests,3000000.0
+qa_106,106,AstraZeneca,2020,Income_Statement,Comprehensive Income Attributable To Noncontrolling Interests,-52000000.0
+qa_110,110,AstraZeneca,2022,Income_Statement,Basic Earnings Loss Per Share,2.12
+qa_111,111,AstraZeneca,2021,Income_Statement,Basic Earnings Loss Per Share,0.08
+qa_112,112,AstraZeneca,2020,Income_Statement,Basic Earnings Loss Per Share,2.44
+qa_113,113,AstraZeneca,2022,Income_Statement,Diluted Earnings Loss Per Share,2.11
+qa_114,114,AstraZeneca,2021,Income_Statement,Diluted Earnings Loss Per Share,0.08
+qa_115,115,AstraZeneca,2020,Income_Statement,Diluted Earnings Loss Per Share,2.44
+qa_128,128,AstraZeneca,2022,Balance_Sheet,Rightofuse Assets,942000000.0
+qa_129,129,AstraZeneca,2021,Balance_Sheet,Rightofuse Assets,988000000.0
+qa_130,130,AstraZeneca,2020,Balance_Sheet,Rightofuse Assets,666000000.0
+qa_134,134,AstraZeneca,2022,Balance_Sheet,Intangible Assets Other Than Goodwill,39307000000.0
+qa_135,135,AstraZeneca,2021,Balance_Sheet,Intangible Assets Other Than Goodwill,42387000000.0
+qa_136,136,AstraZeneca,2020,Balance_Sheet,Intangible Assets Other Than Goodwill,20947000000.0
+qa_137,137,AstraZeneca,2022,Balance_Sheet,Investment Accounted For Using Equity Method,76000000.0
+qa_138,138,AstraZeneca,2021,Balance_Sheet,Investment Accounted For Using Equity Method,69000000.0
+qa_139,139,AstraZeneca,2020,Balance_Sheet,Investment Accounted For Using Equity Method,39000000.0
+qa_140,140,AstraZeneca,2022,Balance_Sheet,Noncurrent Investments Other Than Investments Accounted For Using Equity Method,1066000000.0
+qa_141,141,AstraZeneca,2021,Balance_Sheet,Noncurrent Investments Other Than Investments Accounted For Using Equity Method,1168000000.0
+qa_142,142,AstraZeneca,2020,Balance_Sheet,Noncurrent Investments Other Than Investments Accounted For Using Equity Method,1108000000.0
+qa_143,143,AstraZeneca,2022,Balance_Sheet,Noncurrent Derivative Financial Assets,74000000.0
+qa_144,144,AstraZeneca,2021,Balance_Sheet,Noncurrent Derivative Financial Assets,102000000.0
+qa_145,145,AstraZeneca,2020,Balance_Sheet,Noncurrent Derivative Financial Assets,171000000.0
+qa_149,149,AstraZeneca,2022,Balance_Sheet,Deferred Tax Assets,3263000000.0
+qa_150,150,AstraZeneca,2021,Balance_Sheet,Deferred Tax Assets,4330000000.0
+qa_151,151,AstraZeneca,2020,Balance_Sheet,Deferred Tax Assets,3438000000.0
+qa_152,152,AstraZeneca,2022,Balance_Sheet,Noncurrent Assets,73890000000.0
+qa_153,153,AstraZeneca,2021,Balance_Sheet,Noncurrent Assets,79119000000.0
+qa_154,154,AstraZeneca,2020,Balance_Sheet,Noncurrent Assets,47185000000.0
+qa_164,164,AstraZeneca,2022,Balance_Sheet,Current Derivative Financial Assets,87000000.0
+qa_165,165,AstraZeneca,2021,Balance_Sheet,Current Derivative Financial Assets,83000000.0
+qa_166,166,AstraZeneca,2020,Balance_Sheet,Current Derivative Financial Assets,142000000.0
+qa_167,167,AstraZeneca,2022,Balance_Sheet,Intangible Assets And Goodwill,0.0
+qa_168,168,AstraZeneca,2021,Balance_Sheet,Intangible Assets And Goodwill,105000000.0
+qa_169,169,AstraZeneca,2020,Balance_Sheet,Intangible Assets And Goodwill,0.0
+qa_170,170,AstraZeneca,2022,Balance_Sheet,Current Tax Assets,731000000.0
+qa_171,171,AstraZeneca,2021,Balance_Sheet,Current Tax Assets,663000000.0
+qa_172,172,AstraZeneca,2020,Balance_Sheet,Current Tax Assets,364000000.0
+qa_173,173,AstraZeneca,2022,Cash_Flow,Cash And Cash Equivalents,6166000000.0
+qa_174,174,AstraZeneca,2021,Cash_Flow,Cash And Cash Equivalents,6329000000.0
+qa_175,175,AstraZeneca,2020,Cash_Flow,Cash And Cash Equivalents,7832000000.0
+qa_176,176,AstraZeneca,2022,Balance_Sheet,Noncurrent Assets Or Disposal Groups Classified As Held For Sale Or As Held For Distribution To Owners,150000000.0
+qa_177,177,AstraZeneca,2021,Balance_Sheet,Noncurrent Assets Or Disposal Groups Classified As Held For Sale Or As Held For Distribution To Owners,368000000.0
+qa_178,178,AstraZeneca,2020,Balance_Sheet,Noncurrent Assets Or Disposal Groups Classified As Held For Sale Or As Held For Distribution To Owners,0.0
+qa_179,179,AstraZeneca,2022,Balance_Sheet,Current Assets,22593000000.0
+qa_180,180,AstraZeneca,2021,Balance_Sheet,Current Assets,26244000000.0
+qa_181,181,AstraZeneca,2020,Balance_Sheet,Current Assets,19544000000.0
+qa_182,182,AstraZeneca,2022,Balance_Sheet,Assets,96483000000.0
+qa_183,183,AstraZeneca,2021,Balance_Sheet,Assets,105363000000.0
+qa_184,184,AstraZeneca,2020,Balance_Sheet,Assets,66729000000.0
+qa_188,188,AstraZeneca,2022,Balance_Sheet,Current Lease Liabilities,228000000.0
+qa_189,189,AstraZeneca,2021,Balance_Sheet,Current Lease Liabilities,233000000.0
+qa_190,190,AstraZeneca,2020,Balance_Sheet,Current Lease Liabilities,192000000.0
+qa_194,194,AstraZeneca,2022,Balance_Sheet,Current Derivative Financial Liabilities,93000000.0
+qa_195,195,AstraZeneca,2021,Balance_Sheet,Current Derivative Financial Liabilities,79000000.0
+qa_196,196,AstraZeneca,2020,Balance_Sheet,Current Derivative Financial Liabilities,33000000.0
+qa_200,200,AstraZeneca,2022,Balance_Sheet,Current Tax Liabilities,896000000.0
+qa_201,201,AstraZeneca,2021,Balance_Sheet,Current Tax Liabilities,916000000.0
+qa_202,202,AstraZeneca,2020,Balance_Sheet,Current Tax Liabilities,1127000000.0
+qa_203,203,AstraZeneca,2022,Balance_Sheet,Current Liabilities,26293000000.0
+qa_204,204,AstraZeneca,2021,Balance_Sheet,Current Liabilities,22594000000.0
+qa_205,205,AstraZeneca,2020,Balance_Sheet,Current Liabilities,20307000000.0
+qa_209,209,AstraZeneca,2022,Balance_Sheet,Noncurrent Lease Liabilities,725000000.0
+qa_210,210,AstraZeneca,2021,Balance_Sheet,Noncurrent Lease Liabilities,754000000.0
+qa_211,211,AstraZeneca,2020,Balance_Sheet,Noncurrent Lease Liabilities,489000000.0
+qa_212,212,AstraZeneca,2022,Balance_Sheet,Noncurrent Derivative Financial Liabilities,164000000.0
+qa_213,213,AstraZeneca,2021,Balance_Sheet,Noncurrent Derivative Financial Liabilities,45000000.0
+qa_214,214,AstraZeneca,2020,Balance_Sheet,Noncurrent Derivative Financial Liabilities,2000000.0
+qa_215,215,AstraZeneca,2022,Balance_Sheet,Deferred Tax Liabilities,2944000000.0
+qa_216,216,AstraZeneca,2021,Balance_Sheet,Deferred Tax Liabilities,6206000000.0
+qa_217,217,AstraZeneca,2020,Balance_Sheet,Deferred Tax Liabilities,2918000000.0
+qa_218,218,AstraZeneca,2022,Balance_Sheet,Noncurrent Recognised Liabilities Defined Benefit Plan,1168000000.0
+qa_219,219,AstraZeneca,2021,Balance_Sheet,Noncurrent Recognised Liabilities Defined Benefit Plan,2454000000.0
+qa_220,220,AstraZeneca,2020,Balance_Sheet,Noncurrent Recognised Liabilities Defined Benefit Plan,3202000000.0
+qa_227,227,AstraZeneca,2022,Balance_Sheet,Noncurrent Liabilities,33132000000.0
+qa_228,228,AstraZeneca,2021,Balance_Sheet,Noncurrent Liabilities,43482000000.0
+qa_229,229,AstraZeneca,2020,Balance_Sheet,Noncurrent Liabilities,30784000000.0
+qa_230,230,AstraZeneca,2022,Balance_Sheet,Liabilities,59425000000.0
+qa_231,231,AstraZeneca,2021,Balance_Sheet,Liabilities,66076000000.0
+qa_232,232,AstraZeneca,2020,Balance_Sheet,Liabilities,51091000000.0
+qa_233,233,AstraZeneca,2022,Balance_Sheet,Net Assets Liabilities,37058000000.0
+qa_234,234,AstraZeneca,2021,Balance_Sheet,Net Assets Liabilities,39287000000.0
+qa_235,235,AstraZeneca,2020,Balance_Sheet,Net Assets Liabilities,15638000000.0
+qa_248,248,AstraZeneca,2022,Company_Specific_Metric,Other Reserves Other Than Merger And Capital Redemption Reserve,1468000000.0
+qa_249,249,AstraZeneca,2021,Company_Specific_Metric,Other Reserves Other Than Merger And Capital Redemption Reserve,1444000000.0
+qa_250,250,AstraZeneca,2020,Company_Specific_Metric,Other Reserves Other Than Merger And Capital Redemption Reserve,1423000000.0
+qa_254,254,AstraZeneca,2022,Balance_Sheet,Equity Attributable To Owners Of Parent,37037000000.0
+qa_255,255,AstraZeneca,2021,Balance_Sheet,Equity Attributable To Owners Of Parent,39268000000.0
+qa_256,256,AstraZeneca,2020,Balance_Sheet,Equity Attributable To Owners Of Parent,15622000000.0
+qa_260,260,AstraZeneca,2022,Balance_Sheet,Equity,37058000000.0
+qa_261,261,AstraZeneca,2021,Balance_Sheet,Equity,39287000000.0
+qa_262,262,AstraZeneca,2020,Balance_Sheet,Equity,15638000000.0
+qa_264,264,AstraZeneca,2019,Balance_Sheet,Equity,328000000.0
+qa_265,265,AstraZeneca,2020,Company_Specific_Metric,Increase Decrease Through Transfer Between Other Reserves And Retained Earnings Equity,0.0
+qa_266,266,AstraZeneca,2020,Company_Specific_Metric,Dividends Recognised As Distributions To Owners Of Parent Net Of Forfeiture,0.0
+qa_267,267,AstraZeneca,2020,Balance_Sheet,Issue Of Equity,0.0
+qa_269,269,AstraZeneca,2020,Company_Specific_Metric,Settlement Of Share Plan Awards Equity,0.0
+qa_270,270,AstraZeneca,2020,Balance_Sheet,Changes In Equity,0.0
+qa_271,271,AstraZeneca,2021,Company_Specific_Metric,Increase Decrease Through Transfer Between Other Reserves And Retained Earnings Equity,0.0
+qa_272,272,AstraZeneca,2021,Company_Specific_Metric,Dividends Recognised As Distributions To Owners Of Parent Net Of Forfeiture,0.0
+qa_273,273,AstraZeneca,2021,Balance_Sheet,Issue Of Equity,59000000.0
+qa_275,275,AstraZeneca,2021,Company_Specific_Metric,Settlement Of Share Plan Awards Equity,0.0
+qa_276,276,AstraZeneca,2021,Company_Specific_Metric,Issue Of Replacement Alexion Share Awards Upon Acquisition,0.0
+qa_277,277,AstraZeneca,2021,Balance_Sheet,Changes In Equity,59000000.0
+qa_278,278,AstraZeneca,2022,Company_Specific_Metric,Increase Decrease Through Transfer Between Other Reserves And Retained Earnings Equity,0.0
+qa_279,279,AstraZeneca,2022,Company_Specific_Metric,Dividends Recognised As Distributions To Owners Of Parent Net Of Forfeiture,0.0
+qa_280,280,AstraZeneca,2022,Balance_Sheet,Issue Of Equity,0.0
+qa_282,282,AstraZeneca,2022,Company_Specific_Metric,Settlement Of Share Plan Awards Equity,0.0
+qa_283,283,AstraZeneca,2022,Balance_Sheet,Changes In Equity,0.0
+qa_285,285,AstraZeneca,2022,Income_Statement,Finance Income Cost,-1251000000.0
+qa_286,286,AstraZeneca,2021,Income_Statement,Finance Income Cost,-1257000000.0
+qa_287,287,AstraZeneca,2020,Income_Statement,Finance Income Cost,-1219000000.0
+qa_288,288,AstraZeneca,2022,Income_Statement,Depreciation Amortisation And Impairment Loss Reversal Of Impairment Loss Recognised In Profit Or Loss,5480000000.0
+qa_289,289,AstraZeneca,2021,Income_Statement,Depreciation Amortisation And Impairment Loss Reversal Of Impairment Loss Recognised In Profit Or Loss,6530000000.0
+qa_290,290,AstraZeneca,2020,Income_Statement,Depreciation Amortisation And Impairment Loss Reversal Of Impairment Loss Recognised In Profit Or Loss,3149000000.0
+qa_297,297,AstraZeneca,2022,Company_Specific_Metric,Adjustments For Increase Decrease In Trade Other Payables And Provisions,1165000000.0
+qa_298,298,AstraZeneca,2021,Company_Specific_Metric,Adjustments For Increase Decrease In Trade Other Payables And Provisions,1405000000.0
+qa_299,299,AstraZeneca,2020,Company_Specific_Metric,Adjustments For Increase Decrease In Trade Other Payables And Provisions,1721000000.0
+qa_300,300,AstraZeneca,2022,Company_Specific_Metric,Adjustments For Losses Gains On Disposal Of Intangible Asset,-104000000.0
+qa_301,301,AstraZeneca,2021,Company_Specific_Metric,Adjustments For Losses Gains On Disposal Of Intangible Asset,-513000000.0
+qa_302,302,AstraZeneca,2020,Company_Specific_Metric,Adjustments For Losses Gains On Disposal Of Intangible Asset,-1030000000.0
+qa_303,303,AstraZeneca,2022,Income_Statement,Adjustments For Gain Loss On Disposal Of Investments In Subsidiaries Joint Ventures And Associates,0.0
+qa_304,304,AstraZeneca,2021,Income_Statement,Adjustments For Gain Loss On Disposal Of Investments In Subsidiaries Joint Ventures And Associates,776000000.0
+qa_305,305,AstraZeneca,2020,Income_Statement,Adjustments For Gain Loss On Disposal Of Investments In Subsidiaries Joint Ventures And Associates,0.0
+qa_306,306,AstraZeneca,2022,Company_Specific_Metric,Contingent Consideration Fair Value Movement,82000000.0
+qa_307,307,AstraZeneca,2021,Company_Specific_Metric,Contingent Consideration Fair Value Movement,14000000.0
+qa_308,308,AstraZeneca,2020,Company_Specific_Metric,Contingent Consideration Fair Value Movement,-272000000.0
+qa_309,309,AstraZeneca,2022,Cash_Flow,Other Adjustments For Noncash Items,-692000000.0
+qa_310,310,AstraZeneca,2021,Cash_Flow,Other Adjustments For Noncash Items,95000000.0
+qa_311,311,AstraZeneca,2020,Cash_Flow,Other Adjustments For Noncash Items,-276000000.0
+qa_312,312,AstraZeneca,2022,Cash_Flow,Cash Flows From Used In Operations,12280000000.0
+qa_313,313,AstraZeneca,2021,Cash_Flow,Cash Flows From Used In Operations,8427000000.0
+qa_314,314,AstraZeneca,2020,Cash_Flow,Cash Flows From Used In Operations,7094000000.0
+qa_315,315,AstraZeneca,2022,Cash_Flow,Interest Paid Classified As Operating Activities,849000000.0
+qa_316,316,AstraZeneca,2021,Cash_Flow,Interest Paid Classified As Operating Activities,721000000.0
+qa_317,317,AstraZeneca,2020,Cash_Flow,Interest Paid Classified As Operating Activities,733000000.0
+qa_318,318,AstraZeneca,2022,Cash_Flow,Income Taxes Paid Refund Classified As Operating Activities,1623000000.0
+qa_319,319,AstraZeneca,2021,Cash_Flow,Income Taxes Paid Refund Classified As Operating Activities,1743000000.0
+qa_320,320,AstraZeneca,2020,Cash_Flow,Income Taxes Paid Refund Classified As Operating Activities,1562000000.0
+qa_321,321,AstraZeneca,2022,Cash_Flow,Cash Flows From Used In Operating Activities,9808000000.0
+qa_322,322,AstraZeneca,2021,Cash_Flow,Cash Flows From Used In Operating Activities,5963000000.0
+qa_323,323,AstraZeneca,2020,Cash_Flow,Cash Flows From Used In Operating Activities,4799000000.0
+qa_324,324,AstraZeneca,2022,Cash_Flow,Cash Flows Used In Obtaining Control Of Subsidiaries Or Other Businesses Classified As Investing Activities,48000000.0
+qa_325,325,AstraZeneca,2021,Cash_Flow,Cash Flows Used In Obtaining Control Of Subsidiaries Or Other Businesses Classified As Investing Activities,9263000000.0
+qa_326,326,AstraZeneca,2020,Cash_Flow,Cash Flows Used In Obtaining Control Of Subsidiaries Or Other Businesses Classified As Investing Activities,0.0
+qa_327,327,AstraZeneca,2022,Company_Specific_Metric,Payments Upon Vesting Of Employee Share Awards Attributable To Business Combinations,215000000.0
+qa_328,328,AstraZeneca,2021,Company_Specific_Metric,Payments Upon Vesting Of Employee Share Awards Attributable To Business Combinations,211000000.0
+qa_329,329,AstraZeneca,2020,Company_Specific_Metric,Payments Upon Vesting Of Employee Share Awards Attributable To Business Combinations,0.0
+qa_330,330,AstraZeneca,2022,Company_Specific_Metric,Contingent Consideration Payment Business Combinations Classified As Investing Activities,772000000.0
+qa_331,331,AstraZeneca,2021,Company_Specific_Metric,Contingent Consideration Payment Business Combinations Classified As Investing Activities,643000000.0
+qa_332,332,AstraZeneca,2020,Company_Specific_Metric,Contingent Consideration Payment Business Combinations Classified As Investing Activities,822000000.0
+qa_333,333,AstraZeneca,2022,Cash_Flow,Purchase Of Property Plant And Equipment Classified As Investing Activities,1091000000.0
+qa_334,334,AstraZeneca,2021,Cash_Flow,Purchase Of Property Plant And Equipment Classified As Investing Activities,1091000000.0
+qa_335,335,AstraZeneca,2020,Cash_Flow,Purchase Of Property Plant And Equipment Classified As Investing Activities,961000000.0
+qa_336,336,AstraZeneca,2022,Cash_Flow,Proceeds From Sales Of Property Plant And Equipment Classified As Investing Activities,282000000.0
+qa_337,337,AstraZeneca,2021,Cash_Flow,Proceeds From Sales Of Property Plant And Equipment Classified As Investing Activities,13000000.0
+qa_338,338,AstraZeneca,2020,Cash_Flow,Proceeds From Sales Of Property Plant And Equipment Classified As Investing Activities,106000000.0
+qa_339,339,AstraZeneca,2022,Cash_Flow,Purchase Of Intangible Assets Classified As Investing Activities,1480000000.0
+qa_340,340,AstraZeneca,2021,Cash_Flow,Purchase Of Intangible Assets Classified As Investing Activities,1109000000.0
+qa_341,341,AstraZeneca,2020,Cash_Flow,Purchase Of Intangible Assets Classified As Investing Activities,1645000000.0
+qa_342,342,AstraZeneca,2022,Cash_Flow,Proceeds From Sales Of Intangible Assets Classified As Investing Activities,447000000.0
+qa_343,343,AstraZeneca,2021,Cash_Flow,Proceeds From Sales Of Intangible Assets Classified As Investing Activities,587000000.0
+qa_344,344,AstraZeneca,2020,Cash_Flow,Proceeds From Sales Of Intangible Assets Classified As Investing Activities,951000000.0
+qa_345,345,AstraZeneca,2022,Company_Specific_Metric,Inflows Outflows Of Cash Related To Profit Participation Liability Classified As Investing Activities,0.0
+qa_346,346,AstraZeneca,2021,Company_Specific_Metric,Inflows Outflows Of Cash Related To Profit Participation Liability Classified As Investing Activities,20000000.0
+qa_347,347,AstraZeneca,2020,Company_Specific_Metric,Inflows Outflows Of Cash Related To Profit Participation Liability Classified As Investing Activities,40000000.0
+qa_348,348,AstraZeneca,2022,Cash_Flow,Purchase Of Other Longterm Assets Classified As Investing Activities,45000000.0
+qa_349,349,AstraZeneca,2021,Cash_Flow,Purchase Of Other Longterm Assets Classified As Investing Activities,184000000.0
+qa_350,350,AstraZeneca,2020,Cash_Flow,Purchase Of Other Longterm Assets Classified As Investing Activities,119000000.0
+qa_351,351,AstraZeneca,2022,Cash_Flow,Proceeds From Other Longterm Assets Classified As Investing Activities,42000000.0
+qa_352,352,AstraZeneca,2021,Cash_Flow,Proceeds From Other Longterm Assets Classified As Investing Activities,9000000.0
+qa_353,353,AstraZeneca,2020,Cash_Flow,Proceeds From Other Longterm Assets Classified As Investing Activities,1381000000.0
+qa_354,354,AstraZeneca,2022,Cash_Flow,Other Inflows Outflows Of Cash Classified As Investing Activities,-114000000.0
+qa_355,355,AstraZeneca,2021,Cash_Flow,Other Inflows Outflows Of Cash Classified As Investing Activities,96000000.0
+qa_356,356,AstraZeneca,2020,Cash_Flow,Other Inflows Outflows Of Cash Classified As Investing Activities,745000000.0
+qa_357,357,AstraZeneca,2022,Cash_Flow,Other Cash Payments To Acquire Interests In Joint Ventures Classified As Investing Activities,26000000.0
+qa_358,358,AstraZeneca,2021,Cash_Flow,Other Cash Payments To Acquire Interests In Joint Ventures Classified As Investing Activities,92000000.0
+qa_359,359,AstraZeneca,2020,Cash_Flow,Other Cash Payments To Acquire Interests In Joint Ventures Classified As Investing Activities,8000000.0
+qa_360,360,AstraZeneca,2022,Balance_Sheet,Proceeds From Sales Of Investments Accounted For Using Equity Method,0.0
+qa_361,361,AstraZeneca,2021,Balance_Sheet,Proceeds From Sales Of Investments Accounted For Using Equity Method,776000000.0
+qa_362,362,AstraZeneca,2020,Balance_Sheet,Proceeds From Sales Of Investments Accounted For Using Equity Method,0.0
+qa_363,363,AstraZeneca,2022,Cash_Flow,Interest Received Classified As Investing Activities,60000000.0
+qa_364,364,AstraZeneca,2021,Cash_Flow,Interest Received Classified As Investing Activities,34000000.0
+qa_365,365,AstraZeneca,2020,Cash_Flow,Interest Received Classified As Investing Activities,47000000.0
+qa_366,366,AstraZeneca,2022,Cash_Flow,Cash Flows From Used In Investing Activities,-2960000000.0
+qa_367,367,AstraZeneca,2021,Cash_Flow,Cash Flows From Used In Investing Activities,-11058000000.0
+qa_368,368,AstraZeneca,2020,Cash_Flow,Cash Flows From Used In Investing Activities,-285000000.0
+qa_369,369,AstraZeneca,2022,Company_Specific_Metric,Cash Flows From Used In Operating And Investing Activities,6848000000.0
+qa_370,370,AstraZeneca,2021,Company_Specific_Metric,Cash Flows From Used In Operating And Investing Activities,-5095000000.0
+qa_371,371,AstraZeneca,2020,Company_Specific_Metric,Cash Flows From Used In Operating And Investing Activities,4514000000.0
+qa_375,375,AstraZeneca,2022,Cash_Flow,Proceeds From Borrowings Classified As Financing Activities,0.0
+qa_376,376,AstraZeneca,2021,Cash_Flow,Proceeds From Borrowings Classified As Financing Activities,12929000000.0
+qa_377,377,AstraZeneca,2020,Cash_Flow,Proceeds From Borrowings Classified As Financing Activities,2968000000.0
+qa_378,378,AstraZeneca,2022,Cash_Flow,Repayments Of Borrowings Classified As Financing Activities,1271000000.0
+qa_379,379,AstraZeneca,2021,Cash_Flow,Repayments Of Borrowings Classified As Financing Activities,4759000000.0
+qa_380,380,AstraZeneca,2020,Cash_Flow,Repayments Of Borrowings Classified As Financing Activities,1609000000.0
+qa_381,381,AstraZeneca,2022,Cash_Flow,Dividends Paid Classified As Financing Activities,4364000000.0
+qa_382,382,AstraZeneca,2021,Cash_Flow,Dividends Paid Classified As Financing Activities,3856000000.0
+qa_383,383,AstraZeneca,2020,Cash_Flow,Dividends Paid Classified As Financing Activities,3572000000.0
+qa_384,384,AstraZeneca,2022,Company_Specific_Metric,Hedge Contracts Relating To Dividend Payments Receipts Classified As Financing Activities,127000000.0
+qa_385,385,AstraZeneca,2021,Company_Specific_Metric,Hedge Contracts Relating To Dividend Payments Receipts Classified As Financing Activities,29000000.0
+qa_386,386,AstraZeneca,2020,Company_Specific_Metric,Hedge Contracts Relating To Dividend Payments Receipts Classified As Financing Activities,101000000.0
+qa_387,387,AstraZeneca,2022,Cash_Flow,Payments Of Lease Liabilities Classified As Financing Activities,244000000.0
+qa_388,388,AstraZeneca,2021,Cash_Flow,Payments Of Lease Liabilities Classified As Financing Activities,240000000.0
+qa_389,389,AstraZeneca,2020,Cash_Flow,Payments Of Lease Liabilities Classified As Financing Activities,207000000.0
+qa_390,390,AstraZeneca,2022,Cash_Flow,Other Inflows Outflows Of Cash Classified As Financing Activities,74000000.0
+qa_391,391,AstraZeneca,2021,Cash_Flow,Other Inflows Outflows Of Cash Classified As Financing Activities,-276000000.0
+qa_392,392,AstraZeneca,2020,Cash_Flow,Other Inflows Outflows Of Cash Classified As Financing Activities,288000000.0
+qa_393,393,AstraZeneca,2022,Company_Specific_Metric,Payments To Acquire Non Controlling Interests,0.0
+qa_394,394,AstraZeneca,2021,Company_Specific_Metric,Payments To Acquire Non Controlling Interests,149000000.0
+qa_395,395,AstraZeneca,2020,Company_Specific_Metric,Payments To Acquire Non Controlling Interests,0.0
+qa_396,396,AstraZeneca,2022,Company_Specific_Metric,Payment Of Acerta Pharma Share Purchase Liability,920000000.0
+qa_397,397,AstraZeneca,2021,Company_Specific_Metric,Payment Of Acerta Pharma Share Purchase Liability,0.0
+qa_398,398,AstraZeneca,2020,Company_Specific_Metric,Payment Of Acerta Pharma Share Purchase Liability,0.0
+qa_399,399,AstraZeneca,2022,Cash_Flow,Cash Flows From Used In Financing Activities,-6823000000.0
+qa_400,400,AstraZeneca,2021,Cash_Flow,Cash Flows From Used In Financing Activities,3649000000.0
+qa_401,401,AstraZeneca,2020,Cash_Flow,Cash Flows From Used In Financing Activities,-2203000000.0
+qa_402,402,AstraZeneca,2022,Cash_Flow,Increase Decrease In Cash And Cash Equivalents Before Effect Of Exchange Rate Changes,25000000.0
+qa_403,403,AstraZeneca,2021,Cash_Flow,Increase Decrease In Cash And Cash Equivalents Before Effect Of Exchange Rate Changes,-1446000000.0
+qa_404,404,AstraZeneca,2020,Cash_Flow,Increase Decrease In Cash And Cash Equivalents Before Effect Of Exchange Rate Changes,2311000000.0
+qa_405,405,AstraZeneca,2021,Cash_Flow,Cash And Cash Equivalents If Different From Statement Of Financial Position,6038000000.0
+qa_406,406,AstraZeneca,2020,Cash_Flow,Cash And Cash Equivalents If Different From Statement Of Financial Position,7546000000.0
+qa_407,407,AstraZeneca,2019,Cash_Flow,Cash And Cash Equivalents If Different From Statement Of Financial Position,5223000000.0
+qa_408,408,AstraZeneca,2022,Cash_Flow,Effect Of Exchange Rate Changes On Cash And Cash Equivalents,-80000000.0
+qa_409,409,AstraZeneca,2021,Cash_Flow,Effect Of Exchange Rate Changes On Cash And Cash Equivalents,-62000000.0
+qa_410,410,AstraZeneca,2020,Cash_Flow,Effect Of Exchange Rate Changes On Cash And Cash Equivalents,12000000.0
+qa_411,411,AstraZeneca,2022,Cash_Flow,Cash And Cash Equivalents If Different From Statement Of Financial Position,5983000000.0
+qa_498,498,AstraZeneca,2022,Cash_Flow,Description Of Nature Of Entitys Operations And Principal Activities,"AstraZeneca’s pharmaceuticals business consists of the discovery and development of new products, which are then manufactured, marketed and sold."
+qa_571,571,AstraZeneca,2023,Income_Statement,Revenue From Sale Of Goods,43789000000.0
+qa_572,572,AstraZeneca,2023,Company_Specific_Metric,Alliance Revenue,1428000000.0
+qa_573,573,AstraZeneca,2022,Company_Specific_Metric,Alliance Revenue,755000000.0
+qa_574,574,AstraZeneca,2021,Company_Specific_Metric,Alliance Revenue,388000000.0
+qa_575,575,AstraZeneca,2023,Company_Specific_Metric,Collaboration Revenue,594000000.0
+qa_576,576,AstraZeneca,2023,Income_Statement,Revenue,45811000000.0
+qa_578,578,AstraZeneca,2023,Income_Statement,Gross Profit,37543000000.0
+qa_580,580,AstraZeneca,2023,Income_Statement,Research And Development Expense,10935000000.0
+qa_581,581,AstraZeneca,2023,Income_Statement,Selling General And Administrative Expense,19216000000.0
+qa_582,582,AstraZeneca,2023,Income_Statement,Other Operating Income Expense,1340000000.0
+qa_583,583,AstraZeneca,2023,Cash_Flow,Profit Loss From Operating Activities,8193000000.0
+qa_584,584,AstraZeneca,2023,Income_Statement,Finance Income,344000000.0
+qa_586,586,AstraZeneca,2023,Balance_Sheet,Share Of Profit Loss Of Associates And Joint Ventures Accounted For Using Equity Method,-12000000.0
+qa_587,587,AstraZeneca,2023,Income_Statement,Profit Loss Before Tax,6899000000.0
+qa_588,588,AstraZeneca,2023,Income_Statement,Income Tax Expense Continuing Operations,938000000.0
+qa_589,589,AstraZeneca,2023,Income_Statement,Profit Loss,5961000000.0
+qa_590,590,AstraZeneca,2023,Income_Statement,Other Comprehensive Income Before Tax Gains Losses On Remeasurements Of Defined Benefit Plans,-406000000.0
+qa_591,591,AstraZeneca,2023,Balance_Sheet,Other Comprehensive Income Before Tax Gains Losses From Investments In Equity Instruments,278000000.0
+qa_592,592,AstraZeneca,2023,Balance_Sheet,Other Comprehensive Income Before Tax Change In Fair Value Of Financial Liability Attributable To Change In Credit Risk Of Liability,-6000000.0
+qa_593,593,AstraZeneca,2023,Income_Statement,Income Tax Relating To Components Of Other Comprehensive Income That Will Not Be Reclassified To Profit Or Loss,-101000000.0
+qa_594,594,AstraZeneca,2023,Income_Statement,Other Comprehensive Income That Will Not Be Reclassified To Profit Or Loss Net Of Tax,-33000000.0
+qa_595,595,AstraZeneca,2023,Income_Statement,Other Comprehensive Income Before Tax Exchange Differences On Translation,608000000.0
+qa_596,596,AstraZeneca,2022,Income_Statement,Other Comprehensive Income Before Tax Exchange Differences On Translation,-1446000000.0
+qa_597,597,AstraZeneca,2021,Income_Statement,Other Comprehensive Income Before Tax Exchange Differences On Translation,-483000000.0
+qa_598,598,AstraZeneca,2023,Company_Specific_Metric,Gains Losses On Exchange Difference Hedges Of Net Investments In Foreign Operations Before Tax,24000000.0
+qa_599,599,AstraZeneca,2023,Cash_Flow,Gains Losses On Cash Flow Hedges Before Tax,266000000.0
+qa_600,600,AstraZeneca,2023,Cash_Flow,Reclassification Adjustments On Cash Flow Hedges Before Tax,145000000.0
+qa_601,601,AstraZeneca,2023,Income_Statement,Other Comprehensive Income Before Tax Hedges Of Net Investments In Foreign Operations,44000000.0
+qa_602,602,AstraZeneca,2022,Income_Statement,Other Comprehensive Income Before Tax Hedges Of Net Investments In Foreign Operations,-8000000.0
+qa_603,603,AstraZeneca,2021,Income_Statement,Other Comprehensive Income Before Tax Hedges Of Net Investments In Foreign Operations,34000000.0
+qa_604,604,AstraZeneca,2023,Company_Specific_Metric,Gains Costs Of Hedging Before Tax,-19000000.0
+qa_605,605,AstraZeneca,2022,Company_Specific_Metric,Gains Costs Of Hedging Before Tax,-7000000.0
+qa_606,606,AstraZeneca,2021,Company_Specific_Metric,Gains Costs Of Hedging Before Tax,-6000000.0
+qa_607,607,AstraZeneca,2023,Income_Statement,Income Tax Relating To Components Of Other Comprehensive Income That Will Be Reclassified To Profit Or Loss,12000000.0
+qa_608,608,AstraZeneca,2023,Income_Statement,Other Comprehensive Income That Will Be Reclassified To Profit Or Loss Net Of Tax,766000000.0
+qa_609,609,AstraZeneca,2023,Income_Statement,Other Comprehensive Income,733000000.0
+qa_610,610,AstraZeneca,2023,Income_Statement,Comprehensive Income,6694000000.0
+qa_611,611,AstraZeneca,2023,Income_Statement,Profit Loss Attributable To Owners Of Parent,5955000000.0
+qa_612,612,AstraZeneca,2023,Income_Statement,Profit Loss Attributable To Noncontrolling Interests,6000000.0
+qa_613,613,AstraZeneca,2023,Income_Statement,Comprehensive Income Attributable To Owners Of Parent,6688000000.0
+qa_614,614,AstraZeneca,2023,Income_Statement,Comprehensive Income Attributable To Noncontrolling Interests,6000000.0
+qa_616,616,AstraZeneca,2023,Income_Statement,Basic Earnings Loss Per Share,3.84
+qa_617,617,AstraZeneca,2023,Income_Statement,Diluted Earnings Loss Per Share,3.81
+qa_622,622,AstraZeneca,2023,Balance_Sheet,Rightofuse Assets,1100000000.0
+qa_624,624,AstraZeneca,2023,Company_Specific_Metric,Intangible Assets Classified As Non Current,38089000000.0
+qa_625,625,AstraZeneca,2022,Company_Specific_Metric,Intangible Assets Classified As Non Current,39307000000.0
+qa_626,626,AstraZeneca,2021,Company_Specific_Metric,Intangible Assets Classified As Non Current,42387000000.0
+qa_627,627,AstraZeneca,2023,Balance_Sheet,Investment Accounted For Using Equity Method,147000000.0
+qa_628,628,AstraZeneca,2023,Balance_Sheet,Noncurrent Investments Other Than Investments Accounted For Using Equity Method,1530000000.0
+qa_629,629,AstraZeneca,2023,Balance_Sheet,Noncurrent Derivative Financial Assets,228000000.0
+qa_631,631,AstraZeneca,2023,Balance_Sheet,Deferred Tax Assets,4718000000.0
+qa_632,632,AstraZeneca,2023,Balance_Sheet,Noncurrent Assets,76065000000.0
+qa_636,636,AstraZeneca,2023,Balance_Sheet,Current Derivative Financial Assets,116000000.0
+qa_637,637,AstraZeneca,2023,Company_Specific_Metric,Intangible Assets Classified As Current,0.0
+qa_638,638,AstraZeneca,2022,Company_Specific_Metric,Intangible Assets Classified As Current,0.0
+qa_639,639,AstraZeneca,2021,Company_Specific_Metric,Intangible Assets Classified As Current,105000000.0
+qa_640,640,AstraZeneca,2023,Balance_Sheet,Current Tax Assets,1426000000.0
+qa_641,641,AstraZeneca,2023,Cash_Flow,Cash And Cash Equivalents,5840000000.0
+qa_642,642,AstraZeneca,2023,Balance_Sheet,Noncurrent Assets Or Disposal Groups Classified As Held For Sale Or As Held For Distribution To Owners,0.0
+qa_643,643,AstraZeneca,2023,Balance_Sheet,Current Assets,25054000000.0
+qa_644,644,AstraZeneca,2023,Balance_Sheet,Assets,101119000000.0
+qa_646,646,AstraZeneca,2023,Balance_Sheet,Current Lease Liabilities,271000000.0
+qa_648,648,AstraZeneca,2023,Balance_Sheet,Current Derivative Financial Liabilities,156000000.0
+qa_650,650,AstraZeneca,2023,Balance_Sheet,Current Tax Liabilities,1584000000.0
+qa_651,651,AstraZeneca,2023,Balance_Sheet,Current Liabilities,30542000000.0
+qa_653,653,AstraZeneca,2023,Balance_Sheet,Noncurrent Lease Liabilities,857000000.0
+qa_654,654,AstraZeneca,2023,Balance_Sheet,Noncurrent Derivative Financial Liabilities,38000000.0
+qa_655,655,AstraZeneca,2023,Balance_Sheet,Deferred Tax Liabilities,2844000000.0
+qa_656,656,AstraZeneca,2023,Balance_Sheet,Noncurrent Recognised Liabilities Defined Benefit Plan,1520000000.0
+qa_659,659,AstraZeneca,2023,Balance_Sheet,Noncurrent Liabilities,31411000000.0
+qa_660,660,AstraZeneca,2023,Balance_Sheet,Liabilities,61953000000.0
+qa_661,661,AstraZeneca,2023,Balance_Sheet,Net Assets Liabilities,39166000000.0
+qa_666,666,AstraZeneca,2023,Company_Specific_Metric,Other Reserves Other Than Merger And Capital Redemption Reserve,1464000000.0
+qa_668,668,AstraZeneca,2023,Balance_Sheet,Equity Attributable To Owners Of Parent,39143000000.0
+qa_670,670,AstraZeneca,2023,Balance_Sheet,Equity,39166000000.0
+qa_672,672,AstraZeneca,2021,Company_Specific_Metric,Increase Decrease Through Issue Of Replacement Share Awards Upon Acquisition,0.0
+qa_673,673,AstraZeneca,2023,Company_Specific_Metric,Increase Decrease Through Transfer Between Other Reserves And Retained Earnings Equity,0.0
+qa_674,674,AstraZeneca,2023,Company_Specific_Metric,Dividends Recognised As Distributions To Owners Of Parent Net Of Forfeiture,0.0
+qa_676,676,AstraZeneca,2023,Balance_Sheet,Issue Of Equity,1000000.0
+qa_678,678,AstraZeneca,2023,Company_Specific_Metric,Settlement Of Share Plan Awards Equity,0.0
+qa_679,679,AstraZeneca,2023,Balance_Sheet,Changes In Equity,1000000.0
+qa_681,681,AstraZeneca,2023,Income_Statement,Adjustments For Finance Income Cost,-1282000000.0
+qa_682,682,AstraZeneca,2022,Income_Statement,Adjustments For Finance Income Cost,-1251000000.0
+qa_683,683,AstraZeneca,2021,Income_Statement,Adjustments For Finance Income Cost,-1257000000.0
+qa_684,684,AstraZeneca,2023,Balance_Sheet,Adjustments For Undistributed Profits Of Investments Accounted For Using Equity Method,-12000000.0
+qa_685,685,AstraZeneca,2022,Balance_Sheet,Adjustments For Undistributed Profits Of Investments Accounted For Using Equity Method,-5000000.0
+qa_686,686,AstraZeneca,2021,Balance_Sheet,Adjustments For Undistributed Profits Of Investments Accounted For Using Equity Method,-64000000.0
+qa_687,687,AstraZeneca,2023,Income_Statement,Adjustments For Depreciation And Amortisation Expense And Impairment Loss Reversal Of Impairment Loss Recognised In Profit Or Loss,5387000000.0
+qa_688,688,AstraZeneca,2022,Income_Statement,Adjustments For Depreciation And Amortisation Expense And Impairment Loss Reversal Of Impairment Loss Recognised In Profit Or Loss,5480000000.0
+qa_689,689,AstraZeneca,2021,Income_Statement,Adjustments For Depreciation And Amortisation Expense And Impairment Loss Reversal Of Impairment Loss Recognised In Profit Or Loss,6530000000.0
+qa_692,692,AstraZeneca,2023,Company_Specific_Metric,Adjustments For Increase Decrease In Trade Other Payables And Provisions,-2394000000.0
+qa_693,693,AstraZeneca,2023,Company_Specific_Metric,Adjustments For Losses Gains On Disposal Of Intangible Asset,-251000000.0
+qa_694,694,AstraZeneca,2023,Income_Statement,Adjustments For Gain Loss On Disposal Of Investments In Subsidiaries Joint Ventures And Associates,0.0
+qa_695,695,AstraZeneca,2023,Company_Specific_Metric,Contingent Consideration Fair Value Movement,549000000.0
+qa_696,696,AstraZeneca,2023,Cash_Flow,Other Adjustments For Noncash Items,-386000000.0
+qa_697,697,AstraZeneca,2023,Cash_Flow,Cash Flows From Used In Operations,13792000000.0
+qa_698,698,AstraZeneca,2023,Cash_Flow,Interest Paid Classified As Operating Activities,1081000000.0
+qa_699,699,AstraZeneca,2023,Cash_Flow,Income Taxes Paid Refund Classified As Operating Activities,2366000000.0
+qa_700,700,AstraZeneca,2023,Cash_Flow,Cash Flows From Used In Operating Activities,10345000000.0
+qa_701,701,AstraZeneca,2023,Company_Specific_Metric,Upfront Payments On Business Combinations Classified As Investing Activities,189000000.0
+qa_702,702,AstraZeneca,2022,Company_Specific_Metric,Upfront Payments On Business Combinations Classified As Investing Activities,48000000.0
+qa_703,703,AstraZeneca,2021,Company_Specific_Metric,Upfront Payments On Business Combinations Classified As Investing Activities,9263000000.0
+qa_704,704,AstraZeneca,2023,Company_Specific_Metric,Payments Upon Vesting Of Employee Share Awards Attributable To Business Combinations,84000000.0
+qa_705,705,AstraZeneca,2023,Company_Specific_Metric,Contingent Consideration Payment Business Combinations Classified As Investing Activities,826000000.0
+qa_706,706,AstraZeneca,2023,Cash_Flow,Purchase Of Property Plant And Equipment Classified As Investing Activities,1361000000.0
+qa_707,707,AstraZeneca,2023,Cash_Flow,Proceeds From Sales Of Property Plant And Equipment Classified As Investing Activities,132000000.0
+qa_708,708,AstraZeneca,2023,Cash_Flow,Purchase Of Intangible Assets Classified As Investing Activities,2417000000.0
+qa_709,709,AstraZeneca,2023,Cash_Flow,Proceeds From Sales Of Intangible Assets Classified As Investing Activities,291000000.0
+qa_710,710,AstraZeneca,2023,Company_Specific_Metric,Inflows Outflows Of Cash Related To Profit Participation Liability Classified As Investing Activities,190000000.0
+qa_711,711,AstraZeneca,2023,Cash_Flow,Purchase Of Other Longterm Assets Classified As Investing Activities,136000000.0
+qa_712,712,AstraZeneca,2023,Cash_Flow,Proceeds From Other Longterm Assets Classified As Investing Activities,32000000.0
+qa_713,713,AstraZeneca,2023,Cash_Flow,Other Inflows Outflows Of Cash Classified As Investing Activities,97000000.0
+qa_714,714,AstraZeneca,2023,Cash_Flow,Other Cash Payments To Acquire Interests In Joint Ventures Classified As Investing Activities,80000000.0
+qa_715,715,AstraZeneca,2023,Balance_Sheet,Proceeds From Sales Of Investments Accounted For Using Equity Method,0.0
+qa_716,716,AstraZeneca,2023,Cash_Flow,Interest Received Classified As Investing Activities,287000000.0
+qa_717,717,AstraZeneca,2023,Cash_Flow,Cash Flows From Used In Investing Activities,-4064000000.0
+qa_718,718,AstraZeneca,2023,Company_Specific_Metric,Cash Flows From Used In Operating And Investing Activities,6281000000.0
+qa_720,720,AstraZeneca,2023,Cash_Flow,Proceeds From Borrowings Classified As Financing Activities,3816000000.0
+qa_721,721,AstraZeneca,2023,Cash_Flow,Repayments Of Borrowings Classified As Financing Activities,4942000000.0
+qa_722,722,AstraZeneca,2023,Cash_Flow,Dividends Paid Classified As Financing Activities,4481000000.0
+qa_723,723,AstraZeneca,2023,Company_Specific_Metric,Hedge Contracts Relating To Dividend Payments Receipts Classified As Financing Activities,19000000.0
+qa_724,724,AstraZeneca,2023,Cash_Flow,Payments Of Lease Liabilities Classified As Financing Activities,268000000.0
+qa_725,725,AstraZeneca,2023,Cash_Flow,Other Inflows Outflows Of Cash Classified As Financing Activities,161000000.0
+qa_726,726,AstraZeneca,2023,Company_Specific_Metric,Payments To Acquire Non Controlling Interests,0.0
+qa_727,727,AstraZeneca,2023,Company_Specific_Metric,Payment Of Share Purchase Liabilities,867000000.0
+qa_728,728,AstraZeneca,2022,Company_Specific_Metric,Payment Of Share Purchase Liabilities,920000000.0
+qa_729,729,AstraZeneca,2021,Company_Specific_Metric,Payment Of Share Purchase Liabilities,0.0
+qa_730,730,AstraZeneca,2023,Cash_Flow,Cash Flows From Used In Financing Activities,-6567000000.0
+qa_731,731,AstraZeneca,2023,Cash_Flow,Increase Decrease In Cash And Cash Equivalents Before Effect Of Exchange Rate Changes,-286000000.0
+qa_732,732,AstraZeneca,2023,Cash_Flow,Effect Of Exchange Rate Changes On Cash And Cash Equivalents,-60000000.0
+qa_733,733,AstraZeneca,2023,Cash_Flow,Cash And Cash Equivalents If Different From Statement Of Financial Position,5637000000.0
+qa_819,819,AstraZeneca,2023,Cash_Flow,Description Of Nature Of Entitys Operations And Principal Activities,"AstraZeneca’s pharmaceuticals business consists of the discovery and development of new products, which are then manufactured, marketed and sold."
+qa_892,892,AstraZeneca,2024,Income_Statement,Revenue From Sale Of Goods,50938000000.0
+qa_893,893,AstraZeneca,2024,Company_Specific_Metric,Alliance Revenue,2212000000.0
+qa_894,894,AstraZeneca,2024,Company_Specific_Metric,Collaboration Revenue,923000000.0
+qa_895,895,AstraZeneca,2024,Income_Statement,Revenue,54073000000.0
+qa_897,897,AstraZeneca,2024,Income_Statement,Gross Profit,43866000000.0
+qa_899,899,AstraZeneca,2024,Income_Statement,Research And Development Expense,13583000000.0
+qa_900,900,AstraZeneca,2024,Income_Statement,Selling General And Administrative Expense,19977000000.0
+qa_901,901,AstraZeneca,2024,Income_Statement,Other Operating Income Expense,252000000.0
+qa_902,902,AstraZeneca,2024,Cash_Flow,Profit Loss From Operating Activities,10003000000.0
+qa_903,903,AstraZeneca,2024,Income_Statement,Finance Income,458000000.0
+qa_905,905,AstraZeneca,2024,Balance_Sheet,Share Of Profit Loss Of Associates And Joint Ventures Accounted For Using Equity Method,-28000000.0
+qa_906,906,AstraZeneca,2024,Income_Statement,Profit Loss Before Tax,8691000000.0
+qa_907,907,AstraZeneca,2024,Income_Statement,Income Tax Expense Continuing Operations,1650000000.0
+qa_908,908,AstraZeneca,2024,Income_Statement,Profit Loss,7041000000.0
+qa_909,909,AstraZeneca,2024,Income_Statement,Other Comprehensive Income Before Tax Gains Losses On Remeasurements Of Defined Benefit Plans,80000000.0
+qa_910,910,AstraZeneca,2024,Balance_Sheet,Other Comprehensive Income Before Tax Gains Losses From Investments In Equity Instruments,139000000.0
+qa_911,911,AstraZeneca,2024,Balance_Sheet,Other Comprehensive Income Before Tax Change In Fair Value Of Financial Liability Attributable To Change In Credit Risk Of Liability,12000000.0
+qa_912,912,AstraZeneca,2024,Income_Statement,Income Tax Relating To Components Of Other Comprehensive Income That Will Not Be Reclassified To Profit Or Loss,43000000.0
+qa_913,913,AstraZeneca,2024,Income_Statement,Other Comprehensive Income That Will Not Be Reclassified To Profit Or Loss Net Of Tax,188000000.0
+qa_914,914,AstraZeneca,2024,Income_Statement,Other Comprehensive Income Before Tax Exchange Differences On Translation,-957000000.0
+qa_915,915,AstraZeneca,2024,Company_Specific_Metric,Other Comprehensive Income Gains Losses On Exchange Differences On Liabilities Designated In Net Investment Hedges Before Tax,-122000000.0
+qa_916,916,AstraZeneca,2023,Company_Specific_Metric,Other Comprehensive Income Gains Losses On Exchange Differences On Liabilities Designated In Net Investment Hedges Before Tax,24000000.0
+qa_917,917,AstraZeneca,2022,Company_Specific_Metric,Other Comprehensive Income Gains Losses On Exchange Differences On Liabilities Designated In Net Investment Hedges Before Tax,-282000000.0
+qa_918,918,AstraZeneca,2024,Cash_Flow,Gains Losses On Cash Flow Hedges Before Tax,-129000000.0
+qa_919,919,AstraZeneca,2024,Cash_Flow,Reclassification Adjustments On Cash Flow Hedges Before Tax,-177000000.0
+qa_920,920,AstraZeneca,2024,Income_Statement,Other Comprehensive Income Before Tax Hedges Of Net Investments In Foreign Operations,39000000.0
+qa_921,921,AstraZeneca,2024,Company_Specific_Metric,Gains Costs Of Hedging Before Tax,-21000000.0
+qa_922,922,AstraZeneca,2024,Income_Statement,Income Tax Relating To Components Of Other Comprehensive Income That Will Be Reclassified To Profit Or Loss,-25000000.0
+qa_923,923,AstraZeneca,2024,Income_Statement,Other Comprehensive Income That Will Be Reclassified To Profit Or Loss Net Of Tax,-988000000.0
+qa_924,924,AstraZeneca,2024,Income_Statement,Other Comprehensive Income,-800000000.0
+qa_925,925,AstraZeneca,2024,Income_Statement,Comprehensive Income,6241000000.0
+qa_926,926,AstraZeneca,2024,Income_Statement,Profit Loss Attributable To Owners Of Parent,7035000000.0
+qa_927,927,AstraZeneca,2024,Income_Statement,Profit Loss Attributable To Noncontrolling Interests,6000000.0
+qa_928,928,AstraZeneca,2024,Income_Statement,Comprehensive Income Attributable To Owners Of Parent,6236000000.0
+qa_929,929,AstraZeneca,2024,Income_Statement,Comprehensive Income Attributable To Noncontrolling Interests,5000000.0
+qa_931,931,AstraZeneca,2024,Income_Statement,Basic Earnings Loss Per Share,4.54
+qa_932,932,AstraZeneca,2024,Income_Statement,Diluted Earnings Loss Per Share,4.5
+qa_937,937,AstraZeneca,2024,Balance_Sheet,Rightofuse Assets,1395000000.0
+qa_939,939,AstraZeneca,2024,Balance_Sheet,Intangible Assets Other Than Goodwill,37177000000.0
+qa_940,940,AstraZeneca,2023,Balance_Sheet,Intangible Assets Other Than Goodwill,38089000000.0
+qa_941,941,AstraZeneca,2024,Balance_Sheet,Investment Accounted For Using Equity Method,268000000.0
+qa_942,942,AstraZeneca,2024,Balance_Sheet,Noncurrent Investments Other Than Investments Accounted For Using Equity Method,1632000000.0
+qa_943,943,AstraZeneca,2024,Balance_Sheet,Noncurrent Derivative Financial Assets,182000000.0
+qa_945,945,AstraZeneca,2024,Balance_Sheet,Deferred Tax Assets,5347000000.0
+qa_946,946,AstraZeneca,2024,Balance_Sheet,Noncurrent Assets,78208000000.0
+qa_950,950,AstraZeneca,2024,Balance_Sheet,Current Derivative Financial Assets,54000000.0
+qa_951,951,AstraZeneca,2024,Balance_Sheet,Current Tax Assets Current,1859000000.0
+qa_952,952,AstraZeneca,2023,Balance_Sheet,Current Tax Assets Current,1426000000.0
+qa_953,953,AstraZeneca,2022,Balance_Sheet,Current Tax Assets Current,731000000.0
+qa_954,954,AstraZeneca,2024,Cash_Flow,Cash And Cash Equivalents,5488000000.0
+qa_955,955,AstraZeneca,2024,Balance_Sheet,Noncurrent Assets Or Disposal Groups Classified As Held For Sale Or As Held For Distribution To Owners,0.0
+qa_956,956,AstraZeneca,2024,Balance_Sheet,Current Assets,25827000000.0
+qa_957,957,AstraZeneca,2024,Balance_Sheet,Assets,104035000000.0
+qa_959,959,AstraZeneca,2024,Balance_Sheet,Current Lease Liabilities,339000000.0
+qa_961,961,AstraZeneca,2024,Balance_Sheet,Current Derivative Financial Liabilities,50000000.0
+qa_963,963,AstraZeneca,2024,Balance_Sheet,Current Tax Liabilities Current,1406000000.0
+qa_964,964,AstraZeneca,2023,Balance_Sheet,Current Tax Liabilities Current,1584000000.0
+qa_965,965,AstraZeneca,2022,Balance_Sheet,Current Tax Liabilities Current,896000000.0
+qa_966,966,AstraZeneca,2024,Balance_Sheet,Current Liabilities,27866000000.0
+qa_968,968,AstraZeneca,2024,Balance_Sheet,Noncurrent Lease Liabilities,1113000000.0
+qa_969,969,AstraZeneca,2024,Balance_Sheet,Noncurrent Derivative Financial Liabilities,115000000.0
+qa_970,970,AstraZeneca,2024,Balance_Sheet,Deferred Tax Liabilities,3305000000.0
+qa_971,971,AstraZeneca,2024,Balance_Sheet,Noncurrent Recognised Liabilities Defined Benefit Plan,1330000000.0
+qa_973,973,AstraZeneca,2024,Balance_Sheet,Current Tax Liabilities Noncurrent,238000000.0
+qa_974,974,AstraZeneca,2023,Balance_Sheet,Current Tax Liabilities Noncurrent,0.0
+qa_975,975,AstraZeneca,2022,Balance_Sheet,Current Tax Liabilities Noncurrent,0.0
+qa_977,977,AstraZeneca,2024,Balance_Sheet,Noncurrent Liabilities,35298000000.0
+qa_978,978,AstraZeneca,2024,Balance_Sheet,Liabilities,63164000000.0
+qa_979,979,AstraZeneca,2024,Balance_Sheet,Net Assets Liabilities,40871000000.0
+qa_984,984,AstraZeneca,2024,Company_Specific_Metric,Other Reserves Other Than Merger And Capital Redemption Reserve,1411000000.0
+qa_986,986,AstraZeneca,2024,Balance_Sheet,Equity Attributable To Owners Of Parent,40786000000.0
+qa_988,988,AstraZeneca,2024,Balance_Sheet,Equity,40871000000.0
+qa_990,990,AstraZeneca,2024,Company_Specific_Metric,Increase Decrease Through Transfer Between Other Reserves And Retained Earnings Equity,0.0
+qa_991,991,AstraZeneca,2024,Company_Specific_Metric,Dividends Recognised As Distributions To Owners Of Parent Net Of Forfeiture,0.0
+qa_993,993,AstraZeneca,2024,Balance_Sheet,Issue Of Equity,0.0
+qa_994,994,AstraZeneca,2024,Income_Statement,Increase Decrease Through Changes In Ownership Interests In Subsidiaries That Do Not Result In Loss Of Control,0.0
+qa_997,997,AstraZeneca,2024,Company_Specific_Metric,Settlement Of Share Plan Awards Equity,0.0
+qa_998,998,AstraZeneca,2024,Balance_Sheet,Changes In Equity,0.0
+qa_1000,1000,AstraZeneca,2024,Income_Statement,Adjustments For Finance Income Cost,-1284000000.0
+qa_1001,1001,AstraZeneca,2024,Balance_Sheet,Adjustments For Undistributed Profits Of Investments Accounted For Using Equity Method,-28000000.0
+qa_1002,1002,AstraZeneca,2024,Income_Statement,Adjustments For Depreciation And Amortisation Expense And Impairment Loss Reversal Of Impairment Loss Recognised In Profit Or Loss,6688000000.0
+qa_1005,1005,AstraZeneca,2024,Company_Specific_Metric,Adjustments For Increase Decrease In Trade Other Payables And Provisions,-862000000.0
+qa_1006,1006,AstraZeneca,2024,Company_Specific_Metric,Adjustments For Losses Gains On Disposal Of Intangible Asset,-64000000.0
+qa_1007,1007,AstraZeneca,2024,Company_Specific_Metric,Contingent Consideration Fair Value Movement,311000000.0
+qa_1008,1008,AstraZeneca,2024,Cash_Flow,Other Adjustments For Noncash Items,-121000000.0
+qa_1009,1009,AstraZeneca,2024,Cash_Flow,Cash Flows From Used In Operations,15924000000.0
+qa_1010,1010,AstraZeneca,2024,Cash_Flow,Interest Paid Classified As Operating Activities,1313000000.0
+qa_1011,1011,AstraZeneca,2024,Cash_Flow,Income Taxes Paid Refund Classified As Operating Activities,2750000000.0
+qa_1012,1012,AstraZeneca,2024,Cash_Flow,Cash Flows From Used In Operating Activities,11861000000.0
+qa_1013,1013,AstraZeneca,2024,Company_Specific_Metric,Upfront Payments On Business Combinations Classified As Investing Activities,2771000000.0
+qa_1014,1014,AstraZeneca,2024,Company_Specific_Metric,Payments Upon Vesting Of Employee Share Awards Attributable To Business Combinations,3000000.0
+qa_1015,1015,AstraZeneca,2024,Company_Specific_Metric,Contingent Consideration Payment Business Combinations Classified As Investing Activities,1008000000.0
+qa_1016,1016,AstraZeneca,2024,Cash_Flow,Purchase Of Property Plant And Equipment Classified As Investing Activities,1924000000.0
+qa_1017,1017,AstraZeneca,2024,Cash_Flow,Proceeds From Sales Of Property Plant And Equipment Classified As Investing Activities,55000000.0
+qa_1018,1018,AstraZeneca,2024,Cash_Flow,Purchase Of Intangible Assets Classified As Investing Activities,2662000000.0
+qa_1019,1019,AstraZeneca,2024,Cash_Flow,Proceeds From Sales Of Intangible Assets Classified As Investing Activities,123000000.0
+qa_1020,1020,AstraZeneca,2024,Company_Specific_Metric,Inflows Outflows Of Cash Related To Profit Participation Liability Classified As Investing Activities,0.0
+qa_1021,1021,AstraZeneca,2024,Cash_Flow,Purchase Of Other Longterm Assets Classified As Investing Activities,96000000.0
+qa_1022,1022,AstraZeneca,2024,Cash_Flow,Proceeds From Other Longterm Assets Classified As Investing Activities,78000000.0
+qa_1023,1023,AstraZeneca,2024,Cash_Flow,Other Inflows Outflows Of Cash Classified As Investing Activities,30000000.0
+qa_1024,1024,AstraZeneca,2024,Cash_Flow,Other Cash Payments To Acquire Interests In Joint Ventures Classified As Investing Activities,158000000.0
+qa_1025,1025,AstraZeneca,2024,Balance_Sheet,Proceeds From Sales Of Investments Accounted For Using Equity Method,13000000.0
+qa_1026,1026,AstraZeneca,2024,Cash_Flow,Interest Received Classified As Investing Activities,343000000.0
+qa_1027,1027,AstraZeneca,2024,Cash_Flow,Cash Flows From Used In Investing Activities,-7980000000.0
+qa_1028,1028,AstraZeneca,2024,Company_Specific_Metric,Cash Flows From Used In Operating And Investing Activities,3881000000.0
+qa_1033,1033,AstraZeneca,2024,Cash_Flow,Proceeds From Borrowings Classified As Financing Activities,6492000000.0
+qa_1034,1034,AstraZeneca,2024,Cash_Flow,Repayments Of Borrowings Classified As Financing Activities,4652000000.0
+qa_1035,1035,AstraZeneca,2024,Cash_Flow,Dividends Paid Classified As Financing Activities,4629000000.0
+qa_1036,1036,AstraZeneca,2024,Company_Specific_Metric,Hedge Contracts Relating To Dividend Payments Receipts Classified As Financing Activities,-16000000.0
+qa_1037,1037,AstraZeneca,2024,Cash_Flow,Payments Of Lease Liabilities Classified As Financing Activities,316000000.0
+qa_1038,1038,AstraZeneca,2024,Cash_Flow,Cash Flows From Used In Increase Decrease In Current Borrowings,-31000000.0
+qa_1039,1039,AstraZeneca,2023,Cash_Flow,Cash Flows From Used In Increase Decrease In Current Borrowings,161000000.0
+qa_1040,1040,AstraZeneca,2022,Cash_Flow,Cash Flows From Used In Increase Decrease In Current Borrowings,74000000.0
+qa_1041,1041,AstraZeneca,2024,Company_Specific_Metric,Payment Of Share Purchase Liabilities,833000000.0
+qa_1042,1042,AstraZeneca,2024,Cash_Flow,Cash Flows From Used In Financing Activities,-3996000000.0
+qa_1043,1043,AstraZeneca,2024,Cash_Flow,Increase Decrease In Cash And Cash Equivalents Before Effect Of Exchange Rate Changes,-115000000.0
+qa_1044,1044,AstraZeneca,2024,Cash_Flow,Effect Of Exchange Rate Changes On Cash And Cash Equivalents,-93000000.0
+qa_1045,1045,AstraZeneca,2024,Cash_Flow,Cash And Cash Equivalents If Different From Statement Of Financial Position,5429000000.0
+qa_1135,1135,AstraZeneca,2024,Cash_Flow,Description Of Nature Of Entitys Operations And Principal Activities,"AstraZeneca’s pharmaceuticals business consists of the discovery and development of new products, which are then manufactured, marketed and sold."
+qa_1207,1207,GSK,2022,Income_Statement,Revenue,29324000000.0
+qa_1208,1208,GSK,2021,Income_Statement,Revenue,24696000000.0
+qa_1209,1209,GSK,2020,Income_Statement,Revenue,24354000000.0
+qa_1213,1213,GSK,2022,Income_Statement,Gross Profit,19770000000.0
+qa_1214,1214,GSK,2021,Income_Statement,Gross Profit,16533000000.0
+qa_1215,1215,GSK,2020,Income_Statement,Gross Profit,16425000000.0
+qa_1216,1216,GSK,2022,Income_Statement,Selling General And Administrative Expense,8372000000.0
+qa_1217,1217,GSK,2021,Income_Statement,Selling General And Administrative Expense,7070000000.0
+qa_1218,1218,GSK,2020,Income_Statement,Selling General And Administrative Expense,7437000000.0
+qa_1219,1219,GSK,2022,Income_Statement,Research And Development Expense,5488000000.0
+qa_1220,1220,GSK,2021,Income_Statement,Research And Development Expense,5019000000.0
+qa_1221,1221,GSK,2020,Income_Statement,Research And Development Expense,4793000000.0
+qa_1222,1222,GSK,2022,Income_Statement,Revenue From Royalties,758000000.0
+qa_1223,1223,GSK,2021,Income_Statement,Revenue From Royalties,417000000.0
+qa_1224,1224,GSK,2020,Income_Statement,Revenue From Royalties,321000000.0
+qa_1225,1225,GSK,2022,Income_Statement,Other Operating Income Expense,-235000000.0
+qa_1226,1226,GSK,2021,Income_Statement,Other Operating Income Expense,-504000000.0
+qa_1227,1227,GSK,2020,Income_Statement,Other Operating Income Expense,1463000000.0
+qa_1228,1228,GSK,2022,Cash_Flow,Profit Loss From Operating Activities,6433000000.0
+qa_1229,1229,GSK,2021,Cash_Flow,Profit Loss From Operating Activities,4357000000.0
+qa_1230,1230,GSK,2020,Cash_Flow,Profit Loss From Operating Activities,5979000000.0
+qa_1231,1231,GSK,2022,Income_Statement,Finance Income,76000000.0
+qa_1232,1232,GSK,2021,Income_Statement,Finance Income,14000000.0
+qa_1233,1233,GSK,2020,Income_Statement,Finance Income,32000000.0
+qa_1237,1237,GSK,2022,Company_Specific_Metric,Gain Loss On Disposal Of Interest In Associate,0.0
+qa_1238,1238,GSK,2021,Company_Specific_Metric,Gain Loss On Disposal Of Interest In Associate,-36000000.0
+qa_1239,1239,GSK,2020,Company_Specific_Metric,Gain Loss On Disposal Of Interest In Associate,0.0
+qa_1240,1240,GSK,2022,Balance_Sheet,Share Of Profit Loss Of Associates And Joint Ventures Accounted For Using Equity Method,-2000000.0
+qa_1241,1241,GSK,2021,Balance_Sheet,Share Of Profit Loss Of Associates And Joint Ventures Accounted For Using Equity Method,33000000.0
+qa_1242,1242,GSK,2020,Balance_Sheet,Share Of Profit Loss Of Associates And Joint Ventures Accounted For Using Equity Method,33000000.0
+qa_1243,1243,GSK,2022,Income_Statement,Profit Loss Before Tax,5628000000.0
+qa_1244,1244,GSK,2021,Income_Statement,Profit Loss Before Tax,3599000000.0
+qa_1245,1245,GSK,2020,Income_Statement,Profit Loss Before Tax,5170000000.0
+qa_1246,1246,GSK,2022,Income_Statement,Income Tax Expense Continuing Operations,707000000.0
+qa_1247,1247,GSK,2021,Income_Statement,Income Tax Expense Continuing Operations,83000000.0
+qa_1248,1248,GSK,2020,Income_Statement,Income Tax Expense Continuing Operations,67000000.0
+qa_1249,1249,GSK,2022,Income_Statement,Profit Loss From Continuing Operations,4921000000.0
+qa_1250,1250,GSK,2021,Income_Statement,Profit Loss From Continuing Operations,3516000000.0
+qa_1251,1251,GSK,2020,Income_Statement,Profit Loss From Continuing Operations,5103000000.0
+qa_1252,1252,GSK,2022,Company_Specific_Metric,Profit After Taxation From Discontinued Operations And Other Gains Losses From The Demerger,3049000000.0
+qa_1253,1253,GSK,2021,Company_Specific_Metric,Profit After Taxation From Discontinued Operations And Other Gains Losses From The Demerger,1580000000.0
+qa_1254,1254,GSK,2020,Company_Specific_Metric,Profit After Taxation From Discontinued Operations And Other Gains Losses From The Demerger,1285000000.0
+qa_1255,1255,GSK,2022,Company_Specific_Metric,Remeasurement Of Discontinued Operations Distributed To Shareholders On Demerger,7651000000.0
+qa_1256,1256,GSK,2021,Company_Specific_Metric,Remeasurement Of Discontinued Operations Distributed To Shareholders On Demerger,0.0
+qa_1257,1257,GSK,2020,Company_Specific_Metric,Remeasurement Of Discontinued Operations Distributed To Shareholders On Demerger,0.0
+qa_1258,1258,GSK,2022,Income_Statement,Profit Loss From Discontinued Operations,10700000000.0
+qa_1259,1259,GSK,2021,Income_Statement,Profit Loss From Discontinued Operations,1580000000.0
+qa_1260,1260,GSK,2020,Income_Statement,Profit Loss From Discontinued Operations,1285000000.0
+qa_1261,1261,GSK,2022,Income_Statement,Profit Loss,15621000000.0
+qa_1262,1262,GSK,2021,Income_Statement,Profit Loss,5096000000.0
+qa_1263,1263,GSK,2020,Income_Statement,Profit Loss,6388000000.0
+qa_1264,1264,GSK,2022,Income_Statement,Profit Loss From Continuing Operations Attributable To Noncontrolling Interests,460000000.0
+qa_1265,1265,GSK,2021,Income_Statement,Profit Loss From Continuing Operations Attributable To Noncontrolling Interests,200000000.0
+qa_1266,1266,GSK,2020,Income_Statement,Profit Loss From Continuing Operations Attributable To Noncontrolling Interests,230000000.0
+qa_1267,1267,GSK,2022,Income_Statement,Income From Continuing Operations Attributable To Owners Of Parent,4461000000.0
+qa_1268,1268,GSK,2021,Income_Statement,Income From Continuing Operations Attributable To Owners Of Parent,3316000000.0
+qa_1269,1269,GSK,2020,Income_Statement,Income From Continuing Operations Attributable To Owners Of Parent,4873000000.0
+qa_1270,1270,GSK,2022,Income_Statement,Profit Loss From Discontinued Operations Attributable To Noncontrolling Interests,205000000.0
+qa_1271,1271,GSK,2021,Income_Statement,Profit Loss From Discontinued Operations Attributable To Noncontrolling Interests,511000000.0
+qa_1272,1272,GSK,2020,Income_Statement,Profit Loss From Discontinued Operations Attributable To Noncontrolling Interests,409000000.0
+qa_1273,1273,GSK,2022,Income_Statement,Income From Discontinued Operations Attributable To Owners Of Parent,10495000000.0
+qa_1274,1274,GSK,2021,Income_Statement,Income From Discontinued Operations Attributable To Owners Of Parent,1069000000.0
+qa_1275,1275,GSK,2020,Income_Statement,Income From Discontinued Operations Attributable To Owners Of Parent,876000000.0
+qa_1276,1276,GSK,2022,Income_Statement,Profit Loss Attributable To Noncontrolling Interests,665000000.0
+qa_1277,1277,GSK,2021,Income_Statement,Profit Loss Attributable To Noncontrolling Interests,711000000.0
+qa_1278,1278,GSK,2020,Income_Statement,Profit Loss Attributable To Noncontrolling Interests,639000000.0
+qa_1279,1279,GSK,2022,Income_Statement,Profit Loss Attributable To Owners Of Parent,14956000000.0
+qa_1280,1280,GSK,2021,Income_Statement,Profit Loss Attributable To Owners Of Parent,4385000000.0
+qa_1281,1281,GSK,2020,Income_Statement,Profit Loss Attributable To Owners Of Parent,5749000000.0
+qa_1282,1282,GSK,2022,Income_Statement,Basic Earnings Loss Per Share From Continuing Operations,1.108
+qa_1283,1283,GSK,2021,Income_Statement,Basic Earnings Loss Per Share From Continuing Operations,0.829
+qa_1284,1284,GSK,2020,Income_Statement,Basic Earnings Loss Per Share From Continuing Operations,1.224
+qa_1285,1285,GSK,2022,Income_Statement,Basic Earnings Loss Per Share From Discontinued Operations,2.606
+qa_1286,1286,GSK,2021,Income_Statement,Basic Earnings Loss Per Share From Discontinued Operations,0.267
+qa_1287,1287,GSK,2020,Income_Statement,Basic Earnings Loss Per Share From Discontinued Operations,0.22
+qa_1288,1288,GSK,2022,Income_Statement,Basic Earnings Loss Per Share,3.714
+qa_1289,1289,GSK,2021,Income_Statement,Basic Earnings Loss Per Share,1.096
+qa_1290,1290,GSK,2020,Income_Statement,Basic Earnings Loss Per Share,1.444
+qa_1291,1291,GSK,2022,Income_Statement,Diluted Earnings Loss Per Share From Continuing Operations,1.092
+qa_1292,1292,GSK,2021,Income_Statement,Diluted Earnings Loss Per Share From Continuing Operations,0.818
+qa_1293,1293,GSK,2020,Income_Statement,Diluted Earnings Loss Per Share From Continuing Operations,1.209
+qa_1294,1294,GSK,2022,Income_Statement,Diluted Earnings Loss Per Share From Discontinued Operations,2.57
+qa_1295,1295,GSK,2021,Income_Statement,Diluted Earnings Loss Per Share From Discontinued Operations,0.264
+qa_1296,1296,GSK,2020,Income_Statement,Diluted Earnings Loss Per Share From Discontinued Operations,0.217
+qa_1297,1297,GSK,2022,Income_Statement,Diluted Earnings Loss Per Share,3.662
+qa_1298,1298,GSK,2021,Income_Statement,Diluted Earnings Loss Per Share,1.082
+qa_1299,1299,GSK,2020,Income_Statement,Diluted Earnings Loss Per Share,1.426
+qa_1300,1300,GSK,2022,Income_Statement,Gains Losses On Exchange Differences On Translation Before Tax,113000000.0
+qa_1301,1301,GSK,2021,Income_Statement,Gains Losses On Exchange Differences On Translation Before Tax,-339000000.0
+qa_1302,1302,GSK,2020,Income_Statement,Gains Losses On Exchange Differences On Translation Before Tax,-416000000.0
+qa_1306,1306,GSK,2022,Cash_Flow,Gains Losses On Cash Flow Hedges Before Tax,-18000000.0
+qa_1307,1307,GSK,2021,Cash_Flow,Gains Losses On Cash Flow Hedges Before Tax,5000000.0
+qa_1308,1308,GSK,2020,Cash_Flow,Gains Losses On Cash Flow Hedges Before Tax,-19000000.0
+qa_1309,1309,GSK,2022,Cash_Flow,Reclassification Adjustments On Cash Flow Hedges Before Tax,-14000000.0
+qa_1310,1310,GSK,2021,Cash_Flow,Reclassification Adjustments On Cash Flow Hedges Before Tax,-12000000.0
+qa_1311,1311,GSK,2020,Cash_Flow,Reclassification Adjustments On Cash Flow Hedges Before Tax,-54000000.0
+qa_1312,1312,GSK,2022,Cash_Flow,Income Tax Relating To Cash Flow Hedges Of Other Comprehensive Income,-9000000.0
+qa_1313,1313,GSK,2021,Cash_Flow,Income Tax Relating To Cash Flow Hedges Of Other Comprehensive Income,8000000.0
+qa_1314,1314,GSK,2020,Cash_Flow,Income Tax Relating To Cash Flow Hedges Of Other Comprehensive Income,18000000.0
+qa_1315,1315,GSK,2022,Income_Statement,Other Comprehensive Income That Will Be Reclassified To Profit Or Loss Net Of Tax,120000000.0
+qa_1316,1316,GSK,2021,Income_Statement,Other Comprehensive Income That Will Be Reclassified To Profit Or Loss Net Of Tax,-355000000.0
+qa_1317,1317,GSK,2020,Income_Statement,Other Comprehensive Income That Will Be Reclassified To Profit Or Loss Net Of Tax,-363000000.0
+qa_1318,1318,GSK,2022,Company_Specific_Metric,Exchange Movements On Overseas Net Assets Of Non Controlling Interests,-28000000.0
+qa_1319,1319,GSK,2021,Company_Specific_Metric,Exchange Movements On Overseas Net Assets Of Non Controlling Interests,-20000000.0
+qa_1320,1320,GSK,2020,Company_Specific_Metric,Exchange Movements On Overseas Net Assets Of Non Controlling Interests,-10000000.0
+qa_1321,1321,GSK,2022,Balance_Sheet,Other Comprehensive Income Before Tax Gains Losses From Investments In Equity Instruments,-754000000.0
+qa_1322,1322,GSK,2021,Balance_Sheet,Other Comprehensive Income Before Tax Gains Losses From Investments In Equity Instruments,-911000000.0
+qa_1323,1323,GSK,2020,Balance_Sheet,Other Comprehensive Income Before Tax Gains Losses From Investments In Equity Instruments,1346000000.0
+qa_1324,1324,GSK,2022,Balance_Sheet,Income Tax Relating To Investments In Equity Instruments Of Other Comprehensive Income,-56000000.0
+qa_1325,1325,GSK,2021,Balance_Sheet,Income Tax Relating To Investments In Equity Instruments Of Other Comprehensive Income,-131000000.0
+qa_1326,1326,GSK,2020,Balance_Sheet,Income Tax Relating To Investments In Equity Instruments Of Other Comprehensive Income,220000000.0
+qa_1327,1327,GSK,2022,Income_Statement,Other Comprehensive Income Before Tax Gains Losses On Remeasurements Of Defined Benefit Plans,-786000000.0
+qa_1328,1328,GSK,2021,Income_Statement,Other Comprehensive Income Before Tax Gains Losses On Remeasurements Of Defined Benefit Plans,940000000.0
+qa_1329,1329,GSK,2020,Income_Statement,Other Comprehensive Income Before Tax Gains Losses On Remeasurements Of Defined Benefit Plans,-164000000.0
+qa_1330,1330,GSK,2022,Income_Statement,Income Tax Relating To Remeasurements Of Defined Benefit Plans Of Other Comprehensive Income,-211000000.0
+qa_1331,1331,GSK,2021,Income_Statement,Income Tax Relating To Remeasurements Of Defined Benefit Plans Of Other Comprehensive Income,223000000.0
+qa_1332,1332,GSK,2020,Income_Statement,Income Tax Relating To Remeasurements Of Defined Benefit Plans Of Other Comprehensive Income,-55000000.0
+qa_1333,1333,GSK,2022,Company_Specific_Metric,Fair Value Movements On Cash Flow Hedges Not Reclassified,-6000000.0
+qa_1334,1334,GSK,2021,Company_Specific_Metric,Fair Value Movements On Cash Flow Hedges Not Reclassified,0.0
+qa_1335,1335,GSK,2020,Company_Specific_Metric,Fair Value Movements On Cash Flow Hedges Not Reclassified,0.0
+qa_1336,1336,GSK,2022,Income_Statement,Other Comprehensive Income That Will Not Be Reclassified To Profit Or Loss Net Of Tax,-1307000000.0
+qa_1337,1337,GSK,2021,Income_Statement,Other Comprehensive Income That Will Not Be Reclassified To Profit Or Loss Net Of Tax,-83000000.0
+qa_1338,1338,GSK,2020,Income_Statement,Other Comprehensive Income That Will Not Be Reclassified To Profit Or Loss Net Of Tax,1007000000.0
+qa_1339,1339,GSK,2022,Company_Specific_Metric,Other Comprehensive Expense Income For The Year From Continuing Operations,-1187000000.0
+qa_1340,1340,GSK,2021,Company_Specific_Metric,Other Comprehensive Expense Income For The Year From Continuing Operations,-438000000.0
+qa_1341,1341,GSK,2020,Company_Specific_Metric,Other Comprehensive Expense Income For The Year From Continuing Operations,644000000.0
+qa_1342,1342,GSK,2022,Company_Specific_Metric,Other Comprehensive Expense Income For The Year From Discontinued Operations,356000000.0
+qa_1343,1343,GSK,2021,Company_Specific_Metric,Other Comprehensive Expense Income For The Year From Discontinued Operations,101000000.0
+qa_1344,1344,GSK,2020,Company_Specific_Metric,Other Comprehensive Expense Income For The Year From Discontinued Operations,326000000.0
+qa_1345,1345,GSK,2022,Income_Statement,Comprehensive Income,14790000000.0
+qa_1346,1346,GSK,2021,Income_Statement,Comprehensive Income,4759000000.0
+qa_1347,1347,GSK,2020,Income_Statement,Comprehensive Income,7358000000.0
+qa_1348,1348,GSK,2022,Income_Statement,Comprehensive Income Attributable To Owners Of Parent,14153000000.0
+qa_1349,1349,GSK,2021,Income_Statement,Comprehensive Income Attributable To Owners Of Parent,4068000000.0
+qa_1350,1350,GSK,2020,Income_Statement,Comprehensive Income Attributable To Owners Of Parent,6753000000.0
+qa_1351,1351,GSK,2022,Income_Statement,Comprehensive Income Attributable To Noncontrolling Interests,637000000.0
+qa_1352,1352,GSK,2021,Income_Statement,Comprehensive Income Attributable To Noncontrolling Interests,691000000.0
+qa_1353,1353,GSK,2020,Income_Statement,Comprehensive Income Attributable To Noncontrolling Interests,605000000.0
+qa_1356,1356,GSK,2022,Balance_Sheet,Rightofuse Assets,687000000.0
+qa_1357,1357,GSK,2021,Balance_Sheet,Rightofuse Assets,740000000.0
+qa_1360,1360,GSK,2022,Balance_Sheet,Intangible Assets Other Than Goodwill,14318000000.0
+qa_1361,1361,GSK,2021,Balance_Sheet,Intangible Assets Other Than Goodwill,30079000000.0
+qa_1362,1362,GSK,2022,Balance_Sheet,Investment Accounted For Using Equity Method,74000000.0
+qa_1363,1363,GSK,2021,Balance_Sheet,Investment Accounted For Using Equity Method,88000000.0
+qa_1364,1364,GSK,2022,Balance_Sheet,Noncurrent Investments Other Than Investments Accounted For Using Equity Method,1467000000.0
+qa_1365,1365,GSK,2021,Balance_Sheet,Noncurrent Investments Other Than Investments Accounted For Using Equity Method,2126000000.0
+qa_1366,1366,GSK,2022,Balance_Sheet,Deferred Tax Assets,5658000000.0
+qa_1367,1367,GSK,2021,Balance_Sheet,Deferred Tax Assets,5218000000.0
+qa_1368,1368,GSK,2022,Balance_Sheet,Noncurrent Derivative Financial Assets,0.0
+qa_1369,1369,GSK,2021,Balance_Sheet,Noncurrent Derivative Financial Assets,18000000.0
+qa_1370,1370,GSK,2022,Balance_Sheet,Other Noncurrent Assets,1194000000.0
+qa_1371,1371,GSK,2021,Balance_Sheet,Other Noncurrent Assets,1676000000.0
+qa_1372,1372,GSK,2022,Balance_Sheet,Noncurrent Assets,39377000000.0
+qa_1373,1373,GSK,2021,Balance_Sheet,Noncurrent Assets,60429000000.0
+qa_1376,1376,GSK,2022,Balance_Sheet,Current Tax Assets,405000000.0
+qa_1377,1377,GSK,2021,Balance_Sheet,Current Tax Assets,486000000.0
+qa_1380,1380,GSK,2022,Balance_Sheet,Current Derivative Financial Assets,190000000.0
+qa_1381,1381,GSK,2021,Balance_Sheet,Current Derivative Financial Assets,188000000.0
+qa_1382,1382,GSK,2022,Balance_Sheet,Current Financial Assets At Fair Value Through Profit Or Loss Classified As Held For Trading,4087000000.0
+qa_1383,1383,GSK,2021,Balance_Sheet,Current Financial Assets At Fair Value Through Profit Or Loss Classified As Held For Trading,0.0
+qa_1384,1384,GSK,2022,Balance_Sheet,Other Current Financial Assets,67000000.0
+qa_1385,1385,GSK,2021,Balance_Sheet,Other Current Financial Assets,61000000.0
+qa_1386,1386,GSK,2022,Cash_Flow,Cash And Cash Equivalents,3723000000.0
+qa_1387,1387,GSK,2021,Cash_Flow,Cash And Cash Equivalents,4274000000.0
+qa_1388,1388,GSK,2022,Balance_Sheet,Noncurrent Assets Or Disposal Groups Classified As Held For Sale Or As Held For Distribution To Owners,98000000.0
+qa_1389,1389,GSK,2021,Balance_Sheet,Noncurrent Assets Or Disposal Groups Classified As Held For Sale Or As Held For Distribution To Owners,22000000.0
+qa_1390,1390,GSK,2022,Balance_Sheet,Current Assets,20769000000.0
+qa_1391,1391,GSK,2021,Balance_Sheet,Current Assets,18674000000.0
+qa_1392,1392,GSK,2022,Balance_Sheet,Assets,60146000000.0
+qa_1393,1393,GSK,2021,Balance_Sheet,Assets,79103000000.0
+qa_1396,1396,GSK,2022,Balance_Sheet,Other Current Financial Liabilities,1289000000.0
+qa_1397,1397,GSK,2021,Balance_Sheet,Other Current Financial Liabilities,958000000.0
+qa_1400,1400,GSK,2022,Balance_Sheet,Current Derivative Financial Liabilities,183000000.0
+qa_1401,1401,GSK,2021,Balance_Sheet,Current Derivative Financial Liabilities,227000000.0
+qa_1402,1402,GSK,2022,Balance_Sheet,Current Tax Liabilities,471000000.0
+qa_1403,1403,GSK,2021,Balance_Sheet,Current Tax Liabilities,489000000.0
+qa_1406,1406,GSK,2022,Balance_Sheet,Current Liabilities,22810000000.0
+qa_1407,1407,GSK,2021,Balance_Sheet,Current Liabilities,23670000000.0
+qa_1410,1410,GSK,2022,Balance_Sheet,Current Tax Liabilities Noncurrent,127000000.0
+qa_1411,1411,GSK,2021,Balance_Sheet,Current Tax Liabilities Noncurrent,180000000.0
+qa_1412,1412,GSK,2022,Balance_Sheet,Deferred Tax Liabilities,289000000.0
+qa_1413,1413,GSK,2021,Balance_Sheet,Deferred Tax Liabilities,3556000000.0
+qa_1418,1418,GSK,2022,Balance_Sheet,Noncurrent Derivative Financial Liabilities,0.0
+qa_1419,1419,GSK,2021,Balance_Sheet,Noncurrent Derivative Financial Liabilities,1000000.0
+qa_1420,1420,GSK,2022,Balance_Sheet,Other Noncurrent Financial Liabilities,5779000000.0
+qa_1421,1421,GSK,2021,Balance_Sheet,Other Noncurrent Financial Liabilities,5118000000.0
+qa_1422,1422,GSK,2022,Balance_Sheet,Other Noncurrent Liabilities,899000000.0
+qa_1423,1423,GSK,2021,Balance_Sheet,Other Noncurrent Liabilities,921000000.0
+qa_1424,1424,GSK,2022,Balance_Sheet,Noncurrent Liabilities,27240000000.0
+qa_1425,1425,GSK,2021,Balance_Sheet,Noncurrent Liabilities,34091000000.0
+qa_1426,1426,GSK,2022,Balance_Sheet,Liabilities,50050000000.0
+qa_1427,1427,GSK,2021,Balance_Sheet,Liabilities,57761000000.0
+qa_1428,1428,GSK,2022,Balance_Sheet,Net Assets Liabilities,10096000000.0
+qa_1429,1429,GSK,2021,Balance_Sheet,Net Assets Liabilities,21342000000.0
+qa_1438,1438,GSK,2022,Balance_Sheet,Equity Attributable To Owners Of Parent,10598000000.0
+qa_1439,1439,GSK,2021,Balance_Sheet,Equity Attributable To Owners Of Parent,15055000000.0
+qa_1442,1442,GSK,2022,Balance_Sheet,Equity,10096000000.0
+qa_1443,1443,GSK,2021,Balance_Sheet,Equity,21342000000.0
+qa_1444,1444,GSK,2019,Balance_Sheet,Equity,1346000000.0
+qa_1445,1445,GSK,2020,Income_Statement,Other Comprehensive Income,0.0
+qa_1447,1447,GSK,2020,Company_Specific_Metric,Increase Through Other Contributions By Noncontrolling Interests Equity,0.0
+qa_1448,1448,GSK,2020,Balance_Sheet,Increase Decrease Through Transfers And Other Changes Equity,0.0
+qa_1450,1450,GSK,2020,Income_Statement,Profits Losses On Disposal Of Investments And Changes In Value Of Investments,0.0
+qa_1451,1451,GSK,2020,Company_Specific_Metric,Share Of Associates And Joint Ventures Realised Profits On Disposal Of Equity Investments,0.0
+qa_1452,1452,GSK,2020,Balance_Sheet,Issue Of Equity,0.0
+qa_1453,1453,GSK,2020,Company_Specific_Metric,Shares Acquired By Esop Trusts,0.0
+qa_1454,1454,GSK,2020,Company_Specific_Metric,Write Down Of Shares Held By Employee Stock Ownership Plan,0.0
+qa_1457,1457,GSK,2020,Balance_Sheet,Equity,1346000000.0
+qa_1458,1458,GSK,2021,Income_Statement,Other Comprehensive Income,0.0
+qa_1460,1460,GSK,2021,Company_Specific_Metric,Increase Through Other Contributions By Noncontrolling Interests Equity,0.0
+qa_1462,1462,GSK,2021,Balance_Sheet,Issue Of Equity,1000000.0
+qa_1463,1463,GSK,2021,Income_Statement,Profits Losses On Disposal Of Investments And Changes In Value Of Investments,0.0
+qa_1464,1464,GSK,2021,Company_Specific_Metric,Share Of Associates And Joint Ventures Realised Profits On Disposal Of Equity Investments,0.0
+qa_1465,1465,GSK,2021,Company_Specific_Metric,Write Down Of Shares Held By Employee Stock Ownership Plan,0.0
+qa_1467,1467,GSK,2021,Company_Specific_Metric,Transactions With Noncontrolling Interests,0.0
+qa_1469,1469,GSK,2022,Income_Statement,Other Comprehensive Income,0.0
+qa_1471,1471,GSK,2022,Company_Specific_Metric,Non Cash Distribution To Non Controlling Interests,0.0
+qa_1472,1472,GSK,2022,Company_Specific_Metric,Increase Through Other Contributions By Noncontrolling Interests Equity,0.0
+qa_1473,1473,GSK,2022,Balance_Sheet,Increase Decrease Through Transfers And Other Changes Equity,0.0
+qa_1476,1476,GSK,2022,Company_Specific_Metric,Non Cash Dividend To Shareholders,0.0
+qa_1477,1477,GSK,2022,Income_Statement,Profits Losses On Disposal Of Investments And Changes In Value Of Investments,0.0
+qa_1478,1478,GSK,2022,Company_Specific_Metric,Share Of Associates And Joint Ventures Realised Profits On Disposal Of Equity Investments,0.0
+qa_1479,1479,GSK,2022,Balance_Sheet,Issue Of Equity,0.0
+qa_1480,1480,GSK,2022,Company_Specific_Metric,Write Down Of Shares Held By Employee Stock Ownership Plan,0.0
+qa_1481,1481,GSK,2022,Company_Specific_Metric,Shares Acquired By Esop Trusts,0.0
+qa_1484,1484,GSK,2022,Company_Specific_Metric,Hedging Gain Loss Transferred To Non Financial Assets,0.0
+qa_1485,1485,GSK,2022,Income_Statement,Adjustments For Reconcile Profit Loss,3023000000.0
+qa_1486,1486,GSK,2021,Income_Statement,Adjustments For Reconcile Profit Loss,3733000000.0
+qa_1487,1487,GSK,2020,Income_Statement,Adjustments For Reconcile Profit Loss,2571000000.0
+qa_1488,1488,GSK,2022,Cash_Flow,Cash Flows From Used In Operations,7944000000.0
+qa_1489,1489,GSK,2021,Cash_Flow,Cash Flows From Used In Operations,7249000000.0
+qa_1490,1490,GSK,2020,Cash_Flow,Cash Flows From Used In Operations,7674000000.0
+qa_1491,1491,GSK,2022,Company_Specific_Metric,Income Taxes Paid Refund Classified As Operating Activities Continuing Operations,1310000000.0
+qa_1492,1492,GSK,2021,Company_Specific_Metric,Income Taxes Paid Refund Classified As Operating Activities Continuing Operations,972000000.0
+qa_1493,1493,GSK,2020,Company_Specific_Metric,Income Taxes Paid Refund Classified As Operating Activities Continuing Operations,1086000000.0
+qa_1494,1494,GSK,2022,Cash_Flow,Cash Flows From Used In Operating Activities Continuing Operations,6634000000.0
+qa_1495,1495,GSK,2021,Cash_Flow,Cash Flows From Used In Operating Activities Continuing Operations,6277000000.0
+qa_1496,1496,GSK,2020,Cash_Flow,Cash Flows From Used In Operating Activities Continuing Operations,6588000000.0
+qa_1497,1497,GSK,2022,Company_Specific_Metric,Cash From Used In Operations Before Tax Discontinued Operations,932000000.0
+qa_1498,1498,GSK,2021,Company_Specific_Metric,Cash From Used In Operations Before Tax Discontinued Operations,1994000000.0
+qa_1499,1499,GSK,2020,Company_Specific_Metric,Cash From Used In Operations Before Tax Discontinued Operations,2422000000.0
+qa_1500,1500,GSK,2022,Company_Specific_Metric,Income Taxes Paid Refund Classified As Operating Activities Discontinued Operations,163000000.0
+qa_1501,1501,GSK,2021,Company_Specific_Metric,Income Taxes Paid Refund Classified As Operating Activities Discontinued Operations,319000000.0
+qa_1502,1502,GSK,2020,Company_Specific_Metric,Income Taxes Paid Refund Classified As Operating Activities Discontinued Operations,569000000.0
+qa_1503,1503,GSK,2022,Cash_Flow,Cash Flows From Used In Operating Activities Discontinued Operations,769000000.0
+qa_1504,1504,GSK,2021,Cash_Flow,Cash Flows From Used In Operating Activities Discontinued Operations,1675000000.0
+qa_1505,1505,GSK,2020,Cash_Flow,Cash Flows From Used In Operating Activities Discontinued Operations,1853000000.0
+qa_1506,1506,GSK,2022,Cash_Flow,Cash Flows From Used In Operating Activities,7403000000.0
+qa_1507,1507,GSK,2021,Cash_Flow,Cash Flows From Used In Operating Activities,7952000000.0
+qa_1508,1508,GSK,2020,Cash_Flow,Cash Flows From Used In Operating Activities,8441000000.0
+qa_1509,1509,GSK,2022,Cash_Flow,Purchase Of Property Plant And Equipment Classified As Investing Activities,1143000000.0
+qa_1510,1510,GSK,2021,Cash_Flow,Purchase Of Property Plant And Equipment Classified As Investing Activities,950000000.0
+qa_1511,1511,GSK,2020,Cash_Flow,Purchase Of Property Plant And Equipment Classified As Investing Activities,989000000.0
+qa_1512,1512,GSK,2022,Cash_Flow,Proceeds From Sales Of Property Plant And Equipment Classified As Investing Activities,146000000.0
+qa_1513,1513,GSK,2021,Cash_Flow,Proceeds From Sales Of Property Plant And Equipment Classified As Investing Activities,132000000.0
+qa_1514,1514,GSK,2020,Cash_Flow,Proceeds From Sales Of Property Plant And Equipment Classified As Investing Activities,49000000.0
+qa_1515,1515,GSK,2022,Cash_Flow,Purchase Of Intangible Assets Classified As Investing Activities,1115000000.0
+qa_1516,1516,GSK,2021,Cash_Flow,Purchase Of Intangible Assets Classified As Investing Activities,1704000000.0
+qa_1517,1517,GSK,2020,Cash_Flow,Purchase Of Intangible Assets Classified As Investing Activities,956000000.0
+qa_1518,1518,GSK,2022,Cash_Flow,Proceeds From Sales Of Intangible Assets Classified As Investing Activities,196000000.0
+qa_1519,1519,GSK,2021,Cash_Flow,Proceeds From Sales Of Intangible Assets Classified As Investing Activities,641000000.0
+qa_1520,1520,GSK,2020,Cash_Flow,Proceeds From Sales Of Intangible Assets Classified As Investing Activities,343000000.0
+qa_1521,1521,GSK,2022,Cash_Flow,Other Cash Payments To Acquire Equity Or Debt Instruments Of Other Entities Classified As Investing Activities,143000000.0
+qa_1522,1522,GSK,2021,Cash_Flow,Other Cash Payments To Acquire Equity Or Debt Instruments Of Other Entities Classified As Investing Activities,162000000.0
+qa_1523,1523,GSK,2020,Cash_Flow,Other Cash Payments To Acquire Equity Or Debt Instruments Of Other Entities Classified As Investing Activities,411000000.0
+qa_1524,1524,GSK,2022,Company_Specific_Metric,Purchase Of Businesses Net Of Cash Acquired,3108000000.0
+qa_1525,1525,GSK,2021,Company_Specific_Metric,Purchase Of Businesses Net Of Cash Acquired,0.0
+qa_1526,1526,GSK,2020,Company_Specific_Metric,Purchase Of Businesses Net Of Cash Acquired,0.0
+qa_1527,1527,GSK,2022,Cash_Flow,Other Cash Receipts From Sales Of Equity Or Debt Instruments Of Other Entities Classified As Investing Activities,238000000.0
+qa_1528,1528,GSK,2021,Cash_Flow,Other Cash Receipts From Sales Of Equity Or Debt Instruments Of Other Entities Classified As Investing Activities,202000000.0
+qa_1529,1529,GSK,2020,Cash_Flow,Other Cash Receipts From Sales Of Equity Or Debt Instruments Of Other Entities Classified As Investing Activities,3269000000.0
+qa_1530,1530,GSK,2022,Cash_Flow,Other Inflows Outflows Of Cash Classified As Investing Activities,-79000000.0
+qa_1531,1531,GSK,2021,Cash_Flow,Other Inflows Outflows Of Cash Classified As Investing Activities,-114000000.0
+qa_1532,1532,GSK,2020,Cash_Flow,Other Inflows Outflows Of Cash Classified As Investing Activities,-120000000.0
+qa_1533,1533,GSK,2022,Company_Specific_Metric,Disposal Of Business Net Of Cash Acquired,-43000000.0
+qa_1534,1534,GSK,2021,Company_Specific_Metric,Disposal Of Business Net Of Cash Acquired,-17000000.0
+qa_1535,1535,GSK,2020,Company_Specific_Metric,Disposal Of Business Net Of Cash Acquired,117000000.0
+qa_1536,1536,GSK,2022,Company_Specific_Metric,Purchase Of Investment In Associates And Joint Ventures,1000000.0
+qa_1537,1537,GSK,2021,Company_Specific_Metric,Purchase Of Investment In Associates And Joint Ventures,1000000.0
+qa_1538,1538,GSK,2020,Company_Specific_Metric,Purchase Of Investment In Associates And Joint Ventures,4000000.0
+qa_1539,1539,GSK,2022,Company_Specific_Metric,Proceeds From Disposal Of Associates And Joint Ventures,0.0
+qa_1540,1540,GSK,2021,Company_Specific_Metric,Proceeds From Disposal Of Associates And Joint Ventures,277000000.0
+qa_1541,1541,GSK,2020,Company_Specific_Metric,Proceeds From Disposal Of Associates And Joint Ventures,0.0
+qa_1542,1542,GSK,2022,Cash_Flow,Interest Received Classified As Investing Activities,64000000.0
+qa_1543,1543,GSK,2021,Cash_Flow,Interest Received Classified As Investing Activities,14000000.0
+qa_1544,1544,GSK,2020,Cash_Flow,Interest Received Classified As Investing Activities,27000000.0
+qa_1545,1545,GSK,2022,Company_Specific_Metric,Increase Decrease In Liquid Investments,-1000000.0
+qa_1546,1546,GSK,2021,Company_Specific_Metric,Increase Decrease In Liquid Investments,-18000000.0
+qa_1547,1547,GSK,2020,Company_Specific_Metric,Increase Decrease In Liquid Investments,1000000.0
+qa_1548,1548,GSK,2022,Cash_Flow,Dividends Received Classified As Investing Activities,6000000.0
+qa_1549,1549,GSK,2021,Cash_Flow,Dividends Received Classified As Investing Activities,9000000.0
+qa_1550,1550,GSK,2020,Cash_Flow,Dividends Received Classified As Investing Activities,31000000.0
+qa_1551,1551,GSK,2022,Cash_Flow,Cash Flows From Used In Investing Activities Continuing Operations,-4981000000.0
+qa_1552,1552,GSK,2021,Cash_Flow,Cash Flows From Used In Investing Activities Continuing Operations,-1655000000.0
+qa_1553,1553,GSK,2020,Cash_Flow,Cash Flows From Used In Investing Activities Continuing Operations,1355000000.0
+qa_1554,1554,GSK,2022,Cash_Flow,Cash Flows From Used In Investing Activities Discontinued Operations,-3791000000.0
+qa_1555,1555,GSK,2021,Cash_Flow,Cash Flows From Used In Investing Activities Discontinued Operations,-122000000.0
+qa_1556,1556,GSK,2020,Cash_Flow,Cash Flows From Used In Investing Activities Discontinued Operations,806000000.0
+qa_1557,1557,GSK,2022,Cash_Flow,Cash Flows From Used In Investing Activities,-8772000000.0
+qa_1558,1558,GSK,2021,Cash_Flow,Cash Flows From Used In Investing Activities,-1777000000.0
+qa_1559,1559,GSK,2020,Cash_Flow,Cash Flows From Used In Investing Activities,2161000000.0
+qa_1572,1572,GSK,2022,Company_Specific_Metric,Proceeds From Repayments Of Other Current Borrowings,1021000000.0
+qa_1573,1573,GSK,2021,Company_Specific_Metric,Proceeds From Repayments Of Other Current Borrowings,301000000.0
+qa_1574,1574,GSK,2020,Company_Specific_Metric,Proceeds From Repayments Of Other Current Borrowings,-3594000000.0
+qa_1575,1575,GSK,2022,Cash_Flow,Payments Of Lease Liabilities Classified As Financing Activities,202000000.0
+qa_1576,1576,GSK,2021,Cash_Flow,Payments Of Lease Liabilities Classified As Financing Activities,181000000.0
+qa_1577,1577,GSK,2020,Cash_Flow,Payments Of Lease Liabilities Classified As Financing Activities,182000000.0
+qa_1578,1578,GSK,2022,Cash_Flow,Interest Paid Classified As Financing Activities,848000000.0
+qa_1579,1579,GSK,2021,Cash_Flow,Interest Paid Classified As Financing Activities,772000000.0
+qa_1580,1580,GSK,2020,Cash_Flow,Interest Paid Classified As Financing Activities,851000000.0
+qa_1581,1581,GSK,2022,Cash_Flow,Dividends Paid To Equity Holders Of Parent Classified As Financing Activities,3467000000.0
+qa_1582,1582,GSK,2021,Cash_Flow,Dividends Paid To Equity Holders Of Parent Classified As Financing Activities,3999000000.0
+qa_1583,1583,GSK,2020,Cash_Flow,Dividends Paid To Equity Holders Of Parent Classified As Financing Activities,3977000000.0
+qa_1584,1584,GSK,2022,Cash_Flow,Dividends Paid To Noncontrolling Interests Classified As Financing Activities,521000000.0
+qa_1585,1585,GSK,2021,Cash_Flow,Dividends Paid To Noncontrolling Interests Classified As Financing Activities,239000000.0
+qa_1586,1586,GSK,2020,Cash_Flow,Dividends Paid To Noncontrolling Interests Classified As Financing Activities,442000000.0
+qa_1590,1590,GSK,2022,Cash_Flow,Other Inflows Outflows Of Cash Classified As Financing Activities,376000000.0
+qa_1591,1591,GSK,2021,Cash_Flow,Other Inflows Outflows Of Cash Classified As Financing Activities,40000000.0
+qa_1592,1592,GSK,2020,Cash_Flow,Other Inflows Outflows Of Cash Classified As Financing Activities,-89000000.0
+qa_1593,1593,GSK,2022,Cash_Flow,Cash Flows From Used In Financing Activities Continuing Operations,-9251000000.0
+qa_1594,1594,GSK,2021,Cash_Flow,Cash Flows From Used In Financing Activities Continuing Operations,-7126000000.0
+qa_1595,1595,GSK,2020,Cash_Flow,Cash Flows From Used In Financing Activities Continuing Operations,-9543000000.0
+qa_1596,1596,GSK,2022,Cash_Flow,Cash Flows From Used In Financing Activities Discontinued Operations,10074000000.0
+qa_1597,1597,GSK,2021,Cash_Flow,Cash Flows From Used In Financing Activities Discontinued Operations,-463000000.0
+qa_1598,1598,GSK,2020,Cash_Flow,Cash Flows From Used In Financing Activities Discontinued Operations,-589000000.0
+qa_1599,1599,GSK,2022,Cash_Flow,Cash Flows From Used In Financing Activities,823000000.0
+qa_1600,1600,GSK,2021,Cash_Flow,Cash Flows From Used In Financing Activities,-7589000000.0
+qa_1601,1601,GSK,2020,Cash_Flow,Cash Flows From Used In Financing Activities,-10132000000.0
+qa_1602,1602,GSK,2022,Cash_Flow,Increase Decrease In Cash And Cash Equivalents Before Effect Of Exchange Rate Changes,-546000000.0
+qa_1603,1603,GSK,2021,Cash_Flow,Increase Decrease In Cash And Cash Equivalents Before Effect Of Exchange Rate Changes,-1414000000.0
+qa_1604,1604,GSK,2020,Cash_Flow,Increase Decrease In Cash And Cash Equivalents Before Effect Of Exchange Rate Changes,470000000.0
+qa_1605,1605,GSK,2021,Cash_Flow,Cash And Cash Equivalents If Different From Statement Of Financial Position,3819000000.0
+qa_1606,1606,GSK,2020,Cash_Flow,Cash And Cash Equivalents If Different From Statement Of Financial Position,5262000000.0
+qa_1607,1607,GSK,2019,Cash_Flow,Cash And Cash Equivalents If Different From Statement Of Financial Position,4831000000.0
+qa_1608,1608,GSK,2022,Cash_Flow,Effect Of Exchange Rate Changes On Cash And Cash Equivalents,152000000.0
+qa_1609,1609,GSK,2021,Cash_Flow,Effect Of Exchange Rate Changes On Cash And Cash Equivalents,-29000000.0
+qa_1610,1610,GSK,2020,Cash_Flow,Effect Of Exchange Rate Changes On Cash And Cash Equivalents,-39000000.0
+qa_1611,1611,GSK,2022,Cash_Flow,Cash And Cash Equivalents If Different From Statement Of Financial Position,3425000000.0
+qa_1612,1612,GSK,2020,Cash_Flow,Cash And Cash Equivalents,6292000000.0
+qa_1613,1613,GSK,2022,Cash_Flow,Bank Overdrafts Classified As Cash Equivalents,298000000.0
+qa_1614,1614,GSK,2021,Cash_Flow,Bank Overdrafts Classified As Cash Equivalents,455000000.0
+qa_1615,1615,GSK,2020,Cash_Flow,Bank Overdrafts Classified As Cash Equivalents,1030000000.0
+qa_1618,1618,GSK,2022,Cash_Flow,Description Of Nature Of Entitys Operations And Principal Activities,"GSK is a global biopharma group which makes innovative vaccines and specialty medicines to prevent and treat disease. GSK’s R&amp;D focuses on the science of the immune system, human genetics and advanced technologies primarily in the following four therapeutic areas: infectious diseases, HIV, oncology and immunology/respiratory."
+qa_1739,1739,GSK,2023,Income_Statement,Revenue,30328000000.0
+qa_1741,1741,GSK,2023,Income_Statement,Gross Profit,21763000000.0
+qa_1742,1742,GSK,2023,Income_Statement,Selling General And Administrative Expense,9385000000.0
+qa_1743,1743,GSK,2023,Income_Statement,Research And Development Expense,6223000000.0
+qa_1744,1744,GSK,2023,Income_Statement,Revenue From Royalties,953000000.0
+qa_1745,1745,GSK,2023,Income_Statement,Other Operating Income Expense,-363000000.0
+qa_1746,1746,GSK,2023,Cash_Flow,Profit Loss From Operating Activities,6745000000.0
+qa_1747,1747,GSK,2023,Income_Statement,Finance Income,115000000.0
+qa_1749,1749,GSK,2023,Balance_Sheet,Share Of Profit Loss Of Associates And Joint Ventures Accounted For Using Equity Method,-5000000.0
+qa_1750,1750,GSK,2023,Company_Specific_Metric,Gain Loss On Disposal Of Interest In Associates And Joint Ventures,1000000.0
+qa_1751,1751,GSK,2022,Company_Specific_Metric,Gain Loss On Disposal Of Interest In Associates And Joint Ventures,0.0
+qa_1752,1752,GSK,2021,Company_Specific_Metric,Gain Loss On Disposal Of Interest In Associates And Joint Ventures,-36000000.0
+qa_1753,1753,GSK,2023,Income_Statement,Profit Loss Before Tax,6064000000.0
+qa_1754,1754,GSK,2023,Income_Statement,Income Tax Expense Continuing Operations,756000000.0
+qa_1755,1755,GSK,2023,Income_Statement,Profit Loss From Continuing Operations,5308000000.0
+qa_1756,1756,GSK,2023,Company_Specific_Metric,Profit After Taxation From Discontinued Operations And Other Gains Losses From The Demerger,0.0
+qa_1757,1757,GSK,2023,Company_Specific_Metric,Remeasurement Of Discontinued Operations Distributed To Shareholders On Demerger,0.0
+qa_1758,1758,GSK,2023,Income_Statement,Profit Loss From Discontinued Operations,0.0
+qa_1759,1759,GSK,2023,Income_Statement,Profit Loss,5308000000.0
+qa_1760,1760,GSK,2023,Income_Statement,Profit Loss From Continuing Operations Attributable To Noncontrolling Interests,380000000.0
+qa_1761,1761,GSK,2023,Income_Statement,Income From Continuing Operations Attributable To Owners Of Parent,4928000000.0
+qa_1762,1762,GSK,2023,Income_Statement,Profit Loss From Discontinued Operations Attributable To Noncontrolling Interests,0.0
+qa_1763,1763,GSK,2023,Income_Statement,Income From Discontinued Operations Attributable To Owners Of Parent,0.0
+qa_1764,1764,GSK,2023,Income_Statement,Profit Loss Attributable To Noncontrolling Interests,380000000.0
+qa_1765,1765,GSK,2023,Income_Statement,Profit Loss Attributable To Owners Of Parent,4928000000.0
+qa_1766,1766,GSK,2023,Income_Statement,Basic Earnings Loss Per Share From Continuing Operations,1.216
+qa_1767,1767,GSK,2023,Income_Statement,Basic Earnings Loss Per Share From Discontinued Operations,0.0
+qa_1768,1768,GSK,2023,Income_Statement,Basic Earnings Loss Per Share,1.216
+qa_1769,1769,GSK,2023,Income_Statement,Diluted Earnings Loss Per Share From Continuing Operations,1.199
+qa_1770,1770,GSK,2023,Income_Statement,Diluted Earnings Loss Per Share From Discontinued Operations,0.0
+qa_1771,1771,GSK,2023,Income_Statement,Diluted Earnings Loss Per Share,1.199
+qa_1772,1772,GSK,2023,Company_Specific_Metric,Exchange Movements On Overseas Net Assets And Net Investment Hedges,-22000000.0
+qa_1773,1773,GSK,2022,Company_Specific_Metric,Exchange Movements On Overseas Net Assets And Net Investment Hedges,113000000.0
+qa_1774,1774,GSK,2021,Company_Specific_Metric,Exchange Movements On Overseas Net Assets And Net Investment Hedges,-339000000.0
+qa_1776,1776,GSK,2023,Cash_Flow,Gains Losses On Cash Flow Hedges Before Tax,-1000000.0
+qa_1777,1777,GSK,2023,Cash_Flow,Income Tax Relating To Cash Flow Hedges Of Other Comprehensive Income,-1000000.0
+qa_1778,1778,GSK,2023,Cash_Flow,Reclassification Adjustments On Cash Flow Hedges Before Tax,-4000000.0
+qa_1779,1779,GSK,2023,Income_Statement,Other Comprehensive Income That Will Be Reclassified To Profit Or Loss Net Of Tax,-52000000.0
+qa_1780,1780,GSK,2023,Company_Specific_Metric,Exchange Movements On Overseas Net Assets Of Non Controlling Interests,-25000000.0
+qa_1781,1781,GSK,2023,Balance_Sheet,Other Comprehensive Income Before Tax Gains Losses From Investments In Equity Instruments,-244000000.0
+qa_1782,1782,GSK,2023,Balance_Sheet,Income Tax Relating To Investments In Equity Instruments Of Other Comprehensive Income,-14000000.0
+qa_1783,1783,GSK,2023,Company_Specific_Metric,Fair Value Movements On Cash Flow Hedges Not Reclassified,-40000000.0
+qa_1784,1784,GSK,2023,Income_Statement,Other Comprehensive Income Before Tax Gains Losses On Remeasurements Of Defined Benefit Plans,71000000.0
+qa_1785,1785,GSK,2023,Income_Statement,Income Tax Relating To Remeasurements Of Defined Benefit Plans Of Other Comprehensive Income,41000000.0
+qa_1786,1786,GSK,2023,Income_Statement,Other Comprehensive Income That Will Not Be Reclassified To Profit Or Loss Net Of Tax,-265000000.0
+qa_1787,1787,GSK,2023,Company_Specific_Metric,Other Comprehensive Expense Income For The Year From Continuing Operations,-317000000.0
+qa_1788,1788,GSK,2023,Company_Specific_Metric,Other Comprehensive Expense Income For The Year From Discontinued Operations,0.0
+qa_1789,1789,GSK,2023,Income_Statement,Comprehensive Income,4991000000.0
+qa_1790,1790,GSK,2023,Income_Statement,Comprehensive Income Attributable To Owners Of Parent,4636000000.0
+qa_1791,1791,GSK,2023,Income_Statement,Comprehensive Income Attributable To Noncontrolling Interests,355000000.0
+qa_1793,1793,GSK,2023,Balance_Sheet,Rightofuse Assets,937000000.0
+qa_1795,1795,GSK,2023,Balance_Sheet,Intangible Assets Other Than Goodwill,14768000000.0
+qa_1796,1796,GSK,2023,Balance_Sheet,Investment Accounted For Using Equity Method,55000000.0
+qa_1797,1797,GSK,2023,Balance_Sheet,Noncurrent Investments Other Than Investments Accounted For Using Equity Method,1137000000.0
+qa_1798,1798,GSK,2023,Balance_Sheet,Deferred Tax Assets,6049000000.0
+qa_1799,1799,GSK,2023,Balance_Sheet,Other Noncurrent Assets,1584000000.0
+qa_1800,1800,GSK,2023,Balance_Sheet,Noncurrent Assets,40361000000.0
+qa_1802,1802,GSK,2023,Balance_Sheet,Current Tax Assets,373000000.0
+qa_1804,1804,GSK,2023,Balance_Sheet,Current Derivative Financial Assets,130000000.0
+qa_1805,1805,GSK,2023,Balance_Sheet,Current Financial Assets At Fair Value Through Profit Or Loss Classified As Held For Trading,2204000000.0
+qa_1806,1806,GSK,2023,Balance_Sheet,Other Current Financial Assets,42000000.0
+qa_1807,1807,GSK,2023,Cash_Flow,Cash And Cash Equivalents,2936000000.0
+qa_1808,1808,GSK,2023,Balance_Sheet,Noncurrent Assets Or Disposal Groups Classified As Held For Sale Or As Held For Distribution To Owners,76000000.0
+qa_1809,1809,GSK,2023,Balance_Sheet,Current Assets,18644000000.0
+qa_1810,1810,GSK,2023,Balance_Sheet,Assets,59005000000.0
+qa_1812,1812,GSK,2023,Balance_Sheet,Other Current Financial Liabilities,1053000000.0
+qa_1814,1814,GSK,2023,Balance_Sheet,Current Derivative Financial Liabilities,114000000.0
+qa_1815,1815,GSK,2023,Balance_Sheet,Current Tax Liabilities,500000000.0
+qa_1817,1817,GSK,2023,Balance_Sheet,Current Liabilities,21068000000.0
+qa_1819,1819,GSK,2023,Balance_Sheet,Current Tax Liabilities Noncurrent,75000000.0
+qa_1820,1820,GSK,2023,Balance_Sheet,Deferred Tax Liabilities,311000000.0
+qa_1823,1823,GSK,2023,Balance_Sheet,Other Noncurrent Financial Liabilities,5609000000.0
+qa_1824,1824,GSK,2023,Balance_Sheet,Other Noncurrent Liabilities,1107000000.0
+qa_1825,1825,GSK,2023,Balance_Sheet,Noncurrent Liabilities,25142000000.0
+qa_1826,1826,GSK,2023,Balance_Sheet,Liabilities,46210000000.0
+qa_1827,1827,GSK,2023,Balance_Sheet,Net Assets Liabilities,12795000000.0
+qa_1832,1832,GSK,2023,Balance_Sheet,Equity Attributable To Owners Of Parent,13347000000.0
+qa_1834,1834,GSK,2023,Balance_Sheet,Equity,12795000000.0
+qa_1835,1835,GSK,2023,Income_Statement,Other Comprehensive Income,0.0
+qa_1837,1837,GSK,2023,Company_Specific_Metric,Increase Through Other Contributions By Noncontrolling Interests Equity,0.0
+qa_1839,1839,GSK,2023,Income_Statement,Profits Losses On Disposal Of Investments And Changes In Value Of Investments,0.0
+qa_1840,1840,GSK,2023,Company_Specific_Metric,Share Of Associates And Joint Ventures Realised Profits On Disposal Of Equity Investments,0.0
+qa_1841,1841,GSK,2023,Balance_Sheet,Issue Of Equity,1000000.0
+qa_1842,1842,GSK,2023,Company_Specific_Metric,Write Down Of Shares Held By Employee Stock Ownership Plan,0.0
+qa_1843,1843,GSK,2023,Company_Specific_Metric,Shares Acquired By Esop Trusts,0.0
+qa_1845,1845,GSK,2023,Company_Specific_Metric,Hedging Gain Loss Transferred To Non Financial Assets,0.0
+qa_1847,1847,GSK,2023,Income_Statement,Adjustments For Reconcile Profit Loss,2788000000.0
+qa_1848,1848,GSK,2023,Cash_Flow,Cash Flows From Used In Operations,8096000000.0
+qa_1849,1849,GSK,2023,Company_Specific_Metric,Income Taxes Paid Refund Classified As Operating Activities Continuing Operations,-1328000000.0
+qa_1850,1850,GSK,2023,Cash_Flow,Cash Flows From Used In Operating Activities Continuing Operations,6768000000.0
+qa_1851,1851,GSK,2023,Company_Specific_Metric,Cash From Used In Operations Before Tax Discontinued Operations,0.0
+qa_1852,1852,GSK,2023,Company_Specific_Metric,Income Taxes Paid Refund Classified As Operating Activities Discontinued Operations,0.0
+qa_1853,1853,GSK,2023,Cash_Flow,Cash Flows From Used In Operating Activities Discontinued Operations,0.0
+qa_1854,1854,GSK,2023,Cash_Flow,Cash Flows From Used In Operating Activities,6768000000.0
+qa_1855,1855,GSK,2023,Cash_Flow,Purchase Of Property Plant And Equipment Classified As Investing Activities,1314000000.0
+qa_1856,1856,GSK,2023,Cash_Flow,Proceeds From Sales Of Property Plant And Equipment Classified As Investing Activities,28000000.0
+qa_1857,1857,GSK,2023,Cash_Flow,Purchase Of Intangible Assets Classified As Investing Activities,1030000000.0
+qa_1858,1858,GSK,2023,Cash_Flow,Proceeds From Sales Of Intangible Assets Classified As Investing Activities,12000000.0
+qa_1859,1859,GSK,2023,Cash_Flow,Other Cash Payments To Acquire Equity Or Debt Instruments Of Other Entities Classified As Investing Activities,123000000.0
+qa_1860,1860,GSK,2023,Company_Specific_Metric,Increase Decrease In Liquid Investments,-72000000.0
+qa_1861,1861,GSK,2023,Company_Specific_Metric,Purchase Of Businesses Net Of Cash Acquired,1457000000.0
+qa_1862,1862,GSK,2023,Cash_Flow,Other Cash Receipts From Sales Of Equity Or Debt Instruments Of Other Entities Classified As Investing Activities,1832000000.0
+qa_1863,1863,GSK,2023,Cash_Flow,Other Inflows Outflows Of Cash Classified As Investing Activities,-11000000.0
+qa_1864,1864,GSK,2023,Company_Specific_Metric,Disposal Of Businesses,49000000.0
+qa_1865,1865,GSK,2022,Company_Specific_Metric,Disposal Of Businesses,-43000000.0
+qa_1866,1866,GSK,2021,Company_Specific_Metric,Disposal Of Businesses,-17000000.0
+qa_1867,1867,GSK,2023,Company_Specific_Metric,Purchase Of Investment In Associates And Joint Ventures,0.0
+qa_1868,1868,GSK,2023,Company_Specific_Metric,Proceeds From Disposal Of Associates And Joint Ventures,1000000.0
+qa_1869,1869,GSK,2023,Cash_Flow,Interest Received Classified As Investing Activities,115000000.0
+qa_1870,1870,GSK,2023,Company_Specific_Metric,Dividend And Distributions From Investments,220000000.0
+qa_1871,1871,GSK,2022,Company_Specific_Metric,Dividend And Distributions From Investments,0.0
+qa_1872,1872,GSK,2021,Company_Specific_Metric,Dividend And Distributions From Investments,0.0
+qa_1873,1873,GSK,2023,Cash_Flow,Dividends Received Classified As Investing Activities,11000000.0
+qa_1874,1874,GSK,2023,Cash_Flow,Cash Flows From Used In Investing Activities Continuing Operations,-1595000000.0
+qa_1875,1875,GSK,2023,Cash_Flow,Cash Flows From Used In Investing Activities Discontinued Operations,0.0
+qa_1876,1876,GSK,2023,Cash_Flow,Cash Flows From Used In Investing Activities,-1595000000.0
+qa_1881,1881,GSK,2023,Company_Specific_Metric,Proceeds From Repayments Of Other Current Borrowings,-333000000.0
+qa_1882,1882,GSK,2023,Cash_Flow,Payments Of Lease Liabilities Classified As Financing Activities,197000000.0
+qa_1883,1883,GSK,2023,Cash_Flow,Interest Paid Classified As Financing Activities,766000000.0
+qa_1884,1884,GSK,2023,Cash_Flow,Dividends Paid To Equity Holders Of Parent Classified As Financing Activities,2247000000.0
+qa_1885,1885,GSK,2023,Cash_Flow,Dividends Paid To Noncontrolling Interests Classified As Financing Activities,412000000.0
+qa_1887,1887,GSK,2023,Cash_Flow,Other Inflows Outflows Of Cash Classified As Financing Activities,334000000.0
+qa_1888,1888,GSK,2023,Cash_Flow,Cash Flows From Used In Financing Activities Continuing Operations,-5641000000.0
+qa_1889,1889,GSK,2023,Cash_Flow,Cash Flows From Used In Financing Activities Discontinued Operations,0.0
+qa_1890,1890,GSK,2023,Cash_Flow,Cash Flows From Used In Financing Activities,-5641000000.0
+qa_1891,1891,GSK,2023,Cash_Flow,Increase Decrease In Cash And Cash Equivalents Before Effect Of Exchange Rate Changes,-468000000.0
+qa_1892,1892,GSK,2023,Cash_Flow,Effect Of Exchange Rate Changes On Cash And Cash Equivalents,-99000000.0
+qa_1893,1893,GSK,2023,Cash_Flow,Cash And Cash Equivalents If Different From Statement Of Financial Position,2858000000.0
+qa_1894,1894,GSK,2023,Cash_Flow,Bank Overdrafts Classified As Cash Equivalents,78000000.0
+qa_1896,1896,GSK,2023,Cash_Flow,Description Of Nature Of Entitys Operations And Principal Activities,"GSK is a global biopharma group which prevents and treats disease with vaccines, specialty and general medicines. GSK focuses on the science of the immune system and the use of new platform and data technologies, investing in four core therapeutic areas: infe ctious diseases, HIV, respiratory/immunology and oncology."
+qa_2016,2016,GSK,2024,Income_Statement,Revenue From Sale Of Goods,31376000000.0
+qa_2017,2017,GSK,2023,Income_Statement,Revenue From Sale Of Goods,30328000000.0
+qa_2018,2018,GSK,2022,Income_Statement,Revenue From Sale Of Goods,29324000000.0
+qa_2020,2020,GSK,2024,Income_Statement,Gross Profit,22328000000.0
+qa_2021,2021,GSK,2024,Income_Statement,Selling General And Administrative Expense,11015000000.0
+qa_2022,2022,GSK,2024,Income_Statement,Research And Development Expense,6401000000.0
+qa_2023,2023,GSK,2024,Income_Statement,Revenue From Royalties,639000000.0
+qa_2024,2024,GSK,2024,Income_Statement,Other Operating Income Expense,-1530000000.0
+qa_2025,2025,GSK,2024,Cash_Flow,Profit Loss From Operating Activities,4021000000.0
+qa_2026,2026,GSK,2024,Income_Statement,Finance Income,122000000.0
+qa_2028,2028,GSK,2024,Balance_Sheet,Share Of Profit Loss Of Associates And Joint Ventures Accounted For Using Equity Method,-3000000.0
+qa_2029,2029,GSK,2024,Balance_Sheet,Gains Losses On Disposals Of Noncurrent Assets,6000000.0
+qa_2030,2030,GSK,2023,Balance_Sheet,Gains Losses On Disposals Of Noncurrent Assets,1000000.0
+qa_2031,2031,GSK,2022,Balance_Sheet,Gains Losses On Disposals Of Noncurrent Assets,0.0
+qa_2032,2032,GSK,2024,Income_Statement,Profit Loss Before Tax,3477000000.0
+qa_2033,2033,GSK,2024,Income_Statement,Income Tax Expense Continuing Operations,526000000.0
+qa_2034,2034,GSK,2024,Income_Statement,Profit Loss From Continuing Operations,2951000000.0
+qa_2035,2035,GSK,2024,Company_Specific_Metric,Profit After Taxation From Discontinued Operations And Other Gains Losses From The Demerger,0.0
+qa_2036,2036,GSK,2024,Company_Specific_Metric,Remeasurement Of Discontinued Operations Distributed To Shareholders On Demerger,0.0
+qa_2037,2037,GSK,2024,Income_Statement,Profit Loss From Discontinued Operations,0.0
+qa_2038,2038,GSK,2024,Income_Statement,Profit Loss,2951000000.0
+qa_2039,2039,GSK,2024,Income_Statement,Profit Loss From Continuing Operations Attributable To Noncontrolling Interests,376000000.0
+qa_2040,2040,GSK,2024,Income_Statement,Income From Continuing Operations Attributable To Owners Of Parent,2575000000.0
+qa_2041,2041,GSK,2024,Income_Statement,Profit Loss From Discontinued Operations Attributable To Noncontrolling Interests,0.0
+qa_2042,2042,GSK,2024,Income_Statement,Income From Discontinued Operations Attributable To Owners Of Parent,0.0
+qa_2043,2043,GSK,2024,Income_Statement,Profit Loss Attributable To Noncontrolling Interests,376000000.0
+qa_2044,2044,GSK,2024,Income_Statement,Profit Loss Attributable To Owners Of Parent,2575000000.0
+qa_2045,2045,GSK,2024,Income_Statement,Basic Earnings Loss Per Share From Continuing Operations,0.632
+qa_2046,2046,GSK,2024,Income_Statement,Basic Earnings Loss Per Share From Discontinued Operations,0.0
+qa_2047,2047,GSK,2024,Income_Statement,Basic Earnings Loss Per Share,0.632
+qa_2048,2048,GSK,2024,Income_Statement,Diluted Earnings Loss Per Share From Continuing Operations,0.622
+qa_2049,2049,GSK,2024,Income_Statement,Diluted Earnings Loss Per Share From Discontinued Operations,0.0
+qa_2050,2050,GSK,2024,Income_Statement,Diluted Earnings Loss Per Share,0.622
+qa_2051,2051,GSK,2024,Company_Specific_Metric,Exchange Differences On Translation Of Foreign Operations And Hedges Of Net Investments In Foreign Operations,-392000000.0
+qa_2052,2052,GSK,2023,Company_Specific_Metric,Exchange Differences On Translation Of Foreign Operations And Hedges Of Net Investments In Foreign Operations,-22000000.0
+qa_2053,2053,GSK,2022,Company_Specific_Metric,Exchange Differences On Translation Of Foreign Operations And Hedges Of Net Investments In Foreign Operations,113000000.0
+qa_2054,2054,GSK,2024,Company_Specific_Metric,Reclassification Adjustment Of Net Exchange Differences On Disposal Of Foreign Operations,-87000000.0
+qa_2055,2055,GSK,2023,Company_Specific_Metric,Reclassification Adjustment Of Net Exchange Differences On Disposal Of Foreign Operations,-34000000.0
+qa_2056,2056,GSK,2022,Company_Specific_Metric,Reclassification Adjustment Of Net Exchange Differences On Disposal Of Foreign Operations,2000000.0
+qa_2057,2057,GSK,2024,Cash_Flow,Gains Losses On Cash Flow Hedges Before Tax,0.0
+qa_2058,2058,GSK,2024,Cash_Flow,Income Tax Relating To Cash Flow Hedges Of Other Comprehensive Income,-1000000.0
+qa_2059,2059,GSK,2024,Income_Statement,Gains Losses On Change In Value Of Time Value Of Options Net Of Tax,-4000000.0
+qa_2060,2060,GSK,2023,Income_Statement,Gains Losses On Change In Value Of Time Value Of Options Net Of Tax,0.0
+qa_2061,2061,GSK,2022,Income_Statement,Gains Losses On Change In Value Of Time Value Of Options Net Of Tax,0.0
+qa_2062,2062,GSK,2024,Cash_Flow,Reclassification Adjustments On Cash Flow Hedges Net Of Tax,-4000000.0
+qa_2063,2063,GSK,2023,Cash_Flow,Reclassification Adjustments On Cash Flow Hedges Net Of Tax,-4000000.0
+qa_2064,2064,GSK,2022,Cash_Flow,Reclassification Adjustments On Cash Flow Hedges Net Of Tax,-14000000.0
+qa_2065,2065,GSK,2024,Income_Statement,Other Comprehensive Income That Will Be Reclassified To Profit Or Loss Net Of Tax,-478000000.0
+qa_2066,2066,GSK,2024,Company_Specific_Metric,Exchange Movements On Overseas Net Assets Of Non Controlling Interests,-4000000.0
+qa_2067,2067,GSK,2024,Balance_Sheet,Other Comprehensive Income Before Tax Gains Losses From Investments In Equity Instruments,-100000000.0
+qa_2068,2068,GSK,2024,Balance_Sheet,Income Tax Relating To Investments In Equity Instruments Of Other Comprehensive Income,-17000000.0
+qa_2069,2069,GSK,2024,Company_Specific_Metric,Fair Value Movements On Cash Flow Hedges Not Reclassified,8000000.0
+qa_2070,2070,GSK,2024,Income_Statement,Other Comprehensive Income Before Tax Gains Losses On Remeasurements Of Defined Benefit Plans,506000000.0
+qa_2071,2071,GSK,2024,Income_Statement,Income Tax Relating To Remeasurements Of Defined Benefit Plans Of Other Comprehensive Income,122000000.0
+qa_2072,2072,GSK,2024,Income_Statement,Other Comprehensive Income That Will Not Be Reclassified To Profit Or Loss Net Of Tax,305000000.0
+qa_2073,2073,GSK,2024,Company_Specific_Metric,Other Comprehensive Expense Income For The Year From Continuing Operations,-173000000.0
+qa_2074,2074,GSK,2024,Company_Specific_Metric,Other Comprehensive Expense Income For The Year From Discontinued Operations,0.0
+qa_2075,2075,GSK,2024,Income_Statement,Comprehensive Income,2778000000.0
+qa_2076,2076,GSK,2024,Income_Statement,Comprehensive Income Attributable To Owners Of Parent,2406000000.0
+qa_2077,2077,GSK,2024,Income_Statement,Comprehensive Income Attributable To Noncontrolling Interests,372000000.0
+qa_2079,2079,GSK,2024,Balance_Sheet,Rightofuse Assets,846000000.0
+qa_2081,2081,GSK,2024,Balance_Sheet,Intangible Assets Other Than Goodwill,15515000000.0
+qa_2082,2082,GSK,2024,Balance_Sheet,Investment Accounted For Using Equity Method,96000000.0
+qa_2083,2083,GSK,2024,Balance_Sheet,Noncurrent Investments Other Than Investments Accounted For Using Equity Method,1100000000.0
+qa_2084,2084,GSK,2024,Balance_Sheet,Deferred Tax Assets,6757000000.0
+qa_2085,2085,GSK,2024,Balance_Sheet,Noncurrent Derivative Financial Assets,1000000.0
+qa_2086,2086,GSK,2023,Balance_Sheet,Noncurrent Derivative Financial Assets,0.0
+qa_2087,2087,GSK,2024,Balance_Sheet,Other Noncurrent Assets,1942000000.0
+qa_2088,2088,GSK,2024,Balance_Sheet,Noncurrent Assets,42466000000.0
+qa_2090,2090,GSK,2024,Balance_Sheet,Current Tax Assets,489000000.0
+qa_2092,2092,GSK,2024,Balance_Sheet,Current Derivative Financial Assets,109000000.0
+qa_2093,2093,GSK,2024,Balance_Sheet,Current Financial Assets At Fair Value Through Profit Or Loss Classified As Held For Trading,0.0
+qa_2094,2094,GSK,2024,Company_Specific_Metric,Liquid Investments,21000000.0
+qa_2095,2095,GSK,2023,Company_Specific_Metric,Liquid Investments,42000000.0
+qa_2096,2096,GSK,2024,Cash_Flow,Cash And Cash Equivalents,3870000000.0
+qa_2097,2097,GSK,2024,Balance_Sheet,Noncurrent Assets Or Disposal Groups Classified As Held For Sale,3000000.0
+qa_2098,2098,GSK,2023,Balance_Sheet,Noncurrent Assets Or Disposal Groups Classified As Held For Sale,76000000.0
+qa_2099,2099,GSK,2024,Balance_Sheet,Current Assets,16997000000.0
+qa_2100,2100,GSK,2024,Balance_Sheet,Assets,59463000000.0
+qa_2102,2102,GSK,2024,Company_Specific_Metric,Contingent Consideration Liabilities,1172000000.0
+qa_2103,2103,GSK,2023,Company_Specific_Metric,Contingent Consideration Liabilities,1053000000.0
+qa_2105,2105,GSK,2024,Balance_Sheet,Current Derivative Financial Liabilities,192000000.0
+qa_2106,2106,GSK,2024,Balance_Sheet,Current Tax Liabilities,703000000.0
+qa_2108,2108,GSK,2024,Balance_Sheet,Current Liabilities,21697000000.0
+qa_2110,2110,GSK,2024,Balance_Sheet,Current Tax Liabilities Noncurrent,0.0
+qa_2111,2111,GSK,2024,Balance_Sheet,Deferred Tax Liabilities,382000000.0
+qa_2114,2114,GSK,2024,Balance_Sheet,Noncurrent Financial Liabilities At Fair Value Through Profit Or Loss,6108000000.0
+qa_2115,2115,GSK,2023,Balance_Sheet,Noncurrent Financial Liabilities At Fair Value Through Profit Or Loss,5609000000.0
+qa_2116,2116,GSK,2024,Balance_Sheet,Other Noncurrent Liabilities,1100000000.0
+qa_2117,2117,GSK,2024,Balance_Sheet,Noncurrent Liabilities,24680000000.0
+qa_2118,2118,GSK,2024,Balance_Sheet,Liabilities,46377000000.0
+qa_2119,2119,GSK,2024,Balance_Sheet,Net Assets Liabilities,13086000000.0
+qa_2124,2124,GSK,2024,Balance_Sheet,Equity Attributable To Owners Of Parent,13671000000.0
+qa_2126,2126,GSK,2024,Balance_Sheet,Equity,13086000000.0
+qa_2128,2128,GSK,2022,Company_Specific_Metric,Increase Decrease Through Other Changes To Noncontrolling Interests,0.0
+qa_2130,2130,GSK,2022,Company_Specific_Metric,Increase Decrease Through Disposal Of Equity Investments,0.0
+qa_2131,2131,GSK,2022,Cash_Flow,Amount Removed From Reserve Of Cash Flow Hedges And Included In Initial Cost Or Other Carrying Amount Of Nonfinancial Asset Liability Or Firm Commitment For Which Fair Value Hedge Accounting Is Applied,0.0
+qa_2132,2132,GSK,2023,Company_Specific_Metric,Increase Decrease Through Disposal Of Equity Investments,0.0
+qa_2133,2133,GSK,2023,Cash_Flow,Amount Removed From Reserve Of Cash Flow Hedges And Included In Initial Cost Or Other Carrying Amount Of Nonfinancial Asset Liability Or Firm Commitment For Which Fair Value Hedge Accounting Is Applied,0.0
+qa_2134,2134,GSK,2024,Income_Statement,Other Comprehensive Income,0.0
+qa_2136,2136,GSK,2024,Company_Specific_Metric,Increase Through Other Contributions By Noncontrolling Interests Equity,0.0
+qa_2137,2137,GSK,2024,Company_Specific_Metric,Increase Decrease Through Other Changes To Noncontrolling Interests,0.0
+qa_2140,2140,GSK,2024,Company_Specific_Metric,Increase Decrease Through Disposal Of Equity Investments,0.0
+qa_2141,2141,GSK,2024,Company_Specific_Metric,Share Of Associates And Joint Ventures Realised Profits On Disposal Of Equity Investments,0.0
+qa_2142,2142,GSK,2024,Balance_Sheet,Issue Of Equity,0.0
+qa_2143,2143,GSK,2024,Company_Specific_Metric,Write Down Of Shares Held By Employee Stock Ownership Plan,0.0
+qa_2144,2144,GSK,2024,Company_Specific_Metric,Shares Acquired By Esop Trusts,0.0
+qa_2146,2146,GSK,2024,Cash_Flow,Amount Removed From Reserve Of Cash Flow Hedges And Included In Initial Cost Or Other Carrying Amount Of Nonfinancial Asset Liability Or Firm Commitment For Which Fair Value Hedge Accounting Is Applied,0.0
+qa_2148,2148,GSK,2024,Income_Statement,Adjustments For Reconcile Profit Loss,4910000000.0
+qa_2149,2149,GSK,2024,Cash_Flow,Cash Flows From Used In Operations,7861000000.0
+qa_2150,2150,GSK,2024,Cash_Flow,Income Taxes Paid Refund Classified As Operating Activities,1307000000.0
+qa_2151,2151,GSK,2023,Cash_Flow,Income Taxes Paid Refund Classified As Operating Activities,1328000000.0
+qa_2152,2152,GSK,2022,Cash_Flow,Income Taxes Paid Refund Classified As Operating Activities,1310000000.0
+qa_2153,2153,GSK,2024,Cash_Flow,Cash Flows From Used In Operating Activities Continuing Operations,6554000000.0
+qa_2154,2154,GSK,2024,Company_Specific_Metric,Cash Flows From Used In Operations Before Tax Discontinued Operations,0.0
+qa_2155,2155,GSK,2023,Company_Specific_Metric,Cash Flows From Used In Operations Before Tax Discontinued Operations,0.0
+qa_2156,2156,GSK,2022,Company_Specific_Metric,Cash Flows From Used In Operations Before Tax Discontinued Operations,932000000.0
+qa_2157,2157,GSK,2024,Company_Specific_Metric,Income Taxes Paid Refund Classified As Operating Activities Discontinued Operations,0.0
+qa_2158,2158,GSK,2024,Cash_Flow,Cash Flows From Used In Operating Activities Discontinued Operations,0.0
+qa_2159,2159,GSK,2024,Cash_Flow,Cash Flows From Used In Operating Activities,6554000000.0
+qa_2160,2160,GSK,2024,Cash_Flow,Purchase Of Property Plant And Equipment Classified As Investing Activities,1399000000.0
+qa_2161,2161,GSK,2024,Cash_Flow,Proceeds From Sales Of Property Plant And Equipment Classified As Investing Activities,65000000.0
+qa_2162,2162,GSK,2024,Cash_Flow,Purchase Of Intangible Assets Classified As Investing Activities,1583000000.0
+qa_2163,2163,GSK,2024,Cash_Flow,Proceeds From Sales Of Intangible Assets Classified As Investing Activities,131000000.0
+qa_2164,2164,GSK,2024,Cash_Flow,Other Cash Payments To Acquire Equity Or Debt Instruments Of Other Entities Classified As Investing Activities,103000000.0
+qa_2165,2165,GSK,2024,Company_Specific_Metric,Increase Decrease In Liquid Investments,-21000000.0
+qa_2166,2166,GSK,2024,Cash_Flow,Cash Flows Used In Obtaining Control Of Subsidiaries Or Other Businesses Classified As Investing Activities,805000000.0
+qa_2167,2167,GSK,2023,Cash_Flow,Cash Flows Used In Obtaining Control Of Subsidiaries Or Other Businesses Classified As Investing Activities,1457000000.0
+qa_2168,2168,GSK,2022,Cash_Flow,Cash Flows Used In Obtaining Control Of Subsidiaries Or Other Businesses Classified As Investing Activities,3108000000.0
+qa_2169,2169,GSK,2024,Cash_Flow,Other Cash Receipts From Sales Of Equity Or Debt Instruments Of Other Entities Classified As Investing Activities,2356000000.0
+qa_2170,2170,GSK,2024,Company_Specific_Metric,Cash Inflows Outflows From Share Transactions With Non Controlling Interests,-1000000.0
+qa_2171,2171,GSK,2023,Company_Specific_Metric,Cash Inflows Outflows From Share Transactions With Non Controlling Interests,0.0
+qa_2172,2172,GSK,2022,Company_Specific_Metric,Cash Inflows Outflows From Share Transactions With Non Controlling Interests,0.0
+qa_2173,2173,GSK,2024,Company_Specific_Metric,Outflow Of Cash Through Ccl Classified As Investing Activities,-19000000.0
+qa_2174,2174,GSK,2023,Company_Specific_Metric,Outflow Of Cash Through Ccl Classified As Investing Activities,-11000000.0
+qa_2175,2175,GSK,2022,Company_Specific_Metric,Outflow Of Cash Through Ccl Classified As Investing Activities,-79000000.0
+qa_2176,2176,GSK,2024,Cash_Flow,Cash Flows From Losing Control Of Subsidiaries Or Other Businesses Classified As Investing Activities,-18000000.0
+qa_2177,2177,GSK,2023,Cash_Flow,Cash Flows From Losing Control Of Subsidiaries Or Other Businesses Classified As Investing Activities,49000000.0
+qa_2178,2178,GSK,2022,Cash_Flow,Cash Flows From Losing Control Of Subsidiaries Or Other Businesses Classified As Investing Activities,-43000000.0
+qa_2179,2179,GSK,2024,Balance_Sheet,Purchase Of Interests In Investments Accounted For Using Equity Method,43000000.0
+qa_2180,2180,GSK,2023,Balance_Sheet,Purchase Of Interests In Investments Accounted For Using Equity Method,0.0
+qa_2181,2181,GSK,2022,Balance_Sheet,Purchase Of Interests In Investments Accounted For Using Equity Method,1000000.0
+qa_2182,2182,GSK,2024,Balance_Sheet,Proceeds From Sales Of Investments Accounted For Using Equity Method,0.0
+qa_2183,2183,GSK,2023,Balance_Sheet,Proceeds From Sales Of Investments Accounted For Using Equity Method,1000000.0
+qa_2184,2184,GSK,2022,Balance_Sheet,Proceeds From Sales Of Investments Accounted For Using Equity Method,0.0
+qa_2185,2185,GSK,2024,Cash_Flow,Interest Received Classified As Investing Activities,138000000.0
+qa_2186,2186,GSK,2024,Company_Specific_Metric,Dividends And Distributions Received Classified As Investing Activities,16000000.0
+qa_2187,2187,GSK,2023,Company_Specific_Metric,Dividends And Distributions Received Classified As Investing Activities,220000000.0
+qa_2188,2188,GSK,2022,Company_Specific_Metric,Dividends And Distributions Received Classified As Investing Activities,0.0
+qa_2189,2189,GSK,2024,Cash_Flow,Dividends Received From Investments Accounted For Using Equity Method Classified As Investing Activities,15000000.0
+qa_2190,2190,GSK,2023,Cash_Flow,Dividends Received From Investments Accounted For Using Equity Method Classified As Investing Activities,11000000.0
+qa_2191,2191,GSK,2022,Cash_Flow,Dividends Received From Investments Accounted For Using Equity Method Classified As Investing Activities,6000000.0
+qa_2192,2192,GSK,2024,Cash_Flow,Cash Flows From Used In Investing Activities Continuing Operations,-1229000000.0
+qa_2193,2193,GSK,2024,Cash_Flow,Cash Flows From Used In Investing Activities Discontinued Operations,0.0
+qa_2194,2194,GSK,2024,Cash_Flow,Cash Flows From Used In Investing Activities,-1229000000.0
+qa_2198,2198,GSK,2024,Company_Specific_Metric,Proceeds Repayments From Of Short Term Loans,-811000000.0
+qa_2199,2199,GSK,2023,Company_Specific_Metric,Proceeds Repayments From Of Short Term Loans,-333000000.0
+qa_2200,2200,GSK,2022,Company_Specific_Metric,Proceeds Repayments From Of Short Term Loans,1021000000.0
+qa_2201,2201,GSK,2024,Company_Specific_Metric,Increase Decrease In Other Short Term Loans,266000000.0
+qa_2202,2202,GSK,2023,Company_Specific_Metric,Increase Decrease In Other Short Term Loans,0.0
+qa_2203,2203,GSK,2022,Company_Specific_Metric,Increase Decrease In Other Short Term Loans,0.0
+qa_2204,2204,GSK,2024,Company_Specific_Metric,Repayment Of Other Short Term Loans,81000000.0
+qa_2205,2205,GSK,2023,Company_Specific_Metric,Repayment Of Other Short Term Loans,0.0
+qa_2206,2206,GSK,2022,Company_Specific_Metric,Repayment Of Other Short Term Loans,0.0
+qa_2207,2207,GSK,2024,Cash_Flow,Payments Of Lease Liabilities Classified As Financing Activities,226000000.0
+qa_2208,2208,GSK,2024,Cash_Flow,Interest Paid Classified As Financing Activities,632000000.0
+qa_2209,2209,GSK,2024,Cash_Flow,Dividends Paid To Equity Holders Of Parent Classified As Financing Activities,2444000000.0
+qa_2210,2210,GSK,2024,Company_Specific_Metric,Distributions To Non Controlling Interests Classified As Financing Activities,416000000.0
+qa_2211,2211,GSK,2023,Company_Specific_Metric,Distributions To Non Controlling Interests Classified As Financing Activities,412000000.0
+qa_2212,2212,GSK,2022,Company_Specific_Metric,Distributions To Non Controlling Interests Classified As Financing Activities,521000000.0
+qa_2214,2214,GSK,2024,Cash_Flow,Other Inflows Outflows Of Cash Classified As Financing Activities,129000000.0
+qa_2215,2215,GSK,2024,Cash_Flow,Cash Flows From Used In Financing Activities Continuing Operations,-4726000000.0
+qa_2216,2216,GSK,2024,Cash_Flow,Cash Flows From Used In Financing Activities Discontinued Operations,0.0
+qa_2217,2217,GSK,2024,Cash_Flow,Cash Flows From Used In Financing Activities,-4726000000.0
+qa_2218,2218,GSK,2024,Cash_Flow,Increase Decrease In Cash And Cash Equivalents Before Effect Of Exchange Rate Changes,599000000.0
+qa_2219,2219,GSK,2024,Cash_Flow,Effect Of Exchange Rate Changes On Cash And Cash Equivalents,-54000000.0
+qa_2220,2220,GSK,2024,Cash_Flow,Cash And Cash Equivalents If Different From Statement Of Financial Position,3403000000.0
+qa_2221,2221,GSK,2024,Cash_Flow,Bank Overdrafts Classified As Cash Equivalents,467000000.0
+qa_2224,2224,GSK,2024,Cash_Flow,Description Of Nature Of Entitys Operations And Principal Activities,"GSK is a global biopharma group which prevents and treats disease with specialty medicines, vaccines and general medicines. GSK focuses on the science of the immune system and advanced technologies, investing in four core therapeutic areas: respiratory, immunology and inflammation; oncology; HIV; and infectious diseases."
+qa_2387,2387,Hikma Pharmaceuticals,2022,Income_Statement,Revenue,2517000000.0
+qa_2388,2388,Hikma Pharmaceuticals,2021,Income_Statement,Revenue,2553000000.0
+qa_2391,2391,Hikma Pharmaceuticals,2022,Income_Statement,Gross Profit,1265000000.0
+qa_2392,2392,Hikma Pharmaceuticals,2021,Income_Statement,Gross Profit,1301000000.0
+qa_2393,2393,Hikma Pharmaceuticals,2022,Income_Statement,Selling General And Administrative Expense,509000000.0
+qa_2394,2394,Hikma Pharmaceuticals,2021,Income_Statement,Selling General And Administrative Expense,488000000.0
+qa_2395,2395,Hikma Pharmaceuticals,2022,Balance_Sheet,Impairment Loss On Financial Assets,5000000.0
+qa_2396,2396,Hikma Pharmaceuticals,2021,Balance_Sheet,Impairment Loss On Financial Assets,0.0
+qa_2397,2397,Hikma Pharmaceuticals,2022,Income_Statement,Research And Development Expense,144000000.0
+qa_2398,2398,Hikma Pharmaceuticals,2021,Income_Statement,Research And Development Expense,143000000.0
+qa_2399,2399,Hikma Pharmaceuticals,2022,Income_Statement,Miscellaneous Other Operating Expense,25000000.0
+qa_2400,2400,Hikma Pharmaceuticals,2021,Income_Statement,Miscellaneous Other Operating Expense,40000000.0
+qa_2401,2401,Hikma Pharmaceuticals,2022,Income_Statement,Miscellaneous Other Operating Income,14000000.0
+qa_2402,2402,Hikma Pharmaceuticals,2021,Income_Statement,Miscellaneous Other Operating Income,2000000.0
+qa_2403,2403,Hikma Pharmaceuticals,2022,Company_Specific_Metric,Total Operating Expenses,-669000000.0
+qa_2404,2404,Hikma Pharmaceuticals,2021,Company_Specific_Metric,Total Operating Expenses,-669000000.0
+qa_2405,2405,Hikma Pharmaceuticals,2022,Cash_Flow,Profit Loss From Operating Activities,596000000.0
+qa_2406,2406,Hikma Pharmaceuticals,2021,Cash_Flow,Profit Loss From Operating Activities,632000000.0
+qa_2407,2407,Hikma Pharmaceuticals,2022,Income_Statement,Finance Income,3000000.0
+qa_2408,2408,Hikma Pharmaceuticals,2021,Income_Statement,Finance Income,1000000.0
+qa_2411,2411,Hikma Pharmaceuticals,2022,Balance_Sheet,Gains Losses Arising From Difference Between Previous Carrying Amount And Fair Value Of Financial Assets Reclassified As Measured At Fair Value,-2000000.0
+qa_2412,2412,Hikma Pharmaceuticals,2021,Balance_Sheet,Gains Losses Arising From Difference Between Previous Carrying Amount And Fair Value Of Financial Assets Reclassified As Measured At Fair Value,0.0
+qa_2413,2413,Hikma Pharmaceuticals,2022,Company_Specific_Metric,Results From Joint Venture,0.0
+qa_2414,2414,Hikma Pharmaceuticals,2021,Company_Specific_Metric,Results From Joint Venture,1000000.0
+qa_2415,2415,Hikma Pharmaceuticals,2022,Income_Statement,Profits Losses On Disposal Of Investments And Changes In Value Of Investments,0.0
+qa_2416,2416,Hikma Pharmaceuticals,2021,Income_Statement,Profits Losses On Disposal Of Investments And Changes In Value Of Investments,0.0
+qa_2417,2417,Hikma Pharmaceuticals,2022,Income_Statement,Profit Loss Before Tax,520000000.0
+qa_2418,2418,Hikma Pharmaceuticals,2021,Income_Statement,Profit Loss Before Tax,578000000.0
+qa_2419,2419,Hikma Pharmaceuticals,2022,Income_Statement,Income Tax Expense Continuing Operations,111000000.0
+qa_2420,2420,Hikma Pharmaceuticals,2021,Income_Statement,Income Tax Expense Continuing Operations,129000000.0
+qa_2421,2421,Hikma Pharmaceuticals,2022,Income_Statement,Profit Loss,409000000.0
+qa_2422,2422,Hikma Pharmaceuticals,2021,Income_Statement,Profit Loss,449000000.0
+qa_2423,2423,Hikma Pharmaceuticals,2022,Income_Statement,Profit Loss Attributable To Noncontrolling Interests,3000000.0
+qa_2424,2424,Hikma Pharmaceuticals,2021,Income_Statement,Profit Loss Attributable To Noncontrolling Interests,-1000000.0
+qa_2425,2425,Hikma Pharmaceuticals,2022,Income_Statement,Profit Loss Attributable To Owners Of Parent,406000000.0
+qa_2426,2426,Hikma Pharmaceuticals,2021,Income_Statement,Profit Loss Attributable To Owners Of Parent,450000000.0
+qa_2427,2427,Hikma Pharmaceuticals,2022,Income_Statement,Basic Earnings Loss Per Share,1.813
+qa_2428,2428,Hikma Pharmaceuticals,2021,Income_Statement,Basic Earnings Loss Per Share,1.948
+qa_2429,2429,Hikma Pharmaceuticals,2022,Income_Statement,Diluted Earnings Loss Per Share,1.804
+qa_2430,2430,Hikma Pharmaceuticals,2021,Income_Statement,Diluted Earnings Loss Per Share,1.931
+qa_2431,2431,Hikma Pharmaceuticals,2022,Income_Statement,Gains Losses On Exchange Differences On Translation Net Of Tax,-87000000.0
+qa_2432,2432,Hikma Pharmaceuticals,2021,Income_Statement,Gains Losses On Exchange Differences On Translation Net Of Tax,-22000000.0
+qa_2435,2435,Hikma Pharmaceuticals,2022,Income_Statement,Other Comprehensive Income Net Of Tax Gains Losses On Remeasurements Of Defined Benefit Plans,0.0
+qa_2436,2436,Hikma Pharmaceuticals,2021,Income_Statement,Other Comprehensive Income Net Of Tax Gains Losses On Remeasurements Of Defined Benefit Plans,-1000000.0
+qa_2437,2437,Hikma Pharmaceuticals,2022,Balance_Sheet,Other Comprehensive Income Net Of Tax Financial Assets Measured At Fair Value Through Other Comprehensive Income,-8000000.0
+qa_2438,2438,Hikma Pharmaceuticals,2021,Balance_Sheet,Other Comprehensive Income Net Of Tax Financial Assets Measured At Fair Value Through Other Comprehensive Income,14000000.0
+qa_2439,2439,Hikma Pharmaceuticals,2022,Income_Statement,Other Comprehensive Income,-95000000.0
+qa_2440,2440,Hikma Pharmaceuticals,2021,Income_Statement,Other Comprehensive Income,-9000000.0
+qa_2441,2441,Hikma Pharmaceuticals,2022,Income_Statement,Comprehensive Income,314000000.0
+qa_2442,2442,Hikma Pharmaceuticals,2021,Income_Statement,Comprehensive Income,440000000.0
+qa_2443,2443,Hikma Pharmaceuticals,2022,Income_Statement,Comprehensive Income Attributable To Noncontrolling Interests,0.0
+qa_2444,2444,Hikma Pharmaceuticals,2021,Income_Statement,Comprehensive Income Attributable To Noncontrolling Interests,2000000.0
+qa_2445,2445,Hikma Pharmaceuticals,2022,Income_Statement,Comprehensive Income Attributable To Owners Of Parent,314000000.0
+qa_2446,2446,Hikma Pharmaceuticals,2021,Income_Statement,Comprehensive Income Attributable To Owners Of Parent,438000000.0
+qa_2449,2449,Hikma Pharmaceuticals,2022,Balance_Sheet,Intangible Assets Other Than Goodwill,735000000.0
+qa_2450,2450,Hikma Pharmaceuticals,2021,Balance_Sheet,Intangible Assets Other Than Goodwill,607000000.0
+qa_2453,2453,Hikma Pharmaceuticals,2022,Balance_Sheet,Rightofuse Assets,57000000.0
+qa_2454,2454,Hikma Pharmaceuticals,2021,Balance_Sheet,Rightofuse Assets,74000000.0
+qa_2457,2457,Hikma Pharmaceuticals,2022,Balance_Sheet,Deferred Tax Assets,192000000.0
+qa_2458,2458,Hikma Pharmaceuticals,2021,Balance_Sheet,Deferred Tax Assets,183000000.0
+qa_2459,2459,Hikma Pharmaceuticals,2022,Company_Specific_Metric,Noncurrent Financial And Other Assets,65000000.0
+qa_2460,2460,Hikma Pharmaceuticals,2021,Company_Specific_Metric,Noncurrent Financial And Other Assets,47000000.0
+qa_2461,2461,Hikma Pharmaceuticals,2022,Balance_Sheet,Noncurrent Assets,2472000000.0
+qa_2462,2462,Hikma Pharmaceuticals,2021,Balance_Sheet,Noncurrent Assets,2278000000.0
+qa_2465,2465,Hikma Pharmaceuticals,2022,Balance_Sheet,Current Tax Assets Current,32000000.0
+qa_2466,2466,Hikma Pharmaceuticals,2021,Balance_Sheet,Current Tax Assets Current,60000000.0
+qa_2469,2469,Hikma Pharmaceuticals,2022,Cash_Flow,Cash And Cash Equivalents,270000000.0
+qa_2470,2470,Hikma Pharmaceuticals,2021,Cash_Flow,Cash And Cash Equivalents,426000000.0
+qa_2471,2471,Hikma Pharmaceuticals,2022,Balance_Sheet,Other Current Assets,110000000.0
+qa_2472,2472,Hikma Pharmaceuticals,2021,Balance_Sheet,Other Current Assets,97000000.0
+qa_2473,2473,Hikma Pharmaceuticals,2022,Balance_Sheet,Current Assets Other Than Assets Or Disposal Groups Classified As Held For Sale Or As Held For Distribution To Owners,2000000.0
+qa_2474,2474,Hikma Pharmaceuticals,2021,Balance_Sheet,Current Assets Other Than Assets Or Disposal Groups Classified As Held For Sale Or As Held For Distribution To Owners,0.0
+qa_2475,2475,Hikma Pharmaceuticals,2022,Balance_Sheet,Current Assets,1999000000.0
+qa_2476,2476,Hikma Pharmaceuticals,2021,Balance_Sheet,Current Assets,2094000000.0
+qa_2477,2477,Hikma Pharmaceuticals,2022,Balance_Sheet,Assets,4471000000.0
+qa_2478,2478,Hikma Pharmaceuticals,2021,Balance_Sheet,Assets,4372000000.0
+qa_2481,2481,Hikma Pharmaceuticals,2022,Balance_Sheet,Current Lease Liabilities,9000000.0
+qa_2482,2482,Hikma Pharmaceuticals,2021,Balance_Sheet,Current Lease Liabilities,9000000.0
+qa_2485,2485,Hikma Pharmaceuticals,2022,Balance_Sheet,Current Tax Liabilities Current,73000000.0
+qa_2486,2486,Hikma Pharmaceuticals,2021,Balance_Sheet,Current Tax Liabilities Current,57000000.0
+qa_2489,2489,Hikma Pharmaceuticals,2022,Balance_Sheet,Other Current Liabilities,348000000.0
+qa_2490,2490,Hikma Pharmaceuticals,2021,Balance_Sheet,Other Current Liabilities,339000000.0
+qa_2491,2491,Hikma Pharmaceuticals,2022,Balance_Sheet,Current Liabilities,1077000000.0
+qa_2492,2492,Hikma Pharmaceuticals,2021,Balance_Sheet,Current Liabilities,1016000000.0
+qa_2493,2493,Hikma Pharmaceuticals,2022,Balance_Sheet,Current Assets Liabilities,922000000.0
+qa_2494,2494,Hikma Pharmaceuticals,2021,Balance_Sheet,Current Assets Liabilities,1078000000.0
+qa_2497,2497,Hikma Pharmaceuticals,2022,Balance_Sheet,Noncurrent Lease Liabilities,61000000.0
+qa_2498,2498,Hikma Pharmaceuticals,2021,Balance_Sheet,Noncurrent Lease Liabilities,74000000.0
+qa_2499,2499,Hikma Pharmaceuticals,2022,Balance_Sheet,Deferred Tax Liabilities,19000000.0
+qa_2500,2500,Hikma Pharmaceuticals,2021,Balance_Sheet,Deferred Tax Liabilities,24000000.0
+qa_2501,2501,Hikma Pharmaceuticals,2022,Balance_Sheet,Other Noncurrent Liabilities,92000000.0
+qa_2502,2502,Hikma Pharmaceuticals,2021,Balance_Sheet,Other Noncurrent Liabilities,140000000.0
+qa_2503,2503,Hikma Pharmaceuticals,2022,Balance_Sheet,Noncurrent Liabilities,1246000000.0
+qa_2504,2504,Hikma Pharmaceuticals,2021,Balance_Sheet,Noncurrent Liabilities,889000000.0
+qa_2505,2505,Hikma Pharmaceuticals,2022,Balance_Sheet,Liabilities,2323000000.0
+qa_2506,2506,Hikma Pharmaceuticals,2021,Balance_Sheet,Liabilities,1905000000.0
+qa_2507,2507,Hikma Pharmaceuticals,2022,Balance_Sheet,Net Assets Liabilities,2148000000.0
+qa_2508,2508,Hikma Pharmaceuticals,2021,Balance_Sheet,Net Assets Liabilities,2467000000.0
+qa_2519,2519,Hikma Pharmaceuticals,2022,Balance_Sheet,Equity Attributable To Owners Of Parent,2135000000.0
+qa_2520,2520,Hikma Pharmaceuticals,2021,Balance_Sheet,Equity Attributable To Owners Of Parent,2453000000.0
+qa_2523,2523,Hikma Pharmaceuticals,2022,Balance_Sheet,Equity,2148000000.0
+qa_2524,2524,Hikma Pharmaceuticals,2021,Balance_Sheet,Equity,2467000000.0
+qa_2525,2525,Hikma Pharmaceuticals,2020,Balance_Sheet,Equity,119000000.0
+qa_2526,2526,Hikma Pharmaceuticals,2021,Income_Statement,Other Comprehensive Income Net Of Tax Gains Losses On Revaluation,-3000000.0
+qa_2527,2527,Hikma Pharmaceuticals,2021,Income_Statement,Income Tax Relating To Remeasurements Of Defined Benefit Plans Of Other Comprehensive Income,0.0
+qa_2528,2528,Hikma Pharmaceuticals,2021,Income_Statement,Other Comprehensive Income Net Of Tax Exchange Differences On Translation,0.0
+qa_2532,2532,Hikma Pharmaceuticals,2022,Income_Statement,Other Comprehensive Income Net Of Tax Exchange Differences On Translation,0.0
+qa_2533,2533,Hikma Pharmaceuticals,2022,Company_Specific_Metric,Transfer Of Merger Reserve,-129000000.0
+qa_2534,2534,Hikma Pharmaceuticals,2022,Balance_Sheet,Issue Of Equity,0.0
+qa_2535,2535,Hikma Pharmaceuticals,2022,Company_Specific_Metric,Cancellation Of Ordinary Bonus Share,0.0
+qa_2538,2538,Hikma Pharmaceuticals,2022,Company_Specific_Metric,Ordinary Shares Purchased And Cancelled,0.0
+qa_2540,2540,Hikma Pharmaceuticals,2022,Company_Specific_Metric,Other Comprehensive Income Accumulated In Equity Related To Assets Held For Distribution,0.0
+qa_2543,2543,Hikma Pharmaceuticals,2022,Cash_Flow,Cash Flows From Used In Operations,585000000.0
+qa_2544,2544,Hikma Pharmaceuticals,2021,Cash_Flow,Cash Flows From Used In Operations,767000000.0
+qa_2545,2545,Hikma Pharmaceuticals,2022,Cash_Flow,Income Taxes Paid Classified As Operating Activities,103000000.0
+qa_2546,2546,Hikma Pharmaceuticals,2021,Cash_Flow,Income Taxes Paid Classified As Operating Activities,131000000.0
+qa_2547,2547,Hikma Pharmaceuticals,2022,Cash_Flow,Income Taxes Refund Classified As Operating Activities,48000000.0
+qa_2548,2548,Hikma Pharmaceuticals,2021,Cash_Flow,Income Taxes Refund Classified As Operating Activities,2000000.0
+qa_2549,2549,Hikma Pharmaceuticals,2022,Cash_Flow,Cash Flows From Used In Operating Activities,530000000.0
+qa_2550,2550,Hikma Pharmaceuticals,2021,Cash_Flow,Cash Flows From Used In Operating Activities,638000000.0
+qa_2551,2551,Hikma Pharmaceuticals,2022,Cash_Flow,Purchase Of Property Plant And Equipment Classified As Investing Activities,138000000.0
+qa_2552,2552,Hikma Pharmaceuticals,2021,Cash_Flow,Purchase Of Property Plant And Equipment Classified As Investing Activities,145000000.0
+qa_2553,2553,Hikma Pharmaceuticals,2022,Cash_Flow,Proceeds From Sales Of Property Plant And Equipment Classified As Investing Activities,1000000.0
+qa_2554,2554,Hikma Pharmaceuticals,2021,Cash_Flow,Proceeds From Sales Of Property Plant And Equipment Classified As Investing Activities,0.0
+qa_2555,2555,Hikma Pharmaceuticals,2022,Cash_Flow,Purchase Of Intangible Assets Classified As Investing Activities,87000000.0
+qa_2556,2556,Hikma Pharmaceuticals,2021,Cash_Flow,Purchase Of Intangible Assets Classified As Investing Activities,84000000.0
+qa_2557,2557,Hikma Pharmaceuticals,2022,Cash_Flow,Proceeds From Sales Of Intangible Assets Classified As Investing Activities,9000000.0
+qa_2558,2558,Hikma Pharmaceuticals,2021,Cash_Flow,Proceeds From Sales Of Intangible Assets Classified As Investing Activities,0.0
+qa_2559,2559,Hikma Pharmaceuticals,2022,Company_Specific_Metric,Proceeds From Sale Of Investment At Fair Value Through Other Comprehensive Income,0.0
+qa_2560,2560,Hikma Pharmaceuticals,2021,Company_Specific_Metric,Proceeds From Sale Of Investment At Fair Value Through Other Comprehensive Income,5000000.0
+qa_2561,2561,Hikma Pharmaceuticals,2022,Company_Specific_Metric,Additions Of Investments At Fair Value Through Other Comprehensive Income,15000000.0
+qa_2562,2562,Hikma Pharmaceuticals,2021,Company_Specific_Metric,Additions Of Investments At Fair Value Through Other Comprehensive Income,3000000.0
+qa_2563,2563,Hikma Pharmaceuticals,2022,Cash_Flow,Cash Flows Used In Obtaining Control Of Subsidiaries Or Other Businesses Classified As Investing Activities,373000000.0
+qa_2564,2564,Hikma Pharmaceuticals,2021,Cash_Flow,Cash Flows Used In Obtaining Control Of Subsidiaries Or Other Businesses Classified As Investing Activities,0.0
+qa_2565,2565,Hikma Pharmaceuticals,2022,Balance_Sheet,Proceeds From Sales Of Investments Accounted For Using Equity Method,0.0
+qa_2566,2566,Hikma Pharmaceuticals,2021,Balance_Sheet,Proceeds From Sales Of Investments Accounted For Using Equity Method,1000000.0
+qa_2567,2567,Hikma Pharmaceuticals,2022,Cash_Flow,Cash Flows From Losing Control Of Subsidiaries Or Other Businesses Classified As Investing Activities,-1000000.0
+qa_2568,2568,Hikma Pharmaceuticals,2021,Cash_Flow,Cash Flows From Losing Control Of Subsidiaries Or Other Businesses Classified As Investing Activities,0.0
+qa_2569,2569,Hikma Pharmaceuticals,2022,Company_Specific_Metric,Payment Of Contingent Consideration Classified As Investing Activities,-6000000.0
+qa_2570,2570,Hikma Pharmaceuticals,2021,Company_Specific_Metric,Payment Of Contingent Consideration Classified As Investing Activities,-6000000.0
+qa_2571,2571,Hikma Pharmaceuticals,2022,Company_Specific_Metric,Milestone Payments Of Acquired Contingent Liability,0.0
+qa_2572,2572,Hikma Pharmaceuticals,2021,Company_Specific_Metric,Milestone Payments Of Acquired Contingent Liability,11000000.0
+qa_2573,2573,Hikma Pharmaceuticals,2022,Cash_Flow,Interest Received Classified As Investing Activities,3000000.0
+qa_2574,2574,Hikma Pharmaceuticals,2021,Cash_Flow,Interest Received Classified As Investing Activities,2000000.0
+qa_2575,2575,Hikma Pharmaceuticals,2022,Company_Specific_Metric,Investment Related Amounts Held In Escrow Account,0.0
+qa_2576,2576,Hikma Pharmaceuticals,2021,Company_Specific_Metric,Investment Related Amounts Held In Escrow Account,-3000000.0
+qa_2577,2577,Hikma Pharmaceuticals,2022,Cash_Flow,Cash Flows From Used In Investing Activities,-607000000.0
+qa_2578,2578,Hikma Pharmaceuticals,2021,Cash_Flow,Cash Flows From Used In Investing Activities,-238000000.0
+qa_2587,2587,Hikma Pharmaceuticals,2022,Cash_Flow,Payments Of Lease Liabilities Classified As Financing Activities,9000000.0
+qa_2588,2588,Hikma Pharmaceuticals,2021,Cash_Flow,Payments Of Lease Liabilities Classified As Financing Activities,31000000.0
+qa_2589,2589,Hikma Pharmaceuticals,2022,Cash_Flow,Dividends Paid To Equity Holders Of Parent Classified As Financing Activities,125000000.0
+qa_2590,2590,Hikma Pharmaceuticals,2021,Cash_Flow,Dividends Paid To Equity Holders Of Parent Classified As Financing Activities,120000000.0
+qa_2591,2591,Hikma Pharmaceuticals,2022,Cash_Flow,Dividends Paid To Noncontrolling Interests Classified As Financing Activities,3000000.0
+qa_2592,2592,Hikma Pharmaceuticals,2021,Cash_Flow,Dividends Paid To Noncontrolling Interests Classified As Financing Activities,1000000.0
+qa_2593,2593,Hikma Pharmaceuticals,2022,Company_Specific_Metric,Interest And Bank Charges Paid,68000000.0
+qa_2594,2594,Hikma Pharmaceuticals,2021,Company_Specific_Metric,Interest And Bank Charges Paid,50000000.0
+qa_2595,2595,Hikma Pharmaceuticals,2022,Company_Specific_Metric,Revolving Credit Facility Upfront Fees Paid,5000000.0
+qa_2596,2596,Hikma Pharmaceuticals,2021,Company_Specific_Metric,Revolving Credit Facility Upfront Fees Paid,0.0
+qa_2599,2599,Hikma Pharmaceuticals,2022,Company_Specific_Metric,Share Buyback Transaction Costs,-3000000.0
+qa_2600,2600,Hikma Pharmaceuticals,2021,Company_Specific_Metric,Share Buyback Transaction Costs,0.0
+qa_2601,2601,Hikma Pharmaceuticals,2022,Company_Specific_Metric,Payment To Co Development And Earn Out Payment Agreement,1000000.0
+qa_2602,2602,Hikma Pharmaceuticals,2021,Company_Specific_Metric,Payment To Co Development And Earn Out Payment Agreement,2000000.0
+qa_2603,2603,Hikma Pharmaceuticals,2022,Cash_Flow,Cash Flows From Used In Financing Activities,-58000000.0
+qa_2604,2604,Hikma Pharmaceuticals,2021,Cash_Flow,Cash Flows From Used In Financing Activities,-287000000.0
+qa_2605,2605,Hikma Pharmaceuticals,2022,Cash_Flow,Increase Decrease In Cash And Cash Equivalents,-135000000.0
+qa_2606,2606,Hikma Pharmaceuticals,2021,Cash_Flow,Increase Decrease In Cash And Cash Equivalents,113000000.0
+qa_2607,2607,Hikma Pharmaceuticals,2020,Cash_Flow,Cash And Cash Equivalents,323000000.0
+qa_2608,2608,Hikma Pharmaceuticals,2022,Cash_Flow,Effect Of Exchange Rate Changes On Cash And Cash Equivalents,-21000000.0
+qa_2609,2609,Hikma Pharmaceuticals,2021,Cash_Flow,Effect Of Exchange Rate Changes On Cash And Cash Equivalents,-10000000.0
+qa_2619,2619,Hikma Pharmaceuticals,2022,Cash_Flow,Description Of Nature Of Entitys Operations And Principal Activities,"The Group’s principal activities are the development, manufacturing, marketing and selling of a broad range of generic, branded and in- licensed pharmaceutical products in solid, semi-solid, liquid and injectable final dosage forms."
+qa_2716,2716,Hikma Pharmaceuticals,2023,Income_Statement,Revenue,2875000000.0
+qa_2718,2718,Hikma Pharmaceuticals,2023,Income_Statement,Gross Profit,1407000000.0
+qa_2719,2719,Hikma Pharmaceuticals,2023,Income_Statement,Selling General And Administrative Expense,544000000.0
+qa_2720,2720,Hikma Pharmaceuticals,2023,Balance_Sheet,Impairment Loss On Financial Assets,3000000.0
+qa_2721,2721,Hikma Pharmaceuticals,2023,Income_Statement,Research And Development Expense,149000000.0
+qa_2722,2722,Hikma Pharmaceuticals,2023,Income_Statement,Miscellaneous Other Operating Expense,9000000.0
+qa_2723,2723,Hikma Pharmaceuticals,2023,Income_Statement,Miscellaneous Other Operating Income,5000000.0
+qa_2724,2724,Hikma Pharmaceuticals,2023,Company_Specific_Metric,Total Operating Expenses,-700000000.0
+qa_2725,2725,Hikma Pharmaceuticals,2023,Cash_Flow,Profit Loss From Operating Activities,707000000.0
+qa_2726,2726,Hikma Pharmaceuticals,2023,Income_Statement,Finance Income,7000000.0
+qa_2728,2728,Hikma Pharmaceuticals,2023,Balance_Sheet,Gains Losses Arising From Difference Between Previous Carrying Amount And Fair Value Of Financial Assets Reclassified As Measured At Fair Value,2000000.0
+qa_2729,2729,Hikma Pharmaceuticals,2023,Income_Statement,Profits Losses On Disposal Of Investments And Changes In Value Of Investments,0.0
+qa_2730,2730,Hikma Pharmaceuticals,2023,Income_Statement,Profit Loss Before Tax,626000000.0
+qa_2731,2731,Hikma Pharmaceuticals,2023,Income_Statement,Income Tax Expense Continuing Operations,131000000.0
+qa_2732,2732,Hikma Pharmaceuticals,2023,Income_Statement,Profit Loss,495000000.0
+qa_2733,2733,Hikma Pharmaceuticals,2023,Income_Statement,Profit Loss Attributable To Noncontrolling Interests,3000000.0
+qa_2734,2734,Hikma Pharmaceuticals,2023,Income_Statement,Profit Loss Attributable To Owners Of Parent,492000000.0
+qa_2735,2735,Hikma Pharmaceuticals,2023,Income_Statement,Basic Earnings Loss Per Share,2.23
+qa_2736,2736,Hikma Pharmaceuticals,2023,Income_Statement,Diluted Earnings Loss Per Share,2.21
+qa_2737,2737,Hikma Pharmaceuticals,2023,Income_Statement,Gains Losses On Exchange Differences On Translation Before Tax,-3000000.0
+qa_2738,2738,Hikma Pharmaceuticals,2022,Income_Statement,Gains Losses On Exchange Differences On Translation Before Tax,-87000000.0
+qa_2739,2739,Hikma Pharmaceuticals,2023,Income_Statement,Income Tax Relating To Exchange Differences On Translation Of Other Comprehensive Income,-1000000.0
+qa_2740,2740,Hikma Pharmaceuticals,2022,Income_Statement,Income Tax Relating To Exchange Differences On Translation Of Other Comprehensive Income,0.0
+qa_2742,2742,Hikma Pharmaceuticals,2023,Balance_Sheet,Other Comprehensive Income Net Of Tax Financial Assets Measured At Fair Value Through Other Comprehensive Income,-13000000.0
+qa_2743,2743,Hikma Pharmaceuticals,2023,Income_Statement,Other Comprehensive Income,-15000000.0
+qa_2744,2744,Hikma Pharmaceuticals,2023,Income_Statement,Comprehensive Income,480000000.0
+qa_2745,2745,Hikma Pharmaceuticals,2023,Income_Statement,Comprehensive Income Attributable To Noncontrolling Interests,2000000.0
+qa_2746,2746,Hikma Pharmaceuticals,2023,Income_Statement,Comprehensive Income Attributable To Owners Of Parent,478000000.0
+qa_2748,2748,Hikma Pharmaceuticals,2023,Balance_Sheet,Intangible Assets Other Than Goodwill,712000000.0
+qa_2750,2750,Hikma Pharmaceuticals,2023,Balance_Sheet,Rightofuse Assets,45000000.0
+qa_2752,2752,Hikma Pharmaceuticals,2023,Balance_Sheet,Deferred Tax Assets,226000000.0
+qa_2753,2753,Hikma Pharmaceuticals,2023,Company_Specific_Metric,Noncurrent Financial And Other Assets,103000000.0
+qa_2754,2754,Hikma Pharmaceuticals,2023,Balance_Sheet,Noncurrent Assets,2580000000.0
+qa_2756,2756,Hikma Pharmaceuticals,2023,Balance_Sheet,Current Tax Assets Current,49000000.0
+qa_2758,2758,Hikma Pharmaceuticals,2023,Cash_Flow,Cash And Cash Equivalents,205000000.0
+qa_2759,2759,Hikma Pharmaceuticals,2023,Balance_Sheet,Other Current Assets,120000000.0
+qa_2760,2760,Hikma Pharmaceuticals,2023,Balance_Sheet,Current Assets Other Than Assets Or Disposal Groups Classified As Held For Sale Or As Held For Distribution To Owners,11000000.0
+qa_2761,2761,Hikma Pharmaceuticals,2023,Balance_Sheet,Current Assets,2100000000.0
+qa_2762,2762,Hikma Pharmaceuticals,2023,Balance_Sheet,Assets,4680000000.0
+qa_2764,2764,Hikma Pharmaceuticals,2023,Balance_Sheet,Current Lease Liabilities,11000000.0
+qa_2766,2766,Hikma Pharmaceuticals,2023,Balance_Sheet,Current Tax Liabilities Current,74000000.0
+qa_2769,2769,Hikma Pharmaceuticals,2023,Balance_Sheet,Other Current Liabilities,384000000.0
+qa_2770,2770,Hikma Pharmaceuticals,2023,Balance_Sheet,Current Liabilities,1339000000.0
+qa_2771,2771,Hikma Pharmaceuticals,2023,Balance_Sheet,Current Assets Liabilities,761000000.0
+qa_2773,2773,Hikma Pharmaceuticals,2023,Balance_Sheet,Noncurrent Lease Liabilities,55000000.0
+qa_2774,2774,Hikma Pharmaceuticals,2023,Balance_Sheet,Deferred Tax Liabilities,25000000.0
+qa_2777,2777,Hikma Pharmaceuticals,2023,Balance_Sheet,Other Noncurrent Liabilities,70000000.0
+qa_2778,2778,Hikma Pharmaceuticals,2023,Balance_Sheet,Noncurrent Liabilities,1132000000.0
+qa_2779,2779,Hikma Pharmaceuticals,2023,Balance_Sheet,Liabilities,2471000000.0
+qa_2780,2780,Hikma Pharmaceuticals,2023,Balance_Sheet,Net Assets Liabilities,2209000000.0
+qa_2783,2783,Hikma Pharmaceuticals,2023,Company_Specific_Metric,Other Reserve,-282000000.0
+qa_2784,2784,Hikma Pharmaceuticals,2022,Company_Specific_Metric,Other Reserve,-265000000.0
+qa_2785,2785,Hikma Pharmaceuticals,2023,Company_Specific_Metric,Translation Reserve Related To Assets Classified As Held For Distribution,0.0
+qa_2786,2786,Hikma Pharmaceuticals,2022,Company_Specific_Metric,Translation Reserve Related To Assets Classified As Held For Distribution,-14000000.0
+qa_2788,2788,Hikma Pharmaceuticals,2023,Balance_Sheet,Equity Attributable To Owners Of Parent,2198000000.0
+qa_2790,2790,Hikma Pharmaceuticals,2023,Balance_Sheet,Equity,2209000000.0
+qa_2791,2791,Hikma Pharmaceuticals,2022,Income_Statement,Other Comprehensive Income Before Tax Exchange Differences On Translation,0.0
+qa_2792,2792,Hikma Pharmaceuticals,2022,Company_Specific_Metric,Total Comprehensive Income Expense For The Year,0.0
+qa_2793,2793,Hikma Pharmaceuticals,2022,Company_Specific_Metric,Issue Of Ordinary Bonus Share,1746000000.0
+qa_2794,2794,Hikma Pharmaceuticals,2023,Income_Statement,Other Comprehensive Income Before Tax Exchange Differences On Translation,0.0
+qa_2795,2795,Hikma Pharmaceuticals,2023,Company_Specific_Metric,Total Comprehensive Income Expense For The Year,0.0
+qa_2798,2798,Hikma Pharmaceuticals,2023,Company_Specific_Metric,Other Comprehensive Income Accumulated In Equity Related To Assets Held For Distribution,0.0
+qa_2800,2800,Hikma Pharmaceuticals,2023,Cash_Flow,Cash Flows From Used In Operations,737000000.0
+qa_2801,2801,Hikma Pharmaceuticals,2023,Cash_Flow,Income Taxes Paid Classified As Operating Activities,131000000.0
+qa_2802,2802,Hikma Pharmaceuticals,2023,Cash_Flow,Income Taxes Refund Classified As Operating Activities,2000000.0
+qa_2803,2803,Hikma Pharmaceuticals,2023,Cash_Flow,Cash Flows From Used In Operating Activities,608000000.0
+qa_2804,2804,Hikma Pharmaceuticals,2023,Cash_Flow,Purchase Of Property Plant And Equipment Classified As Investing Activities,169000000.0
+qa_2805,2805,Hikma Pharmaceuticals,2023,Cash_Flow,Proceeds From Sales Of Property Plant And Equipment Classified As Investing Activities,18000000.0
+qa_2806,2806,Hikma Pharmaceuticals,2023,Cash_Flow,Purchase Of Intangible Assets Classified As Investing Activities,35000000.0
+qa_2807,2807,Hikma Pharmaceuticals,2023,Cash_Flow,Proceeds From Sales Of Intangible Assets Classified As Investing Activities,0.0
+qa_2808,2808,Hikma Pharmaceuticals,2023,Company_Specific_Metric,Additions Of Investments At Fair Value Through Other Comprehensive Income,27000000.0
+qa_2809,2809,Hikma Pharmaceuticals,2023,Company_Specific_Metric,Proceeds From Sale Of Investment At Fair Value Through Other Comprehensive Income,1000000.0
+qa_2810,2810,Hikma Pharmaceuticals,2023,Cash_Flow,Cash Flows Used In Obtaining Control Of Subsidiaries Or Other Businesses Classified As Investing Activities,98000000.0
+qa_2811,2811,Hikma Pharmaceuticals,2023,Company_Specific_Metric,Advance Payment Related To Non Financial Assets,23000000.0
+qa_2812,2812,Hikma Pharmaceuticals,2022,Company_Specific_Metric,Advance Payment Related To Non Financial Assets,0.0
+qa_2813,2813,Hikma Pharmaceuticals,2023,Company_Specific_Metric,Cash Loss On Disposal Of Subsidiary Classified As Investing Activities,0.0
+qa_2814,2814,Hikma Pharmaceuticals,2022,Company_Specific_Metric,Cash Loss On Disposal Of Subsidiary Classified As Investing Activities,-1000000.0
+qa_2815,2815,Hikma Pharmaceuticals,2023,Company_Specific_Metric,Payment Of Contingent Consideration Classified As Investing Activities,-7000000.0
+qa_2816,2816,Hikma Pharmaceuticals,2023,Cash_Flow,Interest Received Classified As Investing Activities,7000000.0
+qa_2817,2817,Hikma Pharmaceuticals,2023,Cash_Flow,Cash Flows From Used In Investing Activities,-333000000.0
+qa_2822,2822,Hikma Pharmaceuticals,2023,Cash_Flow,Payments Of Lease Liabilities Classified As Financing Activities,10000000.0
+qa_2823,2823,Hikma Pharmaceuticals,2023,Cash_Flow,Dividends Paid To Equity Holders Of Parent Classified As Financing Activities,137000000.0
+qa_2824,2824,Hikma Pharmaceuticals,2023,Cash_Flow,Dividends Paid To Noncontrolling Interests Classified As Financing Activities,4000000.0
+qa_2825,2825,Hikma Pharmaceuticals,2023,Company_Specific_Metric,Interest And Bank Charges Paid,82000000.0
+qa_2826,2826,Hikma Pharmaceuticals,2023,Company_Specific_Metric,Increase In Restricted Cash,10000000.0
+qa_2827,2827,Hikma Pharmaceuticals,2022,Company_Specific_Metric,Increase In Restricted Cash,0.0
+qa_2828,2828,Hikma Pharmaceuticals,2023,Company_Specific_Metric,Revolving Credit Facility Upfront Fees Paid,0.0
+qa_2830,2830,Hikma Pharmaceuticals,2023,Company_Specific_Metric,Share Buyback Transaction Costs,0.0
+qa_2831,2831,Hikma Pharmaceuticals,2023,Company_Specific_Metric,Payment To Co Development And Earn Out Payment Agreement,1000000.0
+qa_2832,2832,Hikma Pharmaceuticals,2023,Cash_Flow,Cash Flows From Used In Financing Activities,-337000000.0
+qa_2833,2833,Hikma Pharmaceuticals,2023,Cash_Flow,Increase Decrease In Cash And Cash Equivalents,-62000000.0
+qa_2834,2834,Hikma Pharmaceuticals,2023,Cash_Flow,Effect Of Exchange Rate Changes On Cash And Cash Equivalents,-3000000.0
+qa_2846,2846,Hikma Pharmaceuticals,2023,Cash_Flow,Description Of Nature Of Entitys Operations And Principal Activities,"The Group’s principal activities are the development, manufacturing, marketing and selling of a broad range of generic, branded generic and in-licensed patented pharmaceutical products in solid, semi-solid, liquid and injectable final dosage forms."
+qa_2936,2936,Hikma Pharmaceuticals,2024,Income_Statement,Revenue,3156000000.0
+qa_2938,2938,Hikma Pharmaceuticals,2024,Income_Statement,Gross Profit,1448000000.0
+qa_2939,2939,Hikma Pharmaceuticals,2024,Income_Statement,Selling General And Administrative Expense,568000000.0
+qa_2940,2940,Hikma Pharmaceuticals,2024,Balance_Sheet,Impairment Loss On Financial Assets,2000000.0
+qa_2941,2941,Hikma Pharmaceuticals,2024,Income_Statement,Research And Development Expense,141000000.0
+qa_2942,2942,Hikma Pharmaceuticals,2024,Income_Statement,Miscellaneous Other Operating Expense,21000000.0
+qa_2943,2943,Hikma Pharmaceuticals,2024,Income_Statement,Miscellaneous Other Operating Income,3000000.0
+qa_2944,2944,Hikma Pharmaceuticals,2024,Company_Specific_Metric,Total Operating Expenses,729000000.0
+qa_2945,2945,Hikma Pharmaceuticals,2024,Cash_Flow,Profit Loss From Operating Activities,719000000.0
+qa_2946,2946,Hikma Pharmaceuticals,2024,Income_Statement,Finance Income,8000000.0
+qa_2948,2948,Hikma Pharmaceuticals,2024,Balance_Sheet,Gains Losses Arising From Difference Between Previous Carrying Amount And Fair Value Of Financial Assets Reclassified As Measured At Fair Value,1000000.0
+qa_2949,2949,Hikma Pharmaceuticals,2024,Balance_Sheet,Share Of Profit Loss Of Joint Ventures Accounted For Using Equity Method,1000000.0
+qa_2950,2950,Hikma Pharmaceuticals,2023,Balance_Sheet,Share Of Profit Loss Of Joint Ventures Accounted For Using Equity Method,0.0
+qa_2951,2951,Hikma Pharmaceuticals,2024,Income_Statement,Profit Loss Before Tax,636000000.0
+qa_2952,2952,Hikma Pharmaceuticals,2024,Income_Statement,Income Tax Expense Continuing Operations,138000000.0
+qa_2953,2953,Hikma Pharmaceuticals,2024,Income_Statement,Profit Loss,498000000.0
+qa_2954,2954,Hikma Pharmaceuticals,2024,Income_Statement,Profit Loss Attributable To Noncontrolling Interests,3000000.0
+qa_2955,2955,Hikma Pharmaceuticals,2024,Income_Statement,Profit Loss Attributable To Owners Of Parent,495000000.0
+qa_2956,2956,Hikma Pharmaceuticals,2024,Income_Statement,Basic Earnings Loss Per Share,2.24
+qa_2957,2957,Hikma Pharmaceuticals,2024,Income_Statement,Diluted Earnings Loss Per Share,2.21
+qa_2958,2958,Hikma Pharmaceuticals,2024,Income_Statement,Gains Losses On Exchange Differences On Translation Before Tax,-55000000.0
+qa_2959,2959,Hikma Pharmaceuticals,2024,Income_Statement,Income Tax Relating To Exchange Differences On Translation Of Other Comprehensive Income,0.0
+qa_2960,2960,Hikma Pharmaceuticals,2024,Balance_Sheet,Other Comprehensive Income Net Of Tax Financial Assets Measured At Fair Value Through Other Comprehensive Income,-6000000.0
+qa_2961,2961,Hikma Pharmaceuticals,2024,Income_Statement,Other Comprehensive Income Net Of Tax Gains Losses On Remeasurements Of Defined Benefit Plans,-1000000.0
+qa_2962,2962,Hikma Pharmaceuticals,2023,Income_Statement,Other Comprehensive Income Net Of Tax Gains Losses On Remeasurements Of Defined Benefit Plans,0.0
+qa_2963,2963,Hikma Pharmaceuticals,2024,Income_Statement,Other Comprehensive Income,-62000000.0
+qa_2964,2964,Hikma Pharmaceuticals,2024,Income_Statement,Comprehensive Income,436000000.0
+qa_2965,2965,Hikma Pharmaceuticals,2024,Income_Statement,Comprehensive Income Attributable To Noncontrolling Interests,3000000.0
+qa_2966,2966,Hikma Pharmaceuticals,2024,Income_Statement,Comprehensive Income Attributable To Owners Of Parent,433000000.0
+qa_2968,2968,Hikma Pharmaceuticals,2024,Balance_Sheet,Intangible Assets Other Than Goodwill,774000000.0
+qa_2970,2970,Hikma Pharmaceuticals,2024,Balance_Sheet,Rightofuse Assets,48000000.0
+qa_2972,2972,Hikma Pharmaceuticals,2024,Balance_Sheet,Deferred Tax Assets,293000000.0
+qa_2973,2973,Hikma Pharmaceuticals,2024,Company_Specific_Metric,Noncurrent Financial And Other Assets,84000000.0
+qa_2974,2974,Hikma Pharmaceuticals,2024,Balance_Sheet,Noncurrent Assets,2870000000.0
+qa_2976,2976,Hikma Pharmaceuticals,2024,Balance_Sheet,Current Tax Assets Current,24000000.0
+qa_2978,2978,Hikma Pharmaceuticals,2024,Cash_Flow,Cash And Cash Equivalents,188000000.0
+qa_2979,2979,Hikma Pharmaceuticals,2024,Balance_Sheet,Other Current Assets,116000000.0
+qa_2980,2980,Hikma Pharmaceuticals,2024,Balance_Sheet,Current Assets Other Than Assets Or Disposal Groups Classified As Held For Sale Or As Held For Distribution To Owners,0.0
+qa_2981,2981,Hikma Pharmaceuticals,2024,Balance_Sheet,Current Assets,2263000000.0
+qa_2982,2982,Hikma Pharmaceuticals,2024,Balance_Sheet,Assets,5133000000.0
+qa_2984,2984,Hikma Pharmaceuticals,2024,Balance_Sheet,Current Lease Liabilities,11000000.0
+qa_2986,2986,Hikma Pharmaceuticals,2024,Balance_Sheet,Current Tax Liabilities Current,78000000.0
+qa_2988,2988,Hikma Pharmaceuticals,2024,Balance_Sheet,Other Current Liabilities,475000000.0
+qa_2989,2989,Hikma Pharmaceuticals,2024,Balance_Sheet,Current Liabilities,1978000000.0
+qa_2990,2990,Hikma Pharmaceuticals,2024,Balance_Sheet,Current Assets Liabilities,285000000.0
+qa_2992,2992,Hikma Pharmaceuticals,2024,Balance_Sheet,Noncurrent Lease Liabilities,46000000.0
+qa_2993,2993,Hikma Pharmaceuticals,2024,Balance_Sheet,Deferred Tax Liabilities,18000000.0
+qa_2995,2995,Hikma Pharmaceuticals,2024,Balance_Sheet,Other Noncurrent Liabilities,127000000.0
+qa_2996,2996,Hikma Pharmaceuticals,2024,Balance_Sheet,Noncurrent Liabilities,834000000.0
+qa_2997,2997,Hikma Pharmaceuticals,2024,Balance_Sheet,Liabilities,2812000000.0
+qa_2998,2998,Hikma Pharmaceuticals,2024,Balance_Sheet,Net Assets Liabilities,2321000000.0
+qa_3001,3001,Hikma Pharmaceuticals,2024,Company_Specific_Metric,Other Reserve,-374000000.0
+qa_3003,3003,Hikma Pharmaceuticals,2024,Balance_Sheet,Equity Attributable To Owners Of Parent,2310000000.0
+qa_3005,3005,Hikma Pharmaceuticals,2024,Balance_Sheet,Equity,2321000000.0
+qa_3007,3007,Hikma Pharmaceuticals,2024,Income_Statement,Other Comprehensive Income Before Tax Exchange Differences On Translation,0.0
+qa_3008,3008,Hikma Pharmaceuticals,2024,Company_Specific_Metric,Total Comprehensive Income Expense For The Year,0.0
+qa_3014,3014,Hikma Pharmaceuticals,2024,Cash_Flow,Cash Flows From Used In Operations,689000000.0
+qa_3015,3015,Hikma Pharmaceuticals,2024,Cash_Flow,Income Taxes Paid Classified As Operating Activities,125000000.0
+qa_3016,3016,Hikma Pharmaceuticals,2024,Cash_Flow,Income Taxes Refund Classified As Operating Activities,0.0
+qa_3017,3017,Hikma Pharmaceuticals,2024,Cash_Flow,Cash Flows From Used In Operating Activities,564000000.0
+qa_3018,3018,Hikma Pharmaceuticals,2024,Cash_Flow,Purchase Of Property Plant And Equipment Classified As Investing Activities,165000000.0
+qa_3019,3019,Hikma Pharmaceuticals,2024,Cash_Flow,Proceeds From Sales Of Property Plant And Equipment Classified As Investing Activities,0.0
+qa_3020,3020,Hikma Pharmaceuticals,2024,Cash_Flow,Purchase Of Intangible Assets Classified As Investing Activities,70000000.0
+qa_3021,3021,Hikma Pharmaceuticals,2024,Company_Specific_Metric,Additions Of Investments At Fair Value Through Other Comprehensive Income,2000000.0
+qa_3022,3022,Hikma Pharmaceuticals,2024,Company_Specific_Metric,Proceeds From Sale Of Investment At Fair Value Through Other Comprehensive Income,0.0
+qa_3023,3023,Hikma Pharmaceuticals,2024,Cash_Flow,Cash Flows Used In Obtaining Control Of Subsidiaries Or Other Businesses Classified As Investing Activities,150000000.0
+qa_3024,3024,Hikma Pharmaceuticals,2024,Balance_Sheet,Proceeds From Disposal Or Maturity Of Availableforsale Financial Assets,10000000.0
+qa_3025,3025,Hikma Pharmaceuticals,2023,Balance_Sheet,Proceeds From Disposal Or Maturity Of Availableforsale Financial Assets,0.0
+qa_3026,3026,Hikma Pharmaceuticals,2024,Company_Specific_Metric,Advance Payment Related To Non Financial Assets,0.0
+qa_3027,3027,Hikma Pharmaceuticals,2024,Company_Specific_Metric,Payment Of Contingent Consideration Classified As Investing Activities,12000000.0
+qa_3028,3028,Hikma Pharmaceuticals,2024,Cash_Flow,Interest Received Classified As Investing Activities,8000000.0
+qa_3029,3029,Hikma Pharmaceuticals,2024,Cash_Flow,Cash Flows From Used In Investing Activities,-381000000.0
+qa_3034,3034,Hikma Pharmaceuticals,2024,Cash_Flow,Payments Of Lease Liabilities Classified As Financing Activities,21000000.0
+qa_3035,3035,Hikma Pharmaceuticals,2024,Cash_Flow,Dividends Paid To Equity Holders Of Parent Classified As Financing Activities,175000000.0
+qa_3036,3036,Hikma Pharmaceuticals,2024,Cash_Flow,Dividends Paid To Noncontrolling Interests Classified As Financing Activities,3000000.0
+qa_3037,3037,Hikma Pharmaceuticals,2024,Company_Specific_Metric,Interest And Bank Charges Paid,84000000.0
+qa_3039,3039,Hikma Pharmaceuticals,2024,Company_Specific_Metric,Decrease Increase In Restricted Cash,10000000.0
+qa_3040,3040,Hikma Pharmaceuticals,2023,Company_Specific_Metric,Decrease Increase In Restricted Cash,-10000000.0
+qa_3041,3041,Hikma Pharmaceuticals,2024,Company_Specific_Metric,Payment To Co Development And Earn Out Payment Agreement,1000000.0
+qa_3042,3042,Hikma Pharmaceuticals,2024,Cash_Flow,Cash Flows From Used In Financing Activities,-188000000.0
+qa_3043,3043,Hikma Pharmaceuticals,2024,Cash_Flow,Increase Decrease In Cash And Cash Equivalents,-5000000.0
+qa_3044,3044,Hikma Pharmaceuticals,2024,Cash_Flow,Effect Of Exchange Rate Changes On Cash And Cash Equivalents,-12000000.0
+qa_3055,3055,Hikma Pharmaceuticals,2024,Cash_Flow,Description Of Nature Of Entitys Operations And Principal Activities,"The Group’s principal activities are the development, manufacture and commercialisation of a broad range of generic, specialty and branded pharmaceutical products across a range of dosage forms."

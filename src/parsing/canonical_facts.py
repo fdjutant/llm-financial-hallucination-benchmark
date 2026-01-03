@@ -32,6 +32,7 @@ def create_gold_ground_truth(silver_df: pd.DataFrame, output_path):
     gold_df.reset_index(drop=True, inplace=True)
     gold_df.insert(0, 'id', gold_df.index)
     gold_df.to_csv(output_path, index=False)
+    print(f"Created gold ground truth with {len(gold_df)} rows.")
     print(f"Gold data saved to: {output_path}")
     
     return gold_df
@@ -69,6 +70,7 @@ def create_silver_ground_truth(df: pd.DataFrame, output_path):
     def clean_entity(filing_id):
         if 'AstraZeneca' in str(filing_id): return 'AstraZeneca'
         if 'GSK' in str(filing_id): return 'GSK'
+        if 'Hikma_Pharmaceuticals' in str(filing_id): return 'Hikma Pharmaceuticals'
         return filing_id
     
     df['entity_name'] = df['filing_id'].apply(clean_entity)
@@ -82,7 +84,7 @@ def create_silver_ground_truth(df: pd.DataFrame, output_path):
             return 'Narrative_Disclosure'
 
         # B. Company extension check
-        if name.startswith(('azn:', 'gsk:')):
+        if name.startswith(('azn:', 'gsk:', 'hik:')):
             return 'Company_Specific_Metric'
 
         # C. Financial statement logic
@@ -103,6 +105,6 @@ def create_silver_ground_truth(df: pd.DataFrame, output_path):
 
     # 6. Save
     df_clean.to_csv(output_path, index=False)
-    print(f"Created cleaned ground truth with {len(df_clean)} rows.")
+    print(f"Created silver ground truth with {len(df_clean)} rows.")
     print(f"Silver data saved to: {output_path}")
     return df_clean
