@@ -80,7 +80,8 @@ def create_silver_ground_truth(df: pd.DataFrame, output_path):
         name = str(raw_name)
 
         # A. Narrative check
-        if 'Explanatory' in name or 'Policy' in name or 'DisclosureOf' in name:
+        if ('Explanatory' in name or 'Policy' in name or 
+            'DisclosureOf' in name or 'DescriptionOf' in name):
             return 'Narrative_Disclosure'
 
         # B. Company extension check
