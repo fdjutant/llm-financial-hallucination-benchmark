@@ -28,16 +28,20 @@ def compute_metrics(df):
     df['adversarial_correct'] = df.apply(_adversarial_correct, axis=1)
     return df
 
-def analyze_results(folder='./data/results/debug/'):
+def analyze_results(folders=['./data/results/debug/']):
     """
     Print research-grade analysis.
     Accepts:
-      - folder: path to a folder containing CSVs (default: './data/results/debug/')
+      - folders: path or list of paths to folders containing CSVs (default: ['./data/results/debug/'])
     """
-    if not os.path.isdir(folder):
-        raise ValueError(f"Invalid folder path: {folder}")
+    if isinstance(folders, str):
+        folders = [folders]
 
-    csv_files = glob.glob(os.path.join(folder, '*_results.csv'))
+    csv_files = []
+    for folder in folders:
+        if not os.path.isdir(folder):
+            raise ValueError(f"Invalid folder path: {folder}")
+        csv_files.extend(glob.glob(os.path.join(folder, '*_results.csv')))
 
     if not csv_files:
         print("No CSV files found for analysis.")
@@ -47,23 +51,34 @@ def analyze_results(folder='./data/results/debug/'):
     df = pd.concat(dfs, ignore_index=True)
     df = compute_metrics(df)
 
-    print("\n" + "="*70)
     print("HALLUCINATION BENCHMARK RESULTS")
-    print("="*70)
     
+    summary_rows = []
     for model in df['model'].unique():
         model_data = df[df['model'] == model]
         rag_acc = model_data['rag_correct'].mean() * 100
         knowledge_acc = model_data['knowledge_correct'].mean() * 100
         halluc_rate = model_data['hallucinated'].mean() * 100
         adversarial_acc = model_data['adversarial_correct'].mean() * 100
-        print(f"\n{model} (n = {len(model_data)})")
-        print(f"  RAG Accuracy:          {rag_acc:6.1f}% (with context)")
-        print(f"  Knowledge Accuracy:    {knowledge_acc:6.1f}% (no context)")
-        print(f"  Hallucination Rate:    {halluc_rate:6.1f}% (confident wrong answers)")
-        print(f"  Adversarial Robustness: {adversarial_acc:6.1f}% (trusts correct source)")
-        print(f"  Hallucination Index:   {(halluc_rate - (100-knowledge_acc)):+.1f}%")
-    
-    print("\n" + "="*70)
+        summary_rows.append({
+            'model': model,
+            'n': len(model_data),
+            'rag_acc': rag_acc,
+            'knowledge_acc': knowledge_acc,
+            'halluc_rate': halluc_rate,
+            'adversarial_acc': adversarial_acc,
+            'halluc_index': halluc_rate - (100 - knowledge_acc)
+        })
 
-    # return df
+    summary_df = pd.DataFrame(summary_rows)
+
+    # Print summary as aligned ASCII table
+    print("\n" + "-"*100)
+    header = f"{'Model':<35} {'N':>6} {'RAG Acc':>10} {'Knowl Acc':>10} {'Halluc %':>10} {'Adv Acc':>10} {'HallucIdx':>10}"
+    print(header)
+    print("-"*100)
+    for _, row in summary_df.iterrows():
+        print(f"{row['model']:<35} {row['n']:6d} {row['rag_acc']:10.1f} {row['knowledge_acc']:10.1f} {row['halluc_rate']:10.1f} {row['adversarial_acc']:10.1f} {row['halluc_index']:10.1f}")
+    print("-"*100)
+
+    return summary_df

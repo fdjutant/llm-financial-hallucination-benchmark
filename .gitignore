@@ -2,14 +2,8 @@
 /API_KEY
 /BATCH_ID
 
-# Ignore any secret configurations
-configs/secrets.yaml
-configs/**/*secret*.yaml
-*.env
-.env.*
-
 # Development artifacts
-/scribble
+/zettelkasten
 /src/__pycache__/
 /src/evaluation/__pycache__/
 /src/parsing/__pycache__/
