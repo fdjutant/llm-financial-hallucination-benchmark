@@ -1,14 +1,14 @@
 import argparse
 import json
 import os
+import yaml
 from pathlib import Path
-from typing import List, Dict, Any, Tuple
+from typing import List, Dict, Any, Tuple, Optional
 
 import pandas as pd
 from openai import OpenAI
 
-from llm_interface import generate_document, modify_value
-
+from .llm_interface import generate_document, modify_value
 
 # ---------- API key paths ----------
 API_KEY_DIR = Path(__file__).resolve().parents[2] / "API_KEY"
@@ -24,25 +24,39 @@ def get_client_and_provider(provider: str) -> Tuple[OpenAI, str]:
         Tuple of (client, provider_name)
     """
     if provider == "openai":
-        api_key_path = API_KEY_DIR / "OPENAI_API_KEY"
-        api_key = api_key_path.read_text().strip() if api_key_path.exists() else os.getenv("OPENAI_API_KEY", "")
+        api_key = os.getenv("OPENAI_API_KEY", "")
+        if not api_key:
+            # Fallback to file-based API key
+            api_key_path = API_KEY_DIR / "OPENAI_API_KEY"
+            if api_key_path.exists():
+                api_key = api_key_path.read_text().strip()
+        if not api_key:
+            raise ValueError("OPENAI_API_KEY not found in environment or API_KEY directory")
         return OpenAI(api_key=api_key), "openai"
     
     elif provider == "groq":
-        api_key_path = API_KEY_DIR / "GROQ_API_KEY"
-        api_key = api_key_path.read_text().strip() if api_key_path.exists() else os.getenv("GROQ_API_KEY", "")
+        api_key = os.getenv("GROQ_API_KEY", "")
         if not api_key:
-            raise ValueError("GROQ_API_KEY not set. Sign up at https://console.groq.com")
+            # Fallback to file-based API key
+            api_key_path = API_KEY_DIR / "GROQ_API_KEY"
+            if api_key_path.exists():
+                api_key = api_key_path.read_text().strip()
+        if not api_key:
+            raise ValueError("GROQ_API_KEY not found in environment or API_KEY directory. Sign up at https://console.groq.com")
         return OpenAI(
             api_key=api_key,
             base_url="https://api.groq.com/openai/v1"
         ), "groq"
     
     elif provider == "nebius":
-        api_key_path = API_KEY_DIR / "NEBIUS_API_KEY"
-        api_key = api_key_path.read_text().strip() if api_key_path.exists() else os.getenv("NEBIUS_API_KEY", "")
+        api_key = os.getenv("NEBIUS_API_KEY", "")
         if not api_key:
-            raise ValueError("NEBIUS_API_KEY not set.")
+            # Fallback to file-based API key
+            api_key_path = API_KEY_DIR / "NEBIUS_API_KEY"
+            if api_key_path.exists():
+                api_key = api_key_path.read_text().strip()
+        if not api_key:
+            raise ValueError("NEBIUS_API_KEY not found in environment or API_KEY directory")
         return OpenAI(
             api_key=api_key,
             base_url="https://api.tokenfactory.nebius.com/v1/"
@@ -393,20 +407,137 @@ def _add_common_args(parser: argparse.ArgumentParser) -> None:
     parser.add_argument("--max_tokens", type=int, default=200)
 
 
+def load_config(config_path: str) -> Dict[str, Any]:
+    """Load configuration from a YAML file.
+    
+    Args:
+        config_path: Path to the YAML configuration file
+        
+    Returns:
+        Dictionary containing the configuration
+    """
+    with open(config_path, 'r') as f:
+        config = yaml.safe_load(f)
+    return config
+
+
+def run_from_config(config_path: str, command: str) -> None:
+    """Execute a benchmark command using configuration from a YAML file.
+    
+    Args:
+        config_path: Path to the YAML configuration file
+        command: Command to run (prepare, submit, collect, full)
+    """
+    config = load_config(config_path)
+    
+    # Extract configuration values
+    input_csv = config['input']['qa_pairs_csv']
+    output_dir = config['output']['base_dir']
+    requests_jsonl = config['output']['requests_jsonl']
+    mapping_csv = config['output']['mapping_csv']
+    output_jsonl = config['output']['output_jsonl']
+    results_csv = config['output']['results_csv']
+    raw_csv = config['output']['raw_csv']
+    
+    model_name = config['model']['model_name']
+    provider = config['model']['provider']
+    temperature = config['model']['temperature']
+    max_tokens = config['model']['max_tokens']
+    
+    completion_window = config['batch']['completion_window']
+    
+    print(f"Running '{command}' with config: {config_path}")
+    print(f"Model: {model_name} (Provider: {provider})")
+    
+    if command == "prepare":
+        prepare_jsonl(
+            input_csv_path=input_csv,
+            output_jsonl_path=requests_jsonl,
+            mapping_csv_path=mapping_csv,
+            model=model_name,
+            provider=provider,
+            temperature=temperature,
+            max_tokens=max_tokens,
+        )
+        
+    elif command == "submit":
+        batch_id = submit_batch(
+            input_jsonl_path=requests_jsonl,
+            provider=provider,
+            completion_window=completion_window,
+        )
+        print(f"\nBatch ID: {batch_id}")
+        print(f"Save this batch ID for status checking and result collection.")
+        
+    elif command == "collect":
+        # For collect, we need the batch ID from user
+        raise ValueError("For 'collect' command, use the manual CLI with batch_id argument")
+        
+    elif command == "full":
+        # Full workflow: prepare, submit, wait, collect
+        print("\n=== Step 1: Prepare ===")
+        prepare_jsonl(
+            input_csv_path=input_csv,
+            output_jsonl_path=requests_jsonl,
+            mapping_csv_path=mapping_csv,
+            model=model_name,
+            provider=provider,
+            temperature=temperature,
+            max_tokens=max_tokens,
+        )
+        
+        print("\n=== Step 2: Submit ===")
+        batch_id = submit_batch(
+            input_jsonl_path=requests_jsonl,
+            provider=provider,
+            completion_window=completion_window,
+        )
+        
+        print(f"\n=== Batch Submitted ===")
+        print(f"Batch ID: {batch_id}")
+        print(f"Use 'python -m src.evaluation.benchmark_runner_batch status {batch_id} --provider {provider}' to check status")
+        print(f"Once complete, use the 'collect' command with batch_id to retrieve results")
+        
+        # Save batch ID
+        batch_id_dir = Path(__file__).resolve().parents[2] / "BATCH_ID"
+        batch_id_dir.mkdir(parents=True, exist_ok=True)
+        from datetime import datetime
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        batch_id_file = batch_id_dir / f"{timestamp}_batchID"
+        with open(batch_id_file, "w") as f:
+            f.write(batch_id)
+        print(f"Batch ID saved to: {batch_id_file}")
+    
+    else:
+        raise ValueError(f"Unknown command: {command}")
+
+
+def _add_common_args(parser: argparse.ArgumentParser) -> None:
+    parser.add_argument("--model", default="gpt-4o-mini")
+    parser.add_argument("--provider", default="openai", choices=["openai", "groq", "nebius"],
+                        help="API provider to use")
+    parser.add_argument("--temperature", type=float, default=0.0)
+    parser.add_argument("--max_tokens", type=int, default=200)
+
+
 def main():
     parser = argparse.ArgumentParser(description="OpenAI Batch runner for benchmark evaluation")
-    sub = parser.add_subparsers(dest="cmd", required=True)
+    
+    # Add global --config option
+    parser.add_argument("--config", type=str, help="Path to YAML configuration file")
+    
+    sub = parser.add_subparsers(dest="cmd", required=False)
 
     # prepare
     p_prepare = sub.add_parser("prepare", help="Build JSONL requests and mapping CSV")
-    p_prepare.add_argument("input_csv")
-    p_prepare.add_argument("output_jsonl")
-    p_prepare.add_argument("mapping_csv")
+    p_prepare.add_argument("input_csv", nargs="?")
+    p_prepare.add_argument("output_jsonl", nargs="?")
+    p_prepare.add_argument("mapping_csv", nargs="?")
     _add_common_args(p_prepare)
 
     # submit
     p_submit = sub.add_parser("submit", help="Submit a batch job from JSONL")
-    p_submit.add_argument("input_jsonl")
+    p_submit.add_argument("input_jsonl", nargs="?")
     p_submit.add_argument("--provider", default="openai", choices=["openai", "groq", "nebius"],
                           help="API provider to use")
     p_submit.add_argument("--window", default="24h", choices=["24h"])
@@ -420,17 +551,48 @@ def main():
     # collect
     p_collect = sub.add_parser("collect", help="Download output and write results CSV")
     p_collect.add_argument("batch_id")
-    p_collect.add_argument("output_jsonl")
-    p_collect.add_argument("mapping_csv")
-    p_collect.add_argument("results_csv")
-    p_collect.add_argument("raw_csv")
-    p_collect.add_argument("--model", required=True, help="Model name used for the batch")
+    p_collect.add_argument("output_jsonl", nargs="?")
+    p_collect.add_argument("mapping_csv", nargs="?")
+    p_collect.add_argument("results_csv", nargs="?")
+    p_collect.add_argument("raw_csv", nargs="?")
+    p_collect.add_argument("--model", help="Model name used for the batch")
     p_collect.add_argument("--provider", default="openai", choices=["openai", "groq", "nebius"],
                            help="API provider to use")
+    
+    # full - runs prepare + submit workflow
+    p_full = sub.add_parser("full", help="Run full prepare + submit workflow (requires --config)")
 
     args = parser.parse_args()
+    
+    # If --config is provided, use config-driven execution
+    if args.config:
+        if not args.cmd:
+            parser.error("When using --config, you must specify a command: prepare, submit, or full")
+        if args.cmd in ["prepare", "submit", "full"]:
+            run_from_config(args.config, args.cmd)
+            return
+        elif args.cmd == "collect":
+            # Load config for paths, but still need batch_id from CLI
+            config = load_config(args.config)
+            collect_results(
+                batch_id=args.batch_id,
+                output_jsonl_path=config['output']['output_jsonl'],
+                mapping_csv_path=config['output']['mapping_csv'],
+                results_csv_path=config['output']['results_csv'],
+                raw_csv_path=config['output']['raw_csv'],
+                model=config['model']['model_name'],
+                provider=config['model']['provider'],
+            )
+            return
+        # status doesn't need config, fall through to manual handling
+    
+    # Manual CLI mode (backwards compatible)
+    if not args.cmd:
+        parser.error("Either provide --config with a command, or use a command with explicit arguments")
 
     if args.cmd == "prepare":
+        if not all([args.input_csv, args.output_jsonl, args.mapping_csv]):
+            parser.error("prepare requires input_csv, output_jsonl, and mapping_csv")
         prepare_jsonl(
             input_csv_path=args.input_csv,
             output_jsonl_path=args.output_jsonl,
@@ -441,10 +603,15 @@ def main():
             max_tokens=args.max_tokens,
         )
     elif args.cmd == "submit":
-        submit_batch(args.input_jsonl, provider=args.provider, completion_window=args.window)
+        if not args.input_jsonl:
+            parser.error("submit requires input_jsonl")
+        batch_id = submit_batch(args.input_jsonl, provider=args.provider, completion_window=args.window)
+        print(f"\nBatch ID: {batch_id}")
     elif args.cmd == "status":
         check_status(args.batch_id, provider=args.provider)
     elif args.cmd == "collect":
+        if not all([args.output_jsonl, args.mapping_csv, args.results_csv, args.raw_csv, args.model]):
+            parser.error("collect requires batch_id, output_jsonl, mapping_csv, results_csv, raw_csv, and --model")
         collect_results(
             batch_id=args.batch_id,
             output_jsonl_path=args.output_jsonl,
@@ -454,6 +621,8 @@ def main():
             model=args.model,
             provider=args.provider,
         )
+    elif args.cmd == "full":
+        parser.error("The 'full' command requires --config")
 
 
 if __name__ == "__main__":

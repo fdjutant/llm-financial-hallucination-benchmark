@@ -377,3 +377,30 @@ def generate_document(segment, entity, year, metric, ground_truth_value):
         )
     else:
         return f"{metric}: {ground_truth_value}\n"
+    
+def consolidate_chunk_files(model_path, output_results_filename, output_raw_filename):
+    """
+    Consolidates chunk files for a given model into output CSV files.
+
+    Parameters:
+            model_path (Path): Path to the directory containing chunk files for the model.
+            output_results_filename (Path): Path to save the consolidated results CSV file.
+            output_raw_filename (Path): Path to save the consolidated raw CSV file.
+    """
+    csv_results_files = model_path.glob("chunk_*_results.csv")
+    csv_raw_files = model_path.glob("chunk_*_raw.csv")
+
+    results_df = pd.concat(
+            (pd.read_csv(file) for file in csv_results_files),
+            ignore_index=True
+    )
+    raw_df = pd.concat(
+            (pd.read_csv(file) for file in csv_raw_files),
+            ignore_index=True
+    )
+
+    results_df.to_csv(output_results_filename, index=False)
+    raw_df.to_csv(output_raw_filename, index=False)
+
+    print(f"Saved consolidated results to: {output_results_filename}")
+    print(f"Saved consolidated raw data to: {output_raw_filename}")

@@ -47,9 +47,9 @@ def analyze_results(folder='./data/results/debug/'):
     df = pd.concat(dfs, ignore_index=True)
     df = compute_metrics(df)
 
-    print("\n" + "="*80)
+    print("\n" + "="*70)
     print("HALLUCINATION BENCHMARK RESULTS")
-    print("="*80)
+    print("="*70)
     
     for model in df['model'].unique():
         model_data = df[df['model'] == model]
@@ -57,13 +57,13 @@ def analyze_results(folder='./data/results/debug/'):
         knowledge_acc = model_data['knowledge_correct'].mean() * 100
         halluc_rate = model_data['hallucinated'].mean() * 100
         adversarial_acc = model_data['adversarial_correct'].mean() * 100
-        print(f"\n{model}:")
+        print(f"\n{model} (n = {len(model_data)})")
         print(f"  RAG Accuracy:          {rag_acc:6.1f}% (with context)")
         print(f"  Knowledge Accuracy:    {knowledge_acc:6.1f}% (no context)")
         print(f"  Hallucination Rate:    {halluc_rate:6.1f}% (confident wrong answers)")
         print(f"  Adversarial Robustness: {adversarial_acc:6.1f}% (trusts correct source)")
         print(f"  Hallucination Index:   {(halluc_rate - (100-knowledge_acc)):+.1f}%")
     
-    print("\n" + "="*80)
+    print("\n" + "="*70)
 
-    return df
+    # return df

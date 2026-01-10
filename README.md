@@ -2,6 +2,51 @@
 
 This repository scaffolds a research pipeline that benchmarks hallucinations in LLMs on fact-based financial questions extracted from UK regulatory filings (Companies House iXBRL to start).
 
+## Quick Start
+
+### Running Benchmarks (Configuration-Driven Approach)
+
+1. **Set up environment variables** (recommended):
+   ```bash
+   export OPENAI_API_KEY="your-key-here"
+   export GROQ_API_KEY="your-key-here"  # if using Groq
+   export NEBIUS_API_KEY="your-key-here"  # if using Nebius
+   ```
+
+2. **Create or use an existing experiment config**:
+   ```bash
+   # Edit the configuration file
+   nano configs/experiments/gpt4o_chunk7_run.yaml
+   ```
+
+3. **Run the benchmark**:
+   ```bash
+   bash scripts/run_batch.sh configs/experiments/gpt4o_chunk7_run.yaml
+   ```
+
+4. **Monitor batch status**:
+   ```bash
+   python -m src.evaluation.benchmark_runner_batch status <batch_id> --provider openai
+   ```
+
+5. **Collect results once complete**:
+   ```bash
+   python -m src.evaluation.benchmark_runner_batch --config configs/experiments/gpt4o_chunk7_run.yaml collect <batch_id>
+   ```
+
+6. **Analyze results**:
+   Open `notebooks/01_results_analysis.ipynb` to visualize and analyze the results.
+
+### Architecture
+
+This project follows a **separation of concerns** approach:
+
+- **Configuration** (`configs/experiments/`): YAML files defining experiment parameters
+- **Execution** (`scripts/run_batch.sh`, `src/evaluation/`): CLI tools and shell scripts for running experiments
+- **Analysis** (`notebooks/01_results_analysis.ipynb`): Jupyter notebook for data visualization and statistical analysis
+
+Notebooks are **strictly for analysis only** and do not execute batch jobs.
+
 ## Repository layout
 
 ```
@@ -386,3 +431,152 @@ python src/evaluation/openai_benchmark_batch_runner.py collect \
 - Results CSV includes evaluation outputs for all three layers with columns for answers, confidence scores, and reasoning.
 - Raw outputs CSV preserves the complete JSON responses from the model for each layer.
 - **Provider Compatibility**: All three providers (OpenAI, GROQ, NEBIUS) use OpenAI-compatible batch APIs with different base URLs and API keys.
+
+---
+
+## Configuration-Driven Workflow (Recommended)
+
+### Overview
+
+The recommended approach uses **YAML configuration files** to define experiments, separating configuration from execution and analysis.
+
+**Benefits:**
+- ✅ Reproducible experiments with version-controlled configs
+- ✅ No hardcoded parameters in notebooks
+- ✅ Environment variables for API keys (secure)
+- ✅ Clean separation: Config → Execute → Analyze
+
+### Directory Structure
+
+```
+configs/
+  experiments/           # Experiment configurations (YAML)
+    gpt4o_chunk7_run.yaml
+    deepseek_full_run.yaml
+scripts/
+  run_batch.sh          # Shell script for execution
+notebooks/
+  01_results_analysis.ipynb  # Analysis-only notebook
+```
+
+### Creating a Configuration
+
+Create a YAML file in `configs/experiments/`:
+
+```yaml
+# configs/experiments/my_experiment.yaml
+experiment:
+  name: "my_experiment"
+  description: "Description of this experiment"
+
+input:
+  qa_pairs_csv: "/workspace/data/qa/llm_batch/chunks/qa_pairs_chunk_1.csv"
+
+output:
+  base_dir: "/workspace/data/results/llm_batch/gpt-4o/chunk_1"
+  requests_jsonl: "/workspace/data/results/llm_batch/gpt-4o/chunk_1/requests.jsonl"
+  mapping_csv: "/workspace/data/results/llm_batch/gpt-4o/chunk_1/mapping.csv"
+  output_jsonl: "/workspace/data/results/llm_batch/gpt-4o/chunk_1/output.jsonl"
+  results_csv: "/workspace/data/results/llm_batch/gpt-4o/chunk_1_results.csv"
+  raw_csv: "/workspace/data/results/llm_batch/gpt-4o/chunk_1_raw.csv"
+
+model:
+  provider: "openai"  # Options: openai, groq, nebius
+  model_name: "gpt-4o"
+  temperature: 0.0
+  max_tokens: 200
+
+batch:
+  completion_window: "24h"
+```
+
+### Running Experiments
+
+#### 1. Using the Shell Script (Easiest)
+
+```bash
+# Run full workflow (prepare + submit)
+bash scripts/run_batch.sh configs/experiments/gpt4o_chunk7_run.yaml
+
+# Run specific command
+bash scripts/run_batch.sh configs/experiments/gpt4o_chunk7_run.yaml prepare
+bash scripts/run_batch.sh configs/experiments/gpt4o_chunk7_run.yaml submit
+```
+
+#### 2. Using Python Module Directly
+
+```bash
+# Full workflow (prepare + submit)
+python -m src.evaluation.benchmark_runner_batch --config configs/experiments/gpt4o_chunk7_run.yaml full
+
+# Individual commands
+python -m src.evaluation.benchmark_runner_batch --config configs/experiments/gpt4o_chunk7_run.yaml prepare
+python -m src.evaluation.benchmark_runner_batch --config configs/experiments/gpt4o_chunk7_run.yaml submit
+
+# Check status (batch_id required)
+python -m src.evaluation.benchmark_runner_batch status batch_abc123 --provider openai
+
+# Collect results (batch_id required, config used for paths)
+python -m src.evaluation.benchmark_runner_batch --config configs/experiments/gpt4o_chunk7_run.yaml collect batch_abc123
+```
+
+### API Key Setup
+
+**Recommended: Environment Variables**
+
+```bash
+export OPENAI_API_KEY="sk-..."
+export GROQ_API_KEY="gsk_..."
+export NEBIUS_API_KEY="..."
+```
+
+**Fallback: File-based (Legacy)**
+
+API keys can also be stored in `API_KEY/` directory (already in `.gitignore`):
+- `API_KEY/OPENAI_API_KEY`
+- `API_KEY/GROQ_API_KEY`
+- `API_KEY/NEBIUS_API_KEY`
+
+Environment variables take precedence over file-based keys.
+
+### Analyzing Results
+
+After collecting results, open the analysis notebook:
+
+```bash
+jupyter notebook notebooks/01_results_analysis.ipynb
+```
+
+This notebook:
+- Loads results CSV files
+- Computes accuracy and confidence metrics per layer (RAG, Knowledge, Adversarial)
+- Generates visualizations comparing models
+- Performs error analysis
+- Exports summary reports
+
+**Important:** The analysis notebook does NOT run batch jobs. It only loads and analyzes existing results.
+
+### Legacy CLI Mode (Backwards Compatible)
+
+The script still supports the original CLI interface without config files:
+
+```bash
+# Prepare
+python -m src.evaluation.benchmark_runner_batch prepare \
+  input.csv output.jsonl mapping.csv \
+  --provider openai --model gpt-4o --temperature 0.0 --max_tokens 200
+
+# Submit
+python -m src.evaluation.benchmark_runner_batch submit \
+  output.jsonl --provider openai --window 24h
+
+# Status
+python -m src.evaluation.benchmark_runner_batch status batch_id --provider openai
+
+# Collect
+python -m src.evaluation.benchmark_runner_batch collect \
+  batch_id output.jsonl mapping.csv results.csv raw.csv \
+  --model gpt-4o --provider openai
+```
+
+---
