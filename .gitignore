@@ -3,7 +3,7 @@
 /BATCH_ID
 
 # Development artifacts
-/scribble
+/zettelkasten
 /src/__pycache__/
 /src/evaluation/__pycache__/
 /src/parsing/__pycache__/
