@@ -1,0 +1,11 @@
+custom_id,id,entity_name,year,segment,original_metric,ground_truth_value
+qa_2190,2190,GSK,2023,Cash_Flow,Dividends Received From Investments Accounted For Using Equity Method Classified As Investing Activities,11000000.0
+qa_1266,1266,GSK,2020,Income_Statement,Profit Loss From Continuing Operations Attributable To Noncontrolling Interests,230000000.0
+qa_1766,1766,GSK,2023,Income_Statement,Basic Earnings Loss Per Share From Continuing Operations,1.216
+qa_2493,2493,Hikma Pharmaceuticals,2022,Balance_Sheet,Current Assets Liabilities,922000000.0
+qa_347,347,AstraZeneca,2020,Company_Specific_Metric,Inflows Outflows Of Cash Related To Profit Participation Liability Classified As Investing Activities,40000000.0
+qa_2159,2159,GSK,2024,Cash_Flow,Cash Flows From Used In Operating Activities,6554000000.0
+qa_43,43,AstraZeneca,2020,Income_Statement,Profit Loss Before Tax,3916000000.0
+qa_594,594,AstraZeneca,2023,Income_Statement,Other Comprehensive Income That Will Not Be Reclassified To Profit Or Loss Net Of Tax,-33000000.0
+qa_3003,3003,Hikma Pharmaceuticals,2024,Balance_Sheet,Equity Attributable To Owners Of Parent,2310000000.0
+qa_1225,1225,GSK,2022,Income_Statement,Other Operating Income Expense,-235000000.0

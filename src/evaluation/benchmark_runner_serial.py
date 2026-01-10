@@ -3,11 +3,12 @@ import pandas as pd
 import asyncio
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
+import argparse
+import asyncio
 from .llm_interface import (
     call_llm_with_prompt,
     generate_document,
     modify_value,
-    compare_answers,
     robust_extract_json,
 )
 
@@ -293,3 +294,29 @@ class BenchmarkRunner:
             f"RESPONSE FORMAT (JSON only): "
             f"{{'source': 'A' or 'B' or 'UNKNOWN', 'answer': '...', 'confidence': 0-100, 'reasoning': '...'}}\n\n"
         )
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(
+                description="Run LLM Benchmark",
+                epilog="Example usage:\n"
+                    "  python -m ./src/evaluation --qa_pairs ./src/data/qa/debug/qa_pairs.csv "
+                    "--output_dir results --models openai/gpt-oss-120b llama-3.3-70b-versatile "
+                    "--strategy row_by_row "
+                    "--batch_size 50 --max_concurrency 10")
+    parser.add_argument("--qa_pairs", required=True, help="Path to QA pairs CSV")
+    parser.add_argument("--output_dir", required=True, help="Directory to save results")
+    parser.add_argument("--models", nargs="+", required=True, help="List of models to test")
+    parser.add_argument("--strategy", choices=["model_by_model", "row_by_row"], default="model_by_model", help="Execution strategy")
+    parser.add_argument("--batch_size", type=int, default=25, help="Batch size for checkpointing")
+    parser.add_argument("--max_concurrency", type=int, default=None, help="Max concurrency for async execution")
+
+    args = parser.parse_args()
+
+    runner = BenchmarkRunner(
+        models_to_test=args.models,
+        strategy=args.strategy,
+        batch_size=args.batch_size,
+        max_concurrency={"openai": args.max_concurrency} if args.max_concurrency else None,
+    )
+
+    asyncio.run(runner.run(args.qa_pairs, args.output_dir))

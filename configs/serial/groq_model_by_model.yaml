@@ -1,0 +1,36 @@
+# Configuration for Serial Benchmark Runner - GROQ GPT-OSS-120B
+# Uses synchronous execution with async concurrency control
+
+experiment:
+  name: "groq_gpt-oss-120b_serial"
+  description: "Serial benchmark evaluation using GROQ GPT-OSS-120B model"
+
+input:
+  # Path to QA pairs CSV
+  # qa_pairs_csv: "/workspace/data/qa/debug/tiny_sample_qa_pairs.csv"
+  qa_pairs_csv: "/workspace/data/qa/llm_batch/qa_pairs.csv"
+
+output:
+  # Directory for results
+  # output_dir: "/workspace/data/results/serial/debug"
+  output_dir: "/workspace/data/results/serial"
+
+models:
+  # List of models to test (can be multiple)
+  - "openai/gpt-oss-120b"
+  - "llama-3.3-70b-versatile"
+
+execution:
+  # Execution strategy: 'model_by_model' or 'row_by_row'
+  strategy: "model_by_model"
+  
+  # Number of rows to process before saving checkpoint
+  batch_size: 25
+  
+  # Maximum concurrent requests (async semaphore)
+  max_concurrency: 5
+
+# Note: API keys should be set as environment variables:
+# - OPENAI_API_KEY
+# - GROQ_API_KEY
+# - NEBIUS_API_KEY

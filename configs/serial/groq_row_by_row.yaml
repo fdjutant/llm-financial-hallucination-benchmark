@@ -1,0 +1,30 @@
+# Configuration for Serial Benchmark Runner - Llama 3.3 70B
+# Uses synchronous execution with async concurrency control
+
+experiment:
+  name: "llama_3.3_70b_serial"
+  description: "Serial benchmark evaluation using Llama 3.3 70B model"
+
+input:
+  # Path to QA pairs CSV
+  qa_pairs_csv: "/workspace/data/qa/llm_batch/qa_pairs.csv"
+
+output:
+  # Directory for results
+  output_dir: "/workspace/data/results/serial/llama-3.3-70b"
+
+models:
+  # List of models to test
+  - "llama-3.3-70b-versatile"
+
+execution:
+  # Execution strategy: 'model_by_model' or 'row_by_row'
+  strategy: "model_by_model"
+  
+  # Number of rows to process before saving checkpoint
+  batch_size: 25
+  
+  # Maximum concurrent requests
+  max_concurrency: 10
+
+# Environment variable required: GROQ_API_KEY

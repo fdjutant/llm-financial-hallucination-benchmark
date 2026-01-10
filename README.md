@@ -4,22 +4,25 @@ This repository scaffolds a research pipeline that benchmarks hallucinations in 
 
 ## Quick Start
 
-### Running Benchmarks (Configuration-Driven Approach)
+### Running Benchmarks
 
-1. **Set up environment variables** (recommended):
+There are two ways to run benchmarks:
+
+#### 1. Batch API (Asynchronous - Recommended for large datasets)
+
+1. **Set up environment variables**:
    ```bash
    export OPENAI_API_KEY="your-key-here"
    export GROQ_API_KEY="your-key-here"  # if using Groq
    export NEBIUS_API_KEY="your-key-here"  # if using Nebius
    ```
 
-2. **Create or use an existing experiment config**:
+2. **Create or edit experiment config**:
    ```bash
-   # Edit the configuration file
    nano configs/experiments/gpt4o_chunk7_run.yaml
    ```
 
-3. **Run the benchmark**:
+3. **Run the batch benchmark**:
    ```bash
    bash scripts/run_batch.sh configs/experiments/gpt4o_chunk7_run.yaml
    ```
@@ -34,15 +37,35 @@ This repository scaffolds a research pipeline that benchmarks hallucinations in 
    python -m src.evaluation.benchmark_runner_batch --config configs/experiments/gpt4o_chunk7_run.yaml collect <batch_id>
    ```
 
-6. **Analyze results**:
-   Open `notebooks/01_results_analysis.ipynb` to visualize and analyze the results.
+#### 2. Serial Execution (Synchronous - Good for small datasets or debugging)
+
+1. **Set up environment variables** (same as above)
+
+2. **Create or edit serial config**:
+   ```bash
+   nano configs/serial/groq_gpt-oss-120b.yaml
+   ```
+
+3. **Run the serial benchmark**:
+   ```bash
+   bash scripts/run_serial.sh configs/serial/groq_gpt-oss-120b.yaml
+   ```
+
+   Results are saved automatically with checkpointing every N rows.
+
+#### 3. Analyze Results
+
+Open the analysis notebook to visualize and compare results:
+```bash
+jupyter notebook notebooks/01_results_analysis.ipynb
+```
 
 ### Architecture
 
 This project follows a **separation of concerns** approach:
 
-- **Configuration** (`configs/experiments/`): YAML files defining experiment parameters
-- **Execution** (`scripts/run_batch.sh`, `src/evaluation/`): CLI tools and shell scripts for running experiments
+- **Configuration** (`configs/experiments/`, `configs/serial/`): YAML files defining experiment parameters
+- **Execution** (`scripts/run_batch.sh`, `scripts/run_serial.sh`): Shell scripts for running experiments
 - **Analysis** (`notebooks/01_results_analysis.ipynb`): Jupyter notebook for data visualization and statistical analysis
 
 Notebooks are **strictly for analysis only** and do not execute batch jobs.
@@ -555,6 +578,90 @@ This notebook:
 - Exports summary reports
 
 **Important:** The analysis notebook does NOT run batch jobs. It only loads and analyzes existing results.
+
+---
+
+## Serial Benchmark Runner (Synchronous Execution)
+
+For smaller datasets or when you need immediate results without waiting for batch API processing, use the serial benchmark runner.
+
+### Features
+
+- **Synchronous execution** with async concurrency control
+- **Automatic checkpointing** - saves progress every N rows
+- **Resume capability** - continues from last checkpoint on restart
+- **Real-time feedback** - see results as they're generated
+- **Multiple models** - test several models in one run
+
+### Configuration
+
+Create a YAML config in `configs/serial/`:
+
+```yaml
+# configs/serial/groq_gpt-oss-120b.yaml
+experiment:
+  name: "groq_gpt-oss-120b_serial"
+  description: "Serial benchmark evaluation"
+
+input:
+  qa_pairs_csv: "/workspace/data/qa/llm_batch/qa_pairs.csv"
+
+output:
+  output_dir: "/workspace/data/results/serial/groq_gpt-oss-120b"
+
+models:
+  - "openai/gpt-oss-120b"
+
+execution:
+  strategy: "model_by_model"  # or "row_by_row"
+  batch_size: 25              # checkpoint every N rows
+  max_concurrency: 5          # async requests limit
+```
+
+### Usage
+
+```bash
+# Run serial benchmark
+bash scripts/run_serial.sh configs/serial/groq_gpt-oss-120b.yaml
+
+# Run with different config
+bash scripts/run_serial.sh configs/serial/llama-3.3-70b.yaml
+```
+
+### Execution Strategies
+
+**model_by_model** (default):
+- Processes all rows for one model before moving to the next
+- Best for comparing multiple models
+- Easier to resume if interrupted
+
+**row_by_row**:
+- Processes one row across all models before moving to next row
+- Best for quick sampling
+- More balanced progress across models
+
+### Output
+
+Results are saved to the specified output directory:
+```
+output_dir/
+├── model_name_results.csv   # Parsed results with correctness flags
+└── model_name_raw.csv        # Raw model outputs
+```
+
+The script automatically resumes from checkpoints if interrupted.
+
+### Comparison: Batch vs Serial
+
+| Feature | Batch API | Serial Execution |
+|---------|-----------|------------------|
+| **Speed** | Fast (parallel processing) | Slower (sequential with concurrency) |
+| **Cost** | 50% cheaper (OpenAI) | Standard pricing |
+| **Latency** | Hours to complete | Real-time feedback |
+| **Dataset Size** | Large (1000s of rows) | Small-Medium (100s of rows) |
+| **Checkpointing** | Manual (chunking) | Automatic (every N rows) |
+| **Resume** | Manual batch tracking | Automatic from last save |
+| **Best For** | Production runs | Development/debugging |
 
 ### Legacy CLI Mode (Backwards Compatible)
 
