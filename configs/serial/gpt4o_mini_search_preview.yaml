@@ -1,0 +1,40 @@
+# Configuration for Serial Benchmark Runner - gpt-4o-mini-search-preview
+# This model does not support temperature parameter
+# Uses synchronous execution with async concurrency control
+
+experiment:
+  name: "gpt-4o-mini-search-preview"
+  description: "Serial benchmark evaluation using gpt-4o-mini-search-preview model"
+
+input:
+  # Path to QA pairs CSV
+  qa_pairs_csv: "/workspace/data/qa/debug/tiny/qa_pairs.csv"
+
+output:
+  # Directory for results
+  output_dir: "/workspace/data/results/serial/gpt-4o-mini-search-preview_tiny"
+
+model:
+  # Model provider configuration
+  provider: "openai"  # Options: openai, groq, nebius
+  # temperature: null  # Omitted - this model doesn't support temperature
+  max_tokens: 1000  # Maximum tokens in response
+
+models:
+  # List of models to test
+  - "gpt-4o-mini-search-preview"
+
+execution:
+  # Execution strategy: 'model_by_model' or 'row_by_row'
+  strategy: "model_by_model"
+  
+  # Number of rows to process before saving checkpoint
+  batch_size: 1
+  
+  # Maximum concurrent requests
+  max_concurrency: 1
+
+# Note: API keys should be set as environment variables:
+# - OPENAI_API_KEY (for provider: openai)
+# - GROQ_API_KEY (for provider: groq)
+# - NEBIUS_API_KEY (for provider: nebius)

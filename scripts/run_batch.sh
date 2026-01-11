@@ -14,9 +14,9 @@ set -e
 #   command: Optional command to run (prepare, submit, full). Default: full
 #
 # Examples:
-#   bash scripts/run_batch.sh configs/experiments/gpt4o_chunk7_run.yaml
-#   bash scripts/run_batch.sh configs/experiments/gpt4o_chunk7_run.yaml prepare
-#   bash scripts/run_batch.sh configs/experiments/gpt4o_chunk7_run.yaml submit
+#   bash scripts/run_batch.sh configs/llm_batch/gpt4o_chunk7_run.yaml
+#   bash scripts/run_batch.sh configs/llm_batch/gpt4o_chunk7_run.yaml prepare
+#   bash scripts/run_batch.sh configs/llm_batch/gpt4o_chunk7_run.yaml submit
 # ===================================================================
 
 # Colors for output

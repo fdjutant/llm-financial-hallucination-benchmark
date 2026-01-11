@@ -8,6 +8,7 @@ Each YAML file defines:
 - **experiment**: Metadata about the experiment
 - **input**: Input data paths (QA pairs CSV)
 - **output**: Output directory for results
+- **model**: Model configuration (provider, temperature, max_tokens)
 - **models**: List of model names to evaluate
 - **execution**: Execution settings (strategy, batch size, concurrency)
 
@@ -23,6 +24,11 @@ input:
 
 output:
   output_dir: "/workspace/data/results/serial/my_model"
+
+model:
+  provider: "openai"  # Options: openai, groq, nebius
+  temperature: 0.0  # Optional: omit or set to null for models that don't support it
+  max_tokens: 200  # Maximum tokens in response
 
 models:
   # List one or more models
@@ -74,7 +80,8 @@ Use the exact model identifiers expected by the LLM API:
 
 **OpenAI:**
 - `gpt-4o`
-- `gpt-4o-mini`
+- `gpt-4o-mini-search-preview` (Note: does not support temperature parameter)
+- `gpt-3.5-turbo`
 
 **GROQ:**
 - `llama-3.3-70b-versatile`
@@ -84,6 +91,28 @@ Use the exact model identifiers expected by the LLM API:
 **Nebius:**
 - `deepseek-ai/DeepSeek-R1-0528`
 - `Qwen/Qwen2.5-72B-Instruct`
+
+## Model Parameters
+
+### Temperature
+- Controls randomness in model output (0.0 = deterministic, 2.0 = creative)
+- **Optional**: Some models (e.g., `gpt-4o-mini-search-preview`) don't support it
+- To omit: Remove the `temperature` line or set to `null`
+- Default: 0.0 (when supported)
+
+### Max Tokens
+- Maximum number of tokens in the model's response
+- **Required**: Always specify this parameter
+- Recommended: 200 for financial QA (our use case)
+- Increase if you need longer responses (e.g., 1000 for detailed analysis)
+
+**Example for models without temperature support:**
+```yaml
+model:
+  provider: "openai"
+  # temperature parameter omitted
+  max_tokens: 1000
+```
 
 ## Concurrency Settings
 

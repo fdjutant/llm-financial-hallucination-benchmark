@@ -1,0 +1,120 @@
+id,model,raw_output_rag,raw_output_knowledge,raw_output_adversarial,error
+2190,gpt-4o-mini-search-preview,,,,"Error code: 400 - {'error': {'message': ""Response format 'json_object' is not supported with web_search."", 'type': 'invalid_request_error', 'param': 'response_format', 'code': None}}"
+1266,gpt-4o-mini-search-preview,"According to GSK's 2020 Annual Report, the Profit/(Loss) from Continuing Operations Attributable to Non-controlling Interests was £230 million. ([gsk.com](https://www.gsk.com/media/7965/annual-report-2020.pdf?utm_source=openai))
+
+This figure represents the portion of GSK's profit or loss from continuing operations that is attributable to non-controlling interests, which are the equity interests in subsidiaries not owned by the parent company.
+
+The confidence in this information is 100%, as it is directly sourced from GSK's official 2020 Annual Report.","## Stock market information for GSK Plc (GSK)
+- GSK Plc is a equity in the USA market.
+- The price is 50.39 USD currently with a change of 0.16 USD (0.00%) from the previous close.
+- The latest open price was 50.43 USD and the intraday volume is 3925737.
+- The intraday high is 50.83 USD and the intraday low is 50.3 USD.
+- The latest trade time is Friday, January 9, 16:15:00 PST.
+
+
+In 2020, GSK reported a net loss attributable to noncontrolling interests from continuing operations of $2,342 million. ([s23.q4cdn.com](https://s23.q4cdn.com/716592820/files/doc_financials/2020/ar/9fb68dff-4234-4294-a9a6-816feb7ecfc2.pdf?utm_source=openai))","```json
+{
+  ""source"": ""UNKNOWN"",
+  ""answer"": ""£376 million"",
+  ""confidence"": 100,
+  ""reasoning"": ""The available financial data from GSK's 2024 Annual Report indicates that the profit attributable to non-controlling interests from continuing operations in 2024 was £376 million. However, specific figures for 2020 are not provided in the available sources. Therefore, the exact amount for 2020 cannot be determined from the current information.""
+}
+```",
+1766,gpt-4o-mini-search-preview,"{""answer"": ""The Basic Earnings Per Share (EPS) from continuing operations for GSK in 2023 was 121.6 pence, an increase from 110.8 pence in 2022. ([gsk.com](https://www.gsk.com/media/11005/financial-statements-2023.pdf?utm_source=openai))"", ""confidence"": 100, ""reasoning"": ""The provided financial statement indicates that the Basic EPS from continuing operations for GSK in 2023 was 121.6 pence, which is a direct answer to the question.""}","{""answer"": ""121.6p"", ""confidence"": 100, ""reasoning"": ""The Basic Earnings Per Share (EPS) from continuing operations for GSK in 2023 is reported as 121.6p in their Annual Report 2023. ([gsk.com](https://www.gsk.com/media/11005/financial-statements-2023.pdf?utm_source=openai))""}","```json
+{
+  ""source"": ""A"",
+  ""answer"": ""1.216"",
+  ""confidence"": 100,
+  ""reasoning"": ""According to GSK's Annual Report 2023, the Basic Earnings Per Share from Continuing Operations is 121.6 pence, which is equivalent to £1.216. ([gsk.com](https://www.gsk.com/media/11005/financial-statements-2023.pdf?utm_source=openai))""
+}
+```",
+2493,gpt-4o-mini-search-preview,"```json
+{""answer"": ""$922 million"", ""confidence"": 95, ""reasoning"": ""According to Hikma Pharmaceuticals' Annual Report 2022, net current assets were $922 million as of 31 December 2022. ([annualreports.co.uk](https://www.annualreports.co.uk/HostedData/AnnualReportArchive/h/LSE_HIK_2022.pdf?utm_source=openai)) Net current assets are calculated as current assets minus current liabilities. The report also indicates that current liabilities were $1,078 million as of 31 December 2021. ([annualreports.co.uk](https://www.annualreports.co.uk/HostedData/AnnualReportArchive/h/LSE_HIK_2022.pdf?utm_source=openai)) While the exact current liabilities figure for 2022 is not provided, the net current assets figure of $922 million is a reliable indicator of the company's financial position.""}
+```","```json
+{
+  ""answer"": ""Hikma Pharmaceuticals' current assets and current liabilities for the year ending 31 December 2022 were $1,999 million and $1,077 million, respectively. ([reports.ticker.app](https://reports.ticker.app/549300BNS685UXH4JI75/2023-03-16/NI-000070367.pdf?utm_source=openai))"",
+  ""confidence"": 95,
+  ""reasoning"": ""The figures for current assets and current liabilities are directly sourced from Hikma Pharmaceuticals' consolidated balance sheet for the year ending 31 December 2022. ([reports.ticker.app](https://reports.ticker.app/549300BNS685UXH4JI75/2023-03-16/NI-000070367.pdf?utm_source=openai))""
+}
+```","```json
+{
+  ""source"": ""UNKNOWN"",
+  ""answer"": ""The Current Assets Liabilities figure for Hikma Pharmaceuticals in the year 2022 is not explicitly available in the provided sources. The available data includes total assets and total liabilities for 2022, but not the specific 'Current Assets Liabilities' figure. Therefore, it is not possible to determine which source, A or B, is correct based on the available information."",
+  ""confidence"": 0,
+  ""reasoning"": ""The provided sources do not include the specific 'Current Assets Liabilities' figure for Hikma Pharmaceuticals in 2022. Without this data, it is not possible to verify the accuracy of either Source A or Source B.""
+}
+```",
+347,gpt-4o-mini-search-preview,AstraZeneca reported a cash inflow of $40 million related to profit participation liability classified as investing activities in the year 2020. ([annualreports.com](https://www.annualreports.com/HostedData/AnnualReportArchive/a/LSE_AZN_2020.pdf?utm_source=openai)),"AstraZeneca's 2020 Annual Report indicates that the company reported a net cash outflow of $285 million from investing activities for the year ended December 31, 2020. ([cdn.yahoofinance.com](https://cdn.yahoofinance.com/prod/sec-filings/0000901832/000110465922025720/azn-20211231xex15d1.htm?utm_source=openai)) This figure includes various investing activities such as the purchase and disposal of property, plant, and equipment, as well as intangible assets. However, the report does not provide a specific breakdown of cash flows related to profit participation liability classified under investing activities. Therefore, the exact amount for inflows and outflows of cash related to profit participation liability in 2020 is not disclosed in the available financial statements.","```json
+{
+  ""source"": ""UNKNOWN"",
+  ""answer"": ""UNKNOWN"",
+  ""confidence"": 0,
+  ""reasoning"": ""The provided sources (A and B) do not correspond to AstraZeneca's 2020 financial statements. Therefore, it is not possible to determine which source is correct without access to AstraZeneca's official financial reports for that year.""
+}
+```",
+2159,gpt-4o-mini-search-preview,"In 2024, GSK reported a net cash inflow from operating activities of £6,554 million, a slight decrease from £6,768 million in 2023. ([gsk.com](https://www.gsk.com/media/11854/financial-statements-2024.pdf?utm_source=openai)) This figure aligns with the £7,861 million cash generated from operations, adjusted for £1,307 million in taxation paid. ([gsk.com](https://www.gsk.com/en-gb/media/press-releases/gsk-delivers-strong-2024-performance-with-further-improvement-to-long-term-growth-outlook/?utm_source=openai))
+
+In the United States, this amount is approximately $8.375 billion, based on the average exchange rate for 2024.
+
+This cash flow reflects GSK's operational efficiency and its ability to generate cash from core business activities.","{""answer"": ""£6,554 million"", ""confidence"": 100, ""reasoning"": ""According to GSK's Annual Report 2024, the total net cash inflow from operating activities for the year ended 31 December 2024 was £6,554 million. This figure is consistent across multiple sources, including the Annual Report and the Results Summary. ([gsk.com](https://www.gsk.com/media/11854/financial-statements-2024.pdf?utm_source=openai))""}","```json
+{
+  ""source"": ""UNKNOWN"",
+  ""answer"": ""£6,554 million"",
+  ""confidence"": 100,
+  ""reasoning"": ""According to GSK's Annual Report 2024, the total net cash inflow from operating activities was £6,554 million. ([gsk.com](https://www.gsk.com/media/wrvfwob1/annual-report-2024.pdf?utm_source=openai)) This figure is consistent with the data from Source A. Therefore, Source A is correct.""
+}
+```",
+43,gpt-4o-mini-search-preview,"```json
+{
+  ""answer"": ""AstraZeneca's Profit Before Tax in 2020 was $3,916 million."",
+  ""confidence"": 100,
+  ""reasoning"": ""The reported Profit Before Tax for AstraZeneca in 2020 was $3,916 million, reflecting a 153% increase from the previous year. This figure is consistent across multiple reputable sources, including the company's annual reports and financial statements.""
+}
+```","AstraZeneca's reported profit before tax for the year 2020 was $3,916 million, reflecting a 153% increase from 2019. ([annualreports.com](https://www.annualreports.com/HostedData/AnnualReportArchive/a/LSE_AZN_2020.pdf?utm_source=openai))
+
+The core profit before tax, which excludes certain items, was $2,615 million in 2020. ([annualreports.com](https://www.annualreports.com/HostedData/AnnualReportArchive/a/LSE_AZN_2020.pdf?utm_source=openai))
+
+The reported profit before tax includes all income and expenses, while the core profit before tax excludes specific items to provide a clearer picture of the company's operational performance.","```json
+{
+  ""source"": ""A"",
+  ""answer"": ""AstraZeneca's Profit Before Tax in 2020 was $3,916 million."",
+  ""confidence"": 100,
+  ""reasoning"": ""According to AstraZeneca's 2020 Annual Report, the reported profit before tax was $3,916 million, reflecting a 153% increase from the previous year. This figure is consistent across multiple reputable sources, including the company's official financial statements and the U.S. Securities and Exchange Commission filings. Therefore, Source A, which states a profit before tax of $3,916 million, is correct.""
+}
+```",
+594,gpt-4o-mini-search-preview,"{""answer"": ""-33,000,000.0"", ""confidence"": 100, ""reasoning"": ""The provided financial statement indicates that the 'Other Comprehensive Income That Will Not Be Reclassified To Profit Or Loss Net Of Tax' for AstraZeneca in 2023 is -33,000,000.0.""}","According to AstraZeneca's Annual Report for the fiscal year ended December 31, 2023, the 'Other Comprehensive Income That Will Not Be Reclassified To Profit Or Loss Net Of Tax' was $1,234 million. ([sec.gov](https://www.sec.gov/Archives/edgar/data/901832/000110465925014732/tm251208d3_ex99-1.pdf?utm_source=openai))
+
+This figure represents the net amount of income or loss that is not expected to be reclassified to profit or loss in subsequent periods, after accounting for tax effects.","```json
+{
+  ""source"": ""UNKNOWN"",
+  ""answer"": ""UNKNOWN"",
+  ""confidence"": 0,
+  ""reasoning"": ""The provided sources (A and B) do not match the available data for AstraZeneca's 'Other Comprehensive Income That Will Not Be Reclassified To Profit Or Loss Net Of Tax' for the year 2023. According to AstraZeneca's 2023 Annual Report, the 'Other comprehensive income/(loss), net of tax' for items that will not be reclassified to profit or loss was $31 million, a decrease of $746 million from 2022. Therefore, both Source A and Source B are incorrect.""
+}
+```",
+3003,gpt-4o-mini-search-preview,"```json
+{""answer"": ""The Equity Attributable To Owners Of Parent for Hikma Pharmaceuticals in the year 2024 was $2,310 million."", ""confidence"": 100, ""reasoning"": ""The 2024 Annual Report of Hikma Pharmaceuticals provides detailed financial statements, including the Consolidated Balance Sheet, which reports the Equity Attributable To Owners Of Parent as $2,310 million. ([hikma.com](https://www.hikma.com/investors/2024-annual-report/?utm_source=openai))""}
+```","According to Hikma Pharmaceuticals' 2024 Annual Report, the company reported a profit attributable to shareholders of $359 million for the year ended 31 December 2024. ([hikma.com](https://www.hikma.com/news/strong-2024-performance-and-a-positive-outlook-for-2025/?utm_source=openai)) However, the specific figure for 'Equity Attributable to Owners of Parent' is not provided in the available sources.
+
+Therefore, the confidence in this response is 70%, as the exact equity figure is not directly available in the provided information.","```json
+{
+  ""source"": ""UNKNOWN"",
+  ""answer"": ""The Equity Attributable To Owners Of Parent for Hikma Pharmaceuticals in the year 2024 is not specified in the available sources."",
+  ""confidence"": 0,
+  ""reasoning"": ""The provided sources do not include the specific figure for 'Equity Attributable To Owners Of Parent' for the year 2024. Therefore, it is not possible to determine which source, A or B, is correct based on the available information.""
+}
+```",
+1225,gpt-4o-mini-search-preview,"According to GSK's 2022 Annual Report, the 'Other Operating Income/(Expense)' for the year was £235 million. ([gsk.com](https://www.gsk.com/media/9963/financial-statements-2022.pdf?utm_source=openai))
+
+This figure represents a £363 million increase from the previous year's expense of £363 million. ([tracenable.com](https://tracenable.com/company/gsk/income-statement?utm_source=openai))
+
+The positive value indicates that GSK reported other operating income in 2022, as opposed to an expense in 2021.","According to GSK's 2022 Annual Report, the 'Other operating income/(expense)' for the year was a net expense of £235 million. ([tracenable.com](https://tracenable.com/company/gsk/income-statement?utm_source=openai))
+
+This figure represents the net result of various income and expense items not directly related to the company's core operating activities.","```json
+{
+  ""source"": ""A"",
+  ""answer"": ""-235 million GBP"",
+  ""confidence"": 100,
+  ""reasoning"": ""According to GSK's 2022 Annual Report, the 'Other operating (expense)/income' for the year ended 31 December 2022 was £235 million, reflecting a net expense of £235 million. This figure is reported in the Consolidated Income Statement on page 182 of the report. Therefore, Source A, which states 'Other Operating Income Expense = -235000000.0', is correct. Source B, reporting 'Other Operating Income Expense = -258839696.76', does not match the reported figure and is incorrect.""
+}
+```",

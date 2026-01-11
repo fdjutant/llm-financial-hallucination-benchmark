@@ -2,18 +2,22 @@
 # Uses synchronous execution with async concurrency control
 
 experiment:
-  name: "groq_gpt-oss-120b_serial"
-  description: "Serial benchmark evaluation using GROQ GPT-OSS-120B model"
+  name: "groq_serial_gpt-oss-120b_llama-3.3-70b-versatile"
+  description: "Serial benchmark evaluation using GROQ"
 
 input:
   # Path to QA pairs CSV
-  # qa_pairs_csv: "/workspace/data/qa/debug/tiny_sample_qa_pairs.csv"
   qa_pairs_csv: "/workspace/data/qa/llm_batch/qa_pairs.csv"
 
 output:
   # Directory for results
-  # output_dir: "/workspace/data/results/serial/debug"
   output_dir: "/workspace/data/results/serial"
+
+model:
+  # Model provider configuration
+  provider: "groq"  # Options: openai, groq, nebius
+  temperature: 0.0  # Optional: set to null or omit for models that don't support it
+  max_tokens: 200  # Maximum tokens in response
 
 models:
   # List of models to test (can be multiple)
@@ -25,10 +29,10 @@ execution:
   strategy: "model_by_model"
   
   # Number of rows to process before saving checkpoint
-  batch_size: 25
+  batch_size: 10
   
   # Maximum concurrent requests (async semaphore)
-  max_concurrency: 5
+  max_concurrency: 10
 
 # Note: API keys should be set as environment variables:
 # - OPENAI_API_KEY

@@ -73,12 +73,12 @@ def analyze_results(folders=['./data/results/debug/']):
     summary_df = pd.DataFrame(summary_rows)
 
     # Print summary as aligned ASCII table
-    print("\n" + "-"*100)
-    header = f"{'Model':<35} {'N':>6} {'RAG Acc':>10} {'Knowl Acc':>10} {'Halluc %':>10} {'Adv Acc':>10} {'HallucIdx':>10}"
+    print("\n" + "-"*90)
+    header = f"{'Model':<28} {'N':>6} {'RAG Acc':>10} {'Knowl Acc':>10} {'Halluc %':>10} {'Adv Acc':>10} {'HallucIdx':>10}"
     print(header)
-    print("-"*100)
+    print("-"*90)
     for _, row in summary_df.iterrows():
-        print(f"{row['model']:<35} {row['n']:6d} {row['rag_acc']:10.1f} {row['knowledge_acc']:10.1f} {row['halluc_rate']:10.1f} {row['adversarial_acc']:10.1f} {row['halluc_index']:10.1f}")
-    print("-"*100)
+        print(f"{row['model']:<28} {row['n']:6d} {row['rag_acc']:10.1f} {row['knowledge_acc']:10.1f} {row['halluc_rate']:10.1f} {row['adversarial_acc']:10.1f} {row['halluc_index']:10.1f}")
+    print("-"*90)
 
     return summary_df
