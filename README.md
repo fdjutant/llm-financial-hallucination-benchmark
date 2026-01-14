@@ -1,689 +1,181 @@
-# Benchmarking Hallucinations on UK Financial Filings
+**Quantitative evaluation of LLM accuracy and hallucination on UK financial data extracted from regulatory XBRL filings.**
 
-This repository scaffolds a research pipeline that benchmarks hallucinations in LLMs on fact-based financial questions extracted from UK regulatory filings (Companies House iXBRL to start).
+Financial accuracy is non-negotiable, yet LLMs struggle with numerical hallucinations. This benchmark targets that gap by rigorously testing models against real-world financial data. We provide an automated pipeline that extracts ground truth from FCA iXBRL filings to evaluate performance across RAG comprehension, parametric knowledge, and adversarial robustness.
 
-## Quick Start
+## Architecture
+```
+iXBRL Filings (UK Financial Conduct Authority)
+3 FTSE100 Companies (2022-2024)
+      │
+Fact Extraction & Cleaning
+├── Bronze  : Raw Extraction
+├── Silver  : Numeric Filtering
+└── Gold    : Deduplication
+      │
+QA Pair Generation (Ground Truth)
+1,562 QA Pairs
+      │
+LLM Benchmark Evaluation
+├── 1. RAG Comprehension
+├── 2. Parametric Knowledge
+└── 3. Adversarial Robustness
+      │
+Results & Analysis
+```
 
-### Running Benchmarks
+## Evaluation Methodology
 
-There are two ways to run benchmarks:
+### 3-Layer Benchmark Framework
 
-#### 1. Batch API (Asynchronous - Recommended for large datasets)
+**Layer 1: RAG (Retrieval-Augmented Generation)**
+- **Question**: "What was Company X's 2023 revenue?"
+- **Context**: Full financial statement excerpt provided
+- **Metric**: Extraction accuracy (can the model read documents correctly?)
 
-1. **Set up environment variables**:
-   ```bash
-   export OPENAI_API_KEY="your-key-here"
-   export GROQ_API_KEY="your-key-here"  # if using Groq
-   export NEBIUS_API_KEY="your-key-here"  # if using Nebius
-   ```
+**Layer 2: Knowledge**
+- **Question**: Same as Layer 1
+- **Context**: No document provided
+- **Metric**: Parametric knowledge (does the model "know" this fact?)
 
-2. **Create or edit experiment config**:
-   ```bash
-   nano configs/experiments/gpt4o_chunk7_run.yaml
-   ```
+**Layer 3: Adversarial**
+- **Question**: "Which source is correct: Source A (£1.2B) or Source B (£1.5B)?"
+- **Context**: One correct, one fake value
+- **Metric**: Source validation (can the model resist contradictions?)
 
-3. **Run the batch benchmark**:
-   ```bash
-   bash scripts/run_batch.sh configs/experiments/gpt4o_chunk7_run.yaml
-   ```
+## Results Summary
 
-4. **Monitor batch status**:
-   ```bash
-   python -m src.evaluation.benchmark_runner_batch status <batch_id> --provider openai
-   ```
+Based on evaluation of **1,562 QA pairs** across UK financials:
 
-5. **Collect results once complete**:
-   ```bash
-   python -m src.evaluation.benchmark_runner_batch --config configs/experiments/gpt4o_chunk7_run.yaml collect <batch_id>
-   ```
+| Model | RAG Accuracy (%) | RAG Hallucination (%) | Notes |
+|-------|---------|-----------------|-------|
+| gpt-4o | 91.7 | 8.3 | Occasional drift from context; tends to overwrite facts with internal knowledge |
+| gpt-oss-120b | 91.3 | 8.7 | High error rate; frequently hallucinates despite correct context |
+| llama-3.1-8b-instant | 99.5 | 0.5 | Exceptional faithfulness to provided financial documents |
 
-#### 2. Serial Execution (Synchronous - Good for small datasets or debugging)
+**Key Findings:**
+1. RAG performance varies significantly (90-99%)
+2. All models struggle with parametric knowledge (0-0.3% accuracy without documents)
+3. Adversarial robustness is uniformly low (0-5%)
 
-1. **Set up environment variables** (same as above)
+*See llm_benchmark_analysis.ipynb for detailed analysis.*
 
-2. **Create or edit serial config**:
-   ```bash
-   nano configs/serial/groq_gpt-oss-120b.yaml
-   ```
+## Features & Tech Stack
+| Module      | Key Capabilities                                                                                       | Tech Stack                           |
+| ----------- | ------------------------------------------------------------------------------------------------------ | ------------------------------------ |
+| Data Engine | Medallion Pipeline: Raw iXBRL (Bronze) → Numeric Filters (Silver) → Canonical Facts (Gold).            | arelle, pandas             |
+| QA Gen      | LLM-Driven Synthesis: Generates 1,500+ question-answer pairs with reasoning derived from ground truth. | openai (Batch API), asyncio    |
+| Benchmark   | 3-Layer Eval: RAG (Context), Parametric (Memory), and Adversarial (Robustness).                        | Custom metrics, multi-provider SDKs  |
+| Operations  | Containerized Execution: Config-driven experiments, auto-resume, and secure API key management.        | Docker, yaml, jupyter, python-dotenv |
+ 
+## Quick Setup (Recommended)
 
-3. **Run the serial benchmark**:
-   ```bash
-   bash scripts/run_serial.sh configs/serial/groq_gpt-oss-120b.yaml
-   ```
+This project is configured with a **Dev Container** for a consistent, isolated environment.
 
-   Results are saved automatically with checkpointing every N rows.
+### 1. Using VS Code or GitHub Codespaces
+*   **GitHub Codespaces**: Click the **Code** button > **Codespaces** > **Create codespace on main**.
+*   **VS Code (Local)**:
+    1.  Install [Docker Desktop](https://www.docker.com/) and the [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+    2.  Open the project folder in VS Code
+    3.  Click **"Reopen in Container"** when prompted (or run command `Dev Containers: Reopen in Container`)
 
-#### 3. Analyze Results
+### 2. Configure API Keys
+The container expects API keys in a `.env` file (or environment variables). Add your keys:
+```
+OPENAI_API_KEY=sk-...
+GROQ_API_KEY=gsk_...
+NEBIUS_API_KEY=...
+```
 
-Open the analysis notebook to visualize and compare results:
+Alternatively, you can store your API keys in the `API_KEY` folder for better organization. Ensure the folder contains files named `OPENAI_API_KEY`, `GROQ_API_KEY`, and `NEBIUS_API_KEY` with the respective keys as their content. The project will automatically load these keys during runtime.
+
+## Manual Installation (Optional)
+If you prefer running locally without Docker:
+
+1.  **Prerequisites**: Python 3.11+
+2.  **Install**:
+    ```bash
+    git clone https://www.github.com/fdjutant/llm-financial-hallucination-benchmark/
+    cd llm-financial-hallucination-benchmark
+    
+    # Conda (Recommended)
+    conda env create -f environment.yml
+    conda activate mlenv
+    ```
+3.  **Verify**:
+    ```bash
+    python -m src.qa_generation.llm_qa_generator_batch --help
+    ```
+
+## Usage
+
+### 1. Ground Truth Extraction
+Pre-processed data is available in `data/processed/`. To regenerate from raw filings:
+```python
+# Notebook: notebooks/qa_data_pipelines.ipynb
+from src.parsing.arelle_parser import process_html_files
+from src.parsing.canonical_facts import create_silver_ground_truth, create_gold_ground_truth
+
+# Bronze (Raw) -> Silver (Filter) -> Gold (Canonical)
+bronze_df = process_html_files("data/raw/fca", "bronze.csv")
+silver_df = create_silver_ground_truth(bronze_df, "silver.csv")
+create_gold_ground_truth(silver_df, "gold.csv") 
+```
+
+### 2. Generate QA Pairs (Batch API)
+Synthesize questions from ground truth using OpenAI's Batch API.
 ```bash
-jupyter notebook notebooks/01_results_analysis.ipynb
+# 1. Prepare & Submit
+python -m src.qa_generation.llm_qa_generator_batch prepare gold.csv requests.jsonl mapping.csv --model gpt-4o-mini
+python -m src.qa_generation.llm_qa_generator_batch submit requests.jsonl
+
+# 2. Track & Collect (after 24h)
+python -m src.qa_generation.llm_qa_generator_batch status <batch_id>
+python -m src.qa_generation.llm_qa_generator_batch collect <batch_id> output.jsonl mapping.csv qa_pairs.csv
 ```
 
-### Architecture
+### 3. Run Benchmark
+Evaluate models using YAML configurations.
 
-This project follows a **separation of concerns** approach:
-
-- **Configuration** (`configs/experiments/`, `configs/serial/`): YAML files defining experiment parameters
-- **Execution** (`scripts/run_batch.sh`, `scripts/run_serial.sh`): Shell scripts for running experiments
-- **Analysis** (`notebooks/01_results_analysis.ipynb`): Jupyter notebook for data visualization and statistical analysis
-
-Notebooks are **strictly for analysis only** and do not execute batch jobs.
-
-## Repository layout
-
-```
-src/
-  data_download/
-  parsing/
-  qa_generation/
-  evaluation/
-data/
-  raw/
-  processed/
-  qa/
-  results/
-notebooks/
-```
-
-The `src` tree contains Python modules (Python 3, pandas, standard library first) grouped by phase:
-
-- `data_download/`: interactions with Companies House APIs/archives for UK filings plus storage manifests.
-- `parsing/`: iXBRL loading, tag-to-fact mapping, and validation targeted at the UK taxonomy (FRC/IFRS).
-- `qa_generation/`: template definitions and builders that emit programmatically verifiable QA pairs.
-- `evaluation/`: LLM interface abstractions, graders, and analysis helpers for UK-specific benchmarks.
-
-`data/` holds versioned artefacts (gitignored once we add `.gitignore`). `notebooks/` will host exploratory analysis/plots.
-
-## Next steps
-
-1. Decide on exact iXBRL parsing helper (e.g., `ixbrlparse`, `beautifulsoup4`, `lxml`).
-2. Implement Companies House download client with cached manifests and FTSE company metadata table.
-3. Define canonical fact schema + tag mapping for revenue, profit before tax, net income, total assets, and total liabilities within the UK taxonomy.
-4. Author QA templates and grading heuristics, then add automated evaluation notebooks.
-
-
-## Project Milestones (as of Dec 2025)
-
-- Downloaded iXBRL filings for two UK companies (IDs: 08948140, 11270200) from Companies House.
-- Successfully ingested and parsed iXBRL documents into pandas DataFrames using custom loaders in `/src/parsing`.
-- Pipeline for data download and parsing is functional and reproducible for selected companies.
-- Ready to proceed with fact extraction, Q&A generation, and LLM benchmarking.
-
-Edge cases to track throughout:
-- Missing or differently tagged facts between consolidated vs individual UK statements.
-- Currency units, scale, and FY period handling for non-calendar ends.
-- Inconsistent availability of iXBRL tags for older filings and subsidiaries.
-
-# OpenAI Batch Runner for QA Generation
-
-This repository includes a script to prepare, submit, monitor, and collect results from OpenAI batch jobs for generating financial QA datasets.
-
-## Prerequisites
-
-1. **API Key**: Ensure your OpenAI API key is stored in `API_KEY/OPENAI_API_KEY`.
-2. **Dependencies**: Install required Python packages:
-   ```bash
-   pip install pandas openai
-   ```
-
-## Script Overview
-
-The batch runner script is located at `src/qa_generation/openai_batch_runner.py`. It supports the following commands:
-
-### 1. Prepare JSONL Requests
-
-Builds JSONL batch requests and a mapping CSV from an input CSV file.
-
+**Option A: Batch (Large Scale)**
+Recommended for cost-effective evaluation of 1000+ pairs.
 ```bash
-python src/qa_generation/openai_batch_runner.py prepare \
-  data/processed/canonical_facts/bronze.csv \
-  results/debug/batch/requests.jsonl \
-  results/debug/batch/mapping.csv
+# Edit configs/experiments/gpt4o_benchmark.yaml
+bash scripts/run_batch.sh configs/experiments/gpt4o_benchmark.yaml
+
+# Collect results
+python -m src.evaluation.benchmark_runner_batch --config ... collect <batch_id>
 ```
 
-- **Arguments**:
-  - `input_csv`: Path to the input CSV file.
-  - `output_jsonl`: Path to save the generated JSONL file.
-  - `mapping_csv`: Path to save the mapping CSV file.
-- **Optional Flags**:
-  - `--model`: OpenAI model to use (default: `gpt-4o-mini`).
-  - `--temperature`: Sampling temperature (default: `0.7`).
-  - `--max_tokens`: Maximum tokens per response (default: `300`).
-
-### 2. Submit Batch Job
-
-Submits the prepared JSONL file as a batch job to OpenAI.
-
+**Option B: Serial (Real-Time)**
+Best for fast feedback with Groq/Nebius/Llama.
 ```bash
-python src/qa_generation/openai_batch_runner.py submit \
-  results/debug/batch/requests.jsonl \
-  --window 24h
+# Edit configs/serial/groq_run.yaml
+# Defines model: "llama-3.3-70b-versatile", concurrency: 5
+bash scripts/run_serial.sh configs/serial/groq_run.yaml
 ```
 
-- **Arguments**:
-  - `input_jsonl`: Path to the JSONL file.
-- **Optional Flags**:
-  - `--window`: Completion window (default: `24h`).
-
-### 3. Check Batch Status
-
-Checks the status of a submitted batch job.
-
+### 4. Analyze Results
+Launch the analysis notebook to compare performance across experiments.
 ```bash
-python src/qa_generation/openai_batch_runner.py status <batch_id>
+jupyter notebook notebooks/llm_benchmark_analysis.ipynb
 ```
 
-- **Arguments**:
-  - `batch_id`: ID of the batch job.
+**Quick Start Snippet:**
+```python
+from src.evaluation.analysis import analyze_results
 
-### 4. Collect Results
-
-Downloads the batch output, parses it, and writes the results to a CSV file.
-
-```bash
-python src/qa_generation/openai_batch_runner.py collect \
-  <batch_id> \
-  results/debug/batch/output.jsonl \
-  results/debug/batch/mapping.csv \
-  results/debug/batch/llama-3.3-70b-versatile_results.csv
+# Aggregate metrics from Batch and Serial runs
+results = analyze_results([
+    "data/results/llm_batch", 
+    "data/results/serial"
+])
+# Returns: DataFrame with Accuracy and Hallucination Rate for RAG, Knowledge, Adversarial layers
 ```
 
-- **Arguments**:
-  - `batch_id`: ID of the batch job.
-  - `output_jsonl`: Path to save the downloaded JSONL file.
-  - `mapping_csv`: Path to the mapping CSV file.
-  - `results_csv`: Path to save the final results CSV file.
 
-## Example Workflow
 
-1. **Prepare JSONL**:
-   ```bash
-   python src/qa_generation/openai_batch_runner.py prepare \
-     data/processed/canonical_facts/bronze.csv \
-     results/debug/batch/requests.jsonl \
-     results/debug/batch/mapping.csv
-   ```
+## Acknowledgments
 
-2. **Submit Batch**:
-   ```bash
-   python src/qa_generation/openai_batch_runner.py submit \
-     results/debug/batch/requests.jsonl
-   ```
-
-3. **Check Status**:
-   ```bash
-   python src/qa_generation/openai_batch_runner.py status <batch_id>
-   ```
-
-4. **Collect Results**:
-   ```bash
-   python src/qa_generation/openai_batch_runner.py collect \
-     <batch_id> \
-     results/debug/batch/output.jsonl \
-     results/debug/batch/mapping.csv \
-     results/debug/batch/llama-3.3-70b-versatile_results.csv
-   ```
-
-## Notes
-
-- Ensure the input CSV follows the expected format with columns like `id`, `entity_name`, `year`, `canonical_fact_name`, `ground_truth_value`, and `segment`.
-- Excluded segments: `Narrative_Disclosure`, `Other_Financial_Metric`.
-- Results CSV includes columns for `generated_question`, `generated_answer`, and `generated_reasoning`.
-
----
-
-# Batch Runner for Benchmark Evaluation
-
-This repository includes a script to prepare, submit, monitor, and collect results from batch jobs for running benchmark evaluations on generated QA pairs. The script supports multiple API providers: **OpenAI**, **GROQ**, and **NEBIUS**.
-
-## Prerequisites
-
-1. **API Keys**: Ensure your API keys are stored in the appropriate files:
-   - OpenAI: `API_KEY/OPENAI_API_KEY`
-   - GROQ: `API_KEY/GROQ_API_KEY`
-   - NEBIUS: `API_KEY/NEBIUS_API_KEY`
-2. **Dependencies**: Install required Python packages:
-   ```bash
-   pip install pandas openai
-   ```
-
-## Script Overview
-
-The benchmark batch runner script is located at `src/evaluation/openai_benchmark_batch_runner.py`. It supports the following commands:
-
-### 1. Prepare JSONL Requests
-
-Builds JSONL batch requests for 3 evaluation layers (RAG, Knowledge, Adversarial) and a mapping CSV from the QA pairs CSV.
-
-```bash
-python src/evaluation/openai_benchmark_batch_runner.py prepare \
-  data/qa/qa_database/qa_pairs.csv \
-  data/results/batch/requests.jsonl \
-  data/results/batch/mapping.csv \
-  --provider openai \
-  --model gpt-4o-mini \
-  --temperature 0.0 \
-  --max_tokens 200
-```
-
-- **Arguments**:
-  - `input_csv`: Path to the QA pairs CSV file.
-  - `output_jsonl`: Path to save the generated JSONL file.
-  - `mapping_csv`: Path to save the mapping CSV file.
-- **Optional Flags**:
-  - `--provider`: API provider (`openai`, `groq`, `nebius`). Default: `openai`.
-  - `--model`: Model to use. Default: `gpt-4o-mini`.
-  - `--temperature`: Sampling temperature. Default: `0.0`.
-  - `--max_tokens`: Maximum tokens per response. Default: `200`.
-
-**Example models by provider:**
-- OpenAI: `gpt-4o-mini`, `gpt-4o`
-- GROQ: `llama-3.3-70b-versatile`, `openai/gpt-oss-120b`
-- NEBIUS: `deepseek-ai/DeepSeek-R1-0528`, `Qwen/Qwen2.5-72B-Instruct`
-
-### 2. Submit Batch Job
-
-Submits the prepared JSONL file as a batch job to the selected provider.
-
-```bash
-python src/evaluation/openai_benchmark_batch_runner.py submit \
-  data/results/batch/requests.jsonl \
-  --provider openai \
-  --window 24h
-```
-
-- **Arguments**:
-  - `input_jsonl`: Path to the JSONL file.
-- **Optional Flags**:
-  - `--provider`: API provider (`openai`, `groq`, `nebius`). Default: `openai`.
-  - `--window`: Completion window. Default: `24h`.
-
-### 3. Check Batch Status
-
-Checks the status of a submitted batch job.
-
-```bash
-python src/evaluation/openai_benchmark_batch_runner.py status <batch_id> --provider openai
-```
-
-- **Arguments**:
-  - `batch_id`: ID of the batch job.
-- **Optional Flags**:
-  - `--provider`: API provider (`openai`, `groq`, `nebius`). Default: `openai`.
-
-### 4. Collect Results
-
-Downloads the batch output, parses it, and writes the results and raw outputs to CSV files.
-
-```bash
-python src/evaluation/openai_benchmark_batch_runner.py collect \
-  <batch_id> \
-  data/results/batch/output.jsonl \
-  data/results/batch/mapping.csv \
-  data/results/batch/gpt-4o-mini_results.csv \
-  data/results/batch/gpt-4o-mini_raw.csv \
-  --model gpt-4o-mini \
-  --provider openai
-```
-
-- **Arguments**:
-  - `batch_id`: ID of the batch job.
-  - `output_jsonl`: Path to save the downloaded JSONL file.
-  - `mapping_csv`: Path to the mapping CSV file.
-  - `results_csv`: Path to save the final results CSV file.
-  - `raw_csv`: Path to save the raw outputs CSV file.
-  - `--model`: Model name used for the batch (required).
-- **Optional Flags**:
-  - `--provider`: API provider (`openai`, `groq`, `nebius`). Default: `openai`.
-
-## Example Workflow
-
-### Using OpenAI
-
-1. **Prepare JSONL**:
-   ```bash
-   python src/evaluation/openai_benchmark_batch_runner.py prepare \
-     data/qa/qa_database/qa_pairs.csv \
-     data/results/batch/openai_requests.jsonl \
-     data/results/batch/openai_mapping.csv \
-     --provider openai \
-     --model gpt-4o-mini
-   ```
-
-2. **Submit Batch**:
-   ```bash
-   python src/evaluation/openai_benchmark_batch_runner.py submit \
-     data/results/batch/openai_requests.jsonl \
-     --provider openai
-   ```
-
-3. **Check Status**:
-   ```bash
-   python src/evaluation/openai_benchmark_batch_runner.py status <batch_id> --provider openai
-   ```
-
-4. **Collect Results**:
-   ```bash
-   python src/evaluation/openai_benchmark_batch_runner.py collect \
-     <batch_id> \
-     data/results/batch/openai_output.jsonl \
-     data/results/batch/openai_mapping.csv \
-     data/results/batch/gpt-4o-mini_results.csv \
-     data/results/batch/gpt-4o-mini_raw.csv \
-     --model gpt-4o-mini \
-     --provider openai
-   ```
-
-### Using GROQ
-
-1. **Prepare JSONL**:
-   ```bash
-   python src/evaluation/openai_benchmark_batch_runner.py prepare \
-     data/qa/qa_database/qa_pairs.csv \
-     data/results/batch/groq_requests.jsonl \
-     data/results/batch/groq_mapping.csv \
-     --provider groq \
-     --model llama-3.3-70b-versatile
-   ```
-
-2. **Submit Batch**:
-   ```bash
-   python src/evaluation/openai_benchmark_batch_runner.py submit \
-     data/results/batch/groq_requests.jsonl \
-     --provider groq
-   ```
-
-3. **Check Status**:
-   ```bash
-   python src/evaluation/openai_benchmark_batch_runner.py status <batch_id> --provider groq
-   ```
-
-4. **Collect Results**:
-   ```bash
-   python src/evaluation/openai_benchmark_batch_runner.py collect \
-     <batch_id> \
-     data/results/batch/groq_output.jsonl \
-     data/results/batch/groq_mapping.csv \
-     data/results/batch/llama-3.3-70b_results.csv \
-     data/results/batch/llama-3.3-70b_raw.csv \
-     --model llama-3.3-70b-versatile \
-     --provider groq
-   ```
-
-### Using NEBIUS
-
-1. **Prepare JSONL**:
-   ```bash
-   python src/evaluation/openai_benchmark_batch_runner.py prepare \
-     data/qa/qa_database/qa_pairs.csv \
-     data/results/batch/nebius_requests.jsonl \
-     data/results/batch/nebius_mapping.csv \
-     --provider nebius \
-     --model deepseek-ai/DeepSeek-R1-0528
-   ```
-
-2. **Submit Batch**:
-   ```bash
-   python src/evaluation/openai_benchmark_batch_runner.py submit \
-     data/results/batch/nebius_requests.jsonl \
-     --provider nebius
-   ```
-
-3. **Check Status**:
-   ```bash
-   python src/evaluation/openai_benchmark_batch_runner.py status <batch_id> --provider nebius
-   ```
-
-4. **Collect Results**:
-   ```bash
-   python src/evaluation/openai_benchmark_batch_runner.py collect \
-     <batch_id> \
-     data/results/batch/nebius_output.jsonl \
-     data/results/batch/nebius_mapping.csv \
-     data/results/batch/deepseek_results.csv \
-     data/results/batch/deepseek_raw.csv \
-     --model deepseek-ai/DeepSeek-R1-0528 \
-     --provider nebius
-   ```
-
-## Notes
-
-- Ensure the QA pairs CSV follows the expected format with columns like `id`, `generated_question`, `ground_truth_value`, `entity_name`, `year`, `original_metric`, and `segment`.
-- The script generates 3 batch requests per QA pair (RAG, Knowledge, Adversarial layers).
-- Results CSV includes evaluation outputs for all three layers with columns for answers, confidence scores, and reasoning.
-- Raw outputs CSV preserves the complete JSON responses from the model for each layer.
-- **Provider Compatibility**: All three providers (OpenAI, GROQ, NEBIUS) use OpenAI-compatible batch APIs with different base URLs and API keys.
-
----
-
-## Configuration-Driven Workflow (Recommended)
-
-### Overview
-
-The recommended approach uses **YAML configuration files** to define experiments, separating configuration from execution and analysis.
-
-**Benefits:**
-- ✅ Reproducible experiments with version-controlled configs
-- ✅ No hardcoded parameters in notebooks
-- ✅ Environment variables for API keys (secure)
-- ✅ Clean separation: Config → Execute → Analyze
-
-### Directory Structure
-
-```
-configs/
-  experiments/           # Experiment configurations (YAML)
-    gpt4o_chunk7_run.yaml
-    deepseek_full_run.yaml
-scripts/
-  run_batch.sh          # Shell script for execution
-notebooks/
-  01_results_analysis.ipynb  # Analysis-only notebook
-```
-
-### Creating a Configuration
-
-Create a YAML file in `configs/experiments/`:
-
-```yaml
-# configs/experiments/my_experiment.yaml
-experiment:
-  name: "my_experiment"
-  description: "Description of this experiment"
-
-input:
-  qa_pairs_csv: "/workspace/data/qa/llm_batch/chunks/qa_pairs_chunk_1.csv"
-
-output:
-  base_dir: "/workspace/data/results/llm_batch/gpt-4o/chunk_1"
-  requests_jsonl: "/workspace/data/results/llm_batch/gpt-4o/chunk_1/requests.jsonl"
-  mapping_csv: "/workspace/data/results/llm_batch/gpt-4o/chunk_1/mapping.csv"
-  output_jsonl: "/workspace/data/results/llm_batch/gpt-4o/chunk_1/output.jsonl"
-  results_csv: "/workspace/data/results/llm_batch/gpt-4o/chunk_1_results.csv"
-  raw_csv: "/workspace/data/results/llm_batch/gpt-4o/chunk_1_raw.csv"
-
-model:
-  provider: "openai"  # Options: openai, groq, nebius
-  model_name: "gpt-4o"
-  temperature: 0.0
-  max_tokens: 200
-
-batch:
-  completion_window: "24h"
-```
-
-### Running Experiments
-
-#### 1. Using the Shell Script (Easiest)
-
-```bash
-# Run full workflow (prepare + submit)
-bash scripts/run_batch.sh configs/experiments/gpt4o_chunk7_run.yaml
-
-# Run specific command
-bash scripts/run_batch.sh configs/experiments/gpt4o_chunk7_run.yaml prepare
-bash scripts/run_batch.sh configs/experiments/gpt4o_chunk7_run.yaml submit
-```
-
-#### 2. Using Python Module Directly
-
-```bash
-# Full workflow (prepare + submit)
-python -m src.evaluation.benchmark_runner_batch --config configs/experiments/gpt4o_chunk7_run.yaml full
-
-# Individual commands
-python -m src.evaluation.benchmark_runner_batch --config configs/experiments/gpt4o_chunk7_run.yaml prepare
-python -m src.evaluation.benchmark_runner_batch --config configs/experiments/gpt4o_chunk7_run.yaml submit
-
-# Check status (batch_id required)
-python -m src.evaluation.benchmark_runner_batch status batch_abc123 --provider openai
-
-# Collect results (batch_id required, config used for paths)
-python -m src.evaluation.benchmark_runner_batch --config configs/experiments/gpt4o_chunk7_run.yaml collect batch_abc123
-```
-
-### API Key Setup
-
-**Recommended: Environment Variables**
-
-```bash
-export OPENAI_API_KEY="sk-..."
-export GROQ_API_KEY="gsk_..."
-export NEBIUS_API_KEY="..."
-```
-
-**Fallback: File-based (Legacy)**
-
-API keys can also be stored in `API_KEY/` directory (already in `.gitignore`):
-- `API_KEY/OPENAI_API_KEY`
-- `API_KEY/GROQ_API_KEY`
-- `API_KEY/NEBIUS_API_KEY`
-
-Environment variables take precedence over file-based keys.
-
-### Analyzing Results
-
-After collecting results, open the analysis notebook:
-
-```bash
-jupyter notebook notebooks/01_results_analysis.ipynb
-```
-
-This notebook:
-- Loads results CSV files
-- Computes accuracy and confidence metrics per layer (RAG, Knowledge, Adversarial)
-- Generates visualizations comparing models
-- Performs error analysis
-- Exports summary reports
-
-**Important:** The analysis notebook does NOT run batch jobs. It only loads and analyzes existing results.
-
----
-
-## Serial Benchmark Runner (Synchronous Execution)
-
-For smaller datasets or when you need immediate results without waiting for batch API processing, use the serial benchmark runner.
-
-### Features
-
-- **Synchronous execution** with async concurrency control
-- **Automatic checkpointing** - saves progress every N rows
-- **Resume capability** - continues from last checkpoint on restart
-- **Real-time feedback** - see results as they're generated
-- **Multiple models** - test several models in one run
-
-### Configuration
-
-Create a YAML config in `configs/serial/`:
-
-```yaml
-# configs/serial/groq_gpt-oss-120b.yaml
-experiment:
-  name: "groq_gpt-oss-120b_serial"
-  description: "Serial benchmark evaluation"
-
-input:
-  qa_pairs_csv: "/workspace/data/qa/llm_batch/qa_pairs.csv"
-
-output:
-  output_dir: "/workspace/data/results/serial/groq_gpt-oss-120b"
-
-models:
-  - "openai/gpt-oss-120b"
-
-execution:
-  strategy: "model_by_model"  # or "row_by_row"
-  batch_size: 25              # checkpoint every N rows
-  max_concurrency: 5          # async requests limit
-```
-
-### Usage
-
-```bash
-# Run serial benchmark
-bash scripts/run_serial.sh configs/serial/groq_gpt-oss-120b.yaml
-
-# Run with different config
-bash scripts/run_serial.sh configs/serial/llama-3.3-70b.yaml
-```
-
-### Execution Strategies
-
-**model_by_model** (default):
-- Processes all rows for one model before moving to the next
-- Best for comparing multiple models
-- Easier to resume if interrupted
-
-**row_by_row**:
-- Processes one row across all models before moving to next row
-- Best for quick sampling
-- More balanced progress across models
-
-### Output
-
-Results are saved to the specified output directory:
-```
-output_dir/
-├── model_name_results.csv   # Parsed results with correctness flags
-└── model_name_raw.csv        # Raw model outputs
-```
-
-The script automatically resumes from checkpoints if interrupted.
-
-### Comparison: Batch vs Serial
-
-| Feature | Batch API | Serial Execution |
-|---------|-----------|------------------|
-| **Speed** | Fast (parallel processing) | Slower (sequential with concurrency) |
-| **Cost** | 50% cheaper (OpenAI) | Standard pricing |
-| **Latency** | Hours to complete | Real-time feedback |
-| **Dataset Size** | Large (1000s of rows) | Small-Medium (100s of rows) |
-| **Checkpointing** | Manual (chunking) | Automatic (every N rows) |
-| **Resume** | Manual batch tracking | Automatic from last save |
-| **Best For** | Production runs | Development/debugging |
-
-### Legacy CLI Mode (Backwards Compatible)
-
-The script still supports the original CLI interface without config files:
-
-```bash
-# Prepare
-python -m src.evaluation.benchmark_runner_batch prepare \
-  input.csv output.jsonl mapping.csv \
-  --provider openai --model gpt-4o --temperature 0.0 --max_tokens 200
-
-# Submit
-python -m src.evaluation.benchmark_runner_batch submit \
-  output.jsonl --provider openai --window 24h
-
-# Status
-python -m src.evaluation.benchmark_runner_batch status batch_id --provider openai
-
-# Collect
-python -m src.evaluation.benchmark_runner_batch collect \
-  batch_id output.jsonl mapping.csv results.csv raw.csv \
-  --model gpt-4o --provider openai
-```
-
----
+- **Arelle Project**: Open-source XBRL parsing library
+- **Financial Conduct Authority**: UK regulatory filing data
+- **OpenAI/Groq/Nebius**: LLM API providers
