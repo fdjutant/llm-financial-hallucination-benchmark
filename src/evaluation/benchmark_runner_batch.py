@@ -3,10 +3,22 @@ import json
 import os
 import yaml
 from pathlib import Path
-from typing import List, Dict, Any, Tuple, Optional
+from typing import List, Dict, Any, Tuple, Optional, Union, TYPE_CHECKING
 
 import pandas as pd
 from openai import OpenAI
+
+try:
+    from together import Together
+    TOGETHER_AVAILABLE = True
+except ImportError:
+    TOGETHER_AVAILABLE = False
+    Together = None
+
+if TYPE_CHECKING:
+    from together import Together as TogetherType
+else:
+    TogetherType = object
 
 from .llm_interface import generate_document, modify_value
 
@@ -14,14 +26,16 @@ from .llm_interface import generate_document, modify_value
 API_KEY_DIR = Path(__file__).resolve().parents[2] / "API_KEY"
 
 
-def get_client_and_provider(provider: str) -> Tuple[OpenAI, str]:
-    """Get the appropriate OpenAI client and provider name based on the provider string.
+def get_client_and_provider(provider: str) -> Tuple[Union[OpenAI, TogetherType], str]:
+    """Get the appropriate client and provider name based on the provider string.
     
     Args:
-        provider: One of 'openai', 'groq', 'nebius'
+        provider: One of 'openai', 'groq', 'nebius', 'togetherai'
         
     Returns:
         Tuple of (client, provider_name)
+        For togetherai batch operations, returns Together client.
+        For other providers, returns OpenAI-compatible client.
     """
     if provider == "openai":
         api_key = os.getenv("OPENAI_API_KEY", "")
@@ -61,9 +75,30 @@ def get_client_and_provider(provider: str) -> Tuple[OpenAI, str]:
             api_key=api_key,
             base_url="https://api.tokenfactory.nebius.com/v1/"
         ), "nebius"
+
+    elif provider == "togetherai":
+        api_key = os.getenv("TOGETHERAI_API_KEY", "")
+        if not api_key:
+            # Fallback to file-based API key
+            api_key_path = API_KEY_DIR / "TOGETHERAI_API_KEY"
+            if api_key_path.exists():
+                api_key = api_key_path.read_text().strip()
+        if not api_key:
+            raise ValueError("TOGETHERAI_API_KEY not found in environment or API_KEY directory")
+        
+        # For batch operations, use official Together client if available
+        # For serial operations, OpenAI-compatible client works fine
+        if TOGETHER_AVAILABLE:
+            return Together(api_key=api_key), "togetherai"
+        else:
+            # Fallback to OpenAI-compatible client
+            return OpenAI(
+                api_key=api_key,
+                base_url="https://api.together.xyz/v1/"
+            ), "togetherai"
     
     else:
-        raise ValueError(f"Unknown provider: {provider}. Supported: openai, groq, nebius")
+        raise ValueError(f"Unknown provider: {provider}. Supported: openai, groq, nebius, togetherai")
 
 
 def _build_rag_prompt(document: str, question: str) -> str:
@@ -162,8 +197,10 @@ def prepare_jsonl(
             }
             
             # Add response_format only for OpenAI (GROQ/NEBIUS may not support it in batch mode)
-            if provider == "openai":
-                body["response_format"] = {"type": "json_object"}
+            # if provider == "openai":
+            #     body["response_format"] = {"type": "json_object"}
+
+            body["response_format"] = {"type": "json_object"}
 
             one = {
                 "custom_id": custom_id,
@@ -205,23 +242,46 @@ def submit_batch(input_jsonl_path: str, provider: str = "openai", completion_win
     """Uploads the JSONL and creates a Batch job. Returns the batch id."""
     client, _ = get_client_and_provider(provider)
     
-    with open(input_jsonl_path, "rb") as f:
-        uploaded = client.files.create(file=f, purpose="batch")
+    if provider == "togetherai" and isinstance(client, Together):
+        # Use Together AI's batch API
+        uploaded = client.files.upload(
+            file=input_jsonl_path,
+            purpose="batch-api",
+            check=False
+        )
+        
+        batch = client.batches.create_batch(
+            file_id=uploaded.id,
+            endpoint="/v1/chat/completions"
+        )
+        
+        print(f"Submitted batch: id={batch.id}, status={getattr(batch, 'status', 'unknown')}")
+        return batch.id
+    else:
+        # Use OpenAI-compatible batch API
+        with open(input_jsonl_path, "rb") as f:
+            uploaded = client.files.create(file=f, purpose="batch")
 
-    batch = client.batches.create(
-        input_file_id=uploaded.id,
-        endpoint="/v1/chat/completions",
-        completion_window=completion_window,
-    )
+        batch = client.batches.create(
+            input_file_id=uploaded.id,
+            endpoint="/v1/chat/completions",
+            completion_window=completion_window,
+        )
 
-    print(f"Submitted batch: id={batch.id}, status={getattr(batch, 'status', 'unknown')}")
-    return batch.id
+        print(f"Submitted batch: id={batch.id}, status={getattr(batch, 'status', 'unknown')}")
+        return batch.id
 
 
 def check_status(batch_id: str, provider: str = "openai") -> Dict[str, Any]:
     """Retrieves and prints batch status. Returns the batch dict."""
     client, _ = get_client_and_provider(provider)
-    batch = client.batches.retrieve(batch_id)
+    
+    if provider == "togetherai" and isinstance(client, Together):
+        # Use Together AI's batch API
+        batch = client.batches.get_batch(batch_id)
+    else:
+        # Use OpenAI-compatible batch API
+        batch = client.batches.retrieve(batch_id)
 
     status = getattr(batch, "status", None)
     request_counts = getattr(batch, "request_counts", None)
@@ -264,28 +324,48 @@ def collect_results(
     Returns number of parsed rows.
     """
     client, _ = get_client_and_provider(provider)
-    batch = client.batches.retrieve(batch_id)
-    output_file_id = getattr(batch, "output_file_id", None)
-    if not output_file_id:
-        raise RuntimeError("Batch output not available yet. Status: " + str(getattr(batch, "status", None)))
+    
+    if provider == "togetherai" and isinstance(client, Together):
+        # Use Together AI's batch API
+        batch = client.batches.get_batch(batch_id)
+        output_file_id = getattr(batch, "output_file_id", None)
+        if not output_file_id:
+            raise RuntimeError("Batch output not available yet. Status: " + str(getattr(batch, "status", None)))
+        
+        # Download output content to file
+        client.files.retrieve_content(
+            id=output_file_id,
+            output=output_jsonl_path
+        )
+        
+        # Read the downloaded file
+        with open(output_jsonl_path, 'r', encoding='utf-8') as f:
+            data_text = f.read()
+    else:
+        # Use OpenAI-compatible batch API
+        batch = client.batches.retrieve(batch_id)
+        output_file_id = getattr(batch, "output_file_id", None)
+        if not output_file_id:
+            raise RuntimeError("Batch output not available yet. Status: " + str(getattr(batch, "status", None)))
 
-    # Download output content
-    content_stream = client.files.content(output_file_id)
-    try:
-        data_bytes = content_stream.read()
-    except AttributeError:
-        data_text = getattr(content_stream, "text", None)
-        if data_text is None:
-            data_bytes = getattr(content_stream, "content", b"")
-        else:
-            data_bytes = data_text.encode("utf-8")
+        # Download output content
+        content_stream = client.files.content(output_file_id)
+        try:
+            data_bytes = content_stream.read()
+        except AttributeError:
+            data_text = getattr(content_stream, "text", None)
+            if data_text is None:
+                data_bytes = getattr(content_stream, "content", b"")
+            else:
+                data_bytes = data_text.encode("utf-8")
 
-    data_text = data_bytes.decode("utf-8")
+        data_text = data_bytes.decode("utf-8")
 
-    # Save raw output JSONL
-    Path(output_jsonl_path).parent.mkdir(parents=True, exist_ok=True)
-    with open(output_jsonl_path, "w", encoding="utf-8") as f:
-        f.write(data_text)
+    # Save raw output JSONL (only if not already saved by Together AI)
+    if not (provider == "togetherai" and isinstance(client, Together)):
+        Path(output_jsonl_path).parent.mkdir(parents=True, exist_ok=True)
+        with open(output_jsonl_path, "w", encoding="utf-8") as f:
+            f.write(data_text)
     print(f"Saved batch output JSONL to {output_jsonl_path}")
 
     # Load mapping
@@ -401,7 +481,7 @@ def collect_results(
 
 def _add_common_args(parser: argparse.ArgumentParser) -> None:
     parser.add_argument("--model", default="gpt-4o-mini")
-    parser.add_argument("--provider", default="openai", choices=["openai", "groq", "nebius"],
+    parser.add_argument("--provider", default="openai", choices=["openai", "groq", "nebius", "togetherai"],
                         help="API provider to use")
     parser.add_argument("--temperature", type=float, default=0.0)
     parser.add_argument("--max_tokens", type=int, default=200)
@@ -514,7 +594,7 @@ def run_from_config(config_path: str, command: str) -> None:
 
 def _add_common_args(parser: argparse.ArgumentParser) -> None:
     parser.add_argument("--model", default="gpt-4o-mini")
-    parser.add_argument("--provider", default="openai", choices=["openai", "groq", "nebius"],
+    parser.add_argument("--provider", default="openai", choices=["openai", "groq", "nebius", "togetherai"],
                         help="API provider to use")
     parser.add_argument("--temperature", type=float, default=0.0)
     parser.add_argument("--max_tokens", type=int, default=200)
@@ -538,14 +618,14 @@ def main():
     # submit
     p_submit = sub.add_parser("submit", help="Submit a batch job from JSONL")
     p_submit.add_argument("input_jsonl", nargs="?")
-    p_submit.add_argument("--provider", default="openai", choices=["openai", "groq", "nebius"],
+    p_submit.add_argument("--provider", default="openai", choices=["openai", "groq", "nebius", "togetherai"],
                           help="API provider to use")
     p_submit.add_argument("--window", default="24h", choices=["24h"])
 
     # status
     p_status = sub.add_parser("status", help="Check a batch job status")
     p_status.add_argument("batch_id")
-    p_status.add_argument("--provider", default="openai", choices=["openai", "groq", "nebius"],
+    p_status.add_argument("--provider", default="openai", choices=["openai", "groq", "nebius", "togetherai"],
                           help="API provider to use")
 
     # collect
@@ -556,7 +636,7 @@ def main():
     p_collect.add_argument("results_csv", nargs="?")
     p_collect.add_argument("raw_csv", nargs="?")
     p_collect.add_argument("--model", help="Model name used for the batch")
-    p_collect.add_argument("--provider", default="openai", choices=["openai", "groq", "nebius"],
+    p_collect.add_argument("--provider", default="openai", choices=["openai", "groq", "nebius", "togetherai"],
                            help="API provider to use")
     
     # full - runs prepare + submit workflow

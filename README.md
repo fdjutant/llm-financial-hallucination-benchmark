@@ -48,9 +48,15 @@ Based on evaluation of **1,562 QA pairs** across UK financials:
 
 | Model | RAG Accuracy (%) | RAG Hallucination (%) | Notes |
 |-------|---------|-----------------|-------|
-| gpt-4o | 91.7 | 8.3 | Occasional drift from context; tends to overwrite facts with internal knowledge |
-| gpt-oss-120b | 91.3 | 8.7 | High error rate; frequently hallucinates despite correct context |
-| llama-3.1-8b-instant | 99.5 | 0.5 | Exceptional faithfulness to provided financial documents |
+| Google/gemma-3n-E4B-it | 99.7 | 0.3 | Achieves near-perfect accuracy with minimal hallucination, though occasional drift from context occurs |
+| gpt-4o | 91.7 | 8.3 | Maintains good accuracy but shows notable hallucination and occasional drift from context |
+| gpt-oss-120b | 91.3 | 8.7 | Accuracy is moderate, but hallucination rate is high, even when context is correct |
+| gpt-oss-20b | 88.9 | 11.1 | 	Lower accuracy and high hallucination, often generating incorrect facts despite correct context |
+| llama-3.3-70b-versatile  | 97.8 | 2.2 | High accuracy with rare hallucination, but sometimes overwrites facts with internal knowledge |
+| llama-3.1-8b-instant | 99.5 | 0.5 | Exceptional faithfulness to provided context, with almost no hallucination |
+| Mistral-7B-Instruct-v0.3 | 96.9 | 3.1 | Strong accuracy but still prone to frequent hallucination despite correct context |
+| NVIDIA-Nemotron-Nano-9B-v2 | 69.0 | 31.0 | Lowest accuracy among models, but demonstrates notable faithfulness to financial documents. |
+| Qwen2.5-7B-Instruct-Turbo | 98.5 | 1.5 | Very high accuracy with minimal hallucination, though occasional drift from context occurs |
 
 **Key Findings:**
 1. RAG performance varies significantly (90-99%)

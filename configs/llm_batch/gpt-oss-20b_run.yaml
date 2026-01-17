@@ -1,0 +1,36 @@
+# Configuration for gpt-oss-20b benchmark run on sample QA pairs
+
+experiment:
+  name: "openai/gpt-oss-20b_run"
+  description: "Benchmark gpt-oss-20b on full QA pairs"
+
+input:
+  # Path to the QA pairs file or chunk
+  qa_pairs_csv: "/workspace/data/qa/llm_batch/qa_pairs.csv"
+
+output:
+  # Base directory for results
+  base_dir: "/workspace/data/results/llm_batch/gpt-oss-20b"
+  
+  # Specific output files
+  requests_jsonl: "/workspace/data/results/llm_batch/gpt-oss-20b/requests.jsonl"
+  mapping_csv: "/workspace/data/results/llm_batch/gpt-oss-20b/mapping.csv"
+  output_jsonl: "/workspace/data/results/llm_batch/gpt-oss-20b/output.jsonl"
+  results_csv: "/workspace/data/results/llm_batch/gpt-oss-20b/gpt-oss-20b_results.csv"
+  raw_csv: "/workspace/data/results/llm_batch/gpt-oss-20b/gpt-oss-20b_raw.csv"
+
+model:
+  # Model configuration
+  provider: "togetherai"  # Options: openai, groq, nebius, togetherai
+  model_name: "openai/gpt-oss-20b"
+  temperature: 0.0
+  max_tokens: 200
+
+batch:
+  # Batch API settings
+  completion_window: "24h"
+  
+# Note: API keys should be set as environment variables:
+# - OPENAI_API_KEY (for provider: openai)
+# - GROQ_API_KEY (for provider: groq)
+# - NEBIUS_API_KEY (for provider: nebius)

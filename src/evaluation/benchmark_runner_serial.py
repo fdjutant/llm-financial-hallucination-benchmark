@@ -13,6 +13,13 @@ from .llm_interface import (
 )
 from .benchmark_runner_batch import get_client_and_provider
 
+try:
+    from together import Together
+    TOGETHER_AVAILABLE = True
+except ImportError:
+    TOGETHER_AVAILABLE = False
+    Together = None
+
 class BenchmarkRunner:
     def __init__(self, provider, models_to_test, strategy="model_by_model", batch_size=25, max_concurrency=None, temperature=None, max_tokens=200):
         """
@@ -264,7 +271,13 @@ class BenchmarkRunner:
                 if self.provider == "openai" and model != "gpt-4o-mini-search-preview":
                     api_params["response_format"] = {"type": "json_object"}
                 
-                response = self.client.chat.completions.create(**api_params)
+                # Handle Together AI client - uses OpenAI-compatible API for serial calls
+                if self.provider == "togetherai" and isinstance(self.client, Together):
+                    # Together's client also supports OpenAI-compatible chat.completions
+                    response = self.client.chat.completions.create(**api_params)
+                else:
+                    response = self.client.chat.completions.create(**api_params)
+                    
                 content = response.choices[0].message.content.strip()
                 await asyncio.sleep(delay)  # Add delay to throttle requests
                 return content

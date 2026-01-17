@@ -14,11 +14,12 @@ def compute_metrics(df):
         """
         A hallucinated answer is one that is incorrect, non-empty, and does not contain
         placeholders like 'unknown' or 'n/a'.
+        An empty answer is not treated as hallucinated.
         """
-        answer = str(answer)
+        answer = str(answer).strip()
         return (
             not correct and
-            answer.strip() != '' and
+            answer != '' and
             'unknown' not in answer.lower() and
             'n/a' not in answer.lower()
         )
@@ -50,20 +51,18 @@ def compute_metrics(df):
     
     return df
 
-def analyze_results(folders=['./data/results/debug/']):
+def analyze_results(base_folder='./data/results/llm_batch/'):
     """
     Print research-grade analysis.
+    Looks for CSV files inside subfolders of the specified base folder.
     Accepts:
-      - folders: path or list of paths to folders containing CSVs (default: ['./data/results/debug/'])
+      - base_folder: path to the base folder containing subfolders with CSVs (default: './data/results/llm_batch/')
     """
-    if isinstance(folders, str):
-        folders = [folders]
+    if not os.path.isdir(base_folder):
+        raise ValueError(f"Invalid base folder path: {base_folder}")
 
-    csv_files = []
-    for folder in folders:
-        if not os.path.isdir(folder):
-            raise ValueError(f"Invalid folder path: {folder}")
-        csv_files.extend(glob.glob(os.path.join(folder, '*_results.csv')))
+    # Look for CSV files in subfolders of the base folder
+    csv_files = glob.glob(os.path.join(base_folder, '*', '*_results.csv'))
 
     if not csv_files:
         print("No CSV files found for analysis.")
@@ -107,7 +106,7 @@ def analyze_results(folders=['./data/results/debug/']):
     # Print summary as aligned ASCII table
     print("\n" + "-"*90)
     header = (
-        f"{'Model':<28} {'N':>6} "
+        f"{'Model':<38} {'N':>6} "
         f"{'RAG Acc (%)':>12} {'HallRAG (%)':>12} "
         f"{'Knowl Acc (%)':>14} {'HallKnowl (%)':>14} "
         f"{'Adv Acc (%)':>12}"
@@ -116,7 +115,7 @@ def analyze_results(folders=['./data/results/debug/']):
     print("-"*90)
     for _, row in summary_df.iterrows():
         print(
-            f"{row['model']:<28} {row['n']:6d} "
+            f"{row['model']:<38} {row['n']:6d} "
             f"{row['rag_acc']:12.1f} {row['halluc_rate_rag']:12.1f} "
             f"{row['knowledge_acc']:14.1f} {row['halluc_rate_knowledge']:14.1f} "
             f"{row['adversarial_acc']:12.1f}"
@@ -124,3 +123,28 @@ def analyze_results(folders=['./data/results/debug/']):
     print("-"*90)
 
     return summary_df
+
+def fixed_missing_columns_in_mistral_results(ans_csv_path, qa_csv_path):
+
+    # Load the CSV files
+    ans_df = pd.read_csv(ans_csv_path)
+    qa_df = pd.read_csv(qa_csv_path)
+    
+    # Replace columns from ans_df with corresponding columns from qa_df
+    merged_df = ans_df.drop(columns=['question', 'entity', 'year',
+                                     'metric', 'segment', 'ground_truth']).merge(
+        qa_df[['id', 'generated_question', 'entity_name', 'year',
+               'original_metric', 'segment', 'ground_truth_value']], 
+        on='id', 
+        how='left'
+    )
+    
+    # Rename columns to match original naming
+    merged_df = merged_df.rename(columns={
+        'generated_question': 'question',
+        'entity_name': 'entity',
+        'original_metric': 'metric',
+        'ground_truth_value': 'ground_truth'
+    })
+    
+    return merged_df

@@ -18,6 +18,8 @@ nebius_api_key = Path(Path(__file__).resolve().parents[2]/
                    "API_KEY"/"NEBIUS_API_KEY").read_text().strip()
 claude_api_key = Path(Path(__file__).resolve().parents[2]/
                    "API_KEY"/"CLAUDE_API_KEY").read_text().strip()   
+togetherai_api_key = Path(Path(__file__).resolve().parents[2]/
+                   "API_KEY"/"TOGETHERAI_API_KEY").read_text().strip()   
 
 class LLMOutput:
     def __init__(self, answer, confidence, reasoning, full_answer, provider):
@@ -61,6 +63,16 @@ def get_client_for_model(model_name):
             api_key=google_api_key,
             base_url="https://generativelanguage.googleapis.com/v1beta/openai"
         ), "gemini"
+    
+    elif model_name.startswith("togetherai/"):
+        # TogetherAI models
+        return OpenAI(
+            api_key=togetherai_api_key, 
+            base_url="https://api.together.xyz/v1"
+        ), "togetherai"
+    
+    else:
+        raise ValueError(f"Unknown model provider for model: {model_name}")
         
 def call_llm_with_prompt(model, prompt):
     client, provider = get_client_for_model(model)
@@ -72,7 +84,7 @@ def call_llm_with_prompt(model, prompt):
         ],
         temperature=0,
         max_tokens=200,
-        response_format={"type": "json_object"} if provider == "openai" else None
+        response_format={"type": "json_object"} #if provider == "openai" else None
     )
     content = response.choices[0].message.content
     llm_answer = content.strip()
@@ -348,7 +360,7 @@ def generate_response(client, provider, model, prompt):
         ],
         temperature=0,
         max_tokens=200,
-        # response_format={"type": "json_object"} if provider == "openai" else None
+        response_format={"type": "json_object"}
     )
 
 def generate_document(segment, entity, year, metric, ground_truth_value):

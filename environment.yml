@@ -26,3 +26,6 @@ dependencies:
       - black
       - isort
       - jupyterlab-code-formatter
+  - pip:
+      - --pre
+      - together
