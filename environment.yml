@@ -1,4 +1,4 @@
-name: mlenv
+name: llmbenchmark
 channels:
   - conda-forge
   - pytorch

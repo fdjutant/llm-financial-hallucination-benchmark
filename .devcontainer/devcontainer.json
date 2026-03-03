@@ -1,5 +1,5 @@
 {
-  "name": "Medium ML Stack (Conda)",
+  "name": "LLM benchmark stack (Conda)",
   "build": {
     "dockerfile": "Dockerfile",
     "context": ".."
@@ -11,7 +11,11 @@
   "customizations": {
     "vscode": {
       "settings": {
-        "python.defaultInterpreterPath": "/opt/conda/envs/mlenv/bin/python",
+        "python.defaultInterpreterPath": "/opt/conda/envs/llmbenchmark/bin/python",
+        "terminal.integrated.env.linux": {
+          "CONDA_DEFAULT_ENV": "llmbenchmark",
+          "PATH": "/opt/conda/envs/llmbenchmark/bin:/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+        },
         "python.analysis.extraPaths": [
           "/workspace"
         ]

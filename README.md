@@ -105,7 +105,7 @@ If you prefer running locally without Docker:
     
     # Conda (Recommended)
     conda env create -f environment.yml
-    conda activate mlenv
+    conda activate llmbenchmark
     ```
 3.  **Verify**:
     ```bash
