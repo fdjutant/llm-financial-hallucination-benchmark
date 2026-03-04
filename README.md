@@ -46,24 +46,24 @@ Results & Analysis
 
 Based on evaluation of **1,562 QA pairs** across UK financials:
 
-| Model | RAG Accuracy (%) | RAG Hallucination (%) | Notes |
-|-------|---------|-----------------|-------|
-| Google/gemma-3n-E4B-it | 99.7 | 0.3 | Achieves near-perfect accuracy with minimal hallucination, though occasional drift from context occurs |
-| gpt-4o | 91.7 | 8.3 | Maintains good accuracy but shows notable hallucination and occasional drift from context |
-| gpt-oss-120b | 91.3 | 8.7 | Accuracy is moderate, but hallucination rate is high, even when context is correct |
-| gpt-oss-20b | 88.9 | 11.1 | 	Lower accuracy and high hallucination, often generating incorrect facts despite correct context |
-| llama-3.3-70b-versatile  | 97.8 | 2.2 | High accuracy with rare hallucination, but sometimes overwrites facts with internal knowledge |
-| llama-3.1-8b-instant | 99.5 | 0.5 | Exceptional faithfulness to provided context, with almost no hallucination |
-| Mistral-7B-Instruct-v0.3 | 96.9 | 3.1 | Strong accuracy but still prone to frequent hallucination despite correct context |
-| NVIDIA-Nemotron-Nano-9B-v2 | 69.0 | 31.0 | Lowest accuracy among models, but demonstrates notable faithfulness to financial documents. |
-| Qwen2.5-7B-Instruct-Turbo | 98.5 | 1.5 | Very high accuracy with minimal hallucination, though occasional drift from context occurs |
+| Model                                |   N   | Correct | Incorrect |
+|--------------------------------------|-------|---------|-----------|
+| google/gemma-3n-E4B-it               | 1562  |  1558   |     4     |
+| gpt-4o                               | 1562  |  1432   |   130     |
+| openai/gpt-oss-120b                  | 1562  |  1426   |   136     |
+| openai/gpt-oss-20b                   | 1562  |  1388   |   174     |
+| llama-3.1-8b-instant                 | 1562  |  1554   |     8     |
+| llama-3.3-70b-versatile              | 1562  |  1527   |    35     |
+| mistralai/Mistral-7B-Instruct-v0.3   | 1562  |  1514   |    48     |
+| nvidia/NVIDIA-Nemotron-Nano-9B-v2    | 1403  |   968   |   435     |
+| Qwen/Qwen2.5-7B-Instruct-Turbo       | 1562  |  1538   |    24     |
 
 **Key Findings:**
-1. RAG performance varies significantly (90-99%)
-2. All models struggle with parametric knowledge (0-0.3% accuracy without documents)
-3. Adversarial robustness is uniformly low (0-5%)
+1. RAG accuracy varies significantly
+2. Models often introduce commas (,) into numeric values, such as 876,000,000 instead of 876000000. This can cause issues if the output is used directly in automated processes
+3. In some incorrect cases, models provide additional context or formatting beyond the numeric value, such as "Negative 10,000,000.0" instead of -10000000 as specified in the financial statement. 
 
-*See llm_benchmark_analysis.ipynb for detailed analysis.*
+*See detailed RAG result for each model in `./data/rag_analysis/*.csv`*
 
 ## Features & Tech Stack
 | Module      | Key Capabilities                                                                                       | Tech Stack                           |
