@@ -51,12 +51,26 @@ def compute_metrics(df):
     
     return df
 
-def analyze_results(base_folder='./data/results/llm_batch/'):
+def analyze_results(base_folder='/workspace/data/results/llm_batch/',
+                    rag_output_folder='/workspace/data/rag_analysis/'):
     """
-    Print research-grade analysis.
+    Print research-grade analysis and export per-row RAG correctness CSVs per model.
     Looks for CSV files inside subfolders of the specified base folder.
+
     Accepts:
-      - base_folder: path to the base folder containing subfolders with CSVs (default: './data/results/llm_batch/')
+      - base_folder: path to the base folder containing subfolders with CSVs
+                     (default: '/workspace/data/results/llm_batch/')
+      - rag_output_folder: path where per-model RAG analysis CSVs are written
+                           (default: '/workspace/data/rag_analysis/')
+
+    Outputs:
+      - Prints an ASCII summary table to stdout.
+      - Writes one CSV per model to `rag_output_folder/<model_name>.csv`.
+        Each CSV contains every original row enriched with the computed metric
+        columns (rag_correct, knowledge_correct, hallucinated_rag,
+        hallucinated_knowledge, adversarial_correct) plus a human-readable
+        `rag_outcome` column ("correct" / "incorrect").
+      - Returns the aggregate summary DataFrame.
     """
     if not os.path.isdir(base_folder):
         raise ValueError(f"Invalid base folder path: {base_folder}")
@@ -72,57 +86,108 @@ def analyze_results(base_folder='./data/results/llm_batch/'):
     df = pd.concat(dfs, ignore_index=True)
     df = compute_metrics(df)
 
-    print("HALLUCINATION BENCHMARK RESULTS")
-    
-    summary_rows = []
+    # ------------------------------------------------------------------ #
+    # Export per-model RAG analysis CSVs                                  #
+    # ------------------------------------------------------------------ #
+    os.makedirs(rag_output_folder, exist_ok=True)
+
+    # Columns to include in the output CSV
+    output_columns = [
+        'id', 'model', 'question', 'entity', 'year', 'metric', 'segment',
+        'ground_truth', 'answer_rag', 'confidence_rag', 'reasoning_rag', 'rag_outcome'
+    ]
+
+    for model in df['model'].unique():
+        model_data = df[df['model'] == model].copy()
+
+        # Human-readable RAG outcome column
+        model_data['rag_outcome'] = model_data['rag_correct'].map(
+            {True: 'correct', False: 'incorrect'}
+        )
+
+        # Filter to include only the specified columns
+        model_data = model_data[output_columns]
+
+        # Sanitise model name for use as a filename
+        safe_name = model.replace('/', '_').replace(' ', '_')
+        out_path = os.path.join(rag_output_folder, f"{safe_name}.csv")
+        model_data.to_csv(out_path, index=False)
+
+    print(f"RAG analysis saved for all models in folder: {rag_output_folder}")
+        
+    # ------------------------------------------------------------------ #
+    # Aggregate table with counts of correct and incorrect               #
+    # ------------------------------------------------------------------ #
+    aggregate_counts = []
     for model in df['model'].unique():
         model_data = df[df['model'] == model]
-        rag_acc = model_data['rag_correct'].mean() * 100
-        knowledge_acc = model_data['knowledge_correct'].mean() * 100
-        halluc_rate_rag = model_data['hallucinated_rag'].mean() * 100
-        halluc_rate_knowledge = model_data['hallucinated_knowledge'].mean() * 100
-        adversarial_acc = model_data['adversarial_correct'].mean() * 100
-
-        # Hallucination Index for RAG: Measures the gap between hallucination rate and the complement of accuracy
-        halluc_index_rag = halluc_rate_rag - (100 - rag_acc)
-
-        # Hallucination Index for Knowledge: Measures the gap between hallucination rate and the complement of accuracy
-        halluc_index_knowledge = halluc_rate_knowledge - (100 - knowledge_acc)
-
-        summary_rows.append({
+        correct_count = model_data['rag_correct'].sum()
+        incorrect_count = len(model_data) - correct_count
+        aggregate_counts.append({
             'model': model,
-            'n': len(model_data),
-            'rag_acc': rag_acc,
-            'knowledge_acc': knowledge_acc,
-            'halluc_rate_rag': halluc_rate_rag,
-            'halluc_rate_knowledge': halluc_rate_knowledge,
-            'adversarial_acc': adversarial_acc,
-            'halluc_index_rag': halluc_index_rag,
-            'halluc_index_knowledge': halluc_index_knowledge
+            'N': len(model_data),
+            'correct': correct_count,
+            'incorrect': incorrect_count
         })
 
-    summary_df = pd.DataFrame(summary_rows)
+    aggregate_df = pd.DataFrame(aggregate_counts)
+    print("\nAGGREGATE COUNTS")
+    print(aggregate_df.to_string(index=False))
+
+    # ------------------------------------------------------------------ #
+    # Hallucination Benchmark summary table                                             #
+    # ------------------------------------------------------------------ #
+    # print("\nHALLUCINATION BENCHMARK RESULTS")
+
+    # summary_rows = []
+    # for model in df['model'].unique():
+    #     model_data = df[df['model'] == model]
+    #     rag_acc = model_data['rag_correct'].mean() * 100
+    #     knowledge_acc = model_data['knowledge_correct'].mean() * 100
+    #     halluc_rate_rag = model_data['hallucinated_rag'].mean() * 100
+    #     halluc_rate_knowledge = model_data['hallucinated_knowledge'].mean() * 100
+    #     adversarial_acc = model_data['adversarial_correct'].mean() * 100
+
+    #     # Hallucination Index for RAG: Measures the gap between hallucination rate and the complement of accuracy
+    #     halluc_index_rag = halluc_rate_rag - (100 - rag_acc)
+
+    #     # Hallucination Index for Knowledge: Measures the gap between hallucination rate and the complement of accuracy
+    #     halluc_index_knowledge = halluc_rate_knowledge - (100 - knowledge_acc)
+
+    #     summary_rows.append({
+    #         'model': model,
+    #         'n': len(model_data),
+    #         'rag_acc': rag_acc,
+    #         'knowledge_acc': knowledge_acc,
+    #         'halluc_rate_rag': halluc_rate_rag,
+    #         'halluc_rate_knowledge': halluc_rate_knowledge,
+    #         'adversarial_acc': adversarial_acc,
+    #         'halluc_index_rag': halluc_index_rag,
+    #         'halluc_index_knowledge': halluc_index_knowledge
+    #     })
+
+    # summary_df = pd.DataFrame(summary_rows)
 
     # Print summary as aligned ASCII table
-    print("\n" + "-"*90)
-    header = (
-        f"{'Model':<38} {'N':>6} "
-        f"{'RAG Acc (%)':>12} {'HallRAG (%)':>12} "
-        f"{'Knowl Acc (%)':>14} {'HallKnowl (%)':>14} "
-        f"{'Adv Acc (%)':>12}"
-    )
-    print(header)
-    print("-"*90)
-    for _, row in summary_df.iterrows():
-        print(
-            f"{row['model']:<38} {row['n']:6d} "
-            f"{row['rag_acc']:12.1f} {row['halluc_rate_rag']:12.1f} "
-            f"{row['knowledge_acc']:14.1f} {row['halluc_rate_knowledge']:14.1f} "
-            f"{row['adversarial_acc']:12.1f}"
-        )
-    print("-"*90)
+    # print("\n" + "-"*90)
+    # header = (
+    #     f"{'Model':<38} {'N':>6} "
+    #     f"{'RAG Acc (%)':>12} {'HallRAG (%)':>12} "
+    #     f"{'Knowl Acc (%)':>14} {'HallKnowl (%)':>14} "
+    #     f"{'Adv Acc (%)':>12}"
+    # )
+    # print(header)
+    # print("-"*90)
+    # for _, row in summary_df.iterrows():
+    #     print(
+    #         f"{row['model']:<38} {row['n']:6d} "
+    #         f"{row['rag_acc']:12.1f} {row['halluc_rate_rag']:12.1f} "
+    #         f"{row['knowledge_acc']:14.1f} {row['halluc_rate_knowledge']:14.1f} "
+    #         f"{row['adversarial_acc']:12.1f}"
+    #     )
+    # print("-"*90)
 
-    return summary_df
+    return aggregate_df
 
 def fixed_missing_columns_in_mistral_results(ans_csv_path, qa_csv_path):
 
