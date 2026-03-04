@@ -122,12 +122,15 @@ def analyze_results(base_folder='/workspace/data/results/llm_batch/',
     for model in df['model'].unique():
         model_data = df[df['model'] == model]
         correct_count = model_data['rag_correct'].sum()
-        incorrect_count = len(model_data) - correct_count
+        total_count = len(model_data)
+        incorrect_count = total_count - correct_count
+        accuracy_percentage = (correct_count / total_count) * 100 if total_count > 0 else 0
         aggregate_counts.append({
             'model': model,
-            'N': len(model_data),
+            'N': total_count,
             'correct': correct_count,
-            'incorrect': incorrect_count
+            'incorrect': incorrect_count,
+            'accuracy (%)': round(accuracy_percentage, 1)
         })
 
     aggregate_df = pd.DataFrame(aggregate_counts)

@@ -46,20 +46,20 @@ Results & Analysis
 
 Based on evaluation of **1,562 QA pairs** across UK financials:
 
-| Model                                |   N   | Correct | Incorrect |
-|--------------------------------------|-------|---------|-----------|
-| google/gemma-3n-E4B-it               | 1562  |  1558   |     4     |
-| gpt-4o                               | 1562  |  1432   |   130     |
-| openai/gpt-oss-120b                  | 1562  |  1426   |   136     |
-| openai/gpt-oss-20b                   | 1562  |  1388   |   174     |
-| llama-3.1-8b-instant                 | 1562  |  1554   |     8     |
-| llama-3.3-70b-versatile              | 1562  |  1527   |    35     |
-| mistralai/Mistral-7B-Instruct-v0.3   | 1562  |  1514   |    48     |
-| nvidia/NVIDIA-Nemotron-Nano-9B-v2    | 1403  |   968   |   435     |
-| Qwen/Qwen2.5-7B-Instruct-Turbo       | 1562  |  1538   |    24     |
+| Model                                |   N   | Correct | Incorrect | Accuracy (%) |
+|--------------------------------------|-------|---------|-----------|--------------|
+| google/gemma-3n-E4B-it               | 1562  |  1558   |     4     | 99.7         |
+| gpt-4o                               | 1562  |  1432   |   130     | 91.7         |
+| openai/gpt-oss-120b                  | 1562  |  1426   |   136     | 91.3         |
+| openai/gpt-oss-20b                   | 1562  |  1388   |   174     | 88.9         |
+| llama-3.1-8b-instant                 | 1562  |  1554   |     8     | 99.5         |
+| llama-3.3-70b-versatile              | 1562  |  1527   |    35     | 97.8         |
+| mistralai/Mistral-7B-Instruct-v0.3   | 1562  |  1514   |    48     | 96.9         |
+| nvidia/NVIDIA-Nemotron-Nano-9B-v2    | 1403  |   968   |   435     | 69.0         |
+| Qwen/Qwen2.5-7B-Instruct-Turbo       | 1562  |  1538   |    24     | 98.5         |
 
 **Key Findings:**
-1. RAG accuracy varies significantly
+1. RAG accuracy for most models falls between 90% and 99%, highlighting strong but varied performance in document retrieval that can be used for automated processes
 2. Models often introduce commas (,) into numeric values, such as 876,000,000 instead of 876000000. This can cause issues if the output is used directly in automated processes
 3. In some incorrect cases, models provide additional context or formatting beyond the numeric value, such as "Negative 10,000,000.0" instead of -10000000 as specified in the financial statement. 
 
