@@ -6,6 +6,8 @@ import os
 from pathlib import Path
 from typing import List, Dict, Any
 
+import yaml
+
 import pandas as pd
 from openai import OpenAI
 
@@ -272,20 +274,72 @@ def _add_common_args(parser: argparse.ArgumentParser) -> None:
     parser.add_argument("--max_tokens", type=int, default=300)
 
 
+def load_config(config_path: str) -> dict:
+    """Load and return a YAML configuration file."""
+    with open(config_path, "r") as f:
+        return yaml.safe_load(f)
+
+
+def run_from_config(config_path: str, command: str) -> None:
+    """Execute a prepare, submit, or full workflow driven by a YAML config file."""
+    config = load_config(config_path)
+
+    input_csv = config["input"]["gold_csv"]
+    requests_jsonl = config["output"]["requests_jsonl"]
+    mapping_csv = config["output"]["mapping_csv"]
+    output_jsonl = config["output"]["output_jsonl"]
+    qa_pairs_csv = config["output"]["qa_pairs_csv"]
+    model = config["model"]["model_name"]
+    temperature = config["model"].get("temperature", 0.7)
+    max_tokens = config["model"].get("max_tokens", 300)
+    window = config["batch"].get("completion_window", "24h")
+
+    if command == "prepare":
+        prepare_jsonl(
+            input_csv_path=input_csv,
+            output_jsonl_path=requests_jsonl,
+            mapping_csv_path=mapping_csv,
+            model=model,
+            temperature=temperature,
+            max_tokens=max_tokens,
+        )
+    elif command == "submit":
+        submit_batch(requests_jsonl, completion_window=window)
+    elif command == "full":
+        prepare_jsonl(
+            input_csv_path=input_csv,
+            output_jsonl_path=requests_jsonl,
+            mapping_csv_path=mapping_csv,
+            model=model,
+            temperature=temperature,
+            max_tokens=max_tokens,
+        )
+        submit_batch(requests_jsonl, completion_window=window)
+    elif command == "collect":
+        raise ValueError(
+            "'collect' via --config requires a batch_id. "
+            "Use: python -m src.qa_generation.llm_qa_generator_batch --config <cfg> collect <batch_id>"
+        )
+
+
 def main():
     parser = argparse.ArgumentParser(description="OpenAI Batch runner for QA generation")
-    sub = parser.add_subparsers(dest="cmd", required=True)
+
+    # Global --config option
+    parser.add_argument("--config", type=str, help="Path to YAML configuration file")
+
+    sub = parser.add_subparsers(dest="cmd", required=False)
 
     # prepare
     p_prepare = sub.add_parser("prepare", help="Build JSONL requests and mapping CSV")
-    p_prepare.add_argument("input_csv")
-    p_prepare.add_argument("output_jsonl")
-    p_prepare.add_argument("mapping_csv")
+    p_prepare.add_argument("input_csv", nargs="?")
+    p_prepare.add_argument("output_jsonl", nargs="?")
+    p_prepare.add_argument("mapping_csv", nargs="?")
     _add_common_args(p_prepare)
 
     # submit
     p_submit = sub.add_parser("submit", help="Submit a batch job from JSONL")
-    p_submit.add_argument("input_jsonl")
+    p_submit.add_argument("input_jsonl", nargs="?")
     p_submit.add_argument("--window", default="24h", choices=["24h", "48h"])
 
     # status
@@ -295,13 +349,42 @@ def main():
     # collect
     p_collect = sub.add_parser("collect", help="Download output and write results CSV")
     p_collect.add_argument("batch_id")
-    p_collect.add_argument("output_jsonl")
-    p_collect.add_argument("mapping_csv")
-    p_collect.add_argument("results_csv")
+    p_collect.add_argument("output_jsonl", nargs="?")
+    p_collect.add_argument("mapping_csv", nargs="?")
+    p_collect.add_argument("results_csv", nargs="?")
+
+    # full (requires --config)
+    sub.add_parser("full", help="Run full prepare + submit workflow (requires --config)")
 
     args = parser.parse_args()
 
+    # ── Config-driven execution ──────────────────────────────────────────────
+    if args.config:
+        if not args.cmd:
+            parser.error("When using --config, specify a command: prepare, submit, full, or collect")
+        if args.cmd in ("prepare", "submit", "full"):
+            run_from_config(args.config, args.cmd)
+            return
+        elif args.cmd == "collect":
+            config = load_config(args.config)
+            collect_results(
+                batch_id=args.batch_id,
+                output_jsonl_path=config["output"]["output_jsonl"],
+                mapping_csv_path=config["output"]["mapping_csv"],
+                results_csv_path=config["output"]["qa_pairs_csv"],
+            )
+            return
+        elif args.cmd == "status":
+            check_status(args.batch_id)
+            return
+
+    # ── Manual CLI mode (backwards compatible) ───────────────────────────────
+    if not args.cmd:
+        parser.error("Either provide --config with a command, or use a command with explicit arguments")
+
     if args.cmd == "prepare":
+        if not all([args.input_csv, args.output_jsonl, args.mapping_csv]):
+            parser.error("prepare requires input_csv, output_jsonl, and mapping_csv")
         prepare_jsonl(
             input_csv_path=args.input_csv,
             output_jsonl_path=args.output_jsonl,
@@ -311,16 +394,22 @@ def main():
             max_tokens=args.max_tokens,
         )
     elif args.cmd == "submit":
+        if not args.input_jsonl:
+            parser.error("submit requires input_jsonl")
         submit_batch(args.input_jsonl, completion_window=args.window)
     elif args.cmd == "status":
         check_status(args.batch_id)
     elif args.cmd == "collect":
+        if not all([args.output_jsonl, args.mapping_csv, args.results_csv]):
+            parser.error("collect requires batch_id, output_jsonl, mapping_csv, and results_csv")
         collect_results(
             batch_id=args.batch_id,
             output_jsonl_path=args.output_jsonl,
             mapping_csv_path=args.mapping_csv,
             results_csv_path=args.results_csv,
         )
+    elif args.cmd == "full":
+        parser.error("The 'full' command requires --config")
 
 
 if __name__ == "__main__":

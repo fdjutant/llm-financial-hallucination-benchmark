@@ -1,0 +1,25 @@
+# Configuration for serial QA pair generation from demo gold data
+
+experiment:
+  name: "demo_qa_serial_run"
+  description: "Generate QA pairs from demo gold facts (serial, no Batch API)"
+
+input:
+  # Path to the canonical gold facts CSV
+  gold_csv: "/workspace/data/processed/demo_run/demo_gold.csv"
+
+output:
+  # Specific output files
+  requests_jsonl: "/workspace/data/qa/demo_run/requests.jsonl"
+  mapping_csv: "/workspace/data/qa/demo_run/mapping.csv"
+  output_jsonl: "/workspace/data/qa/demo_run/output.jsonl"
+  qa_pairs_csv: "/workspace/data/qa/demo_run/qa_pairs.csv"
+
+model:
+  # Model configuration (OpenAI-compatible)
+  model_name: "gpt-4o-mini"
+  temperature: 0.7
+  max_tokens: 300
+
+# Note: API key must be set as an environment variable or in API_KEY/OPENAI_API_KEY:
+# - OPENAI_API_KEY

@@ -87,7 +87,7 @@ class BenchmarkRunner:
             if row["id"] in processed_ids:
                 continue
 
-            print(f"Processing row {row['id']} for model {model}")
+            print(f"Processing row id {row['id']} for model {model}")
 
             async with semaphore:
                 try:
@@ -95,7 +95,7 @@ class BenchmarkRunner:
                     results.append(result)
                     raw_outputs.append(raw_output)
                 except Exception as e:
-                    print(f"Error processing row {row['id']} for model {model}: {e}")
+                    print(f"Error processing row id {row['id']} for model {model}: {e}")
                     results.append(self._safe_result(row, model, error=str(e)))
                     raw_outputs.append(self._safe_raw_output(row, model, error=str(e)))
 
@@ -134,7 +134,7 @@ class BenchmarkRunner:
         semaphore = asyncio.Semaphore(self.max_concurrency)
 
         for idx, row in df.iterrows():
-            print(f"\nProcessing row {row['id']} across all models")
+            print(f"\nProcessing row id {row['id']} across all models")
             
             for model in self.models_to_test:
                 if row["id"] in processed_by_model[model]:

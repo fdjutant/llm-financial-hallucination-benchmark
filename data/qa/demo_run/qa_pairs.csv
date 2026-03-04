@@ -1,0 +1,2 @@
+id,entity_name,year,segment,original_metric,ground_truth_value,generated_question,generated_answer,generated_reasoning
+4,AstraZeneca,2020,Income_Statement,Revenue From Sale Of Goods,25890000000.0,What was AstraZeneca's Revenue From Sale Of Goods in the year 2020?,25890000000.0,The exact figure for the Revenue From Sale Of Goods reported by AstraZeneca in 2020 is clearly indicated as 25890000000.0.

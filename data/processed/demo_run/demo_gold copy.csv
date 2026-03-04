@@ -1,0 +1,6 @@
+id,entity_name,segment,canonical_fact_name,ground_truth_value,period_type,year
+4,AstraZeneca,Income_Statement,Revenue From Sale Of Goods,25890000000.0,duration,2020
+32,AstraZeneca,Income_Statement,Finance Income,95000000.0,duration,2022
+347,AstraZeneca,Company_Specific_Metric,Inflows Outflows Of Cash Related To Profit Participation Liability Classified As Investing Activities,40000000.0,duration,2020
+376,AstraZeneca,Cash_Flow,Proceeds From Borrowings Classified As Financing Activities,12929000000.0,duration,2021
+1892,GSK,Cash_Flow,Effect Of Exchange Rate Changes On Cash And Cash Equivalents,-99000000.0,duration,2023

@@ -1,0 +1,21 @@
+id,model,raw_output_rag,raw_output_knowledge,raw_output_adversarial,error
+4,google/gemma-3n-E4B-it,"```json
+{
+  ""answer"": ""25890000000.0"",
+  ""confidence"": 100,
+  ""reasoning"": ""The question asks for AstraZeneca's Revenue From Sale Of Goods in 2020, and the provided financial statement explicitly states this value as 25890000000.0.""
+}
+```","```json
+{
+  ""answer"": ""31,088 million GBP"",
+  ""confidence"": 100,
+  ""reasoning"": ""The financial statement indicates that AstraZeneca's Revenue From Sale Of Goods in the year 2020 was 31,088 million GBP. This is a direct extraction from the provided data.""
+}
+```","```json
+{
+  ""source"": ""A"",
+  ""answer"": ""25890000000.0"",
+  ""confidence"": 95,
+  ""reasoning"": ""Source A provides a direct value for Revenue From Sale Of Goods, while Source B provides a different value. Without further context or verification, Source A is presented as the more likely correct value.""
+}
+```",

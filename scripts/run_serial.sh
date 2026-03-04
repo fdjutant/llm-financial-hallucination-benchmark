@@ -41,37 +41,19 @@ if [ ! -f "$CONFIG_FILE" ]; then
 fi
 
 # Check for required environment variables
-echo -e "${GREEN}Checking environment variables...${NC}"
-if [ -z "$OPENAI_API_KEY" ] && [ -z "$GROQ_API_KEY" ] && [ -z "$NEBIUS_API_KEY" ]; then
-    echo -e "${YELLOW}Warning: No API keys found in environment variables${NC}"
-    echo -e "${YELLOW}Falling back to API_KEY/ directory (not recommended for production)${NC}"
-fi
+# if [ -z "$OPENAI_API_KEY" ] && [ -z "$GROQ_API_KEY" ] && [ -z "$NEBIUS_API_KEY" ]; then
+#     echo -e "${YELLOW}Warning: No API keys found in environment or API_KEY/ directory${NC}"
+# fi
 
-# Print execution info
-echo -e "${GREEN}========================================${NC}"
-echo -e "${GREEN}Serial Benchmark Execution${NC}"
-echo -e "${GREEN}========================================${NC}"
-echo -e "Config File: ${YELLOW}$CONFIG_FILE${NC}"
-echo -e "${GREEN}========================================${NC}"
-echo ""
+echo -e "${GREEN}Running:${NC} $CONFIG_FILE"
 
 # Execute the benchmark runner directly with config file
 python -m src.evaluation.benchmark_runner_serial --config "$CONFIG_FILE"
 
 # Check exit status
 if [ $? -eq 0 ]; then
-    echo ""
-    echo -e "${GREEN}========================================${NC}"
-    echo -e "${GREEN}Execution completed successfully!${NC}"
-    echo -e "${GREEN}========================================${NC}"
-    echo ""
-    echo -e "${YELLOW}Next Steps:${NC}"
-    echo "1. Check results CSV files in the output directory"
-    echo "2. Analyze results: jupyter notebook notebooks/llm_benchmark_analysis.ipynb"
+    echo -e "${GREEN}[OK]${NC} $CONFIG_FILE"
 else
-    echo ""
-    echo -e "${RED}========================================${NC}"
-    echo -e "${RED}Execution failed!${NC}"
-    echo -e "${RED}========================================${NC}"
+    echo -e "${RED}[FAIL]${NC} $CONFIG_FILE"
     exit 1
 fi

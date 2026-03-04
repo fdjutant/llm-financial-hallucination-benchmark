@@ -1,0 +1,26 @@
+# Configuration for Serial Benchmark Runner - Qwen2.5-7B-Instruct-Turbo on demo QA pairs
+
+experiment:
+  name: "Qwen2.5-7B-Instruct-Turbo_demo_run"
+  description: "Benchmark Qwen/Qwen2.5-7B-Instruct-Turbo on demo QA pairs"
+
+input:
+  qa_pairs_csv: "/workspace/data/qa/demo_run/qa_pairs.csv"
+
+output:
+  output_dir: "/workspace/data/results/demo_run/Qwen2.5-7B-Instruct-Turbo"
+
+model:
+  provider: "togetherai"
+  temperature: 0.0
+  max_tokens: 200
+
+models:
+  - "Qwen/Qwen2.5-7B-Instruct-Turbo"
+
+execution:
+  strategy: "row_by_row"
+  batch_size: 10
+  max_concurrency: 10
+
+# Note: Requires TOGETHERAI_API_KEY in environment or API_KEY/TOGETHERAI_API_KEY file

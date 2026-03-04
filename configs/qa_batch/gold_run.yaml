@@ -1,0 +1,32 @@
+# Configuration for QA pair generation from full canonical gold data
+
+experiment:
+  name: "gold_qa_run"
+  description: "Generate QA pairs from full canonical gold facts"
+
+input:
+  # Path to the canonical gold facts CSV
+  gold_csv: "/workspace/data/processed/canonical_facts/gold.csv"
+
+output:
+  # Base directory for QA generation outputs
+  base_dir: "/workspace/data/qa/llm_batch"
+
+  # Specific output files
+  requests_jsonl: "/workspace/data/qa/llm_batch/requests.jsonl"
+  mapping_csv: "/workspace/data/qa/llm_batch/mapping.csv"
+  output_jsonl: "/workspace/data/qa/llm_batch/output.jsonl"
+  qa_pairs_csv: "/workspace/data/qa/llm_batch/qa_pairs.csv"
+
+model:
+  # Model configuration (QA generation uses OpenAI Batch API)
+  model_name: "gpt-4o-mini"
+  temperature: 0.7
+  max_tokens: 300
+
+batch:
+  # Batch API settings
+  completion_window: "24h"
+
+# Note: API key must be set as an environment variable or in API_KEY/OPENAI_API_KEY:
+# - OPENAI_API_KEY

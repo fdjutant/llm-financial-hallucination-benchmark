@@ -114,6 +114,16 @@ If you prefer running locally without Docker:
 
 ## Usage
 
+### 0. Quick Demo Start
+Run the full end-to-end pipeline on the demo dataset with a single command:
+```bash
+bash scripts/run_demo.sh
+```
+This executes three steps in sequence:
+1. Generate QA pairs from `data/processed/demo/demo_gold.csv` 
+2. Evaluate multiple LLMs against the QA pairs
+3. Print the RAG accuracy table and write per-model CSVs to `data/rag_analysis/demo_run/`
+
 ### 1. Ground Truth Extraction
 Pre-processed data is available in `data/processed/`. To regenerate from raw filings:
 ```python
@@ -127,17 +137,27 @@ silver_df = create_silver_ground_truth(bronze_df, "silver.csv")
 create_gold_ground_truth(silver_df, "gold.csv") 
 ```
 
-### 2. Generate QA Pairs (Batch API)
-Synthesize questions from ground truth using OpenAI's Batch API.
-```bash
-# 1. Prepare & Submit
-python -m src.qa_generation.llm_qa_generator_batch prepare gold.csv requests.jsonl mapping.csv --model gpt-4o-mini
-python -m src.qa_generation.llm_qa_generator_batch submit requests.jsonl
+### 2. Generate QA Pairs
+Synthesize questions from ground truth using OpenAI's API.
 
-# 2. Track & Collect (after 24h)
-python -m src.qa_generation.llm_qa_generator_batch status <batch_id>
-python -m src.qa_generation.llm_qa_generator_batch collect <batch_id> output.jsonl mapping.csv qa_pairs.csv
+**Option A: Batch (Recommended)**
+Asynchronous — submits all requests at once and collects results after ~24h. Cost-effective for large datasets.
+```bash
+# Prepare & submit (default command: full)
+bash scripts/create_qa_batch.sh configs/qa_batch/gold_run.yaml
+
+# Check status, then collect once complete
+bash scripts/create_qa_batch.sh configs/qa_batch/gold_run.yaml status
+bash scripts/create_qa_batch.sh configs/qa_batch/gold_run.yaml collect
 ```
+
+**Option B: Serial**
+Synchronous — generates QA pairs row-by-row in real time. Simpler workflow with no wait, but slower and costlier for large datasets.
+```bash
+bash scripts/create_qa_serial.sh configs/qa_serial/demo_run.yaml
+```
+
+Config files live in `configs/qa_serial/` and `configs/qa_batch/`. Use the `demo_run.yaml` variants for a small subset.
 
 ### 3. Run Benchmark
 Evaluate models using YAML configurations.
@@ -153,29 +173,35 @@ python -m src.evaluation.benchmark_runner_batch --config ... collect <batch_id>
 ```
 
 **Option B: Serial (Real-Time)**
-Best for fast feedback with Groq/Nebius/Llama.
+Best for fast feedback.
 ```bash
-# Edit configs/serial/groq_run.yaml
-# Defines model: "llama-3.3-70b-versatile", concurrency: 5
-bash scripts/run_serial.sh configs/serial/groq_run.yaml
+# Edit configs/llm_serial/llama-3.1-8b-instant_demo_run.yaml
+bash scripts/run_serial.sh configs/llm_serial/llama-3.1-8b-instant_demo_run.yaml
 ```
 
 ### 4. Analyze Results
-Launch the analysis notebook to compare performance across experiments.
+Run the analysis script to print an accuracy summary table and export per-model RAG analysis CSVs.
+
 ```bash
-jupyter notebook notebooks/llm_benchmark_analysis.ipynb
+# Serial demo run
+python scripts/analyze_rag_results.py --input-path data/results/demo_run --output-path data/rag_analysis/demo_run
+
+# Full batch results
+python scripts/analyze_rag_results.py --input-path data/results/llm_batch --output-path data/rag_analysis
 ```
 
-**Quick Start Snippet:**
-```python
-from src.evaluation.analysis import analyze_results
+The script prints an aggregate table to stdout:
+```
+ model    N  correct  incorrect  accuracy (%)
+ gpt-4o   6        5          1          83.3
+```
 
-# Aggregate metrics from Batch and Serial runs
-results = analyze_results([
-    "data/results/llm_batch", 
-    "data/results/serial"
-])
-# Returns: DataFrame with Accuracy and Hallucination Rate for RAG, Knowledge, Adversarial layers
+Per-model RAG analysis CSVs (one per model) are written to the specified output folder.
+Each file contains every result row enriched with `rag_outcome` (`correct` / `incorrect`).
+
+For deeper exploration, open the notebook:
+```bash
+jupyter notebook notebooks/llm_benchmark_analysis.ipynb
 ```
 
 

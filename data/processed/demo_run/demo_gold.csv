@@ -1,0 +1,2 @@
+id,entity_name,segment,canonical_fact_name,ground_truth_value,period_type,year
+4,AstraZeneca,Income_Statement,Revenue From Sale Of Goods,25890000000.0,duration,2020

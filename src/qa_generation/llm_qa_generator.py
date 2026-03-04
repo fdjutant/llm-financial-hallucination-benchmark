@@ -1,18 +1,32 @@
-import os
-import pandas as pd
-from openai import OpenAI
-import os
-from pydantic import BaseModel, ValidationError
+import argparse
 import json
+import os
 from pathlib import Path
 
-# Set OpenAI API key
-api_key = Path(Path(__file__).resolve().parents[2]/
-               "API_KEY"/"OPENAI_API_KEY").read_text().strip()
-client = OpenAI(api_key=api_key)
+import pandas as pd
+import yaml
+from openai import OpenAI
 
-def generate_qa_openai(input_csv_path, output_csv_path,
-                         model="gpt-4o-mini"):
+
+# ---------- OpenAI client setup ----------
+API_KEY_PATH = Path(__file__).resolve().parents[2] / "API_KEY" / "OPENAI_API_KEY"
+API_KEY = API_KEY_PATH.read_text().strip() if API_KEY_PATH.exists() else os.getenv("OPENAI_API_KEY", "")
+client = OpenAI(api_key=API_KEY)
+
+
+def load_config(config_path: str) -> dict:
+    """Load and return a YAML configuration file."""
+    with open(config_path, "r") as f:
+        return yaml.safe_load(f)
+
+
+def generate_qa_openai(
+    input_csv_path: str,
+    output_csv_path: str,
+    model: str = "gpt-4o-mini",
+    temperature: float = 0.7,
+    max_tokens: int = 300,
+):
     
     # 1. Read the Data
     try:
@@ -60,9 +74,9 @@ def generate_qa_openai(input_csv_path, output_csv_path,
                     {"role": "system", "content": "You are a helpful financial analyst assistant. Output valid JSON only."},
                     {"role": "user", "content": prompt}
                 ],
-                temperature=0.7,       # Adds linguistic variety
-                max_tokens=300,        # Limits cost (keeps answers concise)
-                response_format={"type": "json_object"} # Guarantees strict JSON
+                temperature=temperature,
+                max_tokens=max_tokens,
+                response_format={"type": "json_object"}
             )
 
             # 6. Parse Response
@@ -99,3 +113,37 @@ def generate_qa_openai(input_csv_path, output_csv_path,
     
     return output_df
 
+
+def main():
+    parser = argparse.ArgumentParser(description="Serial QA generator (row-by-row, no Batch API)")
+    parser.add_argument("--config", type=str, help="Path to YAML configuration file")
+    parser.add_argument("input_csv", nargs="?", help="Input gold CSV path (manual mode)")
+    parser.add_argument("output_csv", nargs="?", help="Output QA pairs CSV path (manual mode)")
+    parser.add_argument("--model", default="gpt-4o-mini")
+    parser.add_argument("--temperature", type=float, default=0.7)
+    parser.add_argument("--max_tokens", type=int, default=300)
+    args = parser.parse_args()
+
+    if args.config:
+        config = load_config(args.config)
+        generate_qa_openai(
+            input_csv_path=config["input"]["gold_csv"],
+            output_csv_path=config["output"]["qa_pairs_csv"],
+            model=config["model"]["model_name"],
+            temperature=config["model"].get("temperature", 0.7),
+            max_tokens=config["model"].get("max_tokens", 300),
+        )
+    else:
+        if not args.input_csv or not args.output_csv:
+            parser.error("Provide --config, or supply both input_csv and output_csv positional arguments")
+        generate_qa_openai(
+            input_csv_path=args.input_csv,
+            output_csv_path=args.output_csv,
+            model=args.model,
+            temperature=args.temperature,
+            max_tokens=args.max_tokens,
+        )
+
+
+if __name__ == "__main__":
+    main()

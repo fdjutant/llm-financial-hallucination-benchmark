@@ -1,0 +1,26 @@
+# Configuration for Serial Benchmark Runner - llama-3.1-8b-instant on demo QA pairs
+
+experiment:
+  name: "llama-3.1-8b-instant_demo_run"
+  description: "Benchmark llama-3.1-8b-instant on demo QA pairs"
+
+input:
+  qa_pairs_csv: "/workspace/data/qa/demo_run/qa_pairs.csv"
+
+output:
+  output_dir: "/workspace/data/results/demo_run/llama-3.1-8b-instant"
+
+model:
+  provider: "groq"  # Options: openai, groq, nebius
+  temperature: 0.0
+  max_tokens: 200
+
+models:
+  - "llama-3.1-8b-instant"
+
+execution:
+  strategy: "row_by_row"
+  batch_size: 10
+  max_concurrency: 10
+
+# Note: Requires GROQ_API_KEY in environment or API_KEY/GROQ_API_KEY file
