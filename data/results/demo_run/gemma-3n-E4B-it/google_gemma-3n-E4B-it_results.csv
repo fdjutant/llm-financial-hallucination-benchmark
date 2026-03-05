@@ -1,8 +1,8 @@
 id,model,question,entity,year,metric,segment,ground_truth,fake_value,answer_rag,confidence_rag,reasoning_rag,answer_knowledge,confidence_knowledge,reasoning_knowledge,answer_adversarial,confidence_adversarial,reasoning_adversarial,error
-4,google/gemma-3n-E4B-it,What was AstraZeneca's Revenue From Sale Of Goods in the year 2020?,AstraZeneca,2020,Revenue From Sale Of Goods,Income_Statement,25890000000.0,22333621671.58,25890000000.0,100,"The question asks for AstraZeneca's Revenue From Sale Of Goods in 2020, and the provided financial statement explicitly states this value as 25890000000.0.""
+4,google/gemma-3n-E4B-it,What was AstraZeneca's Revenue From Sale Of Goods in the year 2020?,AstraZeneca,2020,Revenue From Sale Of Goods,Income_Statement,25890000000.0,24641744448.5,25890000000.0,100,"The question directly asks for the Revenue From Sale Of Goods, which is explicitly stated as 25890000000.0 in the provided financial statement.""
 }
-```",31088 million GBP,100,"The financial statement indicates that AstraZeneca's Revenue From Sale Of Goods in the year 2020 was 31,088 million GBP. This is a direct extraction from the provided data.""
+```",£31405 million,100,"The provided financial statement indicates that AstraZeneca's Revenue From Sale Of Goods in the year 2020 was £31,405 million. This is a direct extraction from the given data.""
 }
-```",25890000000.0,95,"Source A provides a direct value for Revenue From Sale Of Goods, while Source B provides a different value. Without further context or verification, Source A is presented as the more likely correct value.""
+```",25890000000.0,95,"Source A provides a numerical value for Revenue From Sale Of Goods, while Source B provides a different numerical value. Without further information to validate one source over the other, and assuming the question is asking for the value reported by one of the sources, Source A is presented as the answer.""
 }
 ```",
