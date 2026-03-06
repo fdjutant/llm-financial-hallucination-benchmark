@@ -1,0 +1,32 @@
+---
+- name: Deploy and Run LLM Benchmark Demo via Podman
+  hosts: localhost
+  connection: local
+  tasks:
+    # - name: Ensure Podman is installed (Linux only)
+    #   ansible.builtin.package:
+    #     name: podman
+    #     state: present
+    #   become: yes
+    #   ignore_errors: yes # Ignores on macOS/Windows where package managers differ
+
+    - name: Build the benchmark Podman image
+      containers.podman.podman_image:
+        name: fca-benchmark
+        path: "{{ playbook_dir }}/.."
+        build:
+          file: "{{ playbook_dir }}/../Containerfile"
+        state: build
+
+    - name: Run the demo script inside the Podman container
+      ansible.builtin.command: >
+        podman run --rm 
+        -v "{{ playbook_dir }}/..:/workspace:Z" 
+        -w /workspace 
+        fca-benchmark:latest 
+        bash scripts/run_demo.sh
+      register: demo_output
+
+    - name: Display Benchmark Results
+      ansible.builtin.debug:
+        msg: "{{ demo_output.stdout_lines }}"

@@ -6,10 +6,10 @@ id,model,raw_output_rag,raw_output_knowledge,raw_output_adversarial,error
 }","{
   ""answer"": ""24,383 million USD"",
   ""confidence"": 95,
-  ""reasoning"": ""Based on AstraZeneca's annual report for 2020, the company reported revenue from sales of goods as 24,383 million USD. This information is publicly available and can be verified through various financial databases and reports.""
+  ""reasoning"": ""Based on AstraZeneca's annual report for 2020, the company reported revenue from sales of goods of 24,383 million USD. This information is publicly available and can be found on the company's website or through financial databases such as Bloomberg or Thomson Reuters.""
 }","{
   ""source"": ""B"",
-  ""answer"": ""24516485864.32"",
+  ""answer"": ""29611182580.97"",
   ""confidence"": 80,
-  ""reasoning"": ""Source B provides a more precise value, suggesting a higher level of accuracy. However, without additional information, it's difficult to determine the exact revenue from AstraZeneca's sales of goods in 2020. The difference between the two values is significant, indicating a potential discrepancy.""
+  ""reasoning"": ""Source B provides a more precise and detailed revenue figure, suggesting a higher level of accuracy. The difference between Source A and Source B is significant, with Source A being approximately 1.2 billion more than Source B. This discrepancy suggests that Source A may be an estimate or a rounded figure, while Source B provides a more granular and likely more accurate figure.""
 }",

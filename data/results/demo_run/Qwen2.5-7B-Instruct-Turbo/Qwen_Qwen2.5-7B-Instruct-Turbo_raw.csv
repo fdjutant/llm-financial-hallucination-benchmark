@@ -6,5 +6,5 @@ id,model,raw_output_rag,raw_output_knowledge,raw_output_adversarial,error
 }","{
   ""answer"": ""107833百万英镑"",
   ""confidence"": 95,
-  ""reasoning"": ""根据AstraZeneca 2020年的财务报表，其From Sale Of Goods的收入为107833百万英镑。这个数值是基于其年度报告中的数据得出的，具有较高的可信度。""
-}","{""source"": ""UNKNOWN"", ""answer"": ""The revenue from the sale of goods for AstraZeneca in 2020 is not definitively known from the given sources."", ""confidence"": 80, ""reasoning"": ""Both sources provide different figures for AstraZeneca's revenue from the sale of goods in 2020, and without additional context or verification, it is not possible to determine which, if either, is correct.""}",
+  ""reasoning"": ""根据AstraZeneca 2020年的财务报表，其从销售商品获得的收入为107833百万英镑。这个数值是基于其年度报告中的具体数据得出的。""
+}","{""source"": ""B"", ""answer"": ""25003216124.35"", ""confidence"": 95, ""reasoning"": ""Source B provides a more precise and detailed figure, which is typical for official financial reports. Source A has a simpler and less precise figure, which could be a rounded or summarized version.""}",

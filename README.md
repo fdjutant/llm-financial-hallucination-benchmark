@@ -124,6 +124,17 @@ This executes three steps in sequence:
 2. Evaluate multiple LLMs against the QA pairs
 3. Print the RAG accuracy table and write per-model CSVs to `data/rag_analysis/demo_run/`
 
+### 0.5. Enterprise Deployment (Podman & Ansible)
+For environments requiring rootless, daemonless container execution (e.g., enterprise security compliance), this repository includes an OCI-compliant `Containerfile` and an Ansible playbook for automated orchestration.
+
+**Prerequisites:**
+Ensure [Podman](https://podman.io/) and [Ansible](https://docs.ansible.com/) are installed on your Linux host or WSL environment.
+
+**Run the automated deployment:**
+```bash
+ansible-playbook ansible/deploy_demo.yaml
+```
+
 ### 1. Ground Truth Extraction
 Pre-processed data is available in `data/processed/`. To regenerate from raw filings:
 ```python

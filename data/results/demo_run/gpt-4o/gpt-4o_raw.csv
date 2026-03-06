@@ -1,15 +1,15 @@
 id,model,raw_output_rag,raw_output_knowledge,raw_output_adversarial,error
 4,gpt-4o,"{
-  ""answer"": ""25,890,000,000"",
+  ""answer"": ""25890000000.0"",
   ""confidence"": 100,
   ""reasoning"": ""The financial statement explicitly states that AstraZeneca's Revenue From Sale Of Goods in 2020 was 25,890,000,000.0. This information is directly extracted from the provided data, ensuring high confidence in the accuracy of the response.""
 }","{
   ""answer"": ""26,617 million USD"",
   ""confidence"": 95,
-  ""reasoning"": ""AstraZeneca's financial statements for the year 2020 report a total revenue from the sale of goods amounting to 26,617 million USD. This figure is derived from their consolidated income statement, which details the company's revenue streams for that fiscal year.""
+  ""reasoning"": ""Based on AstraZeneca's 2020 annual financial report, the revenue from the sale of goods was reported as 26,617 million USD. This figure is derived from the company's consolidated income statement for the year ended December 31, 2020.""
 }","{
     ""source"": ""UNKNOWN"",
     ""answer"": ""The correct revenue figure for AstraZeneca's Revenue From Sale Of Goods in 2020 cannot be determined from the given sources."",
     ""confidence"": 50,
-    ""reasoning"": ""The two sources provide different figures for AstraZeneca's Revenue From Sale Of Goods in 2020, and without additional context or verification from a reliable third-party source, it is not possible to determine which source is correct. Therefore, the confidence level is set at 50, indicating uncertainty.""
+    ""reasoning"": ""The two sources provide conflicting information regarding AstraZeneca's Revenue From Sale Of Goods in 2020. Without additional context or a third source to verify the correct figure, it is not possible to determine which source is accurate.""
 }",

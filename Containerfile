@@ -16,11 +16,11 @@ RUN conda env create -f /tmp/environment.yml && \
 
 # Make sure the environment is default
 SHELL ["bash", "-c"]
-RUN echo "conda activate mlenv" >> ~/.bashrc
+RUN echo "conda activate llmbenchmark" >> ~/.bashrc
 
 # Set PATH so the env is active in non-interactive shells
-ENV CONDA_DEFAULT_ENV=mlenv
-ENV PATH /opt/conda/envs/mlenv/bin:$PATH
+ENV CONDA_DEFAULT_ENV=llmbenchmark
+ENV PATH /opt/conda/envs/llmbenchmark/bin:$PATH
 
 # (Optional) Install any OS-level packages you want
 # RUN apt-get update && apt-get install -y --no-install-recommends \
