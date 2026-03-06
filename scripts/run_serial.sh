@@ -18,15 +18,9 @@ set -e
 #   bash scripts/run_serial.sh configs/serial/openai_row_by_row.yaml
 # ===================================================================
 
-# Colors for output
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-NC='\033[0m' # No Color
-
 # Check if config file is provided
 if [ $# -eq 0 ]; then
-    echo -e "${RED}Error: No configuration file provided${NC}"
+    echo "Error: No configuration file provided"
     echo "Usage: bash scripts/run_serial.sh <config_file>"
     echo "Example: bash scripts/run_serial.sh configs/serial/groq_model_by_model.yaml"
     exit 1
@@ -36,24 +30,24 @@ CONFIG_FILE=$1
 
 # Validate config file exists
 if [ ! -f "$CONFIG_FILE" ]; then
-    echo -e "${RED}Error: Configuration file not found: $CONFIG_FILE${NC}"
+    echo "Error: Configuration file not found: $CONFIG_FILE"
     exit 1
 fi
 
 # Check for required environment variables
 # if [ -z "$OPENAI_API_KEY" ] && [ -z "$GROQ_API_KEY" ] && [ -z "$NEBIUS_API_KEY" ]; then
-#     echo -e "${YELLOW}Warning: No API keys found in environment or API_KEY/ directory${NC}"
+#     echo "Warning: No API keys found in environment or API_KEY/ directory"
 # fi
 
-echo -e "${GREEN}Running:${NC} $CONFIG_FILE"
+echo "Running: $CONFIG_FILE"
 
 # Execute the benchmark runner directly with config file
 python -m src.evaluation.benchmark_runner_serial --config "$CONFIG_FILE"
 
 # Check exit status
 if [ $? -eq 0 ]; then
-    echo -e "${GREEN}[OK]${NC} $CONFIG_FILE"
+    echo "[OK] $CONFIG_FILE"
 else
-    echo -e "${RED}[FAIL]${NC} $CONFIG_FILE"
+    echo "[FAIL] $CONFIG_FILE"
     exit 1
 fi

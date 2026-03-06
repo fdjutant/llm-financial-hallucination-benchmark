@@ -12,7 +12,7 @@
 
     - name: Build the benchmark Podman image
       containers.podman.podman_image:
-        name: fca-benchmark
+        name: benchmark-llm
         path: "{{ playbook_dir }}/.."
         build:
           file: "{{ playbook_dir }}/../Containerfile"
@@ -23,7 +23,7 @@
         podman run --rm 
         -v "{{ playbook_dir }}/..:/workspace:Z" 
         -w /workspace 
-        fca-benchmark:latest 
+        benchmark-llm:latest 
         bash scripts/run_demo.sh
       register: demo_output
 
