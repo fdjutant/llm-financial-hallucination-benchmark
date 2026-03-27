@@ -59,11 +59,32 @@ Based on evaluation of **1,562 QA pairs** across UK financials:
 | Qwen/Qwen2.5-7B-Instruct-Turbo       | 1562  |  1538   |    24     | 98.5         |
 
 **Key Findings:**
-1. RAG accuracy for most models falls between 90% and 99%, highlighting strong but varied performance in document retrieval that can be used for automated processes
-2. Models often introduce commas (,) into numeric values, such as 876,000,000 instead of 876000000. This can cause issues if the output is used directly in automated processes
-3. In some incorrect cases, models provide additional context or formatting beyond the numeric value, such as "Negative 10,000,000.0" instead of -10000000 as specified in the financial statement. 
 
-*See detailed RAG result for each model in `./data/rag_analysis/*.csv`*
+1. **Comma Insertion (breaks automation)** — GPT-4o (row id: 1261)
+
+   Asked *"What was the Profit Loss reported by GSK for the year 2022?"*
+   
+   Ground truth: `15621000000` → LLM output: `"15,621,000,000"`
+
+   Models frequently insert thousands separators into numeric values, which silently breaks downstream parsing and automated pipelines.
+
+2. **Extra Context (sentence instead of number)** — Gemma-3n-E4B (row id: 1892)
+
+   Asked *"What was the impact of exchange rate changes on GSK's cash and cash equivalents in 2023?"*
+   
+   Ground truth: `-99000000` → LLM output: `"The impact of exchange rate changes on GSK's cash and cash equivalents in 2023 was a decrease of $99,000,000."`
+
+   Some models return full sentences rather than bare numeric values, making structured extraction unreliable.
+
+3. **Numeric Hallucination (silent value distortion)** — Llama 3.3-70B (row id: 2)
+
+   Asked *"What was AstraZeneca's revenue from the sale of goods in 2022?"*
+   
+   Ground truth: `42998000000` → LLM output: `"43.998 billion"`
+
+   The model reformatted for readability but hallucinated the leading digit, introducing a silent £1 billion error.
+
+See detailed RAG result for each model in `./data/rag_analysis/*.csv`
 
 ## Features & Tech Stack
 | Module      | Key Capabilities                                                                                       | Tech Stack                           |
